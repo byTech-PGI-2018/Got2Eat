@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "482379733235",
+    "firebase_url": "https://got2eat-65f04.firebaseio.com",
+    "project_id": "got2eat-65f04",
+    "storage_bucket": "got2eat-65f04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482379733235:android:5adc74dd3776ac7e",
+        "android_client_info": {
+          "package_name": "bytech.got2eat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482379733235-m9jit7qrqlndqfqunriq79mc5i5q740b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bytech.got2eat",
+            "certificate_hash": "a73f15799322d7dd282ddc8ff38b7af856f7ab32"
+          }
+        },
+        {
+          "client_id": "482379733235-pjiokcvnivnlnph9cpukvlcakt0qjnaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bytech.got2eat",
+            "certificate_hash": "abb9325733e65f0cc5f6e6bf5b2485160a8a357b"
+          }
+        },
+        {
+          "client_id": "482379733235-9t9lj90mc2t3dvtjncu0unrg95k35llm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxCcJuf08_7_VOu9Dlti0vZMcUg_L1PWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482379733235-9t9lj90mc2t3dvtjncu0unrg95k35llm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

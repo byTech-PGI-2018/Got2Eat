@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Got2Eat</string>
+    <string name="already_login">User already logged in</string>
+    <string name="email_hint">Email</string>
+    <string name="login_button">Login</string>
+    <string name="empty_username">Field can\'t be empty</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Nome</string>
+    <string name="username_hint">Username</string>
+    <string name="register_button">Register</string>
+</resources>
