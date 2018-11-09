@@ -1,10 +1,12 @@
 package bytech.got2eat;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -16,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
 
+    private static final String TAG = "Register";
     FirebaseAuth mAuth;
 
     TextInputLayout registerName;
@@ -41,14 +44,20 @@ public class Register extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String password = registerPassword.getEditText().getText().toString();
-                String name = registerName.getEditText().getText().toString();
-                String username = registerUsername.getEditText().getText().toString();
-                String email = registerEmail.getEditText().getText().toString();
-                //Check input first
-                if (validateInput(password, email, name, username)==0){
-                    //Create the account
-                    register(email, password);
+                if (isNetworkConnected()){
+                    String password = registerPassword.getEditText().getText().toString();
+                    String name = registerName.getEditText().getText().toString();
+                    String username = registerUsername.getEditText().getText().toString();
+                    String email = registerEmail.getEditText().getText().toString();
+                    //Check input first
+                    if (validateInput(password, email, name, username)==0){
+                        //Create the account
+                        register(email, password);
+                    }
+                }
+                else{
+                    Log.e(TAG, "Tried to register without internet");
+                    Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -96,5 +105,10 @@ public class Register extends AppCompatActivity {
             registerEmail.setError(null);
             return 0;
         }
+    }
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm.getActiveNetworkInfo() != null;
     }
 }

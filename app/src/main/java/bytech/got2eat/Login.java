@@ -2,6 +2,7 @@ package bytech.got2eat;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +33,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     FirebaseAuth mAuth;
     Button loginButton;
     Button registerButton;
+    Button googleButton;
     TextInputLayout loginPassword;
     TextInputLayout loginEmail;
     private GoogleApiClient mGoogleApiClient;
@@ -69,15 +71,21 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String password = loginPassword.getEditText().getText().toString().trim();
-                String email = loginEmail.getEditText().getText().toString().trim();
+                if (isNetworkConnected()){
+                    String password = loginPassword.getEditText().getText().toString().trim();
+                    String email = loginEmail.getEditText().getText().toString().trim();
 
-                if (validateInput(password, email)==0){
-                    Log.d(TAG, "Password: " + loginPassword.getEditText().getText().toString());
-                    Log.d(TAG, "Email: " + loginEmail.getEditText().getText().toString());
+                    if (validateInput(password, email)==0){
+                        Log.d(TAG, "Password: " + loginPassword.getEditText().getText().toString());
+                        Log.d(TAG, "Email: " + loginEmail.getEditText().getText().toString());
 
-                    //Log in
-                    signInEmailPassword(email, password);
+                        //Log in
+                        signInEmailPassword(email, password);
+                    }
+                }
+                else{
+                    Log.e(TAG, "Tried to login without network");
+                    Toast.makeText(context, getString(R.string.no_internet), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -88,6 +96,21 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             public void onClick(View v) {
                 Intent intent = new Intent(Login.this, Register.class);
                 startActivity(intent);
+            }
+        });
+
+        googleButton = findViewById(R.id.google_button);
+        googleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isNetworkConnected()){
+                    //Log in with google
+                    signInGoogle();
+                }
+                else{
+                    Log.e(TAG, "Tried to login without internet");
+                    Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -160,5 +183,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+    }
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm.getActiveNetworkInfo() != null;
     }
 }
