@@ -27,6 +27,7 @@ hs_err_pid*
 
 # Built application files
 *.apk
+!got2eat.apk
 *.ap_
 *.aab
 
