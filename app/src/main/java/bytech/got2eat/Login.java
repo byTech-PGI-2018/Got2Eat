@@ -120,7 +120,12 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        if (authResult.getUser()!=null) Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
+                        if (authResult.getUser()!=null){
+                            Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(thisInstance, Home.class);
+                            startActivity(intent);
+                            finish();
+                        }
                         else Toast.makeText(context, "Wrong user/password", Toast.LENGTH_SHORT).show();
                     }
                 })
