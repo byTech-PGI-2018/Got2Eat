@@ -22,10 +22,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.Timestamp;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Login extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
@@ -39,6 +41,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private GoogleApiClient mGoogleApiClient;
     private Context context = this;
     private Login thisInstance = this;
+    private FirebaseFirestore db;
 
     private int RC_SIGN_IN = 100;
 
@@ -46,6 +49,8 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        db = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser()!=null){
@@ -121,6 +126,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         if (authResult.getUser()!=null){
+                            //Update timestamp in database
+                            db.collection("users").document(authResult.getUser().getUid())
+                                    .update("lastlogin", Timestamp.now());
+
+                            //Create new intent to main activity
                             Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(thisInstance, Home.class);
                             startActivity(intent);

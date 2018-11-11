@@ -15,6 +15,11 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Register extends AppCompatActivity {
 
@@ -27,11 +32,14 @@ public class Register extends AppCompatActivity {
     TextInputLayout registerPassword;
     Button registerButton;
     private Context context = this;
+    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        db = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -49,10 +57,14 @@ public class Register extends AppCompatActivity {
                     String name = registerName.getEditText().getText().toString();
                     String username = registerUsername.getEditText().getText().toString();
                     String email = registerEmail.getEditText().getText().toString();
+
+                    Map<String, Object> userData = new HashMap<>();
+                    userData.put("username", username);
+
                     //Check input first
                     if (validateInput(password, email, name, username)==0){
                         //Create the account
-                        register(email, password);
+                        register(email, password, userData);
                     }
                 }
                 else{
@@ -63,14 +75,33 @@ public class Register extends AppCompatActivity {
         });
     }
 
-    private void register(String email, String password){
+    private void register(String email, String password, final Map<String, Object> userData){
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        if (authResult.getUser()!=null) Toast.makeText(context, "Registered", Toast.LENGTH_SHORT).show();
-                        else Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
-                        finish();
+                        if (authResult.getUser()!=null){
+                            //Create new user in database
+                            db.collection("users").document(authResult.getUser().getUid())
+                                    .set(userData)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void aVoid) {
+                                            //Data added successfully
+                                            Toast.makeText(context, "Register complete", Toast.LENGTH_SHORT).show();
+                                            finish();
+                                        }
+                                    })
+                                    .addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                        }
+                        else{
+                            Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
