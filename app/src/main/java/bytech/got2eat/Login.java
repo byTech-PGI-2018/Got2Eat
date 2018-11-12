@@ -118,7 +118,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 }
             }
         });
-    }
+    }//
 
     private void signInEmailPassword(String email, String password){
         mAuth.signInWithEmailAndPassword(email, password)
