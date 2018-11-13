@@ -38,7 +38,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:17.1.2'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
     implementation 'jp.wasabeef:recyclerview-animators:2.3.0'
-    implementation 'com.google.cloud:google-cloud-dialogflow:0.70.0-alpha'
+    //implementation 'com.google.cloud:google-cloud-dialogflow:0.70.0-alpha'
     implementation 'ai.api:sdk:2.0.7@aar'
     implementation 'ai.api:libai:1.6.12'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
