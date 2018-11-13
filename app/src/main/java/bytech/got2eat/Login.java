@@ -56,6 +56,12 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         if (mAuth.getCurrentUser()!=null){
             Toast.makeText(this, R.string.already_login, Toast.LENGTH_SHORT).show();
             Log.i(TAG, "User already logged in");
+
+            //Create new intent to main activity
+            Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(thisInstance, Home.class);
+            startActivity(intent);
+            finish();
         }
 
         //Firebase auth
