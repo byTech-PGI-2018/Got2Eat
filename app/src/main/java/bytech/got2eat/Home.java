@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -161,6 +162,7 @@ public class Home extends AppCompatActivity implements AIListener{
     }
 
     private static class DialogTask extends AsyncTask<AIRequest,Void,AIResponse>{
+        private static final String TAG = "DialogTask";
         private AIDataService aiService;
         private AIRequest aiRequest;
         private static Home homeClass;
@@ -184,7 +186,9 @@ public class Home extends AppCompatActivity implements AIListener{
         @Override
         protected void onPostExecute(AIResponse response) {
             if (response != null) {
-
+                Log.d(TAG, "Response: " + response);
+                Log.d(TAG, "Response result: " + response.getResult());
+                Log.d(TAG, "Response speech: " + response.getResult().getFulfillment().getSpeech());
                 Result result = response.getResult();
                 String reply = result.getFulfillment().getSpeech();
                 homeClass.respond(reply);

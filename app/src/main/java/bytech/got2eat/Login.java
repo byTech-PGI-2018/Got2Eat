@@ -3,6 +3,8 @@ package bytech.got2eat;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.os.AsyncTask;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -29,6 +33,18 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import io.grpc.internal.JsonParser;
+
 public class Login extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     private static final String TAG = "LoginActivity";
@@ -36,12 +52,18 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     Button loginButton;
     Button registerButton;
     Button googleButton;
+    Button uploadButton;
+    ProgressBar progressBar;
     TextInputLayout loginPassword;
     TextInputLayout loginEmail;
+    TextView progressReport;
+    TextView loadingJson;
     private GoogleApiClient mGoogleApiClient;
     private Context context = this;
     private Login thisInstance = this;
     private FirebaseFirestore db;
+
+    private int progressBarValue = 0;
 
     private int RC_SIGN_IN = 100;
 
@@ -53,7 +75,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         db = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
-        if (mAuth.getCurrentUser()!=null){
+        /*if (mAuth.getCurrentUser()!=null){
             Toast.makeText(this, R.string.already_login, Toast.LENGTH_SHORT).show();
             Log.i(TAG, "User already logged in");
 
@@ -62,7 +84,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             Intent intent = new Intent(thisInstance, Home.class);
             startActivity(intent);
             finish();
-        }
+        }*/
 
         //Firebase auth
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -122,6 +144,20 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     Log.e(TAG, "Tried to login without internet");
                     Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        progressBar = findViewById(R.id.progressBar);
+        progressReport = findViewById(R.id.progressReport);
+        progressReport.setText("0/10");
+        loadingJson = findViewById(R.id.loadingJson);
+        loadingJson.setVisibility(View.GONE);
+        uploadButton = findViewById(R.id.uploadButton);
+        uploadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Clicked uploadButton");
+                new Upload();
             }
         });
     }
@@ -209,5 +245,122 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         return cm.getActiveNetworkInfo() != null;
+    }
+
+    private class Upload extends AsyncTask<Void, Void, Void>{
+
+        Upload(){
+            Log.d(TAG, "Upload constructor");
+            this.execute();
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            //int size = receitas.length();
+            Log.d(TAG, "Starting Upload");
+            int size1 = 10;
+            String receitas = null;
+            JSONArray receitasJson = null;
+            try {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadingJson.setVisibility(View.VISIBLE);
+                        loadingJson.setText("Loading JSON file");
+                    }
+                });
+                InputStream is = context.getAssets().open("receitas.json");
+                int size = is.available();
+                byte[] buffer = new byte[size];
+                is.read(buffer);
+                is.close();
+                receitas = new String(buffer, "UTF-8");
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadingJson.setVisibility(View.GONE);
+                    }
+                });
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            try {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadingJson.setText("Creating JSONArray");
+                        loadingJson.setVisibility(View.VISIBLE);
+                    }
+                });
+                receitasJson = new JSONArray(receitas);
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+
+            for (int i=0; i<size1; i++){
+                    try{
+                    JSONObject receita = receitasJson.getJSONObject(i);
+                    JSONObject idObject = receita.getJSONObject("_id");
+                    final String id = idObject.getString("$oid");
+                    String nome = receita.getString("nome");
+                    JSONArray secao = receita.getJSONArray("secao");
+                    JSONArray conteudo = secao.getJSONObject(0).getJSONArray("conteudo");
+                    String[] ingredientes = new String[conteudo.length()];
+                    for (int j=0; j<conteudo.length(); j++){
+                        ingredientes[j] = conteudo.getString(j).toLowerCase();
+                    }
+                    System.out.println("-------New receita:");
+                    System.out.println("----id: " + id);
+                    System.out.println("----nome: " + nome);
+                    System.out.println("----ingredientes: ");
+                    for (int k=0; k<ingredientes.length; k++){
+                        System.out.println("--" + ingredientes[k]);
+                    }
+                    long unixTime = System.currentTimeMillis() / 1000L;
+
+                    //Place in a map
+                    Map<String, Object> data = new HashMap<>();
+                    data.put("name", nome);
+                    data.put("ingredients", Arrays.asList(ingredientes));
+                    data.put("timestamp", Timestamp.now());
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            loadingJson.setText("Uploading to database");
+                        }
+                    });
+
+                    //Upload to database
+                    db.collection("receitas").document(id)
+                            .set(data)
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    progressBarValue+=1;
+                                    progressBar.setProgress(progressBarValue);
+                                    if (progressBarValue == progressBar.getMax()){
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                loadingJson.setText("Upload completed");
+                                            }
+                                        });
+                                    }
+                                    progressReport.setText(progressBarValue+"/"+progressBar.getMax());
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.e(TAG, "Failed uploading recipe with id: " + id);
+                                }
+                            });
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+            return null;
+        }
     }
 }
