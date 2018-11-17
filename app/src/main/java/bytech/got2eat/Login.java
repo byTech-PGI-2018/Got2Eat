@@ -56,6 +56,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Comment for testing gpg key
         db = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
