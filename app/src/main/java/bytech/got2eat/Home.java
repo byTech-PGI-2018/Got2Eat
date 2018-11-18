@@ -26,7 +26,6 @@ import ai.api.model.Result;
 
 public class Home extends AppCompatActivity implements AIListener{
 
-    private MessagesList messagesList;
     private Author user;
     private Author bot;
     private TextInputLayout userInput;
@@ -35,7 +34,7 @@ public class Home extends AppCompatActivity implements AIListener{
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
-    MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
+    private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +47,7 @@ public class Home extends AppCompatActivity implements AIListener{
 
         aiService = new AIDataService(config);
 
-        messagesList = findViewById(R.id.messagesList);
+        MessagesList messagesList = findViewById(R.id.messagesList);
         messagesList.setAdapter(adapter);
 
         userInput = findViewById(R.id.user_input_layout);
@@ -60,7 +59,7 @@ public class Home extends AppCompatActivity implements AIListener{
                 //Validate input
                 final String message = userInput.getEditText().getText().toString();
                 if (validateInput(message)==0){
-                    Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), true, user);
+                    Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), user);
 
                     messages.add(messageObj);
                     adapter.addToStart(messageObj, true);
@@ -79,7 +78,7 @@ public class Home extends AppCompatActivity implements AIListener{
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", new Date(), false, bot);
+        Message obj = new Message(message, "bot", new Date(), bot);
         messages.add(obj);
         adapter.addToStart(obj, true);
     }
