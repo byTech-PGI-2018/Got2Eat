@@ -40,6 +40,7 @@ public class Home extends AppCompatActivity implements AIListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
