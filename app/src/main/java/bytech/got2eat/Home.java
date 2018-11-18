@@ -1,42 +1,41 @@
 package bytech.got2eat;
 
 import android.os.AsyncTask;
-import android.os.Build;
-import android.os.Handler;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.stfalcon.chatkit.messages.MessagesList;
+import com.stfalcon.chatkit.messages.MessagesListAdapter;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import ai.api.AIDataService;
 import ai.api.AIListener;
 import ai.api.AIServiceException;
 import ai.api.android.AIConfiguration;
-import ai.api.android.AIService;
 import ai.api.model.AIError;
 import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
-import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
-import jp.wasabeef.recyclerview.adapters.SlideInBottomAnimationAdapter;
-import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
 public class Home extends AppCompatActivity implements AIListener{
 
-    private RecyclerView recyclerView;
+    private MessagesList messagesList;
+    private Author user;
+    private Author bot;
     private TextInputLayout userInput;
     private Button inputEnter;
-    private MessageListAdapter messageAdapter;
     private List<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
+    MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,80 +48,40 @@ public class Home extends AppCompatActivity implements AIListener{
 
         aiService = new AIDataService(config);
 
-        recyclerView = findViewById(R.id.chat_list);
+        messagesList = findViewById(R.id.messagesList);
+        messagesList.setAdapter(adapter);
+
         userInput = findViewById(R.id.user_input_layout);
+
         inputEnter = findViewById(R.id.input_enter_button);
-
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setStackFromEnd(true);
-        recyclerView.setLayoutManager(llm);
-        recyclerView.setItemAnimator(new SlideInUpAnimator());
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(messageAdapter);
-
-        messageAdapter = new MessageListAdapter(this, messages);
-        AlphaInAnimationAdapter anim = new AlphaInAnimationAdapter(messageAdapter);
-        recyclerView.setAdapter(new SlideInBottomAnimationAdapter(anim));
-
-        recyclerView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
-            @Override
-            public void onLayoutChange(View v,
-                                       int left, int top, int right, int bottom,
-                                       int oldLeft, int oldTop, int oldRight, int oldBottom) {
-                if (!messages.isEmpty()){
-                    if (bottom < oldBottom) {
-                        recyclerView.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                recyclerView.smoothScrollToPosition(
-                                        recyclerView.getAdapter().getItemCount() - 1);
-                            }
-                        }, 100);
-                    }
-                }
-            }
-        });
-
         inputEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Validate input
                 final String message = userInput.getEditText().getText().toString();
                 if (validateInput(message)==0){
-                    Message messageObj = new Message(message, "self", 12332, true);
+                    Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), true, user);
 
                     messages.add(messageObj);
-                    messageAdapter.notifyItemInserted(messages.size()-1);
-                    messageAdapter.notifyItemRangeChanged(messages.size()-2, 0);
-                    AlphaInAnimationAdapter anim = new AlphaInAnimationAdapter(messageAdapter);
-                    recyclerView.setAdapter(new SlideInBottomAnimationAdapter(anim));
+                    adapter.addToStart(messageObj, true);
 
                     //Send HTTP request to Dialogflow
                     aiRequest = new AIRequest();
                     aiRequest.setQuery(message);
                     new DialogTask(aiService, aiRequest, thisInstance).execute(aiRequest);
 
-
-                    /*Handler h = new Handler();
-                    h.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            //Respond
-                            respond(message);
-                        }
-                    }, 1000);*/
                 }
             }
         });
+
+        user = new Author(FirebaseAuth.getInstance().getUid(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null);
+        bot = new Author("bot", "bot", null);
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", 1232, false);
+        Message obj = new Message(message, "bot", new Date(), false, bot);
         messages.add(obj);
-        messageAdapter.notifyItemInserted(messages.size()-1);
-        messageAdapter.notifyItemRangeChanged(messages.size()-2, 0);
-        AlphaInAnimationAdapter anim = new AlphaInAnimationAdapter(messageAdapter);
-        recyclerView.setAdapter(new SlideInBottomAnimationAdapter(anim));
+        adapter.addToStart(obj, true);
     }
 
     private int validateInput(String message){
