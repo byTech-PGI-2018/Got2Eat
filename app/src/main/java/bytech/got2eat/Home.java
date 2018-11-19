@@ -50,7 +50,6 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-	DrawerLayout drawer;
 	NavigationView navView;
 	TextView navDisplayName;
 
@@ -58,7 +57,6 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                drawer = findViewById(R.id.drawer);
                 navView = findViewById(R.id.nav_view);
                 navView.setNavigationItemSelectedListener(thisInstance);
                 navDisplayName = navView.findViewById(R.id.nav_header_textView);
