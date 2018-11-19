@@ -68,6 +68,7 @@ public class Home extends AppCompatActivity implements AIListener{
                     aiRequest = new AIRequest();
                     aiRequest.setQuery(message);
                     new DialogTask(aiService, aiRequest, thisInstance).execute(aiRequest);
+                    userInput.getEditText().setText("");
 
                 }
             }
