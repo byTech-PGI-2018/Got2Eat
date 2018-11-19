@@ -16,4 +16,5 @@
     <string name="register_text">Preencha os seguintes campos para se registar</string>
     <string name="login_text_separator">ou</string>
     <string name="google_login_text">Login com</string>
+    <string name="user_profile">Profile</string>
 </resources>
