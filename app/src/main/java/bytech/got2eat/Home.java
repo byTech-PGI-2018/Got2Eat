@@ -33,9 +33,6 @@ import ai.api.model.AIResponse;
 import ai.api.model.Result;
 
 public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
-    private DrawerLayout drawer;
-    private NavigationView navView;
-    private TextView navDisplayName;
 
     private Author user;
     private Author bot;
@@ -52,6 +49,10 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+	DrawerLayout drawer;
+	NavigationView navView;
+	TextView navDisplayName;
 
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
@@ -127,6 +128,9 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 startActivity(intent);
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
+                return true;
+	    default:
+		//Satisfy codacy
                 return true;
         }
         return false;
