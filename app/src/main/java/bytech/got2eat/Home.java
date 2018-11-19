@@ -1,11 +1,18 @@
 package bytech.got2eat;
 
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.stfalcon.chatkit.messages.MessagesList;
@@ -24,7 +31,7 @@ import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
 
-public class Home extends AppCompatActivity implements AIListener{
+public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
 
     private Author user;
     private Author bot;
@@ -41,6 +48,20 @@ public class Home extends AppCompatActivity implements AIListener{
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+	NavigationView navView;
+	TextView navDisplayName;
+
+        Handler h = new Handler();
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                navView = findViewById(R.id.nav_view);
+                navView.setNavigationItemSelectedListener(thisInstance);
+                navDisplayName = navView.findViewById(R.id.nav_header_textView);
+                navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+            }
+        }, 300);
 
         final AIConfiguration config = new AIConfiguration("bd09387ec42144bd9dbf3ea09141f6fd",
                 AIConfiguration.SupportedLanguages.Portuguese,
@@ -93,6 +114,23 @@ public class Home extends AppCompatActivity implements AIListener{
             userInput.setError(null);
             return 0;
         }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()){
+            case R.id.nav_item_sign_out:
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(thisInstance, Login.class);
+                startActivity(intent);
+                Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
+                finish();
+                return true;
+	    default:
+		//Satisfy codacy
+                return true;
+        }
+        return false;
     }
 
     @Override
