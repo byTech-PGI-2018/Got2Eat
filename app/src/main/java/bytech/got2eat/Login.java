@@ -2,14 +2,18 @@ package bytech.got2eat;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -36,8 +40,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     Button loginButton;
     Button registerButton;
     Button googleButton;
-    TextInputLayout loginPassword;
-    TextInputLayout loginEmail;
+    Button passwordVisibilityButton;
+    EditText loginPassword;
+    EditText loginEmail;
+    private boolean passwordVisible = false;
     private GoogleApiClient mGoogleApiClient;
     private Context context = this;
     private Login thisInstance = this;
@@ -47,9 +53,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Comment for testing gpg key
         db = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
@@ -83,12 +91,12 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             @Override
             public void onClick(View v) {
                 if (isNetworkConnected()){
-                    String password = loginPassword.getEditText().getText().toString().trim();
-                    String email = loginEmail.getEditText().getText().toString().trim();
+                    String password = loginPassword.getText().toString().trim();
+                    String email = loginEmail.getText().toString().trim();
 
                     if (validateInput(password, email)==0){
-                        Log.d(TAG, "Password: " + loginPassword.getEditText().getText().toString());
-                        Log.d(TAG, "Email: " + loginEmail.getEditText().getText().toString());
+                        Log.d(TAG, "Password: " + loginPassword.getText().toString());
+                        Log.d(TAG, "Email: " + loginEmail.getText().toString());
 
                         //Log in
                         signInEmailPassword(email, password);
@@ -122,6 +130,23 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     Log.e(TAG, "Tried to login without internet");
                     Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        passwordVisibilityButton = findViewById(R.id.icon_password_visibility);
+        passwordVisibilityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                passwordVisible = !passwordVisible;
+                if (passwordVisible){
+                    passwordVisibilityButton.setBackground(ContextCompat.getDrawable(context, R.drawable.password_visible));
+                    loginPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }
+                else{
+                    passwordVisibilityButton.setBackground(ContextCompat.getDrawable(context, R.drawable.password_not_visible));
+                    loginPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+                loginPassword.setSelection(loginPassword.length());
             }
         });
     }
