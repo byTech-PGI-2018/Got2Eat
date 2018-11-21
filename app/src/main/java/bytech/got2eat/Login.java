@@ -293,72 +293,96 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     }
                 });
                 receitasJson = new JSONArray(receitas);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadingJson.setText("Starting database upload");
+                        loadingJson.setVisibility(View.VISIBLE);
+                    }
+                });
             } catch (Exception e){
                 e.printStackTrace();
             }
 
             for (int i=0; i<size1; i++){
                     try{
-                    JSONObject receita = receitasJson.getJSONObject(i);
-                    JSONObject idObject = receita.getJSONObject("_id");
-                    final String id = idObject.getString("$oid");
-                    String nome = receita.getString("nome");
-                    JSONArray secao = receita.getJSONArray("secao");
-                    JSONArray conteudo = secao.getJSONObject(0).getJSONArray("conteudo");
-                    String[] ingredientes = new String[conteudo.length()];
-                    for (int j=0; j<conteudo.length(); j++){
-                        ingredientes[j] = conteudo.getString(j).toLowerCase();
-                    }
-                    System.out.println("-------New receita:");
-                    System.out.println("----id: " + id);
-                    System.out.println("----nome: " + nome);
-                    System.out.println("----ingredientes: ");
-                    for (int k=0; k<ingredientes.length; k++){
-                        System.out.println("--" + ingredientes[k]);
-                    }
-                    long unixTime = System.currentTimeMillis() / 1000L;
-
-                    //Place in a map
-                    Map<String, Object> data = new HashMap<>();
-                    data.put("name", nome);
-                    data.put("ingredients", Arrays.asList(ingredientes));
-                    data.put("timestamp", Timestamp.now());
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            loadingJson.setText("Uploading to database");
-                        }
-                    });
-
-                    //Upload to database
-                    db.collection("receitas").document(id)
-                            .set(data)
-                            .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    progressBarValue+=1;
-                                    progressBar.setProgress(progressBarValue);
-                                    if (progressBarValue == progressBar.getMax()){
-                                        runOnUiThread(new Runnable() {
-                                            @Override
-                                            public void run() {
-                                                loadingJson.setText("Upload completed");
-                                            }
-                                        });
+                        JSONObject receita = receitasJson.getJSONObject(i);
+                        JSONObject idObject = receita.getJSONObject("_id");
+                        final String id = idObject.getString("$oid");
+                        String nome = receita.getString("nome");
+                        JSONArray secao = receita.getJSONArray("secao");
+                        JSONArray conteudo = null;
+                        try{
+                            conteudo = secao.getJSONObject(0).getJSONArray("conteudo");
+                        } catch (org.json.JSONException ex){
+                            Log.d(TAG, "Caught exception" + ex);
+                            progressBarValue+=1;
+                            progressBar.setProgress(progressBarValue);
+                            if (progressBarValue == progressBar.getMax()){
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        loadingJson.setText("Upload completed");
                                     }
-                                    progressReport.setText(progressBarValue+"/"+progressBar.getMax());
-                                }
-                            })
-                            .addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.e(TAG, "Failed uploading recipe with id: " + id);
-                                }
-                            });
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+                                });
+                            }
+                            progressReport.setText(progressBarValue+"/"+progressBar.getMax());
+                            continue;
+                        }
+                        String[] ingredientes = new String[conteudo.length()];
+                        for (int j=0; j<conteudo.length(); j++){
+                            ingredientes[j] = conteudo.getString(j).toLowerCase();
+                        }
+                        System.out.println("-------New receita:");
+                        System.out.println("----id: " + id);
+                        System.out.println("----nome: " + nome);
+                        System.out.println("----ingredientes: ");
+                        for (int k=0; k<ingredientes.length; k++){
+                            System.out.println("--" + ingredientes[k]);
+                        }
+                        long unixTime = System.currentTimeMillis() / 1000L;
+
+                        //Place in a map
+                        Map<String, Object> data = new HashMap<>();
+                        data.put("name", nome);
+                        data.put("ingredients", Arrays.asList(ingredientes));
+                        data.put("timestamp", Timestamp.now());
+
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                loadingJson.setText("Uploading to database");
+                            }
+                        });
+
+                        //Upload to database
+                        db.collection("receitas").document(id)
+                                .set(data)
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void aVoid) {
+                                        progressBarValue+=1;
+                                        progressBar.setProgress(progressBarValue);
+                                        if (progressBarValue == progressBar.getMax()){
+                                            runOnUiThread(new Runnable() {
+                                                @Override
+                                                public void run() {
+                                                    loadingJson.setText("Upload completed");
+                                                }
+                                            });
+                                        }
+                                        progressReport.setText(progressBarValue+"/"+progressBar.getMax());
+                                    }
+                                })
+                                .addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Log.e(TAG, "Failed uploading recipe with id: " + id);
+                                    }
+                                });
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
             }
             return null;
         }
