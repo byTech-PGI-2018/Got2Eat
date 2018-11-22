@@ -1,47 +1,65 @@
 package bytech.got2eat;
 
+import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.stfalcon.chatkit.messages.MessagesList;
+import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import ai.api.AIDataService;
 import ai.api.AIListener;
 import ai.api.AIServiceException;
 import ai.api.android.AIConfiguration;
-import ai.api.android.AIService;
 import ai.api.model.AIError;
 import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
-import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
-import jp.wasabeef.recyclerview.adapters.SlideInBottomAnimationAdapter;
-import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
-public class Home extends AppCompatActivity implements AIListener{
-
-    private RecyclerView recyclerView;
+public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
+    private NavigationView navView = null;
+    private TextView navDisplayName = null;
+    private Author user;
+    private Author bot;
     private TextInputLayout userInput;
     private Button inputEnter;
-    private MessageListAdapter messageAdapter;
     private List<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
+    private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Handler h = new Handler();
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                navView = findViewById(R.id.nav_view);
+                navView.setNavigationItemSelectedListener(thisInstance);
+                navDisplayName = navView.findViewById(R.id.nav_header_textView);
+                navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+            }
+        }, 300);
 
         final AIConfiguration config = new AIConfiguration("bd09387ec42144bd9dbf3ea09141f6fd",
                 AIConfiguration.SupportedLanguages.Portuguese,
@@ -49,80 +67,41 @@ public class Home extends AppCompatActivity implements AIListener{
 
         aiService = new AIDataService(config);
 
-        recyclerView = findViewById(R.id.chat_list);
+        MessagesList messagesList = findViewById(R.id.messagesList);
+        messagesList.setAdapter(adapter);
+
         userInput = findViewById(R.id.user_input_layout);
+
         inputEnter = findViewById(R.id.input_enter_button);
-
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setStackFromEnd(true);
-        recyclerView.setLayoutManager(llm);
-        recyclerView.setItemAnimator(new SlideInUpAnimator());
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(messageAdapter);
-
-        messageAdapter = new MessageListAdapter(this, messages);
-        AlphaInAnimationAdapter anim = new AlphaInAnimationAdapter(messageAdapter);
-        recyclerView.setAdapter(new SlideInBottomAnimationAdapter(anim));
-
-        recyclerView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
-            @Override
-            public void onLayoutChange(View v,
-                                       int left, int top, int right, int bottom,
-                                       int oldLeft, int oldTop, int oldRight, int oldBottom) {
-                if (!messages.isEmpty()){
-                    if (bottom < oldBottom) {
-                        recyclerView.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                recyclerView.smoothScrollToPosition(
-                                        recyclerView.getAdapter().getItemCount() - 1);
-                            }
-                        }, 100);
-                    }
-                }
-            }
-        });
-
         inputEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Validate input
                 final String message = userInput.getEditText().getText().toString();
                 if (validateInput(message)==0){
-                    Message messageObj = new Message(message, "self", 12332, true);
+                    Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), user);
 
                     messages.add(messageObj);
-                    messageAdapter.notifyItemInserted(messages.size()-1);
-                    messageAdapter.notifyItemRangeChanged(messages.size()-2, 0);
-                    AlphaInAnimationAdapter anim = new AlphaInAnimationAdapter(messageAdapter);
-                    recyclerView.setAdapter(new SlideInBottomAnimationAdapter(anim));
+                    adapter.addToStart(messageObj, true);
 
                     //Send HTTP request to Dialogflow
                     aiRequest = new AIRequest();
                     aiRequest.setQuery(message);
                     new DialogTask(aiService, aiRequest, thisInstance).execute(aiRequest);
+                    userInput.getEditText().setText("");
 
-
-                    /*Handler h = new Handler();
-                    h.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            //Respond
-                            respond(message);
-                        }
-                    }, 1000);*/
                 }
             }
         });
+
+        user = new Author(FirebaseAuth.getInstance().getUid(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null);
+        bot = new Author("bot", "bot", null);
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", 1232, false);
+        Message obj = new Message(message, "bot", new Date(), bot);
         messages.add(obj);
-        messageAdapter.notifyItemInserted(messages.size()-1);
-        messageAdapter.notifyItemRangeChanged(messages.size()-2, 0);
-        AlphaInAnimationAdapter anim = new AlphaInAnimationAdapter(messageAdapter);
-        recyclerView.setAdapter(new SlideInBottomAnimationAdapter(anim));
+        adapter.addToStart(obj, true);
     }
 
     private int validateInput(String message){
@@ -133,6 +112,22 @@ public class Home extends AppCompatActivity implements AIListener{
         else{
             userInput.setError(null);
             return 0;
+        }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()){
+            case R.id.nav_item_sign_out:
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(thisInstance, Login.class);
+                startActivity(intent);
+                Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
+                finish();
+                return true;
+	    default:
+		//Satisfy codacy
+                return true;
         }
     }
 

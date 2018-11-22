@@ -1,45 +1,39 @@
 package bytech.got2eat;
 
-public class Message {
-    private boolean self;
-    private String content;
-    private String user;
-    private long timestamp;
+import com.stfalcon.chatkit.commons.models.IMessage;
 
-    public Message(String content, String user, long timestamp, boolean self) {
-        this.content = content;
-        this.user = user;
-        this.timestamp = timestamp;
-        this.self = self;
+import java.util.Date;
+
+public class Message implements IMessage {
+    private String text;
+    private String id;
+    private Date createdAt;
+    private Author author;
+
+    public Message(String text, String id, Date createdAt, Author author) {
+        this.text = text;
+        this.id = id;
+        this.createdAt = createdAt;
+        this.author = author;
     }
 
-    /*----Getters and setters------*/
-
-    public String getContent() {
-        return content;
+    @Override
+    public String getId() {
+        return id;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    @Override
+    public String getText() {
+        return text;
     }
 
-    public String getUser() {
-        return user;
+    @Override
+    public Author getUser() {
+        return author;
     }
 
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(long timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public boolean isSelf(){
-        return self;
+    @Override
+    public Date getCreatedAt() {
+        return createdAt;
     }
 }
