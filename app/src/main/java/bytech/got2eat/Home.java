@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -32,6 +33,7 @@ import ai.api.model.AIResponse;
 import ai.api.model.Result;
 
 public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
+    private DrawerLayout drawer;
     private NavigationView navView = null;
     private TextView navDisplayName = null;
     private Author user;
@@ -54,6 +56,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
+                drawer = findViewById(R.id.drawer);
                 navView = findViewById(R.id.nav_view);
                 navView.setNavigationItemSelectedListener(thisInstance);
                 navDisplayName = navView.findViewById(R.id.nav_header_textView);
@@ -122,8 +125,14 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(thisInstance, Login.class);
                 startActivity(intent);
+                drawer.closeDrawers();
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
+                return true;
+            case R.id.nav_item_recipe:
+                intent = new Intent(thisInstance, Recipe.class);
+                startActivity(intent);
+                drawer.closeDrawers();
                 return true;
 	    default:
 		//Satisfy codacy

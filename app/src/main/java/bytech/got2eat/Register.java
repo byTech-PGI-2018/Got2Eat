@@ -166,7 +166,6 @@ public class Register extends AppCompatActivity {
     }
 
     public void gotoLogin(View view){
-        Intent intent = new Intent(Register.this, Login.class);
-        startActivity(intent);
+        finish();
     }
 }
