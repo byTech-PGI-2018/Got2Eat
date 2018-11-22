@@ -54,7 +54,8 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_recipe);
+        /*
 
         db = FirebaseFirestore.getInstance();
 
@@ -146,7 +147,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 }
                 loginPassword.setSelection(loginPassword.length());
             }
-        });
+        });*/
     }
 
     private void signInEmailPassword(String email, String password){
