@@ -1,0 +1,452 @@
+﻿[
+	{"id": 1,
+	 "nome": "Sopa de Couve Lombarda com Grão e Batata Doce",
+	 "quantidade": ["500g de batata doce cortada em pedaços","1 courgette média descascada e cortada em pedaços","520g de grão-de-bico cozido","800g de couve lombarda cortada em tiras","350g de cenouras cortadas em pedaços","1 cebola grande picada","4 dentes de alho laminados","Azeite","Sal","Pimenta"],
+	 "ingredientes": ["batata doce","courgette","grão-de-bico","couve lombarda","cenoura","cebola","alho","Azeite","Sal","Pimenta"],
+	 "preparação": ["1. Numa panela grande coloque 2 colheres de sopa de azeite, a cebola e os alhos. Mexa e deixe refogar sem deixar alourar.","2. Junte a cenoura cortada em pedaços, metade do grão, a courgette, a batata doce e 1/3 da couve lombarda. Junte água quente suficiente para cobrir tudo. Tempere com sal. Mexa, tape e deixe cozer durante 25 minutos.","3. Depois de tudo cozido, passe a sopa com a varinha mágica, até que fique um creme. Retifique o tempero de sal e tempere com pimenta.","4. Junte a restante couve, o restante grão e a cenoura ralada. Mexa e deixe cozer aproximadamente 15 minutos até que a couve coza. Caso a sopa esteja muito espessa, adicione mais um pouco de água. Depois da sopa cozida, retire e sirva."],
+	 "porção": 14,
+	 "tempo": "50 minutos"
+	 },
+
+	{"id": 2,
+	"nome": "Sopa de Legumes com Feijão Branco e Espinafres",
+	"quantidade": ["1 alho francês grande cortado em rodelas finas","500g de cenouras cortadas em pedaços","500g de batatas cortadas em pedaços","500g de feijão branco cozido","2 cenouras médias cortadas em cubinhos","1 molho de espinafres arranjados e lavados","4 colheres de sopa de azeite","Sal q.b."],
+	"ingredientes":["alho francês","cenoura","batata","feijão branco","molho de espinafres","azeite","sal"],
+	"preparação": ["1. Numa panela leve ao lume o azeite e o alho francês. Mexa e deixe refogar sem deixar alourar.","2. Logo que o alho francês amoleça, junte as batatas, as cenouras cortadas em pedaços e metade do feijão branco cozido. Tempere com sal e regue com água suficiente para cobrir tudo (aproximadamente 2 litros). Mexa, tape e deixe cozer em lume médio durante 30 minutos.","3. Passados os 30 minutos e quando os legumes estiverem cozidos, passe muito bem a sopa com a varinha mágica até que fique um creme. Ao creme, adicione 1 litro de água e deixe ferver.","4. Depois de começar a ferver, adicione as cenouras cortadas em cubinhos, os espinafres e o restante feijão branco. Mexa e deixe cozer aproximadamente 10 minutos. Entretanto, rectifique o tempero de sal.","5. Passados os 10 minutos e quando a cenoura estiver tenrinha, retire do lume e sirva."],
+	"porção": 12,
+	"tempo": "1 hora e 30 minutos"
+	},
+
+	{"id": 3,
+	"nome": "Canja de Frango do Campo com Ovo Escalfado",
+	"quantidade": ["1/4 de frango do campo com ou sem patas","Os miúdos do frango","1 cenoura grande cortada em cubinhos","120g de massinha a gosto","4 ovos","1 colher de sopa de vinagre","Folhinhas de hortelã","Sal q.b.","Fatias finas cortadas ao meio de pão alentejano"],
+	"ingredientes": ["frango","cenoura","massa","ovo","vinagre","hortelã","Sal","pão alentejano"],
+	"preparação": ["1. Numa panela com 3 litros de água a ferver, tempere com sal. Junte o frango e os miúdos. Tape e deixe cozer durante 35 minutos até que o frango fique cozido. Depois da carne cozida, retire com uma escumadeira para um prato. Deixe arrefecer.","2. Ao caldo, junte a cenoura e deixe cozer durante 5 minutos. Passados os 5 minutos, junte a massa. Mexa e deixe cozer mais 10 minutos.","3. Entretanto, corte os miúdos em pedacinhos. Limpe o frango de peles e de ossos e desfie a carne. Depois da massa cozida, junte a carne desfiada e os miúdos. Mexa e retire do lume antes que comece a ferver para que a massa não coza demasiado.","4. Entretanto, faça os ovos escalfados. Num tacho com água a ferver, tempere com sal. Junte o vinagre e mexa a água de forma circular com uma colher. Junte de imediato os ovos partidos um a um e deixe-os cozer em lume médio durante 3 minutos.","4. Entretanto, faça os ovos escalfados. Num tacho com água a ferver, tempere com sal. Junte o vinagre e mexa a água de forma circular com uma colher. Junte de imediato os ovos partidos um a um e deixe-os cozer em lume médio durante 3 minutos."],
+	"porção": 4,
+	"tempo": "1 hora"
+	},
+
+	{"id": 4,
+	"nome" : "Caldo de Couve Lombarda com Salsichas Frescas",
+	"quantidade": ["400g de salsichas frescas","1 couve lombarda pequena com cerca de 350g cortada em juliana","2 cenouras grandes raladas","125g de massa cotovelos","3 colheres de sopa de azeite","1 cebola grande picada","2 dentes de alho picados","1 folha de louro cortada ao meio","3 tomates médios maduros sem pele cortados em cubinhos","3 colheres de sopa de polpa de tomate","1 cubo de caldo de galinha natural","3 cravinhos da Índia","Sal q.b.","Pimenta q.b."],
+	"ingredientes": ["salsichas frescas","couve lombarda","cenoura","massa cotovelos","azeite","cebola","alho","louro","tomate","polpa de tomate","caldo de galinha","cravinho da Índia","sal","pimenta"],
+	"preparação": ["1. Numa panela leve ao lume o azeite, a cebola, o alho e o louro. Deixe refogar sem deixar alourar até que a cebola fique vidrada.","2. Adicione o tomate cortado em cubos. Mexa e deixe refogar mais um pouco.","3. Quando o tomate começar a desfazer-se, adicione as salsichas. Tempere com sal e pimenta. Mexa e deixe cozinhar um pouco até que as salsichas ganhem cor.","4. Depois das salsichas loirinhas, junte a polpa de tomate, os cravinhos, o caldo de galinha e 2 litros de água. Mexa, tape e deixe cozer durante 10 minutos. Passado os 10 minutos, quando as salsichas estiverem cozidas, retire-as com um garfo para um prato e deixe arrefecer.","5. Ao caldo, junte a cenoura e a couve. Mexa e caso seja necessário acrescente mais um pouco de água. Tape e deixe ferver.","6. Quando os legumes começarem a ferver, adicione a massa. Mexa, tape e deixe cozer durante 10 minutos.","7. Entretanto, corte as salsichas em rodelas. Depois da massa cozida, rectifique os temperos e retire do lume. Sirva a sopa com rodelas de salsicha por cima"],
+	"porção": 8,
+	"tempo": "45 minutos"
+	},
+
+	{"id": 5,
+	"nome": "Sopa de Couve Chinesa e Cogumelos",
+	"quantidade": ["1 alho francês cortado em rodelas finas","400g de batatas cortadas em pedaços","500g de cenouras cortadas em pedaços","400g de cogumelos frescos laminados","1 couve chinesa cortada em juliana","4 colheres de sopa de azeite","1 cubo de caldo natural de galinha ou de legumes","Sal q.b."],
+	"ingredientes": ["alho francês","batata","cenoura","cogumelos","couve chinesa","azeite","caldo de galinha","caldo de legumes"],
+	"preparação": ["1. Numa panela leve ao lume o azeite e o alho francês. Mexa e deixe refogar até que o alho francês perca volume.","2. Adicione a cenoura, as batatas e o caldo natural. Tempere com sal. Por fim, adicione 3 litros de água. Tape e deixe cozinhar em lume forte durante 30 minutos.","3. Depois de tudo cozido, passe a sopa com a varinha mágica até que fique um creme. Ao creme misture os cogumelos e deixe ferver.","4. Quando começar a ferver, junte a couve. Mexa muito bem e quando começar a ferver, apague o lume. E está pronta a servir."],
+	"porção": 10,
+	"tempo": "50 minutos"
+	},
+
+	{"id": 6,
+	"nome" : "Sopa de Mexilhão com Açafrão",
+	"quantidade": ["1,5 a 2 kg de mexilhão (2 sacos)","3 colheres de sopa de azeite","1 cebola pequena picada","1 folha de louro","Meio pimento vermelho cortado em cubinhos","2 dentes de alho picados","40g de farinha de trigo sem fermento","1 colher de chá de açafrão em pó","1 colher de chá de tabasco","200 ml de natas light","1 molhinho de coentros picados"],
+	"ingredientes": ["mexilhão","azeite","cebola","louro","pimento vermelho","alho","farinha de trigo sem fermento","chá de açafrão","chá de tabasco","natas","coentros"],
+	"preparação": ["1. Num tacho coloque os mexilhões lavados. Tape e deixe cozinhar em lume médio durante 5 minutos, até que as conchas abram. Depois do mexilhão aberto, retire do lume e deixe arrefecer um pouco. Retire o miolo das conchas e reserve o caldo. Coe o caldo numa rede fina e meça-o.","2. Num tacho leve ao lume o azeite, a cebola, os alhos, a folha de louro e o pimento. Mexa e deixe refogar em lume médio até que tudo fique bem cozinhado. Depois de tudo refogado, retire a folha de louro e misture muito bem a farinha. Aos poucos e enquanto mexe, junte o caldo dos mexilhões e água suficiente para prefazer 800 ml de líquido. Junte o açafrão e o tabasco. Mexa até que comece a ferver.","3. Quando começar a ferver, misture as natas e o miolo de mexilhão. Mexa e deixe aquecer bem sem deixar ferver. Se quiser, misture os coentros na sopa ou sirva-os por cima."],
+	"porção": 4,
+	"tempo": "30 minutos"
+	},
+
+	{"id": 7,
+	"nome": "Sopa de Grão com Legumes",
+	"quantidade": ["200g de grão seco demolhado em água fria durante 12 horas ou 400g de grão cozido","340g de batatas cortadas ao meio","480g de nabos cortados em pedaços","1 courgette média com cerca de 370g cortada em rodelas","600g de abóbora cortada em pedaços","60 ml de azeite","1 cebola grande picada grosseiramente","2 dentes de alho picados","1 cubo de caldo de galinha","600g de couve lombarda cortada em juliana","200g de nabo cortado em cubos","2 cenouras médias cortadas em rodelas finas","100g de massa pevide","Sal q.b."],
+	"ingredientes": ["grão","batata","nabo","courgette","abóbora","azeite","cebola","alho","caldo de galinha","couve lombarda","cenoura","massa pevide","sal"],
+	"preparação": ["1. Numa panela grande leve ao lume o azeite, a cebola e o alho. Mexa e deixe refogar um pouco sem deixar alourar.","2. Junte o grão, a courgette, as batatas, a abóbora, os nabos cortados em pedaços e o cubo de caldo de galinha. Tempere com sal. Por fim, adicione cerca de 3 litros de água, o suficiente para cobrir os legumes. Mexa, tape e deixe cozer em lume médio durante 1 hora.","3. Depois de todos os legumes cozidos, passe a sopa com a varinha mágica. Caso a sopa esteja muito espessa, adicione mais um pouco de água.","4. Junte a couve, os cubos de nabo e a cenoura. Mexa e deixe ferver. Quando começar a ferver, misture a massa. Deixe cozer durante 10 minutos. Mexa de vez em quando para que não agarre no fundo."],
+	"porção": 14,
+	"tempo": "1 hora e 30 minutos"
+	},
+
+	{"id": 8,
+	"nome": "Sopa Embrulhada de Cogumelos Portobello",
+	"quantidade": ["2 rodelas de massa-folhada com cerca de 130g cada e diâmetro suficiente para cobrir uma tigela de sopa que possa ir ao forno","1 colher de sopa de manteiga","Meia cebola picada","1 dente de alho picado","40g de bacon fumado cortado em cubinhos","140g de cogumelos portobello laminados","2 colheres de sopa de farinha de trigo sem fermento","250 ml de leite","Salsa picada","60 ml de natas","1 colher de sopa de queijo parmesão ralado","1 ovo batido","Sal q.b.","Pimenta q.b"],
+	"ingredientes": ["massa folhada","manteiga","cebola","alho","bacon","cogumelos","farinha de trigo","leite","salsa","natas","queijo parmesão ralado","ovo","sal","pimenta"],
+	"preparação": ["1. Numa frigideira, leve ao lume 1/3 da manteiga, o alho e o bacon. Deixe aquecer bem e junte metade dos cogumelos. Tempere com um pouco de sal e pimenta. Mexa e deixe saltear. Depois dos cogumelos cozinhados, retire.","2. Num tacho, leve ao lume a restante manteiga e a cebola. Mexa e deixe refogar em lume médio sem deixar alourar. Ao refogado, junte a farinha e misture bem. Aos poucos e enquanto mexe, adicione 350 ml de água e o leite. Junte os cogumelos. Tempere com sal e pimenta. Mexa e deixe cozinhar aproximadamente 10 minutos em lume brando até que os cogumelos cozam. Mexa de vez em quando para que não agarrem no fundo.","3. Depois dos cogumelos cozinhados, passe tudo com a varinha mágica. Quando estiver um creme, junte o salteado de cogumelos, as natas, a salsa picada e o queijo. Mexa e retire do lume.","4. Divida a sopa por 2 tigelas que possam ir ao forno. Tenha atenção especial para não encher demasiado.","5. Pincele ligeiramente as bordas da massa com um pouco de água. Cubra a tigela da sopa com 1 rodela de massa folhada e acalque bem as bordas para que fique bem agarrada. Pincele a massa folhada com ovo batido. Se quiser, decore o centro de cada rodela com figuras feitas em massa folhada e pincele novamente.","6. Coloque as tigelas num tabuleiro de ir ao forno. Leve ao forno pré-aquecido nos 170º e deixe assar aproximadamente 30 minutos. Depois da massa folhada cozida e loirinha, retire e sirva."],
+	"porção": 2,
+	"tempo": "1 hora"
+	},
+
+	{"id": 9,
+	"nome": "Sopa de Abóbora e Nabos com Grelos",
+	"quangidade": ["2 colheres de sopa de azeite","1 cebola grande picada","2 dentes de alho laminados","800g de abóbora cortada em pedaços","600g de nabos cortados em pedaços","400g de batatas cortadas em pedaços","1 cubo de caldo de legumes ou de galinha","1 molho de grelos de couve ou de nabo cortados em pedaços","Sal q.b."],
+	"ingredientes": ["azeite","cebola","alho","abóbora","nabo","batata","caldo de legumes","caldo de galinha","molho de grelos de couve","molho de nabo"],
+	"preparação": ["1. Numa panela leve ao lume o azeite, a cebola e os alhos. Mexa e deixe refogar um pouco sem deixar alourar.","2. Ao refogado adicione a abóbora, os nabos, as batatas, o cubo de caldo, 3 litros de água e sal. Mexa, tape e deixe cozer durante 30 minutos até que os legumes fiquem cozidos.","3. Depois de tudo cozido, passe a sopa com a varinha mágica. Depois da sopa passada, junte os grelos. Mexa, tape e deixe cozinhar em lume médio durante 30 minutos."],
+	"porção": 12,
+	"tempo": "1 hora e 10 minutos"
+	},
+
+	{"id": 10,
+	"nome": "Sopa de Bacalhau com Grão",
+	"quantidade": ["500g de bacalhau demolhado","200g de grão seco demolhado em água fria durante 12 horas ou 400g de grão de bico cozido","3 batatas médias com casca","4 colheres de sopa de azeite","1 cebola picada finamente","2 dentes de alho picados","1 folha de louro cortada ao meio","1 ovo por pessoa","1 colher de sopa de vinagre de vinho branco","Sal q.b.","Pimenta q.b."],
+	"ingredientes": ["bacalhau","grão","batata","azeite","cebola","alho","louro","ovo","vinagre de vinho branco","sal","pimenta"],
+	"preparação": ["1. Numa panela com água a ferver, tempere com sal e coloque o grão a cozer durante 1 hora.A meio do tempo, junte as batatas e deixe cozer mais 30 minutos.","2. Entretanto, numa panela com água a ferver, coza o bacalhau durante 10 minutos. Depois do bacalhau cozido, retire-o para um prato e deixe arrefecer. Reserve a água de cozer o bacalhau. Depois do grão e das batatas cozidas, retire.","3. Limpe o bacalhau de peles e de espinhas e desfie. Retire a pele às batatas e corte-as em cubinhos.","4. Num tacho largo leve ao lume o azeite, a cebola, os alhos e o louro. Deixe refogar em lume médio aproximadamente 5 minutos até que a cebola fique bem refogada e sem deixar alourar.","5. Adicione o bacalhau ao refogado e mexa. Adicione o grão cozido e 1200 ml de água de cozer o bacalhau coada numa rede fina. Tempere com pimenta. Mexa e deixe ferver. Quando começar a ferver, junte os cubinhos de batata. Misture e logo que comece a borbulhar, retire do lume.","6. Entretanto, num tacho com 1,5l de água a ferver, tempere com sal. Adicione o vinagre. Mexa e, em lume brando, junte os ovos partidos, um a um, cuidadosamente. Deixe escalfar em lume brando durante 3 minutos. Depois dos ovos escalfados, retire-os com uma escumadeira para um prato.","7. Sirva a sopa com o ovo por cima. Salpique a sopa com salsa ou coentros picados. Acompanhe com fatias finas de pão alentejano ou de Mafra."],
+	"porção": 6,
+	"tempo": "1 hora e 20 minutos"
+	},
+
+	{"id": 11,
+	"nome": "Sopa de Nabiças",
+	"quantidade": ["1 molho de folhas de nabiças cortadas em pedaços","550g de batatas cortadas ao meio","1 nabo cortado em quartos","550g de cenouras descascadas e cortadas em pedaços","1 cebola grande cortada ao meio","1 dente de alho grande","1 cubo de caldo de galinha","5 colheres de sopa de azeite","1 nabo cortado em cubinhos","1 cenoura grande cortada em cubinhos","Sal q.b."],
+	"ingredientes": ["nabiça","batata","nabo","cenoura","cebola","alho","caldo de galinha","azeite"],
+	"preparação": ["1. Numa panela com aproximadamente 3 litros de água, tempere com sal e adicione o caldo de galinha, o alho, a cebola, o nabo cortado em quartos, as batatas e as cenouras cortadas em pedaços. Por fim, junte o azeite. Tape e deixe cozer durante 30 minutos","2. Depois de tudo cozido, passe a sopa com a varinha mágica. À sopa, adicione os cubinhos de nabo, de cenoura e as folhas de nabiça. Mexa, tape e deixe cozer durante 15 minutos."],
+	"porção": 10,
+	"tempo": "50 minutos"
+	},
+
+	{"id": 12,
+	"nome": "Sopa Fria de Courgette e Tomate com Espetada de Mozarela",
+	"quantidade": ["1 cenoura grande descascada e cortada em pedaços","5 tomates médios maduros cortados ao meio","2 courgettes pequenas, descascadas e cortadas em pedaços","1 cebola pequena cortada ao meio","1 dente de alho","2 colheres de sopa de azeite","10 folhinhas de manjericão","Sal q.b.","20 bolas de queijo mozarela fresco em miniatura","20 tomates mini chucha","Espetos pequenos de madeira"],
+	"ingredientes": ["cenoura","tomate","courgette","cebola","alho","azeite","manjericão","Sal","queijo mozarela","tomate mini chucha","Espetos de madeira"],
+	"preparação": ["1. Numa panela com 2 litros de água a ferver, tempere com um pouco de sal. Adicione a cenoura, o tomate, a courgette, a cebola, o alho, as folhinhas de manjericão e o azeite. Deixe cozer em lume forte durante 40 minutos.","2. Quando tudo estiver bem cozido, passe com a varinha mágica. Deixe ferver durante 1 minuto e apague o lume. Guarde a sopa no frigorífico até que fique bem fresca.","3. Na hora de servir, coloque num espeto de madeira, duas bolinhas de queijo, alternadas com dois tomates mini chucha. Sirva a sopa com uma pedra de gelo e as espetadas de queijo. Decore com folhinhas de manjericão."],
+	"porção": 10,
+	"tempo": "2 horas"
+	},
+
+	{"id": 13,
+	"nome": "Creme Frio de Pepino e Iogurte",
+	"quantidade": ["2 pepinos médios descascados","1 cebola média cortada em quartos","250g de iogurte natural","200 ml de natas light","250 ml de leite","2 colheres de sopa de azeite","4 folhinhas de hortelã","Sumo de limão","Sal q.b.","Pimenta q.b.","Croutons q.b."],
+	"ingredientes": ["pepino","cebola","iogurte","natas","leite","azeite","hortelã","sumo de limão","sal","pimenta","croutons"],
+	"preparação": ["1. Corte os pepinos na vertical. Com a ajuda de uma colher, retire-lhes as sementes. Corte os pepinos em pedaços.","2. No liquidificador coloque os pedaços de pepino, a cebola, o iogurte, o azeite, as folhinhas de hortelã, o leite e as natas. Tempere com sal, pimenta e sumo de limão. Triture tudo até que fique um creme. Caso não tenha liquidificador, coloque tudo numa tigela e triture com uma varinha mágica. Guarde numa tigela no frigorífico até que fique fresca.","Na hora de servir, acompanhe com os croutons e decore com folhas de hortelã."],
+	"porção": 5,
+	"tempo": "5 minutos"
+	},
+
+	{"id": 14,
+	"nome": "Sopa de Feijão Verde com Crocante de Farinheira",
+	"quantidade": ["1 farinheira","450g de batatas cortadas em pedaços","400g de cenouras cortadas em pedaços","A parte branca de um alho francês cortada em rodelas","200g de feijão verde cortado em pedacinhos","2 colheres de sopa de azeite","Sal q.b."],
+	"ingredientes": ["farinheira","batata","cenoura","alho francês","feijão verde","azeite"],
+	"preparação": ["1. Numa panela com 2 litros de água, tempere com sal. Junte o alho francês, as batatas, as cenouras e a farinheira picada com um palito. Deixe cozer durante 20 minutos.","2. Num tachinho com meio litro de água, tempere com sal. Coloque o feijão verde a cozer durante 20 minutos.","3. Passado os 20 minutos, apague o lume ao feijão verde. Com um garfo, retire a farinheira para um prato.","4. Passe a sopa com a varinha mágica até que fique um creme. Ao creme, adicione o feijão verde. Mexa e deixe ferver durante 10 minutos.","5. Com uma faca, abra a farinheira e retire-lhe a pele. Coloque a farinheira numa tigela e com a ajuda de uma colher, separe-a em pedacinhos até que fique bem soltinha.","6. Numa frigideira, leve ao lume as 2 colheres de sopa de azeite e deixe aquecer bem. Adicione a farinheira e deixe saltear bem até que fique crocante.","7. Passado os 10 minutos, retire a sopa do lume. Sirva com a farinheira crocante por cima."],
+	"porção": 8,
+	"tempo": "40 minutos"
+	},
+
+	{"id":15,
+	"nome": "Sopa de Feijão Branco com Tomate e Salsa",
+	"quantidade": ["60 ml de azeite","1 cebola picada","2 dentes de alho picados","400g de tomates maduros cortados em pedaços","550g de feijão branco cozido","1 ramo de salsa","125 ml de polpa de tomate","120g de massa macarronete","Salsa picada","2 litros de caldo de carne","180g de bacon fatiado cortado em tirinhas","Sal q.b."],
+	"ingredientes": ["azeite","cebola","alho","tomate","feiijão branco","salsa","polpa de tomate","massa macarronete","caldo de carne","bacon","sal"],
+	"preparação": ["1. Numa panela leve ao lume o azeite, a cebola e os alhos. Mexa e deixe refogar sem alourar.","2. Junte metade do feijão, o tomate, a polpa de tomate, o ramo de salsa e o caldo de carne. Tempere com sal. Tape e deixe cozer durante 20 minutos.","3. Depois do tomate cozido, passe a sopa com a varinha mágica. À sopa, adicione a massa e o restante feijão. Caso a sopa esteja muito espessa, acrescente mais um pouco de água. Deixe cozer durante 15 minutos e mexa de vez em quando para não agarrar no fundo.","4. Entretanto, numa frigideira, frite o bacon. Mexa e deixe saltear até que fique bem tostado.","5. Depois da massa cozida, retire a sopa do lume. Sirva a sopa com o bacon tostado por cima e polvilhada com a salsa picada."],
+	"porção": 6,
+	"tempo": "40 minutos"
+	},
+
+	{"id": 16,
+	"nome": "Sopa de Abóbora com Bróculos",
+	"quantidade": ["750g de abóbora descascada e cortada em pedaços","2 partes brancas de alho francês cortadas em rodelas","300g de courgette cortada em pedaços","500g de batatas","300g de raminhos de brócolos","80 ml de azeite","Sal q.b."],
+	"ingredientes": ["abóbora","alho francês","courgette","batata","bróculos","azeite","sal"],
+	"preparação": ["1. Numa panela com 2800 ml de água, tempere com sal. Junte a abóbora, a courgette, as batatas e o alho francês. Tape e deixe cozer aproximadamente 40 minutos.","2. Numa outra panela com água a ferver, tempere com sal. Coloque os brócolos a cozer durante 10 minutos.","3. Depois dos legumes da sopa estarem cozidos, passe-os com a varinha mágica. Junte o azeite e deixe ferver durante 10 minutos.","4. Depois dos brócolos cozidos, apague o lume. Junte os brócolos à sopa."],
+	"porção": 10,
+	"tempo": "1 hora"
+	},
+
+	{"id": 17,
+	"nome": "Sopa de Frango e Agriões",
+	"quantidade": ["1 perna de frango do campo cortada ao meio","3 colheres de sopa de azeite","2 cebolas cortadas em rodelas","2 dentes de alho picados","2 tomates maduros cortados em cubos","2 tomates maduros cortados em cubos","100g de cenoura ralada","5 ovos","200g de agriões","Sal q.b."],
+	"ingredientes": ["frango","azeite","cebola","alho","tomate","cenoura","ovo","agrião","sal"],
+	"preparação": ["1. Numa panela com 2300 ml de água, tempere com sal. Coloque o frango a cozer durante 35 minutos. Depois do frango cozido, retire-o para um prato e deixe arrefecer. Reserve o caldo de cozer o frango. Depois do frango frio, limpe-o de peles e ossos e desfie-o.","2. Num tacho, leve ao lume o azeite, a cebola e os alhos. Mexa e deixe refogar um pouco. Junte o tomate e a cenoura. Misture e deixe refogar 5 minutos.","3. Adicione o caldo de cozer o frango e deixe ferver durante 10 minutos. Junte os ovos partidos um a um. Por cima, espalhe os agriões e acalque ligeiramente para que não se misture com os ovos. Deixe cozer durante 5 minutos.","4. Depois dos ovos cozidos, junte o frango e apague o lume. E está pronta a servir."],
+	"porção": 5,
+	"tempo": "1 hora"
+	},
+
+	{"id": 18,
+	"nome": "Sopa de Nabos com Feijão Branco",
+	"quantidade": ["650g de batatas cortadas em pedaços","400g de nabos cortados em pedaços","1 cebola cortada ao meio","400g de feijão branco cozido","300g de nabos cortados em cubinhos","180g de cenouras cortadas em cubinhos","300g de couve coração cortada em tirinhas","80 ml de azeite","Sal q.b."],
+	"ingredientes": ["batata","nabos","cebola","feijão","nabo","cenoura","couve","azeite","sal"],
+	"preparação": ["1. Numa panela com 4 litros de água a ferver, tempere com sal. Junte as batatas, os nabos cortados em pedaços, a cebola e metade do feijão. Tape e deixe cozer durante 30 minutos.","2. Depois dos legumes cozidos, passe com a varinha mágica. Adicione a couve, o nabo aos cubinhos, a cenoura aos cubinhos e o restante feijão. Mexa e regue tudo com o azeite. Tape e deixe cozer aproximadamente 30 minutos.","Depois dos legumes tenrinhos, está pronto a servir."],
+	"porção": 12,
+	"tempo": "1 hora e 20 minutos"
+	},
+
+	{"id": 19,
+	"nome": "Sopa de Beringela com Cogumelos",
+	"quantidade": ["600g de beringela descascada e cortada em pedaços","400g de courgette descascada e cortada em pedaços","200g de batata cortada em pedaços","250g de cenoura cortada em pedaços","1 cebola cortada ao meio","300g de cogumelos frescos laminados","250 ml de caldo de legumes","4 colheres de sopa de azeite1 dente de alho picado","Sal q.b."],
+	"ingredientes": ["beringela","courgette","batata","cenoura","cebola","cogumelos","caldo de legumes","azeite","alho","sal"],
+	"preparação": ["1. Numa panela com 2 litro de água, junte o caldo de legumes. Tempere com sal. Adicione a beringela, a courgette, a batata, a cenoura e a cebola. Mexa, tape e deixe cozer durante 30 minutos.","2. Entretanto, numa frigideira leve ao lume o azeite e o alho. Mexa e deixe aquecer. Junte os cogumelos e deixe saltear em lume forte até que estes percam a água.","3. Depois dos legumes cozidos, passe a sopa com a varinha mágica. Adicione os cogumelos ao creme. Mexa e deixe ferver durante 2 minutos. E está pronta a servir."],
+	"porção": 8,
+	"tempo": "35 minutos"
+
+	},
+
+	{"id": 20,
+	"nome": "Sopa Chinesa com Carne",
+	"quantidade": ["250g de massa chinesa de ovo","500g de bifes de vitela cortados em tirinhas","300g de rebentos de soja","250g de cogumelos frescos laminados","2 cebolas laminadas","2 dentes de alho picados","Gengibre fresco ralado","1 cubo de caldo de carne","2 estrelas de anis","Picante a gosto","250 ml de vinho de arroz","125 ml de molho de soja","2 colheres de sopa de açúcar amarelo","1 colher de sopa de óleo de sésamo","Sal q.b."],
+	"ingredientes": ["massa chinesa","bife de vitela","rebentos de soja","cogumelos","cebola","alho","gengibre","caldo de carne","estrela de anis","Picante a gosto","vinho de arroz","molho de soja","açucar amarelo","óleo de sésamo","sal"],
+	"preparação": ["1. Numa panela com 3 litros de água, tempere com sal. Adicione o cubo de caldo de carne, o gengibre, o alho, as estrelas de anis, o picante, a cebola, o açúcar, o óleo de sésamo, o vinho de arroz e o molho de soja. Mexa e deixe ferver durante 10 minutos.","2. Depois do caldo fervido, junte a carne. Tape e deixe cozinhar em lume brando durante 2 horas. Passado as 2 horas, adicione os cogumelos e deixe cozinhar mais 15 minutos.","3. Entretanto, numa panela com bastante água a ferver, tempere com sal. Coloque a massa a cozer durante 7 minutos. Ajude a massa a soltar-se com um garfo. Depois da massa cozida, escorra-a.","4. Por fim, adicione os rebentos de soja à sopa. Mexa e deixe ferver.","5. No fundo de tigelas de sopa, coloque um pouco de massa e a sopa por cima. E está pronto a servir."],
+	"porção": 10,
+	"tempo": "2 horas e 35 minutos"
+	},
+
+	{"id": 21,
+	"nome": "Caldo de Tomate com Peixe e Camarão",
+	"quantidade": ["2 postas de pescada","300g de camarão","80 ml de azeite","1 cebola picada","2 dentes de alho picados","1 folha de louro","500g de tomates maduros cortados em cubos","3 colheres de sopa bem cheias de polpa de tomate","100g de massa a gosto","Picante q.b.","Sal q.b.","1 molhinho de coentros picados"],
+	"ingredientes": ["pescada","camarão","azeite","cebola","alho","louro","tomate","polpa de tomate","massa","picante","sal","coentros"],
+	"preparação": ["1. Numa panela com 2 litros de água a ferver, tempere com sal. Coloque o peixe e o camarão a cozer durante 10 minutos. Depois de tudo cozido, retire para um prato. Deixe arrefecer e reserve o caldo. Depois de frio, descasque o camarão. Limpe o peixe de peles e de espinhas e desfie.","2. Numa outra panela, leve ao lume o azeite, a cebola, os alhos e a folha de louro. Mexa e deixe refogar. Adicione o tomate. Mexa e deixe refogar mais um pouco. Adicione ao refogado, a água de cozer o peixe coada e polpa de tomate. Tempere com picante a gosto. Mexa e deixe ferver durante 10 minutos.","3. Passado os 10 minutos, retire a folha de louro. Passe o caldo com a varinha mágica. Junte a massa. Mexa e deixe cozer durante 15 minutos.","4. Depois da massa cozida, junte o peixe, o camarão e os coentros. Mexa e sirva."],
+	"porção": 6,
+	"tempo": "45 minutos"
+	},
+
+	{"id": 22,
+	"nome": "Sopa de Cebola Gratinada",
+	"quantidade": ["600g de cebolas cortadas em rodelas meia lua","75g de manteiga","1 colher de sopa de açúcar","50g de farinha de trigo sem fermento","60 ml de Vinho do Porto branco","1600 ml de caldo de carne (1600 ml de água quente + 2 cubos de caldo de carne)","8 fatias pequenas de pão","Azeite q.b.","Orégãos q.b.","200g de queijo gruyère ralado","Sal q.b.","Pimenta q.b.","Noz-moscada q.b."],
+	"ingredientes": ["cebola","manteiga","açucar","farinha de trigo","Vinho do Porto branco","caldo de carne","pão","azeite","orégãos","queijo ralado","sal","pimenta","noz moscada"],
+	"preparação": ["1. Num tacho, leve ao lume a manteiga e deixe derreter. Junte a cebola e mexa. Adicione o açúcar e misture. Deixe cozinhar em lume brando, aproximadamente 1 hora até que a cebola fique com aspecto caramelizado.","2. Entretanto, coloque as fatias de pão num tabuleiro de ir ao forno e regue-as com um fio de azeite. Tempere com umas pedrinhas de sal e polvilhe com orégãos. Leve ao forno pré-aquecido nos 220º e deixe tostar aproximadamente 10 minutos. Quando o pão estiver douradinho, retire-o.","3. Mexa de vez em quando a cebola. Quando a cebola estiver com aspecto caramelizado, tempere com umas pedrinhas de sal, pimenta e noz-moscada. Junte a farinha e misture bem. Aos poucos e mexendo sempre, adicione o caldo de carne. Quando começar a ferver, junte o Vinho do Porto e tempere com umas folhinhas de orégãos. Deixe ferver durante 15 minutos. Passado os 15 minutos, rectifique os tempero e apague o lume.","4. Coloque a sopa em tigelas próprias para ir ao forno. Por cima, coloque duas fatias de pão e regue com 1/4 de concha de sopa. Polvilhe com o queijo ralado, regue com um fio de azeite e por fim, polvilhe com orégãos. Leve ao forno pré-aquecido nos 250º, aproximadamente 10 minutos, até que a sopa fique tostadinha.","Passado os 10 minutos, está pronto a servir."],
+	"porção": 4,
+	"tempo": "1 hora e 30 minutos"
+	},
+
+	{"id": 23,
+	"nome": "Caldo de Couve Lombarda com Enchidos",
+	"quantidade": ["700g de couve lombarda cortada em tiras finas","300g de nabo cortado em cubinhos","300g de cenoura cortada em cubinhos","150g de morcela","150g de chouriço de carne","1 cebola picada","2 dentes de alho picados","4 colheres de sopa de azeite","Sal q.b."],
+	"ingredientes": ["couve lombarda","nabo","cenoura","morcela","chouriço","cebola","alho","azeite","sal"],
+	"preparação": ["1. Numa panela, leve ao lume o azeite, a cebola e os alhos. Mexa e deixe refogar lentamente até que a cebola fique vidrada. Ao refogado adicione 2 litros de água, a morcela e o chouriço. Tempere com sal e deixe cozer durante 15 minutos. Passado os 15 minutos, retire os enchidos.","2. Ao caldo, adicione a couve e deixe cozer durante 15 minutos. Caso seja necessário, acrescente água.","3. Passado os 15 minutos, junte o nabo e a cenoura. Deixe cozer mais 15 minutos. Depois dos legumes todos cozidos, está pronta a servir.","Sirva a sopa com os enchidos cortados às rodelas."],
+	"porção": 10,
+	"tempo": "1 hora"
+	},
+
+	{"id": 24,
+	"nome": "Sopa de Alho Francês e Cenoura",
+	"quantidade": ["400g de alho francês cortado em pedaços","600g de batatas cortadas em pedaços","600g de cenouras cortadas em pedaços","1 cebola grande cortada em pedaços","400g de alho francês cortado em rodelas finas","80 ml de azeite","1 cubo de caldo de galinha (opcional)","Sal q.b."],
+	"ingredientes": ["alho francês","batata","cenoura","cebola","azeite","caldo de galinha"],
+	"preparação": ["1. Numa panela com 3 litros de água, adicione as batatas, o alho francês cortado em pedaços, a cenoura, a cebola e o cubo de caldo de galinha (opcional). Tempere com sal. Mexa, tape e deixe cozinhar durante 30 minutos.","2. Entretanto, numa frigideira, leve ao lume o azeite e o alho francês cortado às rodelas. Mexa e deixe refogar durante 10 minutos em lume médio.","3. Depois dos legumes cozidos, passe a sopa com a varinha mágica. Caso a sopa esteja muito espessa adicione um pouco mais de água. Junte o alho francês ao creme. Mexa e deixe cozinhar durante 5 minutos. Passado os 5 minutos, está pronta a servir."],
+	"porção": 12,
+	"tempo": "40 minutos"
+	},
+
+	{"id": 25,
+	"nome": "Sopa de Natal",
+	"quantidade": ["1 galinha com cerca de 1 kg","2 cenouras cortadas em pedaços","2 partes brancas de alho francês cortadas em pedaços","1 cebola cortada em pedaços","1 cubo de caldo de galinha","80g de aletria","200 ml de natas","12 ovos de codorniz","100g de amêndoa laminada","Sal q.b."],
+	"ingredientes": ["galinha","cenoura","alho francês","cebola","caldo de galinha","aletria","natas","ovo","amêndoa","sal"],
+	"preparação": ["1. Numa panela com 3 litros de água, tempere com sal. Adicione o cubo de caldo de galinha, a galinha, a cenoura, o alho francês e a cebola. Tape e deixe cozer em lume médio até que a galinha fique tenrinha.","2. Entretanto, num tacho à parte, coza os ovos de codorniz durante 5 minutos. Depois de cozidos, retire-os e coloque-os numa tigela com água fria. Descasque os ovos e reserve.","3. Num tabuleiro, leve a amêndoa ao forno pré-aquecido nos 190º e deixe torrar aproximadamente 7 minutos. Depois da amêndoa torrada, retire-a.","4. Depois da galinha cozida, retire-a e deixe arrefecer. Limpe a carne de peles e de ossos e desfie.","5. Passe a sopa com a varinha mágica. Junte a aletria partida e deixe cozer durante 3 minutos.","6. Passado os 3 minutos, junte as natas e a galinha. Quando começar a ferver, apague o lume. Por fim, adicione a amêndoa e os ovos cortados ao meio."],
+	"porção": 10,
+	"tempo": "2 horas"
+	},
+
+	{"id": 26,
+	"nome": "Sopa de Peixe Económica",
+	"quantidade": ["1 pescada ou marmota com 800g","60 ml de azeite","1 cebola picada","2 dentes de alho picados","1 folha de louro","1 cubo de caldo de peixe","Meio pimento vermelho cortado em cubinhos","400g de tomate pelado cortado em cubinhos","200g de massa cotovelos","Sal q.b.","Coentros picados q.b."],
+	"ingredientes": ["pescada","marmota","azeite","cebola","alho","louro","caldo de peixe","pimento","tomate","massa","sal","coentros"],
+	"preparação": ["1. Tempere o peixe com sal. Numa panela com 2 litros de água a ferver, coloque o cubo de caldo de peixe e o peixe. Deixe cozer durante 10 minutos. Depois do peixe cozido, retire-o para um prato e deixe arrefecer. Reserve o caldo.","2. Numa panela, leve ao lume o azeite, a cebola, a folha de louro, os alhos e o pimento. Mexa e deixe refogar. Quando começar a alourar, junte o tomate pelado. Mexa e deixe refogar tudo. Ao refogado, adicione a água de cozer o peixe. Deixe ferver durante 5 minutos. Passado os 5 minutos, retire a folha de louro e passe tudo com a varinha mágica. À sopa, junte a massa. Mexa e deixe cozer durante 10 minutos.","3. Entretanto, limpe o peixe de peles e de espinhas e desfie-o. Depois da massa cozida, adicione o peixe e os coentros. Caso seja necessário, acrescente um pouco mais de água. Quando a sopa começar a ferver, apague o lume e sirva."],
+	"porção": 8,
+	"tempo": "40 minutos"
+	},
+
+	{"id": 27,
+	"nome": "Sopa de Feijão com Entrecosto",
+	"quantidade": ["600g de teclado de entrecosto cortado em pedaços","150g de morcela de sangue para cozer","100g de chouriço de carne","4 colheres de sopa de azeite","4 colheres de sopa de azeite","3 dentes de alho picados","550g de feijão encarnado cozido","1 nabo cortado em pedaços","300g de batatas","1 molho de nabiças arranjado","1 cenoura grande cortada em cubinhos","1 nabo cortado em cubinhos","Sal q.b."],
+	"ingredientes": ["entrecosto","morcela","chouriço","azeite","cebola","alho","feijão encarnado","nabo","batata","nabiças","cenoura","sal"],
+	"preparação": ["1. Numa panela, leve ao lume o azeite, a cebola e os alhos. Mexa e deixe refogar. Junte o entrecosto. Tempere com sal. Adicione os enchidos, o feijão, o nabo cortado em pedaços, as batatas e 3 litros de água. Tape e deixe cozer durante 30 minutos.","2. Passado os 30 minutos, retire para uma travessa, os enchidos e o entrecosto. Passe a sopa com a varinha mágica. À sopa, adicione as nabiças, a cenoura e o nabo cortado em cubos. Caso seja necessário, acrescente um pouco mais de água. Mexa, tape e deixe cozer aproximadamente 30 minutos, até que os legumes fiquem cozidos.","3. Depois de tudo cozido, adicione os enchidos cortados em rodelas e a carne. Quando começar a ferver, está pronta a servir."],
+	"porção": 10,
+	"tempo": "1 hora e 20 minutos"
+	},
+
+	{"id": 28,
+	"nome": "Sopa de Grão com Couve Portuguesa",
+	"quantidade": ["300g de grão de bico cozido","500g de nabos cortados em pedaços","1 cebola cortada ao meio","2 dentes de alho","1 cubo de caldo de legumes","4 folhas grandes de couve portuguesa cortadas em juliana","3 cenouras cortadas em cubos","100g de massa cotovelos","4 colheres de sopa de azeite","Sal q.b."],
+	"ingredientes": ["grão de bico","nabo","cebola","alho","caldo de legumes","couve portuguesa","cenoura","massa cotovelos","azeite","sal"],
+	"preparação": ["1. Numa panela com aproximadamente 3 litros de água, junte os nabos, o grão, a cebola, os alhos e o cubo de caldo de legumes. Tempere com sal. Tape e deixe cozer tudo durante 30 minutos.","2. Depois dos nabos bem cozidos, passe tudo com a varinha mágica. À sopa, junte a cenoura, a couve e o azeite. Mexa, tape e deixe cozer durante 40 minutos.","3. Depois dos legumes cozidos, junte a massa e deixe cozer mais 10 minutos. Depois de tudo cozido, está pronto a servir."],
+	"porção": 8,
+	"tempo": "1 hora e 30 minutos"
+	},
+
+	{"id": 29,
+	"nome": "Sopa de Vitela com Massa",
+	"quantidade": ["400g de peito de vitela cortado em cubinhos","2 cenouras grandes cortadas em cubinhos","150g de massa cotovelos","50g de margarina","1 colher e meia de sopa de farinha de trigo","2 colheres de sopa de polpa de tomate","1 cubo de caldo de carne","Sal q.b.","Colorau q.b."],
+	"ingredientes": ["peito de vitela","cenoura","massa cotovelos","margarina","farinha de trigo","polpa de tomate","caldo de carne","sal","colorau"],
+	"preparação": ["1. Tempere a carne com sal e colorau. Mexa tudo muito bem.","2. Numa panela, leve ao lume a margarina. Quando estiver quente, junte a carne e as cenouras. Mexa e deixe fritar até que a carne ganhe cor.","3. Adicione a farinha e misture tudo muito bem. Junte a polpa de tomate e o cubo de caldo de carne. Aos poucos, junte 2 litros de água. Mexa, tape e deixe cozinhar aproximadamente 40 minutos, até que a carne fique tenra.","4. Depois da carne cozida, junte a massa. Mexa e deixe cozer durante 10 minutos. Caso seja necessário, acrescente um pouco de água para a sopa não ficar muito seca. Depois de tudo cozido, está pronta a servir."],
+	"porção": 6,
+	"tempo": "1 hora"
+	},
+
+	{"id": 30,
+	"nome": "Açorda Alentejana",
+	"quantidade": ["4 ovos","4 dentes de alho","1 molho de coentros ou de poejos picados grosseiramente","4 fatias de pão alentejano","4 colheres de sopa de azeite","1,5 l de água","Sal q.b."],
+	"ingredientes": ["ovo","alho","molho de coentros","molho de poejos","pão alentejano","azeite","água","sal"],
+	"preparação": ["1. Num almofariz, esmague os alhos. Aos poucos, junte os coentros e esmague tudo muito bem.","2. Num tacho, leve ao lume a água. Tempere com sal e deixe ferver.","3. Parta os ovos e junte à água um a um. Deixe escalfar os ovos durante 3 minutos. Depois dos ovos escalfados, com a ajuda de uma escumadeira, retire-os para um prato. Apague o lume.","4. À água de cozinhar os ovos, junte a mistura dos coentros com o alho e o azeite. Misture.","5. No fundo de cada prato de sopa, coloque uma fatia de pão e o ovo. Regue tudo com o caldo e sirva."],
+	"porção": 4,
+	"tempo": "15 minutos"
+	},
+
+	{"id": 31,
+	"nome": "Sopa de Tomate com Espinafres",
+	"quantidade": ["1500g de tomates maduros cortados em cubos","2 cebolas picadas","2 dentes de alho picados","125 ml de azeite","1 colher de sopa rasa de açúcar","170g de folhas de espinafres","Sal q.b.","3 ovos cozidos"],
+	"ingredientes": ["tomate","cebola","alho","azeite","açucar","espinafres","sal","ovo"],
+	"preparação": ["1. Numa panela leve ao lume o azeite, a cebola, os alhos e o tomate. Mexa e deixe refogar durante 10 minutos. Adicione 1 litro de água e tempere com sal. Mexa, tape e deixe cozinhar durante 15 minutos.","2. Depois do tomate cozido, passe a sopa com a varinha mágica. Caso seja necessário, acrescente um pouco mais de água. Junte os espinafres e o açúcar. Mexa e deixe cozer durante 5 minutos.","Depois dos espinafres cozidos, apague o lume. Sirva a sopa com os ovos cozidos picados."],
+	"porção": 6,
+	"tempo": "40 minutos"
+	},
+
+	{"id": 32,
+	"nome": "Sopa do Mar",
+	"quantidade": ["500g de lombo de tamboril","350g de camarão","700g de mexilhão","500g de amêijoas","125 ml de azeite","2 cebolas grandes picadas","2 dentes de alho picados","4 tomates maduros cortados em cubinhos","1 cenoura picada","1 malagueta","100g de farinha de milho","2 colheres de sopa de polpa de tomate","80 ml de brandy","Sal q.b.","1 molhinho de coentros picados"],
+	"ingredientes": ["lombo de tamboril","camarão","mexilhão","amêijoas","azeite","cebola","alho","tomate","cenoura","malagueta","farinha de milho","polpa de tomate","brandy","sal","coentros"],
+	"preparação": ["1. Numa panela com 2,6 l de água a ferver, tempere com sal. Adicione o tamboril e o camarão. Deixe cozer durante 7 minutos. Passado os 7 minutos, retire o tamboril e o camarão e deixe arrefecer.","2. Coloque os mexilhões na água e deixe cozer até abrirem. Depois dos mexilhões abertos, retire-os e deixe arrefecer.","3. Descasque os camarões e reserve as cascas e as cabeças. Limpe o tamboril de peles e de espinhas e desfie-o. Retire o miolo de mexilhão e reserve.","4. Junte as cascas e as cabeças do camarão à água e deixe ferver durante 5 minutos. Passado os 5 minutos, retire as cascas e as cabeças do caldo. Coe o caldo.","5. Num tacho largo, leve ao lume o azeite, a cebola, o alho, a cenoura, o tomate e a malagueta. Mexa e deixe refogar muito bem. Adicione a polpa de tomate ao refogado e mexa. Junte o caldo e reserve um pouco para dissolver com a farinha. Deixe ferver durante 10 minutos.","6. Dissolva a farinha com um pouco de caldo. Passe muito bem a sopa com a varinha mágica e adicione a farinha. Mexa e deixe ferver. Junte o brandy, as amêijoas, o tamboril, o mexilhão e o miolo de camarão. Deixe cozinhar até as amêijoas abrirem.","7. Depois das amêijoas abertas, junte os coentros, mexa e apague o lume. E está pronta a servir. Se quiser, acompanhe com cubinhos de pão tostado."],
+	"porção": 10,
+	"tempo": "1 hora"
+	},
+
+	{"id": 33,
+	"nome": "Sopa de Cenoura com Almôndegas",
+	"quantidade": ["400g de batata","1 courgette descascada cortada em pedaços","500g de cenoura cortada em pedaços","1 parte branca de um alho francês cortada em rodelas","1 cebola pequena cortada ao meio","300g de carne picada","1 cubo de caldo de carne","80 ml de azeite","Sal q.b."],
+	"ingredientes": ["batata","courgette","cenoura","alho francês","cebola","carne picada","caldo de carne","azeite","sal"],
+	"preparação": ["1. Faça bolinhas pequenas com a carne e reserve.","2. Numa panela, leve ao lume o azeite e o alho francês. Mexa e deixe refogar um pouco.","3. Junte as batatas, a cebola, a courgette, a cenoura e o cubo de caldo de carne. Tempere com sal e adicione 3 litros de água. Tape e deixe cozer entre 30 a 35 minutos, até que os legumes fiquem cozidos. Depois dos legumes cozidos, passe a sopa com a varinha mágica.","4. Ao creme, junte as bolinhas de carne uma a uma. Deixe ferver durante 5 minutos. Depois da carne cozida, está pronta a servir."],
+	"porção": 10,
+	"tempo": "50 minutos"
+	},
+
+	{"id": 34,
+	"nome": "Sopa de Tomate com Legumes",
+	"quantidade": ["500g de batatas cortadas em cubos","1 alho francês cortado em rodelas","1 nabo cortado em cubos","2 cenouras cortadas em cubos","500g de tomates maduros sem pele cortados em cubos","400g de feijão de manteiga cozido","500g de couve lombarda cortada em pedacinhos","2 dentes de alho picados","80 ml de azeite","2 colheres de sopa de polpa de tomate","175g de bacon cortado em cubinhos","1 cubo de caldo de carne","100g de massa cotovelinhos","Sal q.b."],
+	"ingredientes": ["batata","alho francês","nabo","cenoura","tomate","feijão de manteiga","couve lombarda","alho","azeite","polpa de tomate","bacon","caldo de carne","massa cotovelos","sal"],
+	"preparação": ["1. Numa panela leve ao lume o azeite, o alho, o alho francês e o bacon. Mexa e deixe refogar um pouco.","2. Junte a couve, o cubo de caldo de carne e a cenoura. Tempere com sal e adicione 3 l de água. Tape e deixe cozinhar durante 15 minutos.","3. Passado os 15 minutos adicione mais 1,5 l de água, o feijão, o nabo, a batata, o tomate a polpa de tomate e a massa. Tape e deixe cozinhar em lume moderado durante 15 minutos. Depois de tudo cozido está pronta a servir."],
+	"porção": 15,
+	"tempo": "50 minutos"
+	},
+
+	{"id": 35,
+	"nome": "Sopa de Favas à Ribatejana",
+	"quantidade": ["1300g de favas","80 ml de azeite","1 cebola picada","3 dentes de alho picados","1 molho de coentros picados","Meio chouriço mouro","Sal q.b."],
+	"ingredientes": ["favas","azeite","cebola","alho","coentros","chouriço","Sal"],
+	"preparação": ["1. Descasque as favas. Com uma faca, dê um golpe nas favas e retire-lhes a pele. Abra as favas ao meio e coloque-as numa tigela.","2. Numa panela leve ao lume o azeite, a cebola e o alho. Mexa e deixe refogar. Junte ao refogado os coentros e as favas. Tempere com sal e adicione 1,5 l de água. Por fim, junte o chouriço mouro. Deixe cozer entre 30 a 40 minutos até que as favas fiquem tenrinhas.","3. Caso seja necessário, acrescente um pouco mais de água. Depois das favas cozidas está pronta a servir. Sirva a sopa com as rodelas de chouriço mouro por cima."],
+	"porção": 4,
+	"tempo": "1 hora e 20 minutos"
+	},
+
+	{"id": 36,
+	"nome": "Sopa de Legumes",
+	"quantidade": ["500g de batatas","3 cenouras grandes partidas em pedaços","350g de abóbora cortada em cubos","1 alho francês cortado em rodelas","1 nabo cortado ao meio","1 cebola cortada ao meio","200g de ervilhas","2 cenouras cortadas em cubinhos","170g de folhas de espinafres","1 cubo de caldo de galinha","100 ml de azeite","Sal q.b."],
+	"ingredientes": ["batata","cenoura","abóbora","alho francês","nabo","cebola","ervilhas","cenoura","espinafres","caldo de galinha","azeite","sal"],
+	"preparação": ["1. Numa panela com 4 litros de água a ferver, junte as batatas, as cenouras cortadas em pedaços, o alho francês, o nabo, a cebola, a abóbora e o cubo de caldo de galinha. Tempere com sal. Tape e deixe cozer durante 40 minutos.","2. Depois dos legumes cozidos, passe a sopa com a varinha mágica. Depois da sopa passada, adicione as ervilhas, as cenouras cortadas em cubinhos, os espinafres e o azeite. Mexa e deixe cozinhar durante 25 minutos. Depois de tudo cozido está pronta a servir."],
+	"porção": 10,
+	"tempo": "1 hora e 10 minutos"
+	},
+
+	{"id": 37,
+	"nome": "Sopa de Feijão de Manteiga com Couve Portuguesa",
+	"quantidade": ["550g de feijão de manteiga cozido","Meia couve portuguesa pequena cortada em tiras","1 kg de batatas","1 tira de entremeada com 200g","100g de macarronete","80 ml de azeite","1 cebola picada","2 dentes de alho picados","Sal q.b."],
+	"ingredientes": ["feijão de manteiga","couve portuguesa","batata","entremeada","macarrone","azeite","cebola","alho","sal"],
+	"preparação": ["1. Numa panela, leve ao lume o azeite, a cebola e os alhos. Mexa e deixe refogar.","2. Junte a tira de entremeada e deixe fritar de ambos os lados.","3. Junte metade do feijão, as batatas e 3 litros de água. Tempere com sal, tape e deixe cozer durante 30 minutos. Depois de tudo cozido, retire a entremeada para um prato.","4. Passe a sopa com a varinha mágica.","5. Junte a couve. Mexa, tape e deixe cozinhar durante 15 minutos.","6. Passado os 15 minutos, junte o restante feijão e os macarronetes. Mexa e deixe cozinhar em lume brando durante 15 minutos.","7. Quando tudo estiver cozido, junte a entremeada cortada em tiras, mexa e apague o lume. E está pronta a servir."],
+	"porção": 8,
+	"tempo": "1 hora e 20 minutos"
+	},
+
+	{"id": 38,
+	"nome": "Sopa de Feijão Frade com Nabiças",
+	"quantidade": ["600g de feijão frade seco demolhado de um dia para o outro","1 molho de nabiças arranjas e lavadas","1 morcela","60 ml de azeite","Sal q.b."],
+	"ingredientes": ["feijão frade","nabiças","morcela","azeite","sal"],
+	"preparação": ["1. Numa panela com água, tempere com sal. Junte o feijão e a morcela. Tape e deixe cozer durante 1 hora.","2. Depois de cozido, retire a morcela. Passe o feijão com a varinha mágica.","3. Junte as nabiças. Mexa e deixe cozer durante 15 minutos.","4. Depois dos legumes cozidos, junte o azeite. Mexa e apague o lume. Sirva a sopa com as rodelas de morcela por cima."],
+	"porção": 6,
+	"tempo": "1 hora e 20 minutos"
+	},
+
+	{"id": 39,
+	"nome": "Canja de Pato",
+	"quantidade": ["Meio pato","300g de miúdos de pato","1 cebola cortada ao meio com 2 cravinhos espetados","2 cenouras grandes","125g de chouriço de carne","250g de massa cuscus","12 ovos de codorniz cozidos","Sal q.b."],
+	"ingredientes": ["pato","cebola","cenoura","chouriço","massa cuscus","ovo","sal"],
+	"preparação": ["1. Numa panela com aproximadamente 4 litros de água, tempere com sal. Junte as cenouras, a cebola, o pato, os miúdos de pato e o chouriço. Tape e deixe cozer durante 1 hora.","2. Passado 1 hora, retire tudo com uma escumadeira para uma travessa. Reserve o caldo.","3. Depois de frio, limpe o pato de peles e de ossos e desfie a carne. Corte a cenoura em rodelas meia lua, o chouriço em cubinhos e os miúdos em pedaços.","4. Entretanto, junte a massa ao caldo e deixe cozer durante 12 minutos.","5. Depois da massa cozida, junte o pato, o chouriço, a cenoura, os miúdos e os ovos. Mexa e logo que comece a ferver apague o lume. E está pronta a servir."],
+	"porção": 10,
+	"tempo": "1 hora e 30 minutos"
+	},
+
+	{"id": 40,
+	"nome": "Sopa de Rabo de Boi",
+	"quantidade": ["1 rabo de boi com aproximadamente 900g cortado em pedaços","1 rama de aipo","Uma parte branca de 1 alho francês cortada em tiras","2 cenouras cortadas em pedaços","1 cebola picada","50g de manteiga","60g de farinha","180 ml de Vinho da Madeira","1 colher de chá de molho inglês","Sal q.b.","Pimenta preta q.b."],
+	"ingredientes": ["rabo de boi","aipo","alho francês","cenoura","cebola","manteiga","fariha","vinho","chá","sal","pimenta preta"],
+	"preparação": ["1. Numa panela com aproximadamente 3,5 l de água, tempere com sal. Junte as cenouras, o alho francês, o aipo, a cebola picada e o rabo de boi. Tempere com pimenta. Tape e deixe cozer durante 2 horas até a carne se soltar dos ossos.","2. Depois de cozida, retire a carne para um prato.","3. Coe o caldo.","4. Limpe a carne de gorduras e de ossos e desfie.","5. Numa outra panela leve ao lume a manteiga e deixe aquecer. Junte a farinha e mexa muito bem. Aos poucos e sem parar de mexer, junte 1 l de caldo. Adicione também o Vinho da Madeira e o molho inglês","6. Junte a carne e mexa. Quando começar a ferver está pronta a servir."],
+	"porção": 6,
+	"tempo": "2 horas e 30 minutos"
+	},
+
+	{"id": 41,
+	"nome": "Sopa de Lentilhas",
+	"quantidade": ["500g de lentilhas","3 partes brancas de alho francês","2 cenouras cortadas em rodelas","600g de batata cortadas em cubos","2 tomates maduros cortados em cubos","1 cebola picada","2 dentes de alho picados","80 ml de azeite","1 cubo de caldo de galinha","1 chouriço de carne com 300g","Sal q.b."],
+	"ingredientes": ["lentilhas","alho francês","cenoura","batata","tomate","cebola","alho","azeite","caldo de galinha","chouriço","sal"],
+	"preparação": ["1. Numa panela, leve ao lume o azeite, a cebola, os alhos e o alho francês. Mexa e deixe refogar um pouco.","2. Junte o tomate, as cenouras, o cubo de caldo de galinha e as lentilhas. Tempere com sal e junte aproximadamente 2 litros de água. Junte o chouriço. Tape e deixe cozer durante 1 hora. Caso seja necessário, acrescente mais água.","3. Passado 1 hora e depois das lentilhas cozidas, junte as batatas. Deixe cozer durante 15 minutos até as batatas ficarem cozidas. Depois de tudo cozido, está pronto a servir. Sirva a sopa com o chouriço cortado em rodelas."],
+	"porção": 12,
+	"tempo": "1 hora e 30 minutos"
+	},
+
+	{"id": 42,
+	"nome": "Sopa de Camarão Picante",
+	"quantidade": ["1 kg de camarão","2 malaguetas cortadas em rodelas finas","4 colheres de sopa de polpa de tomate","80 ml de óleo","2 colheres de sopa bem cheias de farinha maizena","4 ovos batidos","Folhinhas de coentros q.b.","Sal q.b."],
+	"ingredientes": ["camarão","malagueta","polpa de tomate","óleo","farinha maizena","ovo","coentros","sal"],
+	"preparação": ["1. Numa panela com 3 litros de água, tempere com sal. Coloque o camarão a cozer durante 10 minutos.","2. Com uma escumadeira, retire o camarão para um prato e deixe arrefecer. Reserve a água.","3. Descasque o camarão e guarde as cabeças. Pique o camarão miudinho.","4. Entretanto, junte as cabeças ao caldo e deixe ferver durante 15 minutos. Retire as cabeças e guarde o caldo.","5. Numa outra panela, leve ao lume o óleo, as malaguetas e a polpa de tomate. Mexa e deixe aquecer.","6. Entretanto, dissolva a farinha maizena num pouco de água.","7. Coe o caldo para dentro da panela. Mexa e junte a farinha maizena dissolvida. Junte os camarões picados e deixe ferver. Se quiser o caldo mais saboroso, junte 1 cubo de caldo de marisco.","8. Quando a sopa estiver a ferver, junte os ovos batidos em fio e mexa. Logo que comece a ferver, apague o lume. Sirva a sopa salpicada com as folhinhas de coentros."],
+	"porção": 10,
+	"tempo": "30 minutos"
+	},
+
+	{"id": 43,
+	"nome": "Gaspacho",
+	"quantidade": ["3 tomates maduros cortados em cubos","390g de tomate pelado picado","Meio pepino cortado em cubos","Meio pimento vermelho cortado em cubos","Meia cebola picada","3 dentes de alho picados","30 ml de azeite","Orégãos q.b.","Sal q.b.","Pimenta q.b."],
+	"ingredientes": ["tomate","pepino","pimento","cebola","alho","azeite","orégãos","sal","pimenta"],
+	"preparação": ["1. No liquidificador, coloque o tomate pelado, os 3 tomates maduros, a cebola, o pimento vermelho, o meio pepino cortado em cubos e o azeite. Tempere com sal e pimenta. Para que a sopa não fique muito grossa, acrescente aproximadamente 250 ml de água de preferência fresca. Triture tudo.","2. Quando estiver bem triturado, acrescente os alhos e os orégãos. Caso seja necessário, acrescente um pouco mais de água. Triture mais um pouco.","3. Sirva a sopa num prato. Por cima espalhe, cubinhos de pepino, cubinhos de pimento verde, cubinhos de tomate, tiras de presunto, ovo picado e os cubinhos de pão."],
+	"porção": 6,
+	"tempo": "10 minutos"
+	},
+
+	{"id": 44,
+	"nome": "Sopa de Feijão Verde com Tomate e Presunto",
+	"quantidade": ["600g de batatas cortadas em pedaços","500g de tomates sem peles cortados em pedaços","1 cebola cortada ao meio","300g de feijão verde cortado em tiras","150g de presunto fatiado cortado em tiras","60 ml de azeite","Sal q.b."],
+	"ingredientes": ["batata","tomate","cebola","feijão verde","presunto","azeite","sal"],
+	"preparação": ["1. Numa panela com aproximadamente 2,5l de água, leve ao lume as batatas, a cebola e o tomate. Tempere com sal e junte o azeite. Deixe cozer durante 30 minutos.","2. Depois da sopa cozida, passe com a varinha mágica. Junte o feijão verde e deixe cozer mais 30 minutos.","3. Depois de tudo cozido, junte o presunto, mexa e logo que comece a ferver apague o lume. Está pronta a servir."],
+	"porção": 8,
+	"tempo": "1 hora e 10 minutos"
+	},
+
+	{"id": 45,
+	"nome": "Sopa de Cenoura com Bróculos",
+	"quantidade": ["900g de cenouras cortadas em pedacinhos","1 cebola cortada ao meio","1 dente de alho","1 cubo de caldo de galinha (opcional)","60 ml de azeite","500g de troncos de bróculos","2 cenouras grandes raladas","1,5 l de água","Sal q.b."],
+	"ingredients": ["cenouras","cebola","alho","caldo de galinha","azeite","bróculos","cenoura","água","sal"],
+	"preparação": ["1. Numa panela, coloque as cenouras cortadas em pedaços, a cebola, o dente de alho e o cubo de caldo de galinha (opcional). Tempere com sal. Junte a água, tape e leve ao lume a cozer durante 30 minutos.","2. Depois das cenouras cozidas, passe a sopa com a varinha mágica. Caso a sopa esteja muito grossa, acrescente mais água.","3. Depois da sopa passada, junte os bróculos, a cenoura ralada e o azeite. Mexa e deixe cozer entre 20 a 30 minutos até os bróculos ficarem cozidos.","Depois dos bróculos cozidos está pronto a servir."],
+	"porção": 8,
+	"tempo": "1 hora"
+	},
+
+	{"id": 46,
+	"nome": "Sopa de Tomate com Rebentos de Soja",
+	"quantidade": ["600g de batatas","1 cebola picada","2 dentes de alho picados","100 ml de azeite","1 folha de louro","200 ml de polpa de tomate","300g de rebentos de soja","Sal q.b.","1,5 l de água"],
+	"ingredientes": ["batata","cebola","alho","azeite","louro","polpa de tomate","rebentos de soja","sal","água"],
+	"preparação": ["1. Numa panela, leve ao lume o azeite, a cebola e os alhos. Deixe alourar um pouco.","2. Junte a folha de louro, as batatas, a polpa de tomate e a água. Tempere com sal e deixe cozer durante 25 minutos.","3. Depois das batatas cozidas, retire a folha de louro e passe tudo com a varinha mágica. Se necessário, acrescente um pouco de água. Junte os rebentos de soja e deixe cozer durante 5 minutos.","Passado os 5 minutos está pronta a servir."],
+	"porção": 6,
+	"tampo": "35 minutos"
+	},
+
+	{"id": 47,
+	"nome": "Sopa de Amêijoa",
+	"quantidade": ["900g de amêijoas demolhadas em água fria durante 2 horas","5 cebolas picadas","200 ml de azeite","4 dentes de alho","50g de farinha de trigo torrada","1 molhinho de coentros","Água q.b.","Sal q.b.","Pimenta q.b.","Fatias de pão alentejano q.b."],
+	"ingredientes": ["amêijoas","cebola","azeite","alho","farinha de trigo","coentros","água","sal","pimenta","pão alentejano"],
+	"preparação": ["1. Num tacho, leve ao lume um pouco de água e tempere com sal. Junte as amêijoas. Apague o lume logo que comecem a abrir e coloque-as numa travessa.","2. Coe o caldo numa rede fina. Retire o miolo das amêijoas.","3. Num tacho, leve ao lume a cebola e o azeite. Deixe refogar. Junte a farinha e aos poucos, junte o caldo e mexa. Passe tudo com a varinha mágica e aos poucos junte água até ficar com a consistência desejada. Tempere com pimenta e mais sal se for necessário. Deixe cozinhar durante 10 minutos.","4. Entretanto, pique na picadora, os alhos e os coentros até tudo ficarem bem picadinhos.","5. Por fim, junte à sopa o miolo das amêijoas e o picadinho dos alhos com os coentros. Mexa e apague o lume.","Sirva a sopa com uma fatia de pão no fundo do prato."],
+	"porção": 6,
+	"tempo": "30 minutos"
+	},
+
+	{"id": 48,
+	"nome": "Sopa de Vitela com Hortelã",
+	"quantidade": ["400g de carne de vitela para cozer","Meia couve lombarda cortada em pedaços","1 nabo cortado em cubos","3 cenouras cortadas em cubos","150g de massinhas pevide","1 cubo de caldo de carne","Raminhos de hortelã q.b.","Sal q.b."],
+	"ingredientes": ["carne de vitela","couve lombarda","nabo","cenoura","massinhas pevide","caldo de carne","hortelã","sal"],
+	"preparação": ["1. Numa panela com 4 litros de água, tempere com sal. Junte o cubo de caldo de carne e a carne. Deixe cozer durante 40 minutos.","2. Depois da carne cozida, retire e junte ao caldo, a couve, o nabo e as cenouras. Deixe cozer durante 20 minutos.","3. Corte a carne em pedacinhos.","4. Passado os 20 minutos junte a massa e a carne e deixe cozer mais 15 minutos.","Depois de tudo cozido está pronta a servir."],
+	"porção": 10,
+	"tempo": "75 minutos"
+	},
+
+	{"id": 49,
+	"nome": "Sopa Fria de Tomate com Atum",
+	"quantidade": ["1 kg de tomate maduros cortados ao meio","Meio pimento vermelho","3 dentes de alho","250 ml de água","60 ml de azeite","2 colheres de sopa de vinagre","Sal q.b.","Pimenta q.b.","240g de atum de conserva em azeite","2 ovos cozidos","Cubinhos de pão tostado q.b."],
+	"ingredientes": ["tomate","pimento vermelho","alho","água","vinagre","sal","pimenta","atum","ovo","pão"],
+	"preparação": ["1. Coloque no liquidificador metade dos tomates, metade do pimento, metade dos alhos, tempere com sal, junte metade da água e tempere com pimenta. Triture tudo muito bem e coloque numa taça grande.","2. Repita o processo com os mesmos ingredientes utilizados no passo anterior, junte na taça e mexa tudo.","3. Junte o azeite e o vinagre e mexa bem.","Espalhe por cima o atum, os ovos cozidos cortados em pedaços e o pão tostado. Sirva esta sopa bem fria."],
+	"porção": 6,
+	"tempo": "indefinido"
+	},
+
+	{"id": 50,
+	"nome": "Sopa de Feijão Branco com Agriões",
+	"quantidade": ["540g de feijão branco cozido","500g de batatas","125g de agriões escolhidos e lavados","1 cebola","2 dentes de alho","1 cubo de caldo de galinha","80 ml de azeite","Sal q.b.","1,5 l de água"],
+	"ingredientes": ["feijão branco","batata","agrião","cebola","alho","caldo de galinha","azeite","sal","água"],
+	"preparação": ["1. Numa panela leve ao lume a água, as batatas, a cebola, o cubo de caldo de galinha, os alhos e cerca de 2/3 de feijão. Reserve o restante. Tempere com sal, tape e deixe cozer durante 20 minutos.", "2. Depois de tudo cozido passe a sopa com a varinha mágica. Junte o restante feijão e os agriões. Mexa e se necessário acrescente um pouco mais de água. Junte o azeite e deixe ferver durante 2 minutos."],
+	"porção": 8,
+	"tempo": "30 minutos"
+	}
+]

@@ -303,49 +303,55 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             } catch (Exception e){
                 e.printStackTrace();
             }
-
+            size1 = receitasJson.length();
             for (int i=0; i<size1; i++){
                     try{
                         JSONObject receita = receitasJson.getJSONObject(i);
-                        JSONObject idObject = receita.getJSONObject("_id");
-                        final String id = idObject.getString("$oid");
+                        final String id = receita.getString("id");
                         String nome = receita.getString("nome");
-                        JSONArray secao = receita.getJSONArray("secao");
-                        JSONArray conteudo = null;
+                        final String portion = receita.getString("porção");
+                        final String tempo = receita.getString("tempo");
+                        JSONArray ingredientes = receita.getJSONArray("ingredientes");
+                        JSONArray preparation = null;
                         try{
-                            conteudo = secao.getJSONObject(0).getJSONArray("conteudo");
-                        } catch (org.json.JSONException ex){
-                            Log.d(TAG, "Caught exception" + ex);
-                            progressBarValue+=1;
-                            progressBar.setProgress(progressBarValue);
-                            if (progressBarValue == progressBar.getMax()){
-                                runOnUiThread(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        loadingJson.setText("Upload completed");
-                                    }
-                                });
-                            }
-                            progressReport.setText(progressBarValue+"/"+progressBar.getMax());
-                            continue;
+                            preparation = receita.getJSONArray("preparacao");
+                        } catch (Exception e){
+                            preparation = null;
                         }
-                        String[] ingredientes = new String[conteudo.length()];
-                        for (int j=0; j<conteudo.length(); j++){
-                            ingredientes[j] = conteudo.getString(j).toLowerCase();
+
+                        if (preparation==null){
+                            preparation = receita.getJSONArray("preparação");
+                        }
+                        JSONArray quantidade = receita.getJSONArray("quantidade");
+
+                        String[] ingredientesStringArr = new String[ingredientes.length()];
+                        String[] preparationStringArr = new String[preparation.length()];
+                        String[] quantidadeStringArr = new String[quantidade.length()];
+                        for (int j=0; j<ingredientes.length(); j++){
+                            ingredientesStringArr[j] = ingredientes.getString(j).toLowerCase();
+                        }
+                        for (int j=0; j<preparation.length(); j++){
+                            preparationStringArr[j] = preparation.getString(j);
+                        }
+                        for (int j=0; j<quantidade.length(); j++){
+                            quantidadeStringArr[j] = quantidade.getString(j);
                         }
                         System.out.println("-------New receita:");
                         System.out.println("----id: " + id);
                         System.out.println("----nome: " + nome);
                         System.out.println("----ingredientes: ");
-                        for (int k=0; k<ingredientes.length; k++){
-                            System.out.println("--" + ingredientes[k]);
+                        for (int k=0; k<ingredientesStringArr.length; k++){
+                            System.out.println("--" + ingredientesStringArr[k]);
                         }
-                        long unixTime = System.currentTimeMillis() / 1000L;
 
                         //Place in a map
                         Map<String, Object> data = new HashMap<>();
                         data.put("name", nome);
-                        data.put("ingredients", Arrays.asList(ingredientes));
+                        data.put("porção", portion);
+                        data.put("tempo", tempo);
+                        data.put("ingredients", Arrays.asList(ingredientesStringArr));
+                        data.put("quantidade", Arrays.asList(quantidadeStringArr));
+                        data.put("preparação", Arrays.asList(preparationStringArr));
                         data.put("timestamp", Timestamp.now());
 
                         runOnUiThread(new Runnable() {
@@ -361,17 +367,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
-                                        progressBarValue+=1;
-                                        progressBar.setProgress(progressBarValue);
-                                        if (progressBarValue == progressBar.getMax()){
-                                            runOnUiThread(new Runnable() {
-                                                @Override
-                                                public void run() {
-                                                    loadingJson.setText("Upload completed");
-                                                }
-                                            });
-                                        }
-                                        progressReport.setText(progressBarValue+"/"+progressBar.getMax());
+
                                     }
                                 })
                                 .addOnFailureListener(new OnFailureListener() {

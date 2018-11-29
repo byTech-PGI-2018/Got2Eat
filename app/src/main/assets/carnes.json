@@ -1,0 +1,999 @@
+﻿[
+
+{"id":51,
+"nome": "Massada de Coelho",
+"quantidade": ["1 coelho cortado em pedaços","350g de macarronetes","250g de couve lombarda cortada em juliana","2 cenouras cortadas em cubos","120g de bacon cortado em cubinhos","120g de linguiça cortada em rodelas","4 colheres de sopa de azeite","1 cebola picada","4 dentes de alho picados","2 folhas de louro","1/2 pimento vermelho cortado em cubinhos","400g de tomate pelado cortado em pedaços","3 colheres de sopa de polpa de tomate","225 ml de vinho branco","1 molhinho de coentros picados","Sal","Pimenta"],
+"ingredientes": ["coelho","macarronetes","couve lombarda","cenouras","bacon","linguiça","azeite","cebola","alho","louro","pimento vermelho","tomate","vinho branco","coentros","sal","pimenta"],
+"preparação": ["1. Tempere o coelho com sal e pimenta. Junte os alhos e o louro. Envolva bem.","2. Num tacho grande leve ao lume o azeite, o bacon, a linguiça e o pimento. Deixe fritar bem.","3. Junte o coelho. Mexa e deixe fritar por igual até que a carne fique lourinha.","4. Depois da carne lourinha, junte a cebola e deixe fritar mais um pouco. À carne, adicione o tomate pelado, a polpa de tomate e a cenoura. Misture bem e adicione o vinho branco. Tape e deixe cozinhar aproximadamente 20 minutos.","5. Passado o tempo e quando a carne estiver tenrinha, adicione a couve e 1 litro de água. Mexa, tape e deixe ferver.","6. Quando começar a ferver, misture a massa. Tape e deixe cozinhar em lume forte, aproximadamente 15 minutos até que a massa fique cozida e o molho fique apurado.","7. Por fim, adicione os coentros e misture bem. Retire do lume e sirva de imediato."],
+"porção":5,
+"tempo":"1 hora"
+},
+
+{"id":52,
+"nome": "Pato Guisado",
+"quantidade": ["1 pato cortado em pedaços","4 colheres de sopa de azeite","1 cebola picada","4 dentes de alho picados","2 folhas de louro","150g de bacon cortado em cubinhos","400g de tomate pelado cortado em pedaços","1 raminho de salsa atado com um fio","500 ml de vinho branco","Salsa picada","Sal","Pimenta preta"],
+"ingredientes": ["pato","azeite","cebola","alho","louro","bacon","tomate","salsa","vinho branco","sal","pimenta preta"],
+"preparação": ["1. Tempere o pato com sal e pimenta. Envolva bem o tempero com a carne.","2. Num tacho largo, leve ao lume o azeite e deixe aquecer. Coloque a carne e deixe fritar por igual até que ganhe cor.Depois do pato lourinho, retire-o para uma travessa.","3. À gordura, junte o bacon, o louro, a cebola e os alhos. Mexa e deixe alourar.","4. Ao refogado, adicione o tomate.
+Mexa e deixe refogar mais um pouco.","5. Depois de tudo bem refogado, junte o raminho de salsa e os pedaços de pato. Misture bem e regue com o vinho branco. Tape e deixe cozinhar em lume moderado aproximadamente 1 hora e meia. Mexa de vez em quando para que não agarre no fundo e caso seja necessário, acrescente um pouco de água.","6. Passado o tempo e quando a carne estive tenrinha, retire do lume. Por fim, polvilhe a carne com salsa picada."],
+"porção":5,
+"tempo":"2 horas"
+},
+
+{"id":53,
+"nome": "Lasanha de Beringela à Bolonhesa",
+"quantidade": ["3 beringelas","500g de carne de vaca picada","80g de bacon cortado em cubinhos","1 cebola picada","2 dentes de alho picados","2 folhas de louro","4 tomates de rama maduros, sem pele e cortados em cubos","300g de cogumelos laminados","2 colheres de sopa bem cheia de polpa de tomate","200 ml de natas","250g de queijo ricota","300g de queijo mozarela ralado","Azeite","Noz-moscada","Folhas de orégãos secas","Sal","Pimenta"],
+"ingredientes": ["beringela","carne de vaca","bacon","cebola","alho","louro","tomate","cogumelos","polpa de tomate","natas","queijo ricota","queijo mozarela","azeite","noz-moscada","oregaos","sal","pimenta"],
+"preparação": ["1. Num tacho, coloque 4 colheres de sopa de azeite, a cebola, o louro, o alho e o bacon. Mexa e deixe refogar.","2. Quando a cebola começar a alourar, junte o tomate.
+Mexa e deixe refogar até que se desfaça.","3. Quando tudo estiver bem refogado, adicione a carne.
+Tempere com sal e pimenta. Mexa muito bem até que a carne ganhe cor e fique soltinha.","4. Misture a polpa de tomate e os cogumelos.Tape e deixe cozinhar em lume médio, aproximadamente 15 minutos.Quando a carne e o molho estiverem apurados, retire.","5. Com uma faca, retire os topos às beringelas e corte-as na vertical em fatias finas.Num tabuleiro de ir ao forno, espalhe bem azeite o fundo e disponha por cima as fatias de beringela, sem se sobreporem. Regue muito bem com azeite. Leve ao forno pré-aquecido nos 190ºC e deixe assar durante 20 minutos. Passado o tempo, retire.","6. Numa tigela, coloque o queijo ricota.Mexa um pouco com uma vara de arames e misture muito bem as natas.Quando o creme ficar homogéneo, tempere com sal, pimenta e noz-moscada.Mexa muito bem e por fim, misture 4 colheres de sopa de queijo mozarela.","7. Num tabuleiro de ir ao forno, espalhe um pouco de azeite. Faça camada alternadas de carne picada, um pouco de folhas de orégãos, um pouco de queijo mozarela ralado e as beringelas assadas. Repita o processo até acabar os ingredientes, de forma a que a última camada seja de beringela. Por fim, espalhe o molho branco que preparou e polvilhe com o restante queijo ralado."," 8. Leve ao forno pré-aquecido nos 190ºC e deixe assar aproximadamente 30 minutos.Quando a lasanha estiver lourinha, retire. Polvilhe com um pouco de orégãos e sirva"],
+"porção":7,
+"tempo":"1 hora e 30 minutos"
+},
+
+{"id":54,
+"nome": "Bochechas de Porco Grelhadas",
+"quantidade": ["800g de bochechas de porco, abertas ao meio para grelhar","Piri piri a gosto","Pimentão doce","2 folhas de louro","1/2 limão","Sal q.b.","1 cebola pequena picada finamente","4 dentes de alho picados","1 molhinho de coentros picados","Azeite","2 colheres de sopa bem cheias de vinagre de vinho branco"],
+"ingredientes": ["bochechas de porco","piri piri","pimentão doce","louro","limão","sal","cebola","alho","coentros","azeite","vinagre de vinho branco"],
+"preparação": ["1. Tempere as bochechas de ambos os lados com sal, o louro partido em pedaços, o pimentão doce, o piri piri e sumo de limão.","2. Entretanto, prepare o vinagre. Numa tigela, coloque a cebola, o alho, os coentros, 4 colheres de sopa de azeite e o vinagre. Mexa muito bem e caso esteja muito espesso, adicione mais azeite.","3. Num grelhador, grelhe as bochechas aproximadamente 8 minutos de cada lado.Depois da carne bem passada, retire-a para uma travessa.","4. Por cima da carne, espalhe um pouco do vinagrete e sirva o restante à parte.
+Acompanhe este prato com batatas a murro."],
+"porção":4,
+"tempo":"30 minutos"
+},
+
+{"id":55,
+"nome": "Massa Gratinada com Frango e Beringela",
+"quantidade": ["250g de peito de frango cortado em tiras","170g de massa a gosto","1 molhinho pequeno de manjericão fresco","1 cebola pequena picada finamente","30g de queijo parmesão cortado em cubinhos","25g de amêndoas","2 tomates maduros cortados em cubinhos","1 beringela pequena cortada em cubinhos","1 dente de alho picado","1 folha de louro","125g de queijo mozarela fresco cortado em rodelas finas","Azeite","Sal","Pimenta"],
+"ingredientes": ["peito de frango","massa","manjericão","cebola","queijo parmesão","amêndoas","tomates","beringela","alho","queijo mozarela","azeite","sal","pimenta"],
+"preparação": ["1. Numa panela com água a ferver, coloque um fio de azeite e sal.Adicione a massa, mexa e deixe cozer conforme indicação na embalagem.Depois da massa cozida, escorra-a.","2. Num tacho, leve ao lume um fio de azeite, a cebola, o louro e o alho.Mexa e deixe refogar um pouco até que a cebola fique vidrada.Junte o tomate, mexa e deixe refogar até que este comece a desfazer-se.","3. Depois de tudo bem refogado, retire a folha de louro e triture até que fique um molho espesso.Tempere com sal e pimenta.Junte a beringela e 150 ml de água. Mexa e deixe cozer aproximadamente 10 minutos.Depois da beringela cozida, retire do lume.","4. Numa tigela, coloque o queijo parmesão, a amêndoa, o manjericão e aproximadamente 3 colheres de sopa de azeite.Triture tudo com a varinha mágica.Tempere o frango com sal e pimenta.
+Misture bem.","5. Leve uma frigideira ao lume e coloque um fio de azeite.Frite o frango por igual até que fique lourinho.","6. Depois do frango cozinhado, junte a massa e o molho pesto que preparou anteriormente. Misture tudo muito bem e retire do lume.","7. Divida o preparado entre 2 pratos individuais que possam ir a forno. Por cima, espalhe o molho da beringela. Por fim, cubra com as rodelas de queijo mozarela.","8. Leve ao forno pré-aquecido nos 210ºC e deixe gratinar aproximadamente 10 minutos até que ganhe cor. Depois do queijo lourinho, retire e sirva."],
+"porção":2,
+"tempo":"30 minutos"
+},
+
+
+{"id":56,
+"nome": "Bifes de Peru com Cogumelos e Natas",
+"quantidade": ["4 bifes grandes ou 8 bifinhos de peru","300g de cogumelos frescos laminados","300 ml de natas","1 colher de chá de mostarda","1 colher de chá de molho inglês","1 dente de alho esmagado","2 folhas de louro","Sumo de 1/2 limão","Azeite","Cebolinho fresco picado","Sal","Pimenta"],
+"ingredientes": ["peru","cogumelos","natas","mostarda","molho ingês","alho","louro","limão","azeite","cebolinho","sal","pimenta"],
+"preparação": ["1. Tempere os bifes de ambos os lados com sal, pimenta e sumo de limão.
+Deixe marinar durante 15 minutos.","2. Numa frigideira, leve ao lume 2 colheres de sopa de azeite, o alho e as folhas de louro.Deixe aquecer bem e frite os bifes de ambos os lados até que ganhem cor.Depois dos bifes terem ganho cor, retire-os para uma travessa.Frite todos os bifes e caso seja necessário, acrescente mais um pouco de azeite.","3. Depois dos bifes todos fritos, retire o alho e o louro. Na frigideira, coloque a mostarda e o molho inglês. Misture, junte os cogumelos e mexa muito bem. Deixe saltear em lume médio até que percam a água.","4. Depois dos cogumelos salteados, junte as natas. Mexa.","5. Coloque novamente os bifes na frigideira e mergulhe-os bem no molho. Junte o molho que escorreu da carne. Misture tudo e deixe cozinhar em lume médio durante 5 minutos.","6. Quando a carne estiver bem cozinhada e o molho apurado, apague o lume e polvilhe com o cebolinho fresco. Sirva de imediato, acompanhado de batatas, massa ou arroz a gosto."],
+"porção":4,
+"tempo":"20 minutos"
+},
+
+
+{"id":57,
+"nome": "Salada de Frango com Grão",
+"quantidade": ["650g de frango assado","520g de grão de bico cozido","12 ovos de codorniz","1/2 pepino cortado em cubos","120g de tomates cereja cortados ao meio ou em quartos","1/4 de um pimento vermelho cortado em cubinhos","1/2 cebola picada","2 dentes de alho picados","Coentros picados","Azeite","2 colheres de sopa de vinagre de vinho branco","Sal","Pimenta"],
+"ingredientes": ["frango","grão de bico","ovos de codorniz","pepino","tomates cereja","pimento vermelho","cebola","alho","coentros","azeite","vinagre de vinho branco","sal","pimenta"],
+"preparação": ["1. Num fervedor com água, tempere com sal e coloque os ovos a cozer durante 5 minutos. Passado o tempo, retire-os com uma escumadeira para uma tigela com água fria.","2. Limpe o frango de peles e de ossos e desfie a carne para uma saladeira.","3. Descasque os ovos de codorniz.","4. Ao frango junte o alho, a cebola, o pimento, o pepino, os coentros e o grão.
+Tempere com pimenta, sal, 4 colheres de sopa de azeite e o vinagre. Misture muito bem. Depois da salada bem misturado, junte o tomate e misture mais um pouco.","5. Por fim, junte os ovos inteiros ou cortados ao meio. Guarde no frigorífico até que a salada fique fresca."],
+"porção":4,
+"tempo":"20 minutos"
+},
+
+{"id":58,
+"nome": "Rabo de Boi Estufado",
+"quantidade": ["1 kg de rabo de boi cortado em pedaços","1 cebola grande picada","3 dentes de alho picados","400g de tomate pelado cortado em pedaços","2 cenouras cortadas em cubinhos","2 folhas de louro","1 raminho de salsa","4 cravinhos da Índia","1 haste de alecrim fresco","Azeite","Sal","Pimenta preta","Piri piri","500 ml de vinho tinto","1 litro de caldo de carne, de preferência caseiro"],
+"ingredientes": ["rabo de boi","cebola","alho","tomate","cenouras","louro","salsa","cravinhos da Índia","alecrim","azeite","vinho tinto","sal","pimenta preta","piri piri","caldo de carne"],
+"preparação": ["1. Numa panela de pressão, coloque azeite suficiente para cobrir o fundo.Deixe aquecer e junte o rabo de boi.Frite os pedaços de carne de ambos os lados até que ganhem cor.
+Retire a carne para um prato.","2. Ao azeite, junte a cebola e o alho. Mexa e deixe refogar até que a cebola fique vidrada.","3. Junte as folhas de louro e a polpa de tomate. Mexa e deixe refogar durante 2 minutos.","4. Junte novamente os pedaços de carne.Tempere com sal, tendo em conta que o caldo de carne já é salgado, pimenta preta e o piri piri.Junte os cravinhos da Índia, o raminho de salsa, o alecrim, a cenoura, o vinho tinto e 800 ml a 1 litro de caldo de carne, até que a carne fique submersa.Tape a panela de pressão e fecha-a.Depois de começar a ferver, deixe cozer em lume médio durante 1 hora.Caso não tenha a panela de pressão, pode fazer esta receita numa panela normal e cozer entre 2 a 3 horas em lume moderado.","5. Passado o tempo, abra a panela e verifique se a carne está cozida.Se a carne se soltar do osso, está no ponto. Caso seja necessário cozer mais a carne ou se o molho estiver muito seco, acrescente mais caldo de carne e deixe cozer mais um pouco sem a tampa. Podem acompanhar este prato com puré de batata, batata cozida, batata doce cozida, pirão ou polenta."],
+"porção":4,
+"tempo":"1 hora e 30 minutos"
+},
+
+{"id":59,
+"nome": "Empadas de Pato",
+"quantidade": ["1/2 pato grande cortado ao meio","100g de chouriço de carne cortado em pedaços",
+"75g de bacon fumado cortado em pedaços","1 cenoura","Metade de 1 cebola cortada ao meio","1 dente de alho","2 folhas de louro","1 raminho de salsa","Grãos de pimenta preta","5 cravinhos da Índia","Sal","1 cebola picada","2 colheres de sopa bem cheias de manteiga","2 colheres de sopa de farinha de trigo sem fermento","1 colher de chá rasa de raspa de laranja","600g de farinha de trigo tipo 55 sem fermento","150g de manteiga","2 ovos","1 ovo","Farinha para polvilhar"],
+"ingredientes": ["pato","chouriço de carne","bacon fumado","cenoura","cebola","alho","louro","salsa","pimenta preta","cravinhos da Índia","farinha","raspa de laranja","ovo"],
+"preparação": ["1. Reserve a gordura em excesso do pato.Com uma faca, retire a pele da perna e junte à gordura que reservou.Mantenha a pele do peito com a carne para fazer o caldo.","2. Numa panela com água a ferver, coloque a cenoura, a cebola cortada ao meio, o louro, os cravinhos da Índia, o alho, uma colher de chá de grãos de pimenta, a salsa, o bacon e o chouriço. Tempere com sal e junte o pato.Tape e deixe cozer aproximadamente 1 hora e meia até que o pato fique cozido.Se quiser, para que seja mais rápido, pode cozer o pato na panela de pressão. Depois do pato cozido, retire tudo com uma escumadeira para o prato.","3. Coe o caldo.","4. Entretanto, num tachinho, leve ao lume a gordura que reservou e deixe fritar em lume brando. Mexa de vez em quando e deixe fritar até que as peles derretam. Depois da gordura derretida, rejeite os pedaços e reserve o líquido.","5. Numa tigela, coloque os 150g de manteiga, 6 colheres de sopa da gordura do pato derretida e aos poucos, os 600g de farinha. Com a ponta dos dedos, misture bem.","6. Tempere com uma colher de chá de sal e adicione os 2 ovos partidos e aos poucos, 150 ml do caldo de cozer o pato. Amasse muito bem até que a massa fique homogénea e descole da tigela. Faça uma bola com a massa e embrulhe-a em película aderente.Guarde a massa no frigorífico enquanto prepara o resto da receita.","7. Na picadora, coloque o chouriço, a cenoura e o bacon sem o courato. Pique tudo. Coloque a mistura numa tigela. Limpe o pato de peles e de ossos, desfie a carne e junte-a ao chouriço.","8. Num tacho, leve ao lume uma colher de sopa de manteiga e a cebola picada. Mexa e deixe refogar sem deixar alourar.Depois da cebola bem refogada, junte 2 colheres de sopa de farinha e mexa muito bem.Enquanto mexe, adicione aos poucos 400 ml do caldo de cozer o pato. Quando começar a ferver, junte o pato desfiado e o picado do chouriço e do bacon.Misture muito bem. Retifique os temperos de sal e pimenta preta moída na hora. Por fim, misture a raspa de laranja. Mexa muito bem, retire e reserve.","9. Unte forminhas com manteiga.","10. Polvilhe a bancada com farinha. No centro, coloque a massa e polvilhe-a um pouco com farinha. Estenda a massa sem a deixar muito fina. Corte duas rodelas de massa, uma com um copo grande e outra com um copo mais pequeno. Forre muito bem as forminhas com as rodelas maiores. Por cima, coloque um pouco de recheio e acalque com uma colher. Cubra o recheio com a rodela pequena de massa e dobre as pontas da massa para dentro para fechar a empada. Repita o processo até acabar os ingredientes e coloque as forminhas num tabuleiro de ir ao forno.","11. Parta um ovo e mexa muito bem com um garfo. Pincele as empadas com o ovo batido.
+Se quiser, decore as empadas a gosto com a massa recortada e pincele novamente com o ovo.","12. Leve ao forno pré-aquecido nos 180ºC e deixe cozer aproximadamente 35 minutos. Depois das empadas cozidas e lourinhas, retire-as e desenforme."],
+"porção":4,
+"tempo":"3 horas"
+},
+
+{"id":60,
+"nome": "Bife com Molho Madeira e Cogumelos",
+"quantidade": ["2 bifes do lombo ou da vazia","180g de cogumelos Portobello fatiados","2 dentes de alho esmagados com casca","1 folha de louro","50g de manteiga","1 cebola pequena picada","125 ml de vinho da Madeira","180 ml de caldo de carne","15g de farinha de trigo sem fermento (1 colher de chá cheia)","1 colher de chá de molho inglês","sal q.b.","pimenta q.b."],
+"ingredientes": ["bifes","cogumelos","alho","louro","manteiga","cebola","vinho da Madeira","farinha de trigo","molho inglês","sal","pimenta","caldo de carne"],
+"preparação": ["1. Comece por fazer o molho. Num tachinho, leve ao lume metade da manteiga e a cebola. Mexa e deixe refogar até que a cebola fique lourinha.","2. Ao refogado, junte a farinha e mexa muito bem. Aos poucos e enquanto mexe, adicione o caldo de carne, o molho inglês e o vinho da Madeira. Logo que comece a ferver, retire. Coe o molho numa rede fina.","3. Tempere a carne com um pouco de sal, tendo em conta que o molho já é salgado e pimenta. Numa frigideira, leve ao lume a restante manteiga, os alhos e o louro. Deixe aquecer muito bem.","4. Frite os bifes de ambos os lados, entre 1 a 4 minutos de cada lado, conforme queira mal, médio ou bem passado. Depois dos bifes fritos, retire-os para um prato com papel absorvente e rejeite o alho e o louro.","5. À gordura que ficou, junte os cogumelos e salteie até que percam a água. Por fim, junte o molho e deixe apurar em lume brando aproximadamente 2 minutos. Sirva os bifes com o molho por cima e acompanhados de batata frita."],
+"porção":2,
+"tempo":"15 minutos"
+},
+
+{"id":61,
+"nome": "Carne de Vaca Guisada com Esparguete",
+"quantidade": ["600g de carne de vaca para estufar cortada em cubos","320g de esparguete","Azeite","1 cebola picada","4 dentes de alho picados","1 folha de louro","200g de tomate pelado","6 colheres de sopa bem cheias de polpa de tomate","2 cenouras cortadas em cubinhos","250 ml de vinho branco","1 colher de chá de folhas de orégãos secas","Sal","Pimenta preta"],
+"ingredientes": ["carne de vaca","esparguete","azeite","cebola","alho","louro","tomate","polpa de tomate","cenouras","vinho branco","orégãos","sal","pimenta preta"],
+"preparação": ["1. Num tacho largo, leve ao lume 3 colheres de sopa de azeite, a cebola, o alho e o louro. Mexa e deixe refogar um pouco.","2. Ao refogado, junte a carne. Tempere com sal e pimenta. Mexa e deixe fritar até que a carne ganhe cor.","3. Adicione o tomate pelado e a polpa de tomate. Mexa e deixe cozinhar durante 5 minutos.","4. Passado o tempo, junte o vinho branco e meio litro de água quente. Tape e deixe cozer em lume médio durante 40 minutos. Caso seja necessário, a meio do tempo, adicione água.","5. Passado o tempo, junte a cenoura e mais meio litro de água quente. Tape e deixe cozinhar durante 15 minutos.",
+"6. Passados os 15 minutos e quando a carne estiver cozida, junte o esparguete e mexa muito bem com um garfo até que a massa amoleça. Caso seja necessário, acrescente mais um pouco de água quente. Deixe cozer aproximadamente 10 minutos até que a massa fique al dente.","7. Por fim, apague o lume e polvilhe tudo com os orégãos secos."],
+"porção":4,
+"tempo":"1 hora e 20 minutos"
+},
+
+{"id":62,
+"nome": "Frango com Ervilhas e Ovos Escalfados",
+"quantidade": ["1 kg de frango do campo cortado em pedaços","800g de ervilhas congeladas ou frescas","5 ovos","100g de linguiça cortada em rodelas","60g de bacon cortado em tirinhas","1 cebola picada","400g de tomate pelado cortado em pedaços","3 dentes de alho picados","2 folhas de louro","2 colheres de sopa de polpa de tomate","300 ml de vinho branco","1 raminho de salsa","Azeite","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["frango","ervilhas","ovos","linguiça","bacon","cebola","tomate","alho","louro","polpa de tomate","vinho branco","salsa","azeite","sal","pimenta"],
+"preparação": ["1. Tempere o frango com sal e pimenta. Envolva bem.","2. Num tacho largo, leve ao lume 3 colheres de sopa de azeite, a cebola, os alhos e as folhas de louro. Deixe refogar até que a cebola fique vidrada.","3. Ao refogado, junte o bacon e a linguiça. Mexa e deixe aquecer.","4. Adicione o frango e deixe cozinhar em lume forte até que a carne ganhe cor. Junte o tomate pelado e a polpa de tomate. Mexa, tape e deixe cozinhar entre 5 a 10 minutos até que tudo fique bem refogado.","5. Passado o tempo, junte a salsa, o vinho branco, as ervilhas e ½ litro de água a ferver. Tape e deixe cozinhar entre 25 a 30 minutos, até que tudo fique cozido.","6. Passado o tempo, retire os pedaços de frango para um prato e reserve. Retire também a salsa e o louro.","7. Às ervilhas, junte os ovos partidos com espaço entre si. Tape e deixe cozinhar aproximadamente 3 minutos até que os ovos fiquem escalfados. Passado o tempo, junte novamente o frango às ervilhas e sirva."],
+"porção":5,
+"tempo":"1 hora"
+},
+
+
+{"id":63,
+"nome": "Carpaccio de Carne",
+"quantidade": ["400g de lombo de novilho","Queijo parmesão","Sal","Pimenta","Azeite","Sumo de limão","Mostarda","Vinagre balsâmico em glacê","Rúcula","Película aderente"],
+"ingredientes": ["lombo de novilho","queijo parmesão","sal","pimenta","azeite","sumo de limão","mostarda","vinagre balsâmico","rúcula","película aderente"],
+"preparação": ["1. Embrulhe a carne em película aderente de forma que fique um rolo compacto. Guarde no congelador entre 3 a 4 horas até que a carne fique quase congelada.","2. Na hora de servir, regue um prato grande e liso com um pouco de azeite. Desembrulhe a carne e com uma faca afiada corte às fatias o mais finas que conseguir.","3. Espalhe as fatias de carne no prato com algum espaço entre elas. Regue a carne com um fio de azeite e tape o prato com película aderente. Com uma espátula, pressione bem a carne para que esta fique um pouco mais fina.
+Retire a película.","4. Tempere o carpaccio com sal e pimenta, moídos na hora. Tempere com azeite e sumo de limão. Com um descascador de legumes corte o queijo parmesão em lascas finas e espalhe por cima da carne.","5. À volta do prato, espalhe gotas de vinagre balsâmico e mostarda.
+Por fim, no centro, coloque um pouco de rúcula. Repita o processo até acabar os ingredientes ou se quiser, guarde a restante carne para outra vez."],
+"porção":6,
+"tempo":"5 mminutos + 3 horas"
+},
+
+{"id":64,
+"nome": "Frango Recheado com Alheira, Maçã e Frutos Secos",
+"quantidade": ["1 frango do campo inteiro","3 folhas de louro","80 ml de vinho Moscatel","125 ml de vinho branco","1 maçã reineta cortada em pedacinhos e regada com sumo de 1/2 limão","1 colher de sopa de banha","3 dentes de alho esmagados","Sal q.b.","Pimenta q.b.","3 colheres de sopa de azeite","1 colher de café de alho picado","1 alheira sem pele cortada em pedacinhos","200g de côdea de broa de milho","2 colheres de sopa de pinhões","2 colheres de sopa de sultanas douradas","2 colheres de sopa de nozes partidas em pedaços"],
+"ingredientes": ["frango","louro","vinho Moscatel","vinho branco","maçã","banha","sal","pimenta","azeite","alheira","broa de milho","pinhões","sultanas douradas","nozes"],
+"preparação": ["1. Num processador, triture a côdea de broa.","2. Numa frigideira, leve ao lume o azeite e o alho picado. Mexa e junte a alheira. Salteie bem até que a alheira sem desfaça.","3. Adicione os frutos secos e a maçã. Salteie tudo durante 2 minutos. Por fim, adicione a broa e salteie mais um pouco.","4. Num tabuleiro de ir ao forno, tempere o frango por igual com sal e pimenta. Vire o frango com os peitos para cima e coloque o recheio no seu interior. Enquanto introduz o recheio, acalque bem com uma colher. Feche o frango com palitos ou com fio de cozinha.","5. À volta do frango, coloque os alhos esmagados e o louro. Por cima, coloque a banha e o vinho Moscatel. Por fim, à volta, regue com o vinho branco. Deixe tomar gosto durante 10 minutos.","6. Leve ao forno pré-aquecido nos 190ºC e deixe assar durante 1 hora e 30 minutos. De vez em quando, regue o frango com o próprio molho. Depois do frango cozinhado e lourinho, retire-o."],
+"porção":6,
+"tempo":"1 hora e 45 minutos"
+},
+
+{"id":65,
+"nome": "Arroz de Frango no Forno",
+"quantidade": ["1/2 frango do campo cortado ao meio","100g de chouriço de carne","100g de bacon","2 cenouras pequenas","2 tomates maduros cortados em cubos","2 talos de aipo","1 cebola cortada ao meio","6 cravinhos da Índia","1 colher de chá de grãos de pimenta preta","2 folhas de louro","Sal","320g de arroz"],
+"ingredientes": ["frango","chouriço de carne","bacon","cenoura","tomate","aipo","cebola","cravinhos da Índia","pimenta preta","louro","sal","arroz"],
+"preparação": ["1. Numa panela com água a ferver, coloque sal, a pimenta, os cravinhos, o louro, a cebola, as cenouras, o aipo, o tomate, o chouriço e o bacon. Quando começar a ferver, junte o frango. Tape e deixe cozer entre 50 minutos a 1 hora até que o frango fique tenro.
+Depois do frango cozido, retire-o com uma escumadeira para uma travessa.","2. Coe o caldo e reserve 800 ml. Num tacho, coloque os 800 ml de caldo e logo que comece a ferver, junte o arroz.
+Mexa, tape e deixe cozer em lume médio até que o caldo evapore.","3. Corte o bacon em fatias grossas e o chouriço em rodelas. Limpe o frango de peles e de ossos e desfie.","4. Depois do arroz cozido, espalhe metade num tabuleiro de ir ao forno. Por cima, espalhe o frango e cubra tudo com o restante arroz. Por cima, espalhe os pedaços de bacon e as rodelas de chouriço.
+Leve ao forno pré-aquecido nos 190ºC e deixe alourar aproximadamente 25 minutos.","5. Depois do arroz lourinho, retire e sirva."],
+"porção":5,
+"tempo":"2 horas"
+},
+
+{"id":66,
+"nome": "Alheira de Mirandela Tradicional",
+"quantidade": ["2 alheiras","2 ovos","1/2 molho de grelos de nabo lavados","2 batatas com casca","3 colheres de sopa de azeite","1 dente de alho com casca esmagado","Sal"],
+"ingredientes": ["alheira","ovo","molho de grelos","batata","azeite","aipo","alho","sal"],
+"preparação": ["1. Numa panela com água a ferver, coloque sal e os grelos. Acalque com uma escumadeira. Tape e deixe cozer durante 20 minutos. Passado o tempo, escorra os grelos.","2. Entretanto, coza as batatas. Num tachinho com água, coloque sal e as batatas a cozer durante 20 minutos. Passado o tempo, retire as batatas. Corte as batatas em rodelas grossas.","3. Pique as alheiras por igual com um garfo. Numa frigideira, leve ao lume o azeite e as alheiras. Deixe fritar em lume brando durante 25 minutos. A meio do tempo, vire as alheiras para que fiquem fritas por igual. Passados os 25 minutos, retire as alheiras com uma escumadeira para um prato de servir.","4. No azeite que ficou, estrele os ovos e tempere-os com umas pedrinhas de sal.
+Depois de fritos, retire os ovos para os pratos.","5. Ao azeite que ficou, junte o alho esmagado e deixe aquecer um pouco. Junte as rodelas de batata e salteie. Depois das batatas lourinhas, retire-as com uma escumadeira para o prato.","6. Antes de saltear os grelos, retire o excesso de gordura da frigideira. Salteie os grelos na frigideira. Sirva a alheira com os acompanhamentos e se quiser, com broa de milho."],
+"porção":2,
+"tempo":"40 minutos"
+},
+
+{"id":67,
+"nome": "Caldo de Carne Caseiro",
+"quantidade": ["400g de carne de vaca para cozer com osso cortada em pedaços","2 cenouras com casca cortadas em pedaços","1 cebola grande com casca cortada em pedaços","1/2 alho francês cortado em pedaços","1 ramo de aipo cortado em pedaços","2 folhas de louro","1 raminho de salsa","1 raminho de cebolinho","1 colher de sopa de polpa de tomate","1 colher de chá de sal","12 grãos de pimenta preta"],
+"ingredientes": ["carne de vaca","cenoura","cebola","alho francês","aipo","louro","salsa","cebolinho","polpa de tomate","sal","pimenta preta"],
+"preparação": ["1. Numa panela grande com 4 litros de água, coloque o sal, a pimenta, o louro, a salsa, o cebolinho, o aipo, a cenoura, o alho francês, a cebola, a polpa de tomate e a carne.
+Tape e deixe cozer entre 3 horas a 3 horas e meia, até que o caldo reduz para metade.","2. Passado o tempo, coe o caldo.","3. Divida o caldo por caixas com aproximadamente 200 ml cada ou por cuvetes de gelo. Guarde no frigorífico até 3 dias ou congele."],
+"porção":2,
+"tempo":"3 horas e 30 minutos"
+},
+
+{"id":68,
+"nome": "Lombinho de Porco no Tacho com Molho",
+"quantidade": ["1 lombinho de porco","1 colher de sopa bem cheia de banha","1 cebola grande picada","2 folhas de louro","1 colher de chá de molho inglês","caldo de carne","150 ml de vinho tinto","sal q.b.","pimenta q.b."],
+"ingredientes": ["lombinho de porco","banha","cebola","louro","molho inglês","caldo de carne","vinho tinto","sal","pimenta"],
+"preparação": ["1. Tempere a carne por igual com sal e pimenta.","2. Num tacho largo, leve ao lume a banha e deixe aquecer bem. Frite a carne por igual até que fique lourinha.","3. Depois de lourinha, retire a carne para um prato e à gordura que ficou, junte a cebola e o louro. Mexa e deixe refogar até alourar.","4. Junte novamente a carne e adicione o molho inglês, o vinho tinto e um pouco de caldo de carne. Tape e deixe cozinhar durante 20 minutos. De 5 em 5 minutos, vire a carne e conforme o molho vá secando, adicione mais caldo.","5. Passados os 20 minutos, retire a carne para uma travessa. Retire as folhas de louro e com a varinha mágica, triture o molho. Deixe ferver e retire do lume."],
+"porção":4,
+"tempo":"40 minutos"
+},
+
+{"id":69,
+"nome": "Codornizes Fritas com Moscatel e Alecrim",
+"quantidade": ["4 codornizes cortadas ao meio","4 colheres de sopa de azeite","1 cebola roxa grande cortada em rodelas meia lua","1 malagueta cortada em rodelas","2 dentes de alho picados","125 ml de moscatel","80 ml de vinho branco","Sumo de limão","Flor de sal q.b","Raminho de alecrim"],
+"ingredientes": ["codornizes","azeite","cebola","malagueta","alho","moscatel","vinho branco","flor de sal","alecrim"],
+"preparação": ["1. Tempere as codornizes de ambos os lados com flor de sal.","2. Numa frigideira, leve ao lume o azeite e deixe aquecer bem. Frite as codornizes de ambos os lados até que fiquem lourinhas. Depois de ganharem cor, retire-as para uma travessa.","3. Ao azeite que ficou, junte o alho, a cebola, a malagueta e o alecrim. Deixe refogar bem.","4. Quando a cebola começar a amolecer, junte novamente as codornizes, o vinho branco e o moscatel. Tape e deixe cozinhar em lume médio durante 10 minutos. A meio do tempo, vire as codornizes. Caso o molho seque muito, adicione mais um pouco de vinho branco.","5. Passado o tempo, destape e regue com sumo de limão. Mexa e retire."],
+"porção":4,
+"tempo":"xxxx"
+},
+
+{"id":70,
+"nome": "Corações de Galinha Salteados com Presunto",
+"quantidade": ["800g de corações de galinha, com a gordura em excesso retirada","2 colheres de sopa de azeite","4 dentes de alho picados","1 folha de louro cortada ao meio","60g de presunto magro cortado em cubinhos","100 ml de vinho branco","Piri piri a gosto","Flor de sal q.b.","Salsa picada","1/2 limão"],
+"ingredientes": ["galinha","azeite","alho","louro","presunto","piri piri","vinho branco","flor de sal","limão"],
+"preparação": ["1. Numa frigideira, leve ao lume o azeite e os alhos. Mexa e deixe aquecer.","2. Adicione o louro e o presunto. Mexa e junte os corações de galinha. Tempere com flor de sal e piri piri a gosto. Deixe saltear bem, aproximadamente 10 minutos em lume forte até que os corações fiquem lourinhos.","3. Depois de tudo bem salteado, junte o vinho branco e deixe ferver até que fique apurado.","4. Por fim, regue tudo com sumo de limão e misture a salsa picada. Retire e sirva."],
+"porção":6,
+"tempo":"25 minutos"
+},
+
+{"id":71,
+"nome": "Entrecosto de Cebolada",
+"quantidade": ["1 kg de teclado de entrecosto, separado pelos ossos","2 colheres de chá de massa de pimentão","8 dentes de alho esmagados","Sal q.b.","Piri piri q.b.","3 folhas de louro cortadas ao meio","2 colheres de sopa de banha de porco","3 cebolas cortadas em rodelas meia-lua","300 ml de vinho branco","2 colheres de sopa de vinagre de vinho branco"],
+"ingredientes": ["entrecosto","massa de pimentão","alho","sal","louro","piri piri","banha de porco","cebola","vinho branco","vinagre de vinho branco"],
+"preparação": ["1. Numa tigela, coloque a carne, a massa de pimentão e caso seja necessário, um pouco de sal (caso a massa de pimentão seja caseira, não coloque sal), os alhos, o piri piri e as folhas de louro. Envolva tudo muito bem. Regue com o vinho branco e deixe marinar durante 30 minutos.","2. Numa frigideira larga ou num tacho, leve ao lume a banha e deixe derreter. Junte a carne, os alhos e o louro bem escorrido. Reserve a marinada. Deixe fritar em lume forte, aproximadamente 15 minutos até que a carne fique lourinha por igual.","3. Passado o tempo, junte a cebola e misture bem. Deixe fritar até que a cebola fique vidrada.","4. Adicione a marinada e deixe fritar aproximadamente 15 minutos, até que a carne fique tenrinha e comece a soltar-se do osso. Caso seja necessário, acrescente mais um pouco de vinho branco.","5. Por fim, regue com o vinagre, misture e retire do lume."],
+"porção":4,
+"tempo":"70 minutos"
+},
+
+{"id":72,
+"nome": "Almôndegas de Frango com Molho Pesto de Amêndoas",
+"quantidade": ["500g de peito de frango picado","3 salsichas frescas de aves","1 ovo","pão ralado",",salsa picada","2 colheres de sopa de manteiga","1 dente de alho picado","4 colheres de sopa de miolo de amêndoa","1 chávena de chá de folhas de manjericão frescas","150 ml de azeite","80g de queijo parmesão cortado em pedaços","1 colher de sopa de azeite","350g de esparguete"],
+"ingredientes": ["peito de frango","salsicha","ovo","pão ralado","salsa","manteiga","alho","amêndoa","manjericão","azeite","queijo parmesão","azeite","esparguete"],
+"preparação": ["1. Numa frigideira pequena, leve ao lume a manteiga e o alho. Deixe derreter e retire.","2. Dê um golpe nas salsichas frescas e junte o recheio ao frango. Tempere com um pouco de sal e adicione a salsa picada, o ovo e 3 colheres de sopa bem cheias de pão ralado. Com uma colher, misture tudo muito bem. Caso seja necessário, acrescente mais pão ralado para que a carne não cole nas mãos.","3. Na mão, coloque um pouco de pão ralado, uma colher de sopa de carne e polvilhe com mais um pouco de pão ralado. Molde as almôndegas e coloque-as num tabuleiro de ir ao forno.","4. Regue as almôndegas com a manteiga derretida. Por cima, espalhe 2 colheres de sopa de amêndoas.","5. Leve ao forno pré-aquecido nos 190ºC e deixe assar durante 25 minutos.","6. Entretanto, prepare o molho pesto. Num copo alto, coloque as restantes amêndoas, o queijo parmesão, o manjericão, umas pedrinhas de sal e o azeite. Triture tudo com a varinha mágica. Caso o molho esteja muito espesso, adicione mais um pouco de azeite.","7. Numa panela grande com água a ferver, coloque sal e a colher de sopa de azeite. Junte o esparguete, mexa com um garfo e deixe cozer o tempo indicado na embalagem. Depois do esparguete cozido, escorra-o. Passe-o por um pouco de água fria para que não cole e não coza mais.","8. Depois das almôndegas loirinhas, retire-as do forno. Sirva as almôndegas com o esparguete e com o molho pesto."],
+"porção":5,
+"tempo":"35 minutos"
+},
+
+{"id":73,
+"nome": "Dobrada com Feijão Branco",
+"quantidade": ["800g de dobrada lavada em várias águas","550g de feijão branco cozido","80 ml de azeite","1 cebola picada","4 dentes de alho picados","4 folhas de louro cortadas ao meio","70g de bacon cortado em cubinhos","100g de chouriço de carne cortado em cubinhos","400g de tomate pelado cortado em cubos","4 cenouras pequenas cortadas em rodelas","200 ml de vinho branco","Molho piri-piri","1 colher de sopa de polpa de tomate","Sal q.b.","Salsa picada"],
+"ingredientes": ["dobrada","feijão branco","azeite","cebola","louro","bacon","chouriço de carne","tomate","cenoura","vinho branco","piri piri","polpa de tomate","salsa","sal"],
+"preparação": ["1. Numa panela de pressão com água, coloque metade do louro, sal e a dobrada.
+Tape bem a panela e deixe cozer durante 1 hora.","2. Passado o tempo, abra a panela e retire a dobrada. Reserve o caldo. Corte a dobrada em pedacinhos e reserve.","3. Num tacho largo leve ao lume o azeite, a cebola, o alho e o restante louro. Mexa e logo que aqueça, adicione o chouriço e o bacon. Mexa e deixe refogar muito bem.","4. Ao refogado, junte o tomate pelado. Mexa e deixe refogar mais um pouco até que seque.","5. Adicione a dobrada, a polpa de tomate, o piri-piri, o vinho branco, a cenoura, umas pedrinhas de sal e 650 ml de caldo de cozer a dobrada. Mexa, tape e deixe cozinhar em lume forte durante 5 minutos.","6. Passados os 5 minutos, misture o feijão. Tape novamente e deixe cozinhar aproximadamente 15 minutos até que o molho fique apurado.","7. Por fim, misture a salsa e retire do lume. Sirva acompanhado com arroz branco."],
+"porção":5,
+"tempo":"1 hora e 30 minutos"
+},
+
+{"id":74,
+"nome": "Strogonoff de Vaca e Cogumelos",
+"quantidade": ["600g de bifes de vaca cortados em tiras","250g de cogumelos frescos laminados","1 colher de sopa bem cheia de manteiga","1 colher de sopa de mostarda","1,5 colher de sopa de ketchup","1 colher de sopa de molho inglês","60 ml de whisky ou brandy","300 ml de natas","2 colheres de sopa de salsa picada","Sal q.b.","Pimenta preta q.b."],
+"ingredientes": ["bifes de vaca","cogumelos","manteiga","mostarda","ketchup","molho inglês","whisky","brandy","natas","salsa","sal","pimenta preta"],
+"preparação": ["1. Tempere a carne com umas pedrinhas de sal, (tendo em conta que alguns ingredientes já são salgados) e pimenta. Envolva bem o tempero.","2. Numa frigideira grande, leve ao lume a manteiga e deixe aquecer bem. Frite a carne por igual em lume forte até que ganhe cor. Logo que ganhe cor, retire a carne com uma escumadeira.","3. Ao molho que ficou, junte o molho inglês e o whisky. Mexa e deixe ferver durante 30 segundos para que o álcool evapore.","4. Misture a mostarda e o ketchup até que o molho fique homogéneo.Adicione as natas e misture bem. Junte os cogumelos e mexa. Deixe cozinhar em lume médio durante 5 minutos.","5. Passado o tempo, junte novamente a carne e por fim, adicione a salsa. Envolva muito bem e deixe aquecer. Logo que comece a ferver, retire e sirva."],
+"porção":4,
+"tempo":"15 minutos"
+},
+
+{"id":75,
+"nome": "Peito de Frango com Chutney de Manga e Maracujá",
+"quantidade": ["4 peitos grandes de frango","2 dentes de alho laminados","1 lima","Sal q.b.","Pimenta q.b.","100g de manteiga cortada em cubinhos","1 cebola picada finamente","350g de manga cortada em cubos","2 maracujás roxos cortados ao meio","1 colher de sopa de açúcar mascavado","2 colheres de sopa de vinagre de vinho branco","1 colher de café de gengibre em pó","1 cravinho-da-Índia","1 malagueta cortada em rodelas"],
+"ingredientes": ["frango","alho","lima","sal","pimenta","manteiga","cebola","manga","maracujá","açúcar mascavado","vinagre de vinho branco","gengibre","cravinho-da`-Índia","malagueta"],
+"preparação": ["1. Num tabuleiro de ir ao forno, coloque os peitos de frango. Tempere-os de ambos os lados com sal, pimenta, alho e o sumo de lima. Mantenha os peitos virados para cima e por cima de cada peito, coloque um cubinho de manteiga. Deixe tomar gosto durante 10 minutos.","2. Entretanto, faça o chutney. Num tachinho, leve ao lume a restante manteiga.
+Logo que esteja derretida, junte a cebola e a malagueta. Deixe refogar durante 1 minuto.","3. Quando a cebola começar a ficar vidrada, adicione o gengibre em pó, o cravinho-da-Índia e o açúcar. Mexa muito bem e tempere com sal. Junte a polpa dos maracujás, a manga, o vinagre e 80 ml de água. Mexa, tape e deixe cozinhar em lume brando durante 40 minutos.","4. Leve o frango ao forno pré-aquecido nos 190ºC e deixe assar aproximadamente 35 minutos. Quando o frango estiver cozinhado e lourinho, retire-o.","5. Passados os 40 minutos e quando o chutney estiver espesso, retire-o. Sirva o frango cortado em fatias com o chutney de manga e maracujá. Acompanhe este prato com batata frita e brócolos cozidos."],
+"porção":4,
+"tempo":"50 minutos"
+},
+
+{"id":76,
+"nome": "Massa Chinesa com Frango e Camarão",
+"quantidade": ["250g de noodles sem sabor","3 colheres de sopa de óleo de sésamo ou óleo de girassol","350g de bifes de frango cortados em tiras","200g de camarão descongelado e descascado","80g de ervilhas","1 dente de alho picado","150g de cogumelos laminados","1/2 pimento laranja cortado em tiras finas","1 cenoura ralada","200g de rebentos de soja","1/2 cebola grande laminada","4 colheres de sopa de molho de soja","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["noodles","óleo de sésamo","óleo de girassol","frango","camarão","ervilhas","alho","cogumelos","pimento laranja","cenoura","rebentos de soja","cebola","molho de soja","sal","pimenta"],
+"preparação": ["1. Tempere o frango com sal e pimenta. Envolva bem.","2. Com uma faca, dê um golpe nos camarões e retire-lhes a tripa. Tempere os camarões com sal e pimenta. Envolva bem.","3. Num tachinho com água a ferver, tempere com um pouco de sal. Coloque as ervilhas a cozer aproximadamente 15 minutos.","4. Entretanto coza a massa. Numa panela com bastante água a ferver, coloque sal e a massa. Deixe cozer durante 2 minutos. Logo que a massa amoleça, mexa muito bem com um garfo. Passados os 2 minutos, escorra a massa e passe-a por bastante água fria. Depois das ervilhas cozidas, escorra-as.","5. Num wok, leve ao lume o óleo e deixe aquecer bem. Junte o frango e salteie até que ganhe cor. Adicione o alho, a cebola e o pimento. Deixe saltear até que o pimento e a cebola amoleçam.","6. Ao salteado, junte o camarão e os cogumelos. Salteie até que o camarão ganhe cor.","7. Junte a cenoura, os rebentos de soja e as ervilhas. Regue tudo com o molho de soja e salteie durante 2 minutos.","8. Por fim, adicione a massa e salteie muito bem até que a aqueça. E está pronto a servir."],
+"porção":4,
+"tempo":"30 minutos"
+},
+
+{"id":77,
+"nome": "Peru Gratinado com Batata Doce e Legumes",
+"quantidade": ["600g de peito de peru cortado em cubinhos","700g de batata doce cortada em cubinhos","A parte branca de um alho francês cortada em rodelas finas","300g de cogumelos frescos cortados em quartos","2 cenouras raladas","4 colheres de sopa de azeite","40g de amido de milho","1/2 cebola pequena picada","1 folha de louro cortada ao meio","Noz-moscada q.b.","Folhas de orégãos secas q.b.","800 ml de leite","100g de queijo mozarela ralado","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["peito de peru","batata doce","alho francês","cogumelos","cenoura","azeite","amido de milho","cebola","louro","noz-moscada","orégãos","leite","queijo mozarela","sal","pimenta"],
+"preparação": ["1. Tempere a carne com sal e pimenta. Envolva bem o tempero com a carne.","2. Numa panela com água a ferver, coloque sal e a batata doce. Tape e deixe cozer entre 5 a 8 minutos. Logo que a batata doce fique tenrinha, escorra-a.","3. Dissolva o amido de milho com um pouco de leite.","4. Numa panela leve ao lume a cebola com uma colher de sopa de azeite. Mexa e deixe refogar sem deixar alourar. Ao refogado, adicione o leite e deixe ferver. Quando levantar fervura, adicione o amido de milho ao leite e mexa energeticamente. Tempere com sal, pimenta e noz-moscada ralada. Caso o molho esteja muito espesso, adicione mais um pouco de leite. Retire e reserve.","5. Num tacho grande leve ao lume o restante azeite e o alho francês. Mexa e deixe refogar até que amoleça. Ao refogado, misture a carne. Deixe fritar por igual até que ganhe cor.","6. Junte o louro, os cogumelos, a cenoura e os orégãos. Misture muito bem. Tape e deixe cozinhar em lume forte durante 5 minutos. Passados os 5 minutos, misture a batata doce e metade do molho branco.","7. Retire as folhas de louro e coloque num tabuleiro de ir ao forno. Alise com uma espátula e por cima, espalhe o restante molho. Por fim, polvilhe tudo com o queijo.","8. Leve ao forno pré-aquecido nos 180ºC e deixe gratinar aproximadamente 20 minutos. Logo que esteja lourinho, retire. E está pronto a servir."],
+"porção":6,
+"tempo":"1 hora"
+},
+
+{"id":78,
+"nome": "Feijoada de Frango do Campo",
+"quantidade": ["1/2 frango do campo grande, cortado em pedaços","2 dentes de alho picados","2 folhas de louro cortadas ao meio","1 colher de sopa bem cheia de azeite","1 cebola grande picada","60g de bacon fumado cortado em pedacinhos","100g de chouriço de carne cortado em rodelas","400g de tomate pelado cortado em pedaços","1 cenoura grande cortada em rodelas","4 folhas de couve lombarda cortadas em tiras","125 ml de vinho branco","650g de feijão branco cozido","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["frango","alho","louro","azeite","cebola","bacon","chouriço de carne","tomate","cenoura","couve lombarda","vinho branco","feijão branco","sal","pimenta"],
+"preparação": ["1. Tempere o frango com sal e pimenta. Envolva bem.","2. Num tacho largo, leve ao lume o azeite, a cebola, o alho, o bacon e as folhas de louro. Mexa e deixe refogar bem.","3. Ao refogado, junte o chouriço e salteie um pouco. Adicione os pedaços de frango. Mexa e deixe fritar por igual até que a carne ganhe cor.","4. Junte o tomate pelado. Mexa e deixe cozinhar em lume forte, aproximadamente 10 minutos. Quando o tomate estiver refogado, junte o vinho branco e aproximadamente ½ litro de água a ferver. Mexa, tape e deixe cozinhar durante 10 minutos.","5. Passado o tempo, junte a cenoura, a couve e o feijão branco. Se for necessário, acrescente mais um pouco de água. Tape e deixe cozer em lume médio durante 15 minutos. Caso não goste do feijão muito cozido, coloque-o apenas nos últimos 7 minutos.","6. Passado o tempo, apague o lume e deixe repousar 5 minutos antes de servir. Acompanhe este prato com arroz branco."],
+"porção":5,
+"tempo":"1 hora"
+},
+
+{"id":79,
+"nome": "Entremeada Assada com Molho de Leitão",
+"quantidade": ["1,4 kg de entremeada inteira","4 dentes de alho","1 colher de chá de sal","1 colher de café de louro em pó","Pimenta preta q.b.","2 colheres de sopa de banha de porco","Vinho branco","Laranja cortada em rodelas"],
+"ingredientes": ["entremeada","alho","sal","louro","pimenta preta","banha","vinho branco","laranja"],
+"preparação": ["1. Corte os dentes de alho em pedaços e coloque-os num almofariz. Junte o sal, o louro em pó e bastante pimenta preta moída na hora.","2. Esmague muito bem até que fique uma pasta. Aos poucos, misture a banha. Barre a entremeada por igual com o tempero. Deixe tomar gosto durante 2 horas.","3. Insira uma grelha dentro de um tabuleiro de ir ao forno de preferência de barro. Por cima, coloque a entremeada com o courato virado para cima. Regue a entremeada com um copo de vinho.","4. Leve ao forno pré-aquecido nos 180ºC e deixe assar durante 2 horas. A cada 20 minutos, regue a entremeada com um pouco de vinho branco. Passadas as 2 horas, regue pela última vez com o vinho branco e leve novamente ao forno entre 30 a 40 minutos até que o courato fique estaladiço e o molho apurado.","5. Passado o tempo, retire e sirva acompanhado do molho, rodelas de laranja, batata frita às rodelas e salada"],
+"porção":6,
+"tempo":"4 horas e 50 minutos"
+},
+
+{"id":80,
+"nome": "Bifes de Peru de Cebolada",
+"quantidade": ["4 bifes de peru grandes e grossos","4 colheres de sopa de azeite","2 cebolas grandes cortadas em rodelas","3 dentes de alho cortados em rodelas","2 folhas de louro cortadas ao meio","1 raminho de alecrim","2 colheres de sopa de polpa de tomate","125 ml de vinho branco","150 ml de caldo de galinha caseiro","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["peru","cebola","alho","azeite","louro","alecrim","polpa de tomate","vinho branco","caldo de galinha","sal","pimenta"],
+"preparação": ["1. Tempere os bifes de ambos os lados com sal e pimenta.","2. Numa frigideira leve ao lume o azeite e deixe aquecer bem. Quando o azeite estive bem quente frite os bifes 30 segundos de cada lado apenas para ganharem cor. Passado o tempo, retire os bifes para um prato.","3. Ao azeite que ficou, adicione a cebola, o alho, o louro e o alecrim. Salteie a cebola até que amoleça.","4. Junte a polpa de tomate, o vinho branco, o caldo e 200 ml de água. Mexa e adicione novamente os bifes.Deixe cozinhar em lume médio 5 minutos de cada lado.","5. Passado o tempo e quando o molho estiver apurado está pronto a servir. Acompanhe este prato com puré de batata e legumes cozidos a gosto."],
+"porção":4,
+"tempo":"15 minutos"
+},
+
+{"id":81,
+"nome": "Frango Guisado",
+"quantidade": ["1 frango com cerca de 1,5 kg cortado em pedaços","4 dentes de alho picados","4 colheres de sopa de azeite","1 cebola grande picada","2 folhas de louro cortadas ao meio","390g de tomate pelado em pedaços","3 colheres de sopa de polpa de tomate","200 ml de vinho branco","3 cenouras cortadas em rodelas","2 colheres de sopa de salsa picada","600 ml de caldo de galinha","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["frango","alho","azeite","cebola","louro","tomate","polpa de tomate","vinho branco","cenoura","salsa","caldo de galinha","sal","pimenta"],
+"preparação": ["1. Numa tigela, tempere o frango com sal e pimenta. Adicione os alhos e o louro. Envolva bem o tempero e deixe tomar gosto durante 30 minutos.","2. Num tacho largo leve ao lume o azeite e a cebola. Mexa e deixe refogar até que a cebola fique vidrada.","3. Junte o frango. Deixe cozinhar por igual em lume forte até que a carne ganhe cor.","4. Ao frango junte o tomate pelado, a polpa de tomate e a salsa picada. Misture, tape e deixe cozinhar durante 5 minutos.","5. Passado o tempo junte a cenoura, o vinho branco e o caldo de galinha. Mexa, tape e deixe cozinhar em lume forte durante 30 minutos.","6. Passados os 30 minutos, quando o frango estiver cozido e o molho apurado, está pronto a servir."],
+"porção":5,		
+"tempo":"1 hora e 30 minutos"
+},
+
+{"id":82,
+"nome": "Almôndegas Recheadas no Forno",
+"quantidade": ["700g de carne de vaca picada","1 cebola picada finamente","2 dentes de alho picados","40g de chouriço de carne picado","3 colheres de sopa de pão ralado","1 ovo","Salsa picada","125g de queijo flamengo ou mozarela cortado em cubos","200g de bacon fatiado","Sal q.b.","Pimenta q.b.","1/2 colher de café de louro em pó","Palitos","1 colher de sopa de manteiga derretida","2 colheres de sopa de manteiga","300g de cogumelos frescos laminados","1 dente de alho picado","1 colher de chá de mostarda","1/2 colher de chá de molho inglês","1 colher de sopa bem cheia de creme instantâneo de cogumelos em pó","200 ml de natas frescas"],
+"ingredientes": ["carne de vaca","cebola","alho","chouriço de carne","pão ralado","ovo","salsa","queijo","bacon","sal","pimenta","louro","palitos","manteiga","cogumelos","mostarda","molho inglês","natas","molho de cogumelos"],
+"preparação": ["1. Numa tigela, coloque a carne. Tempere com umas pedrinhas de sal e pimenta.
+Junte o louro em pó, os 2 dentes de alho picados, o chouriço, a cebola, a salsa, o ovo partido e o pão ralado. Com a mão, misture tudo muito bem.","2. Retire pedaços pequenos de carne, acalque ligeiramente e no centro, coloque um cubo de queijo. Molde em formato de almôndega e acalque bem. Repita o processo até que a carne acabe.","3. Embrulhe cada almôndega com uma fatia de bacon e prenda com um palito.","4. Num tabuleiro grande de ir ao forno, coloque as almôndegas com bastante espaço entre si. Regue-as individualmente com a manteiga derretida.","5. Leve ao forno pré-aquecido nos 230ºC durante 25 minutos.","6. Entretanto, faça o molho. Numa frigideira, leve ao lume as 2 colheres de sopa de manteiga e o alho picado. Quando a manteiga estiver derretida, junte os cogumelos e deixe saltear bem até que estes percam a água.","7. Aos cogumelos salteados, adicione a mostarda, o molho inglês e o creme instantâneo de cogumelos. Mexa muito bem e misture as natas. Deixe ferver até que o molho engrosse.","8. Depois das almôndegas lourinhas, retire-as do forno e sirva-as com o molho.
+Pode acompanhar este prato com puré de batata, esparguete cozido ou batata frita."],
+"porção":2,		
+"tempo":"40 minutos"
+},
+
+{"id":83,
+"nome": "Coelho à Bulhão Pato",
+"quantidade": ["1 coelho grande com cerca de 1800g cortado em pedaços","1 kg de amêijoas demolhadas em água fria, temperada com sal durante 2 horas","Sal q.b.","Piri-piri a gosto","100 ml de azeite","6 dentes de alho esmagados","2 folhas de louro cortadas ao meio","1 colher de chá de mostarda","400 ml de vinho branco","2 colheres de sopa de manteiga","1 bom molho de coentros picados","Gomos de limão"],
+"ingredientes": ["coelho","amêijoas","sal","piri piri","azeite","alho","louro","mostarda","vinho branco","manteiga","coentros","limão"],
+"preparação": ["1. Tempere o coelho com sal. Envolva bem.","2. Junte a mostarda ao vinho. Mexa com uma vara de arames até que a mostarda fique dissolvida.","3. Num tacho largo leve ao lume o azeite, os alhos e o louro. Deixe aquecer bem. Junte os pedaços de coelho e deixe fritar em lume forte até que a carne aloure por igual.","4. Depois da carne lourinha, junte o piri-piri e o vinho branco. Tape e deixe ferver. Logo que levante fervura, retire a tampa do tacho e deixe cozinhar em lume forte durante 10 minutos até que o molho apure.","5. Passados os 10 minutos e quando o coelho estiver cozinhado, adicione as amêijoas bem escorridas e a manteiga. Mexa muito bem e tape. Deixe cozinhar entre 3 a 5 minutos até que o marisco abra.","6. Depois das amêijoas abertas, junte os coentros picados e misture bem. Retire tudo com uma escumadeira para uma travessa.","7. Deixe o molho ferver 1 a 2 minutos até que fique bem apurado. Por fim, regue tudo com o molho e sirva decorado com gomos de limão. Acompanhe este prato com batata frita e uma salada a gosto."],
+"porção":6,		
+"tempo":"40 minutos"
+},
+
+{"id":84,
+"nome": "Carne de Vaca Assada no Forno",
+"quantidade": ["1,5 kg de uma peça de carne de vaca para assar","350g de cogumelos frescos portobello inteiros","12 chalotas cortadas ao meio","700g de batatinhas para assar","250g de fatias de bacon cortadas ao meio","1 molhinho de salsa","4 dentes de alho","1 colher de sopa bem cheia de folhinhas de orégãos secas","1 cubo de caldo de carne de preferência natural","180 ml de vinho branco","Folhinhas de tomilho frescas","7 colheres de sopa de azeite","2 colheres de sopa de manteiga","Sal q.b.","Pimenta preta q.b.","1 colher de café de louro em pó","1 colher de café de pimentão doce","Palitos"],
+"ingredientes": ["carne de vaca","cogumelos","chalotas","batata","bacon","salsa","alho","orégãos","caldo de carne","vinho branco","tomilho","azeite","manteiga","sal","pimenta preta","louro","pimentão doce"],
+"preparação": ["1. Numa tigela, coloque o molhinho de salsa os dentes de alho cortados em pedaços, os orégãos, o louro, pimenta preta moída na hora, sal e 5 colheres de sopa de azeite.
+Triture tudo com a varinha mágica até que fique uma pasta. Barre a carne por igual com o tempero preparado.","2. Às batatas, misture as chalotas. Tempere com sal e pimenta. Adicione o pimentão doce, as folhinhas de tomilho e o restante azeite. Misture tudo muito bem.","3. Num tabuleiro grande de ir ao forno, espalhe à volta as chalotas. Enrole cada batata com meia fatia de bacon e prenda com uma palito. Coloque-as à volta no tabuleiro e por cima espalhe o marinado da batata. Regue tudo com o vinho branco. Junte o cubo de caldo de carne e 200 ml de água.","4. Leve ao forno pré-aquecido nos 180ºC e deixe assaar durante 10 minutos. Passados os 10 minutos mexa as batatas e afaste-as do centro do tabuleiro. No meio, coloque a carne e à volta, espalhe os cogumelos. Por fim, coloque a manteiga por cima da carne. Aumente a temperatura para os 210ºC e deixe assar aproximadamente 30 minutos.","5. A 10 minutos do fim, vire a carne e mexa as batatas. Passado o tempo, retire do forno e sirva com a carne cortada em fatias."],
+"porção":7,		
+"tempo":"1 hora"
+},
+
+{"id":85,
+"nome": "Ensopado de Borrego",
+"quantidade": ["2 kg de borrego da pá, do peito, do cachaço e costeletas cortado em pedaços","125g de banha de porco","3 cebolas cortadas em rodelas meia lua","6 dentes de alho picados","2 folhas de louro cortadas ao meio","1 raminho de salsa picada","1 colher de chá de grãos de pimenta branca","1 malagueta cortada em rodelas","2 colheres de sopa de colorau","4 cravinhos da Índia","Sal q.b.","1 colher de sopa de farinha de trigo sem fermento","125 ml de vinagre de vinho branco","Fatias de pão alentejano de véspera"],
+"ingredientes": ["borrego","banha de porco","cebola","alho","louro","salsa","pimenta branca","malagueta","colourau","cravinhos da Índia","sal","farinha","vinho branco","pão"],
+"preparação": ["1. Tempere o borrego com sal. Junte o colorau, os alhos, a farinha, a malagueta e os grãos de pimenta. Misture tudo muito bem.","2. Num tacho de barro, leve ao lume a banha e as folhas de louro. Deixe aquecer muito bem. Quando a banha estiver quente, junte o borrego e frite até que a carne ganhe cor. Mexa de vez em quando para que a carne cozinhe por igual.","3. Depois da carne lourinha, junte os cravinhos, a cebola e a salsa picada. Misture tudo. Tape e deixe cozinhar durante 5 minutos.","4. Passados os 5 minutos, mexa novamente. Regue com o vinagre e adicione aproximadamente 800 ml de água a ferver, o suficiente para cobrir a carne.
+Tape e deixe cozinhar em lume médio aproximadamente 40 minutos.","5. Quando a carne estiver cozida e começar a soltar-se dos ossos, retire. Sirva numa travessa ou num prato grande sobre as fatias de pão. Se quiser, acompanhe com batata cozida em água ou num pouco de caldo do ensopado."],
+"porção":6,		
+"tempo":"1 hora"
+},
+
+{"id":86,
+"nome": "Tarte de Frango com Cogumelos e Bacon",
+"quantidade": ["1 base de massa folhada para tartes","1 peito de frango com 400g","125g de bacon cortado em cubinhos","300g de cogumelos frescos laminados","2 colheres de sopa de azeite","1 dente de alho picado","1 colher de sopa bem cheia de folhinhas de tomilho fresco
+5 ovos","200 ml de natas","500 ml de leite","1 colher de sopa bem cheia de farinha de trigo sem fermento","Noz-moscada q.b.","Sal q.b.","Pimenta q.b.","1 dente de alho cortado ao meio","1 folha de louro","1 cenoura picada","1/2 cebola","1 raminho de salsa","1 raminho de cebolinho"],
+"ingredientes": ["base de massa folhada","peito de frango","bacon","cogumelos","azeite","alho","tomilho","ovos","natas","leite","farinha","noz-moscada","sal","pimenta","louro","cenoura","cebola","salsa","cebolinho"],
+"preparação": ["1. Numa panela com água a ferver, tempere com sal e pimenta. Junte a cebola, o alho, o raminho de salsa, o raminho de cebolinho, o louro e a cenoura picada. Mexa e logo que comece a ferver, junte o peito de frango. Tape e deixe cozer durante 25 minutos.","2. Depois do frango cozido, retire-o com um garfo para um prato e deixe arrefecer. Para receitas futuras, pode reservar o caldo de frango coado, dividido por caixas ou cuvettes de gelo e armazenado no frigorífico ou congelador.","3. Numa frigideira leve ao lume o azeite, o alho picado e o bacon.
+Deixe saltear até que o bacon fique frito. Adicione os cogumelos. Tempere com sal e pimenta.
+Por fim, junte as folhinhas de tomilho. Salteie em lume forte até que os cogumelos percam a água.","4. Entretanto, parta os ovos para uma tigela. Tempere com sal, pimenta e noz-moscada.
+Junte a farinha e bata muito bem com uma vara de arames até que tudo fique bem misturado.","5. Adicione as natas e o leite. Bata mais um pouco até que fique homogéneo.","6. Depois do frango frio, limpe de peles e de ossos e desfie a carne. Misture bem o frango com os cogumelos e o bacon.","7. Numa tarteira com 32 cm de diâmetro e fundo amovível, estenda a massa e acalque bem.
+Espalhe a mistura da carne com os cogumelos e regue tudo com o líquido preparado anteriormente.","8. Leve ao forno pré-aquecido nos 190ºC, apenas com a resistência inferior e coloque a tarteira junte a esta, para que a massa fique bem cozida por baixo. Deixe cozinhar aproximadamente 40 minutos, até que a tarte fique lourinha.","9. Depois da tarte cozida, retire.
+Deixe repousar 3 minutos antes de desenformar. Depois de desenformada está pronta a servir."],
+"porção":4,		
+"tempo":"1 hora e 30 minutos"
+},
+
+
+{"id":87,
+"nome": "Pernas de Frango no Forno com Mostarda e Cerveja",
+"quantidade": ["3 pernas de frango inteiras e com pele","3 colheres de chá de mostarda dijon com sementes","200 ml de cerveja","1 folha de louro cortada ao meio","1 dente de alho esmagado","Sumo de limão","1 colher de sopa de manteiga","Salsa picada","Sal q.b.","Pimenta preta q.b.","Chucrute q.b."],
+"ingredientes": ["frango","mostarda dijon","cerveja","louro","alho","limão","manteiga","salsa","sal","pimenta preta","chucrute"],
+"preparação": ["1. Coloque as pernas de frango num tabuleiro de ir ao forno. Tempere de ambos os lados com sal e pimenta. Barre as pernas por igual com a mostarda.","2. Vire a carne para que a pele fique virada para cima. Adicione as folhas de louro e o alho esmagado. Regue tudo com um pouco de sumo de limão. Adicione a cerveja e a manteiga.","3. Leve ao forno pré-aquecido nos 190ºC e deixe assar aproximadamente 35 minutos. A meio do tempo, regue a carne com o molho.","4. Depois do frango assado e o molho apurado, retire do forno. Salpique tudo com a salsa. Sirva o frango com chucrute e acompanhe a gosto com batata cozida, salteada ou frita."],
+"porção":3,		
+"tempo":"40 minutos"
+},
+
+{"id":88,
+"nome": "Pizza de Tortilha",
+"quantidade": ["2 tortilhas de trigo","1 colher de sobremesa de azeite","1 dente de alho picado","3 colheres de sopa de polpa de tomate","1/2 colher de café de açúcar","Sal q.b.","Folhas de orégãos secas q.b.","150g de queijo mozarela ralado","3 cogumelos frescos laminados finamente","3 fatias de bacon cortadas em tiras","2 fatias de fiambre cortadas em tiras","12 rodelas finas de chouriço de carne","2 ovos grandes","12 azeitonas pretas descaroçadas"],
+"ingredientes": ["tortilha de trigo","azeite","alho","polpa de tomate","açúcar","sal","orégãos","queijo mozarela","cogumelos","bacon","fiambre","chouriço de carne","azeitonas"],
+"preparação": ["1. Numa frigideira leve ao lume o azeite e o alho. Mexa e deixe aquecer sem deixar alourar. Junte a polpa de tomate e mexa. Tempere com umas pedrinhas de sal, o açúcar e folhas de orégãos secas. Mexa e logo que comece a ferver, retire do lume.","2. Coloque as tortilhas num tabuleiro de ir ao forno. Divida o molho de tomate pelas tortilhas e espalhe com um pincel. Polvilhe as tortilhas com o queijo mozarela ralado. Por cima, espalhe a gosto os cogumelos laminados, o bacon, o fiambre, o chouriço e as azeitonas.","3. Parta os ovos e separe as gemas das claras. Coloque uma gema no centro de cada tortilha. Tempere as gemas com umas pedrinhas de sal. Por fim, polvilhe tudo com folhas de orégãos secas.","4. Leve ao forno pré-aquecido nos 210ºC durante 5 minutos. Depois das tortilhas lourinhas, retire. E está pronto a servir."],
+"porção":2,		
+"tempo":"10 minutos"
+},
+
+{"id":89,
+"nome": "Bife do Lombo com Molho de Morangos",
+"quantidade": ["2 bifes de vaca do lombo com cerca de 180g cada","1 colher de sopa de manteiga","1 colher de chá bem cheia de mostarda dijon com sementes","Pimenta preta moída na hora q.b.","Sal q.b.","250g de morangos arranjados e cortados em rodelas","1 colher de sopa de manteiga","1 cebola doce picada","1 colher de sopa bem cheia de açúcar mascavado","2 colheres de sopa de vinagre balsâmico","2 folhinhas de manjericão","Raminhos de manjericão para decorar","3 batatas médias cortadas em rodelas","1 colher de sopa de azeite","1 colher de café de folhas de tomilho secas","2 raminhos de couve-flor","1 colher de chá rasa de açafrão em pó","Limão"],
+"ingredientes": ["bifes de vaca","manteiga","mostarda dijon","pimenta preta","sal","morangos","cebola","açúcar mascavado","vinagre","manjericão","batatas","azeite","tomilho","couve-flor","açafrão","limão"],
+"preparação": ["1. Comece por fazer as batatas. Tempere as batatas com um pouco de sal e as folhinhas de tomilho. Regue tudo com o azeite e misture.","2. Num tabuleiro de ir ao forno, espalhe as batatas. Leve ao forno pré-aquecido nos 180ºC e deixe assar durante 40 minutos.","3. Faça a couve-flor. Numa panela com água a ferver, tempere com sal, um pouco de sumo de limão e o açafrão. Mexa e coloque a couve-flor. Tape e deixe cozer aproximadamente 15 minutos.","4. Entretanto, tempere os bifes de ambos os lados com sal e pimenta. Barre os bifes por igual com a mostarda.","5. Faça o molho. Numa frigideira leve ao lume a manteiga e deixe aquecer. Junte a cebola, mexa e deixe refogar sem deixar alourar. Ao refogado, adicione os morangos e tempere com uma pitada de sal. Mexa e deixe cozinhar em lume brando aproximadamente 10 minutos até que os morangos comecem a desfazer-se.","6. Depois dos morangos cozinhados, adicione o açúcar e as folhinhas de manjericão. Mexa muito bem e deixe cozinhar 1 minuto. Passado 1 minuto, apague o lume e misture o vinagre balsâmico.","7. Triture o molho no liquidificador até que fique cremoso. Reserve o molho num local quente.","8. Quando a couve estiver cozida, retire-a com uma escumadeira para um prato.","9. Por fim, frite os bifes. Numa frigideira leve ao lume a manteiga e deixe aquecer bem. Frite os bifes de ambos os lados, 2 a 4 minutos de cada lado, conforme queira mal, médio ou bem passado.","10. Depois das batatas assadas e lourinhas, retire-as do forno. Sirva os bifes com o molho e acompanhados com as batatas e a couve-flor."],
+"porção":2,		
+"tempo":"45 minutos"
+},
+
+{"id":90,
+"nome": "Massa com Salsichas Frescas e Natas",
+"quantidade": ["3 salsichas frescas grandes de porco ou de peru","200g de massa cotovelos ou outra a gosto","1 e 1/2 colher de sopa de azeite","1 dente de alho picado","1 colher de chá bem cheia de mostarda","200 ml de natas","1 colher de chá de manjericão seco picado","Queijo parmesão ralado na hora","Sal q.b.","Pimenta preta q.b."],
+"ingredientes": ["salsichas","massa","azeite","alho","mostarda","natas","manjericão","queijo parmesão","sal","pimenta preta"],
+"preparação": ["1. Numa panela com bastante água a ferver, tempere com sal. Adicione a massa.
+Mexa e deixe cozer aproximadamente 9 minutos até que fique cozida.","2. Passado os 9 minutos, escorra a massa. Regue com um fio de azeite e mexa para que não cole.","3. Entretanto, prepare as salsichas. Com uma faca afiada, corte a pele e retire-a das salsichas. Corte as salsichas em pedaços.","4. Numa frigideira leve ao lume o restante azeite e o alho picado. Mexa e deixe aquecer bem sem deixar alourar. Junte as salsichas. Tempere com sal e pimenta preta. Deixe saltear e vá separando a carne com duas colheres para que os pedaços fiquem soltos.","5. Depois da carne bem passada, junte a mostarda e mexa. Adicione a massa e salteie um pouco.","6. Depois de tudo bem salteado, adicione as natas e o manjericão. Misture bem e deixe aquecer sem deixar ferver. Sirva de imediato polvilhado com o queijo parmesão ralado na hora."],
+"porção":2,		
+"tempo":"20 minutos"
+},
+
+{"id":91,
+"nome": "Jardineira de Peru com Cogumelos",
+"quantidade": ["700g de carne de peru da perna, limpa e cortada em pedaços","3 colheres de sopa de azeite","1 cebola picada","2 dentes de alho picados","60g de bacon cortado em cubinhos","80g de chouriço de carne cortado em rodelas finas","125 ml de vinho branco","1 raminho de salsa e 1 raminho de alecrim atados com um fio","1 folha de louro cortada ao meio","390g de tomate pelado cortado em pedaços","300g de cenouras cortadas em cubinhos","200g de ervilhas congeladas","200g de feijão verde cortado em pedaços","400g de batatas cortadas em cubinhos","300g de cogumelos frescos cortados em quartos","1/2 litro de caldo de galinha ou de legumes natural","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["peru","azeite","cebola","alho","bacon","chouriço de carne","vinho branco","salsa","alecrim","louro","tomate","cenouras","ervilhas","feijão verde","batatas","cogumelos","caldo de galinha","caldo de legumes","sal","pimenta"],
+"preparação": ["1. Tempere a carne com sal e pimenta. Envolva tudo muito bem.","2. Num tacho grande leve ao lume o azeite, a cebola e o alho. Mexa e deixe refogar um pouco sem deixar alourar. Ao refogado junte a carne e o bacon. Mexa e deixe cozinhar até que a carne ganhe cor por igual.","3. Junte o chouriço, o tomate pelado, o louro e o raminho de salsa e alecrim. Mexa e deixe refogar tudo durante 10 minutos.","4. Passado os 10 minutos, regue tudo com o vinho branco. Logo que comece a ferver, junte o caldo de legumes ou de galinha. Tape e deixe cozinhar em lume médio durante 15 minutos.","5. Passado os 15 minutos, junte a cenoura, o feijão verde e as ervilhas. Mexa, tape e deixe cozinhar mais 12 minutos.","6. Passado os 12 minutos, rectifique o tempero de sal. Misture as batatas e os cogumelos. Mexa tudo muito bem. Tape e deixe cozinhar durante 15 minutos.","7. Passado os 15 minutos e quando todos os legumes estiverem cozidos, está pronto a servir."],
+"porção":5,		
+"tempo":"1 hora"
+},
+
+{"id":92,
+"nome": "Lombo de Porco Recheado com Morcela e Molho de Cogumelos Silvestres",
+"quantidade": ["1 lombo de porco com cerca de 1,8 kg","450g de morcela de arroz ou outra a gosto","Fio de cozinha","3 colheres de sopa de azeite","2 folhas de louro cortadas ao meio","1 raminho de alecrim","125 ml de vinho branco","1 dente de alho esmagado","Sal q.b.","Pimenta preta q.b.","400 ml de caldo de carne","50g de manteiga","450g de cogumelos silvestres congelados","30 ml de Vinho da Madeira ou xerez","1 colher de chá de molho inglês","300 ml de natas"],
+"ingredientes": ["porco","morcela de arroz","fio","azeite","louro","alecrim","vinho branco","alho","sal","pimenta preta","caldo de carne","manteiga","cogumelos","vinho da Madeira","molho inglês","natas"],
+"preparação": ["1. Retire a pele à morcela e corte em pedaços.","2. Com uma faca afiada corte o lombo num bife largo e grosso. Por cima do lombo aberto, espalhe a morcela bem esfarelada. Enrole e aconchegue bem o lombo para que fique na sua forma original. Com o fio de cozinha ate bem o lombo de forma a manteiga o recheio no seu interior.","3. Coloque o lombo dentro de um tabuleiro de ir ao forno. Tempere a carne por igual com sal e pimenta preta. À volta, coloque as folhas de louro, o alho, o alecrim e o vinho branco. Com a parte mais gorda da carne virada para cima, regue-a com o azeite. Por fim, junte o caldo de carne.","4. Leve ao forno pré-aquecido nos 190ºC e deixe assar durante 1 hora. Passado 1 hora, retire o molho da carne para uma tigela e coloque novamente a carne no forno durante 15 minutos. Coe o molho e reserve 400 ml.","5. Numa frigideira leve ao lume a manteiga e deixe aquecer. Quando estiver quente, adicione os cogumelos congelados e quando começarem a perder a água, adicione o molho inglês, o Vinho da Madeira e os 400 ml do molho de carne. Deixe ferver aproximadamente 10 minutos até que o molho engrosse. Por fim, junte as natas, mexa muito bem e logo que comece a ferver, retire do lume.","6. Passado os 15 minutos e quando a carne estiver lourinha, retire do forno. Retire o fio e corte a carne às fatias. Sirva a carne com o molho, noisettes de batata e espargos salteados."],
+"porção":8,		
+"tempo":"1 hora e 30 minutos"
+},
+
+{"id":93,
+"nome": "Perna de Peru Estufada com Tomate e Ervas",
+"quantidade": ["600g de perna de peru, limpa de peles e de ossos cortada em cubos","3 colheres de sopa de azeite","1 cebola picada","4 dentes de alho picados","1 folha de louro cortada ao meio","3 raminhos de manjericão fresco","2 raminhos de tomilho fresco","50g de bacon cortado em cubinhos","1 tomate maduro sem pele cortado em cubinhos","4 colheres de sopa de polpa de tomate
+150 ml de vinho branco","1/2 litro de caldo de galinha","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["peru","azeite","cebola","alho","louro","manjericão","tomilho","bacon","tomate","polpa de tomate","vinho branco","caldo de galinha","sal","pimenta"],
+"preparação": ["1. Tempere a carne com sal e pimenta. Envolva bem os temperos.","2. Num tacho leve ao lume o azeite, a cebola, os alhos e o bacon. Mexa e deixe aquecer muito bem.","3. Ao refogado, junte os raminhos de tomilho, os raminhos de manjericão, o louro e o tomate cortado em cubinhos. Mexa e deixe refogar bem até que o tomate comece a desfazer-se.","4. Depois de tudo bem refogado, junte a carne. Mexa e deixe cozinhar um pouco até que a carne ganhe cor.","5. Por fim, junte a polpa de tomate, o vinho branco e o caldo de galinha. Mexa, tape e deixe cozinhar em lume médio durante 45 minutos. Depois da carne tenrinha e o molho apurado, está pronto a servir. Acompanhe este prato com puré de batata e legumes cozidos."],
+"porção":3,		
+"tempo":"1 hora"
+},
+
+{"id":94,
+"nome": "Espetadas de Porco com Enchidos",
+"quantidade": ["650g de lombinho de porco cortado em cubos","150g de morcela cortada em rodelas","150g de chouriço de carne cortado em rodelas","150g de farinheira cortada em rodelas","3 dentes de alho cortados em pedaços","2 colheres de chá de massa pimentão","1 colher de café de cominhos em pó","2 colheres de sopa de vinho branco","2 folhas de louro cortadas ao meio","1 malagueta sem sementes picada","1 molhinho de coentros picados","Azeite q.b.","Sal q.b.","12 batatas com casca para assar","2 cebolas cortadas em rodelas meia lua","Pickles picados q.b.","Espetos de madeira"],
+"ingredientes": ["porco","morcela","chouriço de carne","farinheira","alho","massa pimentão","cominhos","vinho branco","louro","malagueta","coentros","azeite","sal","batatas","cebola","pickles","espetos"],
+"preparação": ["1. Num almofariz coloque os alhos, a malagueta, um pouco de sal tendo em conta que a massa de pimentão e os enchidos já são salgados, 1 colher de sopa de azeite e um molhinho de coentros. Esmague tudo até que fique uma pasta. Numa tigela, tempere a carne com a pasta, a massa de pimentão, os cominhos e as folhas de louro. Regue com o vinho branco e uma colher de sopa de azeite. Envolva tudo muito bem e deixe marinar durante meia hora.","2. Entretanto, num tacho com água a ferver, tempere com sal. Adicione as batatas. Tape e deixe cozer durante 15 minutos. Depois das batatas cozidas, retire.","3. Faça as espetadas. Em cada espeto de madeira, coloque alternadamente os enchidos e a carne de porco. Repita o processo até acabar todos os ingredientes.","4. Num tabuleiro de ir ao forno, de preferência de barro, espalhe no fundo a cebola e à volta espalhe as batatas. Com um esmagador ou com as mãos, pressione as batatas para que abram ligeiramente. Por cima, espalhe as espetadas. Regue tudo com 4 colheres de sopa de azeite.","5. Leve ao forno pré-aquecido nos 190ºC e deixe assar durante 20 minutos. Passado os 20 minutos e quando a carne estiver cozinhada, retire as espetadas para uma travessa e guarde num local quente. Com uma colher misture bem a cebola com o molho. Leve novamente ao forno durante 10 minutos com a temperatura no máximo. Quando as batatas e a cebola estiverem lourinhas, retire e sirva. Sirva este prato com uma salada a gosto."],
+"porção":4,		
+"tempo":"1 hora e 15 minutos"
+},
+
+{"id":95,
+"nome": "Croquetes de Presunto",
+"quantidade": ["1100 ml de leite","1 pedaço de courato de presunto","1 folha de louro","1 cebola média picada","200g de presunto cortado em cubinhos","125g de manteiga","200g de farinha de trigo sem fermento","Noz-moscada q.b.","Sal q.b.","Pimenta q.b.","Manteiga para untar","2 ovos","Pão ralado q.b.","Óleo para fritar"],
+"ingredientes": ["leite","courato de presunto","louro","cebola","presunto","manteiga","farinha","noz-moscada","sal","pimenta","manteiga","ovos","pão ralado","óleo"],
+"preparação": ["1. Num fervedor, leve ao lume o leite, o courato de presunto e a folha de louro.
+Deixe ferver durante 5 minutos. Passado o tempo, retire com uma escumadeira o courato e o louro.","2. Num tacho, leve ao lume a manteiga e deixe aquecer. Depois da manteiga quente, adicione a cebola. Mexa e deixe refogar um pouco. Ao refogado, adicione o presunto. Mexa e deixe fritar bem.","3. Depois do presunto frito, adicione a farinha de uma só vez e misture tudo muito bem. Aos poucos, adicione o leite e mexa bem entre cada adição. Quando a massa estiver consistente, rectifique o tempero de sal. Por fim, tempere com pimenta e noz-moscada.
+Mexa muito bem e retire do lume.","4. Unte com manteiga um tabuleiro de vidro. Espalhe o preparado no tabuleiro. Tape o tabuleiro com película aderente e faça furos com uma faca. Guarde no frigorífico aproximadamente 3 horas até que a massa fique rija e fria.","5. Depois da massa fria, parta os ovos para um prato e mexa-os bem com um garfo. Retire colheradas de massa e molde em forma de croquete. Coloque os croquetes numa travessa previamente polvilhada com farinha.","6. Passe os croquetes por ovo e por pão ralado. Frite os croquetes por igual em óleo quente. Depois dos croquetes fritos, retire-os com uma escumadeira para um prato com papel absorvente. Se quiser, pode congelar os croquetes, depois de panados e antes de fritar. E estão prontos a servir."],
+"porção":8,		
+"tempo":"4 horas"
+},
+
+{"id":96,
+"nome": "Fricassé de Frango",
+"quantidade": ["1 frango cortado em pedaços","3 colheres de sopa de azeite","1 cebola picada","2 dentes de alho picados","1 folha de louro cortada ao meio","150 ml de vinho branco","1/2 litro de caldo de galinha","Salsa picada q.b.","Sumo de 1 limão","1 colher de sopa bem cheia de farinha de trigo sem fermento","2 gemas de ovo","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["frango","azeite","cebola","alho","louro","vinho branco","caldo de galinha","salsa","limão","farinha","gemas","sal","pimenta"],
+"preparação": ["1. Tempere o frango com sal e pimenta. Envolva tudo muito bem.","2. Num tacho largo leve ao lume o azeite, a cebola, o alho e o louro. Mexa e deixe aquecer muito bem. Logo que a cebola comece a ficar vidrada, junte os pedaços de frango. Tape e deixe cozinhar em lume médio até que a carne ganhe cor, sem deixar alourar. Vire a carne e deixe ganhar cor por igual.","3. Quando a carne ganhar cor, regue tudo com o vinho branco e o caldo de galinha. Tape e deixe cozinhar em lume médio durante 40 minutos.","4. Com uma colher, misture a farinha com as gemas. Aos poucos, adicione o sumo de limão.","5. Passado os 40 minutos e quando o frango estiver cozido, baixe o lume e misture a salsa. Por fim, junte a farinha dissolvida nas gemas e mexa rapidamente. Logo que engrosse e antes que comece a ferver, apague o lume. E está pronto a servir."],
+"porção":5,		
+"tempo":"1 hora"
+},
+
+{"id":97,
+"nome": "Bifes de Peru Recheados com Molho de Tomate no Forno",
+"quantidade": ["4 bifes grandes de peru","8 fatias de fiambre","8 fatias de queijo flamengo","1 molho de espinafres","4 colheres de sopa bem cheias de azeite","4 dentes de alho picados","1 cebola picada","560g de tomate maduro sem pele ou pelado cortado em cubos","1/2 pimentão vermelho cortado em cubos","1 folha de louro cortada ao meio","100 ml de vinho branco","Folhas de orégãos secas","Queijo parmesão","Sal q.b.","Pimenta q.b.","Palitos"],
+"ingredientes": ["peru","fiammbre","queijo","espinafres","azeite","alho","cebola","tomate","pimentão vermelho","louro","vinho branco","orégãos","queijo parmesão","sal","pimenta","palitos"],
+"preparação": ["1. Tempere os bifes de ambos os lados com sal e pimenta.","2. Numa frigideira ou num wok, leve ao lume 2 colheres de sopa de azeite e metade dos alhos. Mexa e deixe aquecer um pouco sem deixar alourar. Junte as folhas de espinafres bem lavadas. Tempere com um pouco de sal. Salteie em lume forte até que os espinafres percam a água. Depois da água secar e os espinafres bem salteados, retire-os do lume e reserve.","3. Entretanto, faça o molho. Num tacho leve ao lume o restante azeite, a cebola picada, o restante alho e o louro. Mexa e deixe refogar um pouco até que a cebola fique vidrada. Ao refogado, junte o pimento e o tomate. Tempere com sal e pimenta. Mexa bem e deixe cozinhar em lume forte até que o tomate comece a desfazer-se.","4. Depois do tomate desfeito, retire as folhas de louro e adicione o vinho branco. Mexa e logo que comece a ferver, triture tudo com a varinha mágica. Por fim, retifique os temperos e misture um pouco de folhas de orégãos secas. Mexa, retire do lume e reserve.","5. Por cima de cada bife, coloque 2 fatias de fiambre, 2 fatias de queijo e 1/4 dos espinafres salteados. Com cuidado, enrole os bifes e prenda com os palitos. Coloque os bifes num tabuleiro de ir ao forno e regue-os com o molho de tomate. Por fim, polvilhe tudo com queijo parmesão ralado na hora.","6. Leve ao forno pré-aquecido nos 190ºC e deixe assar aproximadamente 35 minutos. Depois dos rolinhos bem passados e gratinados, retire do forno. Acompanhe este prato com uma massa a gosto salteada com cogumelos."],
+"porção":4,		
+"tempo":"1 hora e 10 minutos"
+},
+
+{"id":98,
+"nome": "Frango Frito com Cerveja",
+"quantidade": ["1 frango cortado em pedaços","60 ml de azeite","50g de margarina","6 dentes de alho laminados","2 folhas de louro cortadas ao meio","2 malaguetas frescas cortadas em rodelas finas","500 ml de cerveja","Salsa picada","Sal q.b.","Couve flor em vinagrete picada grosseiramente"],
+"ingredientes": ["frango","azeite","margarina","alho","louro","malagueta","cerveja","salsa","sal","couve-flor"],
+"preparação": ["1. Numa tigela, tempere o frango com sal. Junte os alhos, as malaguetas e as folhas de louro. Envolva tudo muito bem e regue com a cerveja. Deixar marinar entre 1 a 2 horas.","2. Passado o tempo, escorra o frango no escorredor. Reserve o marinado.","3. Num tacho largo leve ao lume o azeite e a margarina. Deixe aquecer bem. Junte os pedaços de frango com as folhas de louro e os alhos. Deixe fritar o frango por igual em lume forte aproximadamente 20 minutos. Mexa de vez em quando para que não agarre.","4. Passado os 20 minutos e quando o frango estiver lourinho, regue-o com o marinado. Deixe cozinhar em lume forte entre 10 a 15 minutos até que o molho fique apurado.","5. Por fim, misture a salsa e mexa bem. Retire do lume e sirva com a couve flor picada. Sirva este prato com batata frita e uma salada mista."],
+"porção":5,		
+"tempo":"2 horas e 40 minutos"
+},
+
+{"id":99,
+"nome": "Picanha no Forno com Alho",
+"quantidade": ["1 peça de picanha inteira com cerca de 1,5 kg","Sal q.b.","1 cabeça grande de alhos descascados e cortados em pedaços","1 colher de chá rasa de louro em pó","Pimenta q.b."],
+"ingredientes": ["picanha","sal","alho","louro","pimenta"],
+"preparação": ["1. Num almofariz coloque o alho, cerca de 3 colheres de chá rasas de sal, o louro em pó e pimenta. Esmague tudo até que fique uma pasta.","2. Coloque a carne num tabuleiro de ir ao forno com a gordura virada para baixo. Barre bem a picanha com metade da pasta. Vire a picanha com a gordura virada para cima e barre com a restante pasta. Deixe tomar gosto entre 2 a 3 horas.","3. Leve a picanha ao forno pré-aquecido nos 210ºC e deixe assar durante 40 minutos.
+Passado os 40 minutos, retire a picanha do forno e coloque-a numa tábua de corte. Com a faca, retire a camada de alho que ficou por cima da picanha. Por fim, corte a picanha em fatias finas. Sirva este prato de carne com arroz de manteiga, feijão preto, farofa, couve mineira, banana frita e vinagrete de tomate."],
+"porção":8,		
+"tempo":"4 horas"
+},
+
+{"id":100,
+"nome": "Pizza de Frango com Cogumelos e Banana",
+"quantidade": ["1 base fina para pizza com 30 cm de diâmetro","1 colher de chá de azeite","1 dente de alho picado","2 colheres de sopa de polpa de tomate","50g de cogumelos frescos laminados","100g de queijo mozarela ralada","100g de sobras de frango cozido ou assado, desfiado","4 colheres de chá de natas com cogumelos","Folhas de orégãos secas","1 banana pequena cortada em rodelas","Azeitonas pretas"],
+"ingredientes": ["base","azeite","alho","polpa de tomate","frango","cogumelos","queijo mozarela","natas","banana","azeitonas"],
+"preparação": ["1. Num tachinho leve ao lume o azeite e o alho. Mexa e deixe aquecer sem deixar refogar. Junte a polpa de tomate e mexa até que fique quente.","2. Pincele a massa com o molho de tomate e polvilhe com um pouco de orégãos. Por cima, espalhe o queijo, os cogumelos, o frango desfiado, a banana e pequenas colheradas de natas. Por fim, espalhe as azeitonas e polvilhe com mais um pouco de orégãos.","3. Leve ao forno pré-aquecido nos 220ºC e deixe cozer entre 10 a 15 minutos. Logo que a pizza esteja cozida e loirinha, retire-a e sirva."],
+"porção":2,		
+"tempo":"20 minutos"
+},
+
+{"id":101,
+"nome": "Favas Guisadas com Entrecosto",
+"quantidade": ["2 kg de favas frescas ou congeladas","1200g de entrecosto cortado em pedaços","1 chouriço de carne cortado em rodelas","1 chouriço mouro cortado em rodelas","1 farinheira (opcional)","1 morcela de cozer ou de arroz","2 colheres de café de massa de pimentão","1 colher de sopa de banha de porco","3 colheres de sopa de azeite","2 cebolas picadas","6 dentes de alho picados","2 folhas de louro cortadas ao meio","5 colheres de sopa de polpa de tomate","200 ml de vinho branco","Sal q.b.","Pimenta q.b.","1 bom molho de coentros frescos picados"],
+"ingredientes": ["favas","entrecosto","chouriço de carne","chouriço mouro","farinheira","morcela","massa de pimentão","banha","azeite","cebola","alho","polpa de tomate","vinho branco","sal","pimenta","coentros"],
+"preparação": ["1. Numa tigela, tempere o entrecosto com a massa de pimentão, sal e pimenta.
+Envolva a carne com os temperos muito bem.","2. Pique a farinheira com um palito de ambos os lados.","3. Num tacho largo ou numa frigideira, leve ao lume a banha, o azeite, a cebola, os alhos picados e as folhas de louro. Mexa e deixe refogar. Quando a cebola começar a ficar loirinha, junte o chouriço de carne e o chouriço mouro. Mexa e deixe aquecer até que comece a fritar.","4. Quando os chouriços estiverem bem quentes, junte o entrecosto. Mexa e deixe fritar bem por igual. Quando a carne estiver loirinha e a gordura do entrecosto derretida, transfira tudo para uma panela.","5. Leve novamente ao lume. Adicione a polpa de tomate e o vinho branco.
+Mexa e deixe ferver. Logo que comece a ferver, junte as favas. Mexa, tape e deixe aquecer bem.
+Quando estiver bem quente, adicione água a ferver até cobrir as favas. Junte a morcela. Tape e deixe cozer em lume forte durante 15 minutos.","6. Passados os 15 minutos, rectifique o tempero de sal. Junte a farinheira. Coloque a tampa por cima sem tapar totalmente e deixe cozer em lume médio durante 15 minutos. Tenha cuidado para que a farinheira não rebente.","7. Passados os 15 minutos, retire a farinheira e a morcela. Às favas, junte os coentros e mexa muito bem. Tape e deixe cozinhar em lume médio aproximadamente 20 minutos, até que as favas fiquem cozidas. Caso seja necessário acrescente mais água para que as favas não fiquem secas.","8. Depois das favas cozidas, sirva-as com os enchidos cortados em rodelas. Se quiser, polvilhe com um pouco mais de coentros picados."],
+"porção":10,		
+"tempo":"1 hora e 20 minutos"
+},
+
+{"id":102,
+"nome": "Pezinhos de Coentrada",
+"quantidade": ["6 pezinhos de porco cortados ao meio e lavados","1 cebola grande inteira","6 cravinhos da Índia","1 folha de louro","Grãos de pimenta preta q.b.","Sal grosso q.b.","2 cenouras inteiras e descascadas","1 colher de sopa de banha de porco","3 colheres de sopa de azeite","1 cebola picada","12 dentes de alho descascados","1 colher de sopa bem cheia de farinha de trigo sem fermento","50 ml de vinagre de vinho branco","1 molho de coentros picados grosseiramente","2 gemas de ovo (opcional)"],
+"ingredientes": ["pé de porcos","cebola","cravinhos da Índia","louro","pimenta preta","sal","cenouras","banha","azeite","alho","farinha","vinagre de vinho branco","coentros","gemas"],
+"preparação": ["1. Espete os cravinhos na cebola. Numa panela grande com bastante água, tempere com uma mão cheia de sal. Junte a cebola com os cravinhos espetados, as cenouras, grãos de pimenta a gosto, o louro e os pezinhos de porco. Tape e deixe cozer entre 2 horas e meia a 3 horas. Quando começar a ferver, retire com uma colher ou uma escumadeira a espuma que ganha por cima.","2. Quando os pezinhos estiverem cozidos e os ossos começarem a soltar-se da carne, retire e reserve o caldo. Deixe arrefecer.","3. Entretanto, num almofariz, coloque os alhos e um pouco de sal para ajudar a esmagar. Esmague até que fique uma pasta.","4. Numa rede fina, coe o caldo. Depois dos pezinhos frios, retire os ossos maiores e corte o restante em pedaços.","5. Com um garfo, dissolva a farinha no vinagre. Por fim, misture com um pouco de caldo. Tradicionalmente esta receita é feita sem as gemas de ovo, mas estas deixam o molho mais cremoso. Se utilizar as gemas, mexa-as com um garfo e misture-as com um pouco de caldo.","6. Num tacho, de preferência de barro, leve ao lume o azeite, a banha, a cebola picada e a pasta de alho. Mexa e deixe refogar sem deixar alourar. Junte ao refogado, os coentros picados. Mexa e deixe aquecer um pouco. Misture a farinha dissolvida no vinagre e cerca de 1 litro de caldo de cozer os pezinhos. Por fim, junte os pezinhos cortados. Caso seja necessário, acrescente mais um pouco de caldo ou de água. Tape e deixe cozinhar em lume médio entre 20 a 30 minutos.","7. Quando os pezinhos estiverem tenrinhos e o molho cremoso, misture as gemas (opcional) e retire do lume. E está pronto a servir. Acompanhe este petisco com pão alentejano cortado às fatias."],
+"porção":8,		
+"tempo":"4 horas"
+},
+
+{"id":103,
+"nome": "Almôndegas de Borrego com Molho de Iogurte e Cuscuz",
+"quantidade": ["600g de carne de borrego da carne picada","1 cebola picada finamente","1 dente de alho grande","Gengibre fresco","1 colher de café rasa de cominhos em pó","1 colher de café rasa de louro em pó","1 colher de café de pimentão doce","1 colher de chá bem cheia de açafrão-das-Índias","Sal q.b.","Pimenta q.b.","1 ovo","Pão ralado q.b.","125g de iogurte natural","2 colheres de sopa de maionese magra","Coentros frescos picados q.b.","200g de cuscuz","400 ml de caldo de galinha natural","80g de pimento vermelho cortado em cubinhos","80g de pimento verde cortado em cubinhos","1 cenoura ralada","180g de grão-de-bico cozido","Azeite q.b."],
+"ingredientes": ["borrego","cebola","alho","gengibre","cominhos","louro","pimentão doce","açafrão-das-Índias","sal","pimenta","ovo","pão ralado","iogurte","maionese","coentros","cuscuz","caldo de galinha","pimento vermelho","pimento verde","cenoura","grão-de-bico","azeite"],
+"preparação": ["1. Numa tigela tempere a carne com sal, pimenta, metade do alho ralado e um pouco de gengibre ralado. Junte o louro em pó, os cominhos, o pimentão doce, o açafrão, 1/3 da cebola, o ovo partido e aproximadamente 2 colheres de sopa de pão ralado. Misture tudo muito bem. Caso a carne esteja a colar muito nas mãos, adicione mais um pouco de pão ralado. Faça bolinhas com a carne.","2. Numa tigela, tempere o iogurte com o restante alho ralado, sal e pimenta. Junte a maionese e coentros picados a gosto. Misture muito bem e guarde no frigorífico até à hora de servir.","3. Numa tigela coloque os cuscuz e cubra com o caldo de galinha a ferver. Mexa com um garfo e tape a tigela com um prato. Deixe repousar enquanto faz o refogado.","4. Numa frigideira leve ao lume 3 colheres de sopa de azeite, a restante cebola e os pimentos cortados em cubinhos. Mexa e deixe refogar sem deixar alourar. Ao refogado adicione o grão-de-bico. Mexa e deixe saltear até que o grão fique brilhante. Ao refogado, adicione a cenoura. Mexa e baixe o lume.","5. Depois dos cuscuz absorver o caldo todo, junte-o ao refogado.
+Envolva tudo muito bem. Junte um pouco de coentros picados. Apague o lume e misture tudo.","6. Entretanto frite a carne. Numa outra frigideira leve ao lume um pouco de azeite e deixe aquecer.
+Quando o azeite estiver quente, frite as almôndegas por igual entre 7 a 10 minutos em lume médio até que fiquem loirinhas. Depois da carne cozinhada está pronta a servir. Acompanhe as almôndegas com o molho e o cuscuz."],
+"porção":4,		
+"tempo":"25 minutos"
+},
+
+{"id":104,
+"nome": "Bifes com Molho de Cerveja Preta e Cogumelos",
+"quantidade": ["2 bifes de vaca da vazia ou do lombo","200g de cogumelos portobello laminados grosseiramente de preferência na hora","40g de manteiga","1 dente de alho esmagado","Folhinhas de tomilho fresco","1/2 cubo de caldo de carne de preferência natural","1 colher de café de molho inglês","200 ml de cerveja preta","200 ml de natas","Flor de sal q.b.","Pimenta branca q.b."],
+"ingredientes": ["bifes de vaca","bifes do lombo","cogumelos","manteiga","alho","tomilho","caldo de carne","molho inglês","cerveja preta","natas","flor de sal","pimenta branca"],
+"preparação": ["1. Tempere os bifes de ambos os lados com flor de sal e pimenta.","2. Numa frigideira leve ao lume metade da manteiga, o dente de alho e as folhinhas de tomilho. Mexa e deixe aquecer bem. Em lume forte, frite os bifes de ambos os lados a gosto. Depois dos bifes fritos, retire-os para um prato e reserve-os em local quente.","3. À gordura que ficou, junte o ½ cubo de caldo de carne, o molho inglês e a cerveja preta. Mexa e quando começar a ferver, adicione os cogumelos. Deixe cozinhar em lume forte aproximadamente 10 minutos até que o molho reduza para metade.","4. Depois do molho reduzido, retire o alho. Junte a restante manteiga e as natas. Mexa muito bem e logo que comece a borbulhar, retire do lume. Sirva o bife com o molho por cima e acompanhe a gosto como por exemplo, com noisettes de batata e espargos salteados."],
+"porção":2,		
+"tempo":"15 minutos"
+},
+
+{"id":105,
+"nome": "Carré de Borrego à Padeiro",
+"quantidade": ["1 vão de costeletas de borrego com cerca de 1,5 kg","12 dentes de alho descascados","4 folhas de louro cortadas ao meio","Flor de sal q.b.","Pimenta q.b.","3 colheres de chá bem cheias de massa pimentão","Sumo de 1/2 limão","2 raminhos de alecrim fresco","100g de margarina","200 ml de vinho branco","Colorau q.b.","1 colher de sopa de folhinhas de tomilho fresco","1 cebola grande cortada em tiras finas","800g de batatas descascadas e cortadas em gomos"],
+"ingredientes": ["borrego","alho","louro","flor de sal","pimenta","massa pimentão","limão","alecrim","margariina","vinho branco","colorau","tomilho","cebola","batatas"],
+"preparação": ["1. Num almofariz coloque os alhos e um pouco de flor de sal, tendo em conta que a massa de pimentão já é salgada. Esmague muito bem os alhos até que fique uma pasta. Misture a massa de pimentão aos alhos esmagados e pimenta moída na hora. Barre bem o vão de costeletas por igual com o tempero. Deixe marinar durante 1 hora.","2. Num tabuleiro grande de ir ao forno, de preferência de barro, espalhe as folhas de louro, as batatas e a cebola. Tempere com umas pedrinhas de flor de sal e colorau. Junte as folhinhas de tomilho e envolva bem. Por cima, espalhe a margarina cortada em pedaços. Regue com metade do vinho e por fim, junte os raminhos de alecrim.","3. Leve ao forno pré-aquecido nos 200ºC e deixe assar durante 20 minutos. Passados os 20 minutos, retire o tabuleiro. Empurre as batatas para as extremidades e no centro, coloque o vão de costeletas. Espalhe uniformemente as batatas à volta do vão. Regue a carne com o sumo de limão e com o restante vinho branco.","4. Leve ao forno novamente e deixe assar durante 40 minutos. A meio do tempo, vire a carne para que fique loirinha de ambos os lados. Depois da carne e das batatas bem assadas, retire do forno. E está pronto a servir.
+Acompanhe este prato com grelos de couve ou de nabo cozidos."],
+"porção":6,		
+"tempo":"2 horas e 30 minutos"
+},
+
+{"id":106,
+"nome": "Arroz de Entrecosto",
+"quantidade": ["600g de entrecosto cortado em pedacinhos","1 colher de chá bem cheia de massa pimentão","1 colher de café rasa de cominhos em pó","2 dentes de alho picados","2 raminhos de alecrim fresco","1 folha de louro cortada ao meio","Sal q.b.","250 ml de vinho branco","1 colher de sopa de banha de porco","1 cebola picada","1 malagueta fresca cortada em rodelas finas","75g de chouriço de carne cortado em rodelas","3 colheres de sopa de polpa de tomate","200g de feijão encarnado cozido","220g de arroz vaporizado","750 ml de caldo de carne","Salsa picada q.b."],
+"ingredientes": ["entrecosto","massa pimentão","cominhos","alho","alecrim","louro","sal","vinho branco","banha","cebola","malagueta","chouriço de carne","polpa de tomate","feijão","arroz","caldo de carne"],
+"preparação": ["1. Numa tigela, tempere a carne com sal, os cominhos em pó, os alhos picados, a massa de pimentão e o louro. Misture o tempero muito bem. Junte o alecrim e regue tudo com o vinho branco. Deixe marinar durante 1 hora.","2. Num tacho largo leve ao lume a banha e deixe derreter. Junte as rodelas de chouriço e o entrecosto bem escorrido. Deixe fritar por igual em lume forte até que a carne ganhe cor. Depois de loirinha, retire a carne e o chouriço para uma travessa com uma escumadeira.","3. À gordura que ficou, junte a cebola, o louro e o alecrim do marinado e a malagueta. Mexa e deixe refogar bem sem deixar alourar.","4. Depois de tudo refogado, retire o alecrim e adicione novamente o entrecosto e o chouriço. Junte a polpa de tomate e o marinado. Mexa, tape e deixe cozinhar em lume forte durante 5 minutos.","5. Passado os 5 minutos, junte o caldo de carne. Tape e deixe cozinhar em lume forte durante 10 minutos.","6. Passado os 10 minutos, junte o arroz e o feijão cozido. Mexa, tape e deixe cozinhar em lume médio forte durante 18 minutos. Caso seja necessário, acrescente mais um pouco de água e rectifique os temperos.","7. Por fim, quando o arroz estiver cozido, junte a salsa picada. Mexa e retire do lume. Tenha atenção para que o arroz fique ligeiramente malandrinho.
+E está pronto a servir."],
+"porção":4,		
+"tempo":"1 hora"
+},
+
+{"id":107,
+"nome": "Magret de Pato com Castanhas e Redução de Laranja e Jeropiga",
+"quantidade": ["2 peitos de pato","Sumo de 2 laranjas","Gengibre em pó","Folhinhas de alecrim fresco","4 cravinhos da india","1 colher de chá de molho inglês","Sal q.b.","Pimenta preta q.b.","1 colher de sopa de mel","1 dúzia de castanhas","Erva-doce em pó","1 colher de sopa de azeite","1/2 cebola picada","150 ml de jeropiga","1 colher de sobremesa de mel","1 colher de chá bem cheia de manteiga"],
+"ingredientes": ["pato","laranja","gengibre","alecrim","crabinhos da Índia","molho inglês","sal","pimenta preta","mel","castanhas","erva-doce","azeite","cebola","jeropiga","mel","manteiga"],
+"preparação": ["1. Na pele do pato, faça golpes com uma faca em forma de losangos. Numa taça quadrada funda, coloque os peitos de pato. Tempere-os de ambos os lados com sal. Deixe tomar gosto durante 10 minutos.","2. Passado os 10 minutos, tempere os peitos de pato de ambos os lados com pimenta preta, gengibre em pó e folhas de alecrim. Com a pele virada para cima, regue os peitos de pato com o molho inglês. Junte os cravinhos e por fim, regue com o sumo de laranja.
+Deixe marinar durante 1 hora no frigorífico.","3. Entretanto, prepare as castanhas. Com uma faca dê um golpe nas castanhas. Num tachinho com água, tempere com sal e um pouco de erva-doce.
+Leve ao lume e deixe ferver. Quando começar a ferver, junte as castanhas e deixe cozer durante 7 minutos. Passado os 7 minutos, retire-as com uma escumadeira para um prato e descasque-as ainda quentes.","4. Depois do pato marinado, leve uma frigideira ao lume e deixe aquecer bem.
+Quando a frigideira estiver bem quente, coloque os peitos com a pele virada para baixo. Deixe fritar aproximadamente 3 minutos até que a pele aloure e a gordura derreta. Vire os peitos e deixe fritar mais 30 segundos só para alourar. Retire os peitos e coloque-os num tabuleiro de ir ao forno com a pele virada para cima. Numa rede fina, coe a gordura que sobrou e misture-a com as castanhas.","5. Faça o molho. Numa rede fina, coe o marinado do pato. Num tachinho, leve ao lume o azeite e a cebola. Mexa até que a cebola fique vidrada e sem deixar alourar. Ao refogado, junte 180 ml do marinado e a jeropiga. Deixe ferver durante 5 minutos.","6. Passado os 5 minutos, triture tudo com a varinha mágica. Adicione a colher de sobremesa de mel. Deixe ferver até que o molho reduza para menos de metade. Quando o molho estiver bem apurado, junte a manteiga. Mexa e apague o lume.","7. Entretanto, acabe o pato. Pincele os peitos de pato com uma colher de sopa de mel e à volta espalhe as castanhas. Leve ao forno pré-aquecido nos 220ºC e deixe assar durante 12 minutos. Passado os 12 minutos e quando o pato estiver loirinho, retire-o.","8. Sirva o pato cortado às fatias, com as castanhas e regado com o molho. Para acompanhar este prato, pode utilizar puré de batata simples ou puré de batata com trufas negras."],
+"porção":3,		
+"tempo":"1 hora e 50 minutos"
+},
+
+{"id":108,
+"nome": "Bifes à Portuguesa",
+"quantidade": ["2 bifes da vazia com cerca de 180g cada","4 fatias de presunto","4 colheres de sopa de azeite","3 dentes de alho esmagados com casca","2 folhas de louro cortadas ao meio","1 colher de café de mostarda amarela","60 ml de vinho branco","1 colher de chá de vinagre de vinho branco","50g de manteiga","Flor de sal q.b.","Pimenta preta q.b."],
+"ingredientes": ["bife da vazia","presunto","azeite","alho","louro","mostarda","vinho branco","vinagre de vinho branco","manteiga","flor de sal","pimenta preta"],
+"preparação": ["1. Tempere os bifes de ambos os lados com flor de sal.","2. Numa frigideira, leve ao lume o azeite, os alhos e o louro. Quando estiver bem quente, frite as fatias de presunto de ambos os lados. Depois do presunto frito, retire-o para um prato e reserve.","3. Na gordura que ficou, frite os bifes em lume forte aproximadamente 1 minuto e meio de cada lado. Depois dos bifes fritos, tempere-os com pimenta preta moída na hora. Coloque os bifes em pratos individuais.","4. Ao molho que sobrou na frigideira, junte o vinho branco e misture muito bem a mostarda. Junte a manteiga e deixe derreter. Por fim, misture o vinagre e retire do lume.","5. Sirva cada bife com 2 fatias de presunto por cima e regado com o molho. Acompanhe este prato com batata frita caseira cortada em rodelas e se quiser, ovo estrelado."],
+"porção":2,		
+"tempo":"10 minutos"
+},
+
+{"id":109,
+"nome": "Borrego Guisado com Molho de Tomate e Manjericão",
+"quantidade": ["800g de carne de borrego da perna, dessosada e cortada em cubos","4 colheres de sopa de azeite","1 cebola picada","3 dentes de alho picados","2 folhas de louro cortadas ao meio","1 lata com 390g de tomate pelado cortado em cubos","125 ml de vinho branco","1 molhinho de folhinhas de manjericão frescas picadas","600 ml de caldo de carne","Sal q.b.","Mistura de 5 pimentas q.b."],
+"ingredientes": ["borrego","azeite","cebola","alho","louro","tomate","vinho branco","manjericão","caldo de carne","sal","pimenta"],
+"preparação": ["1. Tempere a carne com sal e pimenta. Envolva bem o tempero com a carne.","2. Num tacho largo leve ao lume o azeite. Quando estiver quente, adicione a carne. Deixe fritar bem por igual até que a carne aloire. Depois da carne loirinha, retire-a com uma escumadeira para um prato.","3. À gordura que ficou, junte a cebola, os alhos e as folhas de louro. Mexa e deixe refogar um pouco.","4. Quando a cebola estiver vidrada, adicione as folhas de manjericão picadas e o tomate pelado. Misture bem e deixe refogar durante 5 minutos.","5. Ao refogado, adicione a carne. Regue com o vinho branco. Mexa e por fim, regue tudo com o caldo de carne. Tape e deixe cozinhar em lume médio aproximadamente 40 minutos.","6. Mexa de vez em quando e se for necessário, acrescente mais um pouco de água. Quando a carne estiver tenrinha e o molho apurado, retire. Acompanhe este prato com esparguete ou outra massa cozida a gosto."],
+"porção":4,		
+"tempo":"1 hora"
+},
+
+{"id":110,
+"nome": "Gratinado de Carne com Molho de Tomate e Cogumelos",
+"quantidade": ["180g de massa a gosto","280g de carne de vaca picada","3 colheres de sopa de azeite","1/2 cebola picada","1 dente de alho picado","50g de bacon fumado cortado em cubinhos","120g de cogumelos frescos laminados","8 colheres de sopa bem cheias de polpa de tomate","60 ml de vinho branco","160 ml de caldo de carne","Folhas de orégãos secas","Queijo Grana Padano","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["massa","vaca","azeite","cebola","alho","bacon","cogumelos","polpa de tomate","vinho branco","caldo de carne","orégãos","queijo","sal","pimenta"],
+"preparação": ["1. Num tacho leve ao lume o azeite, a cebola, o alho e o bacon. Mexa muito bem e deixe refogar.","2. Ao refogado, junte a carne. Tempere com sal e pimenta. Mexa e deixe fritar em lume forte até que a carne ganhe cor e fique soltinha.","3. À carne, junte os cogumelos, o vinho branco, a polpa de tomate e o caldo de carne. Mexa e deixe cozinhar em lume médio aproximadamente 10 minutos.","4. Quando o molho estiver apurado, adicione os orégãos.
+Misture bem e retire do lume.","5. Entretanto, numa panela com água a ferver, coloque a massa.
+Tempere com sal e mexa. Deixe cozer durante o tempo indicado na embalagem. Depois da massa cozida, escorra-a.","6. Coloque a massa num tabuleiro de ir ao forno. Cubra a massa com a carne.
+Polvilhe com o queijo ralado na hora.","7. Leve ao forno pré-aquecido nos 210ºC e deixe gratinar aproximadamente 10 minutos. Quando o queijo começar a ficar gratinado, retire e sirva."],
+"porção":4,		
+"tempo":"40 minutos"
+},
+
+{"id":111,
+"nome": "Frango com Leite de Coco e Pimentos",
+"quantidade": ["4 pernas de frango cortadas ao meio ou 1 frango cortado em pedaços","4 colheres de sopa de azeite","1 cebola picada","2 dentes de alho picados","1 folha de louro cortada ao meio","2 pedacinhos de gengibre fresco","2 malaguetas secas","1/2 pimento vermelho cortado em tiras","1/2 pimento laranja cortado em tiras","1/2 pimento amarelo cortado em tiras","250g de cogumelos frescos laminados","400 ml de leite de coco","Coentros picados q.b.","Sal q.b."],
+"ingredientes": ["frango","azeite","cebola","alho","louro","gengibre","malagueta","pimento vermelho","pimento amarelo","cogumelos","leite de coco","coentros","sal"],
+"preparação": ["1. Tempere o frango por igual com sal. Deixe tomar gosto durante 1 hora.","2. Num tacho largo leve ao lume 4 colheres de sopa de azeite, a cebola, o alho, o louro, o gengibre e as malaguetas. Mexa e deixe refogar bem sem deixar alourar.","3. Ao refogado, junte o pimento vermelho, o pimento laranja e o pimento amarelo. Mexa, deixe aquecer um pouco e adicione os pedaços de frango com a pele virada para baixo. Deixe ganhar um pouco de cor de ambos os lados. Tape e deixe cozinhar em lume médio durante 5 minutos.","4. Passado os 5 minutos, junte os cogumelos e o leite de coco. Mexa, tape e deixe cozinhar em lume médio durante 20 minutos. Depois da carne cozinhada e o molho apurado, apague o lume. Sirva este prato polvilhado com coentros picados e acompanhado de esparguete com caril ou arroz basmati e brócolos cozidos."],
+"porção":4,		
+"tempo":"40 minutos"
+},
+
+{"id":112,
+"nome": "Bochechas de Porco Estufadas com Vinho Tinto",
+"quantidade": ["600g de bochechas de porco","4 colheres de sopa de azeite","1 cebola grande picada","2 dentes de alho picados","2 folhas de louro cortadas ao meio","2 tomates médios maduros cortados em cubinhos","60g de linguiça alentejana ou chouriço alentejano cortado em rodelas finas ou pedacinhos","Malaguetas secas a gosto","2 colheres de sopa de polpa de tomate","1 raminho de alecrim","1/2 litro de vinho tinto","Sal q.b."],
+"ingredientes": ["porco","azeite","cebola","alho","louro","tomate","linguiça","malagueta","polpa de tomate","alecrim","vinho tinto","sal"],
+"preparação": ["1. Tempere as bochechas de ambos os lados com sal.","2. Num tacho largo leve ao lume o azeite, a cebola, o alho e o louro. Mexa e deixe refogar sem deixar alourar.","3. Ao refogado, adicione a linguiça ou o chouriço, as malaguetas, o raminho de alecrim e a polpa de tomate. Mexa e deixe aquecer um pouco. Adicione ao refogado o tomate cortado em pedaços. Misture e deixe refogar bem.","4. Quando o tomate começar a desfazer-se, adicione as bochechas de porco. Deixe fritar um pouco de ambos os lados até que a carne ganhe cor.","5. Por fim, regue com o vinho tinto. Tape e deixe cozinhar em lume brando aproximadamente 45 minutos, até que a carne fique tenra. Depois da carne bem estufada e o molho apurado está pronto a servir.
+Acompanhe este prato com puré de batata e legumes cozidos a gosto."],
+"porção":3,		
+"tempo":"1 hora"
+},
+
+{"id":113,
+"nome": "Bifes com Cogumelos e Manteiga de Alecrim",
+"quantidade": ["2 bifes do lombo ou da vazia","200g de cogumelos frescos laminados","2 dentes de alho picados","1 colher de chá bem cheia de mostarda amarela","1 raminho de folhas de alecrim fresco, picadas","80g de manteiga","Sal q.b."],
+"ingredientes": ["lombo","vazia","cogumelos","alho","mostarda","alecrim","manteiga","sal"],
+"preparação": ["1. Tempere os bifes de ambos os lados com sal e esfregue bem.","2. Numa tigela, coloque a manteiga cortada em pedaços, os alhos, a mostarda e o alecrim picado. Misture muito bem até que fique uma pasta.","3. Numa frigideira leve ao lume metade da pasta e deixe aquecer.
+Frite os bifes de ambos os lados em lume médio. Tenha atenção para não deixar queimar a manteiga. Depois dos bifes fritos a gosto, retire-os para pratos individuais.","4. Numa outra frigideira, coe a gordura que sobrou dos bifes num passado fino metálico. Junte os cogumelos e deixe saltear até que estes percam a água. Por fim, junte a restante pasta e deixe saltear mais um pouco até que tudo fique quente. Tenha atenção especial para não deixar alourar o alho. Sirva os bifes com os cogumelos e o molho por cima."],
+"porção":2,		
+"tempo":"15 minutos"
+},
+
+{"id":114,
+"nome": "Croquetes de Frango",
+"quantidade": ["1/2 frango grande de preferência a parte dos peitos","1 raminho de salsa","1 colher de chá de grãos de pimenta branca","1 dente de alho","1 folha de louro cortada ao meio","1 cebola grande picada","1 cenoura média cortada ao meio","70g de manteiga","100g de bacon picado","120g de farinha de trigo sem fermento","250 ml de leite","Noz-moscada q.b.","Sal q.b.","Pimenta q.b.","Sumo de limão","Salsa picada","Farinha para polvilhar","2 ovos mexidos com um garfo","Pão ralado para polvilhar","Óleo para fritar"],
+"ingredientes": ["frango","salsa","pimenta branca","alho","louro","cebola","cenoura","manteiga","bacon","farinha","leite","noz-moscada","sal","pimenta","limão","ovo","pão ralado","óleo"],
+"preparação": ["1. Numa panela leve ao lume 2 litros de água e tempere com sal. Adicione os grãos de pimenta, o dente de alho, o louro, o raminho de salsa, uma colher de sopa de cebola picada e a cenoura. Quando o caldo começar a ferver, junte os peitos e deixe cozer durante 30 minutos.","2. Depois do frango cozido, retire-o com uma escumadeira para um prato e deixe arrefecer. Numa tigela, coloque a cenoura e adicione 3 conchas de caldo (o que dá aproximadamente meio litro). Triture com a varinha mágica o caldo e a cenoura até que esta se desfaça. Limpe o frango de peles e de ossos e desfie a carne.","3. Num tacho leve ao lume a manteiga, a restante cebola e o bacon. Mexa e deixe refogar até que comece a alourar.","4. Ao refogado junte a farinha e misture muito bem até que descole do fundo. Aos poucos e enquanto mexe, adicione o caldo com a cenoura e o leite. Tempere com noz-moscada ralada e adicione o frango desfiado. Mexa muito bem até que comece a borbulhar e descole um pouco do fundo.","5. Rectifique os temperos de sal e pimenta. Tempere com umas gotinhas de sumo de limão e por fim, misture bem a salsa picada. Deixe arrefecer e guarde no frigorífico até que a massa fique fria.","6. Depois da massa fria, retire colheradas e polvilhe com um pouco de farinha.
+Molde a massa em formato de croquete. Reserve os croquetes numa travessa, polvilhe previamente com farinha.","7. Passe os croquetes por ovo batido e pão ralado. Se não quiser utilizar os croquetes todos de uma vez, pode congelá-los antes de os fritar. Por fim, frite os croquetes em óleo quente de ambos os lados até que fiquem loirinhos.","8. Depois de fritos, retire-os com uma escumadeira para um prato com papel absorvente. E está pronto a servir. Pode servir os croquetes como lanche, petisco ou prato principal acompanhados a gosto."],
+"porção":8,		
+"tempo":"6 horas"
+},
+
+
+{"id":115,
+"nome": "Costeletas de Borrego Panadas com Molho de Tomate e Manjericão",
+"quantidade": ["12 costeletas de borrego","4 dentes de alho picados","Sumo de 1 lima","Sal q.b.","Pimenta q.b.","Azeite q.b.","Meia cebola picada finamente","4 raminhos de manjericão","150 ml de polpa de tomate","1 colher de chá rasa de açúcar","4 colheres de sopa bem cheias de queijo parmesão ralado","1 ovo batido","Pão ralado para polvilhar"],
+"ingredientes": ["borrego","alho","lima","sal","pimenta","azeite","cebola","manjericão","polpa de tomate","açúcar","queijo","ovo","pão ralado"],
+"preparação": ["1. Tempere as costeletas de ambos os lados com sal, pimenta, metade dos alhos picados, um fio de azeite e o sumo de lima. Deixe marinar durante 30 minutos.","2. Entretanto, numa frigideira leve ao lume aproximadamente 2 colheres de sopa de azeite, a cebola e os restantes alhos picados. Mexa e deixe refogar em lume médio sem deixar alourar.","3. Quando a cebola estiver bem refogada, junte os pézinhos de manjericão e deixe aquecer bem. Adicione a polpa de tomate e mexa. Tempere o molho com sal, pimenta e o açúcar. Mexa bem e deixe aquecer. Quando começar a ferver, retire os pézinhos de manjericão e reserve o molho.","4. Misture o queijo com o pão ralado. Passe as costeletas por ovo batido e pela mistura do pão com o queijo.
+Frite as costeletas de ambos os lados em azeite quente. Quando a carne estiver loirinha, retire-a para um prato com papel absorvente. Repita o processo até as costeletas acabarem. Sirva os panados com o molho. Acompanhe este prato com esparguete salteado com courgette ou outra massa a gosto."],
+"porção":3,		
+"tempo":"50 minutos"
+},
+
+
+{"id":116,
+"nome": "Bolinhas de Alheira",
+"quantidade": ["2 alheiras","Meia cebola picada finamente","1 ovo","2 colheres de sopa de salsa picada","Sumo de limão","Farinha de trigo sem fermento para polvilhar","Pão ralado","Óleo para fritar"],
+"ingredientes": ["alheira","cebola","ovo","salsa","limão","farinha","pão ralado","óleo"],
+"preparação": ["1. Com uma faca dê um golpe ao longo das alheiras e retire-lhes a pele.","2. Parta o ovo e separe a gema da clara. Coloque a gema numa taça e a clara num prato fundo.","3. À gema junte a cebola, a salsa, um pouco de sumo de limão e as alheiras partidas em pedaços. Com um garfo esmague tudo muito bem e misture até que fique uma pasta. Com a pasta faça bolinhas pequenas e coloque num prato.","4. Mexa bem a clara com um garfo. Passe as bolinhas por farinha e sacuda bem. Depois passe pela clara e por fim, pelo pão ralado.","5. Frite as bolinhas de ambos os lados em óleo quente até que fiquem loirinhas. Depois das bolinhas fritas, retire-as com uma escumadeira para um prato com papel absorvente. Sirva as bolinhas como entrada ou petisco ou se quiser, sirva como prato principal, acompanhadas de arroz de manteiga ou uma salada a gosto."],
+"porção":4,		
+"tempo":"20 minutos"
+},
+
+{"id":117,
+"nome": "Coelho Picante Frito",
+"quantidade": ["1 coelho cortado em pedaços","4 dentes de alho picados","2 colheres de sopa bem cheia de massa de pimentão","1 malagueta cortada em rodelas","2 folhas de louro cortadas ao meio","100 ml de azeite","200 ml de vinho branco","1 molhinho de salsa picada","Sumo de limão q.b.","Sal q.b."],
+"ingredientes": ["coelho","alho","massa de pimentão","malagueta","louro","azeite","vinho branco","salsa","limão","sal"],
+"preparação": ["1. Numa tigela, tempere o coelho com umas pedrinhas de sal, tendo em conta que a massa de pimentão já é salgada, principalmente se for caseira. Junte o alho picado, a malagueta, a massa de pimentão e as folhas de louro. Envolva tudo muito bem. Regue com o vinho branco. Deixe marinar durante 2 horas.","2. Num tacho leve ao lume o azeite e deixe aquecer.
+Coloque os pedaços de coelho bem escorridos a fritar e adicione as folhas de louro. Deixe fritar em lume médio durante 20 minutos e mexa de vez em quando para que não queime.","3. Passados os 20 minutos e quando o coelho estiver loirinho, junte a marinada. Deixe fritar mais 10 minutos e mexa de vez em quando para não agarrar.","4. Quando tudo estiver apurado, apague o lume. Regue com um pouco de sumo de limão. Misture a salsa picada. Sirva o coelho acompanhado de uma salada e batata frita."],
+"porção":5,		
+"tempo":"2 horas e 40 minutos"
+}, 
+
+{"id":118,
+"nome": "Peitos de Frango em Papelote no Forno",
+"quantidade": ["2 peitos de frango","2 colheres de sopa de azeite","2 dentes de alho picados","40g de bacon picado na picadora","1 colher de chá de molho inglês","1 colher de chá de mostarda","Salsa picada","Sal q.b.","Mistura de 5 pimentas q.b.","Papel de alumínio."],
+"ingredientes": ["frango","azeite","alho","bacon","molho inglês","salsa","mostarda","sal","pimenta","papel de alumínio"],
+"preparação": ["1. Tempere os peitos de ambos os lados com sal e com a mistura das 5 pimentas."," 2. Numa frigideira leve ao lume o azeite, os alhos e o bacon. Deixe saltear em lume forte durante alguns segundos. Quando tudo estiver dourado, junte o molho inglês, a mostarda e a salsa. Mexa, deixe aquecer e retire do lume.","3. Coloque um peito de frango sobre 2 folhas de alumínio. Por cima, espalhe 1/4 do refogado. Vire o peito e por cima espalhe outro 1/4 do refogado. Feche bem as folhas de alumínio com as pontas viradas para cima. Repita o processo com o outro peito e coloque os embrulhos num tabuleiro de ir ao forno.","4. Leve ao forno pré-aquecido nos 220ºC e deixe assar durante 20 minutos. Passado os 20 minutos, retire, desembrulhe os peitos e sirva. Acompanhe este prato com esparguete, legumes e salada."],
+"porção":2,		
+"tempo":"30 minutos"
+}, 
+
+{"id":119,
+"nome": "Tostas de Frango Assado com Cogumelos e Presunto",
+"quantidade": ["1 baguete com cerca de 250g aberta ao meio","2 colheres de sopa de azeite","Meia cebola picada finamente","2 colheres de sopa de polpa de tomate","160g de cogumelos frescos laminados","1 colher de chá bem cheia de folhas de orégãos secas","Sal q.b.","Pimenta q.b.","200g de frango assado desfiado","4 fatias de presunto cortadas em tiras finas","150g de queijo mozarela ralado"],
+"ingredientes": ["baguete","azeite","cebola","polpa de tomate","cogumelos","orégãos","sal","pimenta","frango","presunto","queijo"],
+"preparação": ["1. Numa frigideira leve ao lume o azeite e a cebola. Mexa e deixe refogar um pouco.","2. Ao refogado adicione os cogumelos. Tempere com sal e pimenta. Junte a polpa de tomate e misture. Deixe cozinhar em lume forte durante 2 minutos até que os cogumelos percam volume.","3. Adicione o frango. Envolva bem. Quando tudo estiver quente, apague o lume e por fim, misture o presunto.","4. Num tabuleiro de ir ao forno, coloque a baguete cortada ao meio com o miolo virado para cima. Espalhe muito bem o recheio por cada metade. Por cima do recheio polvilhe com o queijo e por fim com as folhinhas de orégãos.","5. Leve ao forno pré-aquecido nos 180ºC e deixe tostar entre 10 a 15 minutos. Quando as tostas estiverem loirinhas, retire e sirva."],
+"porção":4,		
+"tempo":"25 minutos"
+}, 
+
+{"id":120,
+"nome": "Frango do Campo Assado à Alentejana",
+"quantidade": ["1 frango do campo inteiro","300g de tiras de entremeada cortadas em cubinhos","700g de batatinhas para assar descascadas","7 dentes de alho","3 colheres de chá bem cheias de massa pimentão","3 folhas de louro","125 ml de vinho branco","Sal q.b.","20g de margarina","Rodelas de laranja"],
+"ingredientes": ["frango","entremeada","batata","alho","massa pimentão","louro","vinho branco","sal","margarina","laranja"],
+"preparação": ["1. Corte os alhos em pedaços e coloque-os num almofariz. Adicione um pouco de sal, tendo em conta que a massa de pimentão já é salgada, principalmente se for caseira. Esmague tudo muito bem até que fique uma pasta. Misture bem a pasta de alho com a massa de pimentão.","2. Barre bem o frango por dentro e por fora com 3/4 do tempero. Coloque-o num tabuleiro de ir ao forno com os peitos virados para cima.","3. Numa tigela misture bem as batatas com o restante tempero e com a entremeada. À volta do frango, espalhe a mistura das batatas com a entremeada. Espalhe também as folhas de louro. Regue com o vinho branco. Por fim, junte a margarina.","4. Leve ao forno pré-aquecido nos 190ºC e deixe assar aproximadamente 1 hora e 30 minutos. Quando tudo estiver bem loirinho e o molho apurado, retire do forno. Sirva acompanhado das rodelas de laranja e com uma salada de alface roxa, folhas de coentros e cebola."],
+"porção":6,		
+"tempo":"1 hora e 45 minutos"
+}, 
+
+{"id":121,
+"nome": "Almôndegas à Mexicana",
+"quantidade": ["500g de carne de vaca picada","260g de feijão encarnado cozido (1 lata pequena)","150g de milho doce cozido","Meio pimento vermelho pequeno cortado em cubinhos","Meio pimento verde pequeno cortado em cubinhos","1 malagueta cortada em rodelas","1 cebola picada","2 dentes de alho picados","2 tomates médios maduros cortados em cubos","Salsa picada","4 colheres de sopa de azeite","4 colheres de sopa de polpa de tomate","150 ml de vinho branco","1 cubo de caldo de carne natural","Sal q.b."],
+"ingredientes": ["vaca","feijão","milho","pimento vermelho","pimento","pimento verde","malagueta","cebola","alho","tomate","salsa","azeite","polpa de tomate","vinho branco","caldo de carne","sal"],
+"preparação": ["1. Tempere a carne com sal e misture bem. Retire pedaços de carne e faça almôndegas do mesmo tamanho.","2. Num tacho leve ao lume 2 colheres de sopa de azeite, a cebola e os alhos. Mexa e deixe refogar sem deixar alourar. Ao refogado junte a malagueta, os pimentos e o tomate cortado em cubos. Mexa e deixe refogar bem aproximadamente 10 minutos.","3. Ao refogado junte a polpa de tomate, o caldo de carne, o feijão, o milho e a salsa picada. Tempere com sal. Adicione o vinho branco e por fim, 200 ml de água. Mexa, tape e deixe cozinhar em lume médio durante 20 minutos até que tudo fique apurado.","4. Entretanto, numa frigideira leve ao lume o restante azeite e deixe aquecer. Frite as almôndegas de ambos os lados até que ganhem cor. Por fim, espalhe o molho por cima e deixe apurar entre 5 a 10 minutos. Quando tudo estiver bem apurado, está pronto a servir. Acompanhe este prato com arroz branco."],
+"porção":5,		
+"tempo":"50 minutos"
+}, 
+
+{"id":122,
+"nome": "Tarte de Pato",
+"quantidade": ["370g de massa quebrada","1,2 kg de pato cortado em pedaços","70g de chouriço de carne","2 cenouras médias","Meia cebola cortada em pedaços","1 dente de alho","1 raminho de salsa","2 raminhos de alecrim","1 folha de louro","3 cravinhos da Índia","1 colher de chá rasa de pimenta preta em grão","4 ovos","1 colher de sopa de farinha de trigo sem fermento","550 ml de leite","200 ml de natas light","Noz-moscada q.b.","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["massa quebrada","pato","chouriço de carne","cenoura","cebola","alho","salsa","alecrim","louro","cravinho da Índia","pimenta preta","ovo","farinha","leite","nata","noz-moscada","sal","pimenta"],
+"preparação": ["1. Numa panela com água a ferver, tempere com sal. Adicione o alho, a cebola, o louro, a salsa, o alecrim, os cravinhos, os grãos de pimenta, o chouriço e as cenouras. Quando começar a ferver, junte o pato. Tape e deixe cozer durante 1 hora e 20 minutos.","2. Quando a carne estiver bem cozida, retire para um prato, com uma escumadeira, o pato, a cenoura e o chouriço. Deixe arrefecer. Limpe o pato de peles e de ossos e desfie a carne. Corte as cenouras e o chouriço em cubinhos e misture com a carne desfiada.","3. Parta os ovos para uma tigela.
+Tempere com sal, pimenta e noz-moscada ralada. Mexa um pouco com uma vara de arames. Junte a farinha e bata bem até que tudo fique bem misturado. Por fim, misture bem as natas e o leite.","4. Polvilhe a bancada com um pouco de farinha. Estenda a massa com um rolo. Forre uma tarteira com fundo amovível e 32 cm de diâmetro com a massa. Acalque bem e retire o excesso da massa com uma faca.","5. Por cima da massa, espalhe a carne com a cenoura e o chouriço. Por fim, cubra tudo com o líquido. Leve ao forno pré-aquecido nos 180ºC e deixe cozer durante 50 minutos. Quando a carne estiver cozida, retire e desenforme. E está pronta a servir."],
+"porção":12,		
+"tempo":"3 horas"
+}, 
+
+{"id":123,
+"nome": "Lombo de Porco Assado Frio",
+"quantidade": ["1 lombo de porco com cerca de 1,7 kg","3 dentes de alho","1 colher de café de louro em pó","Sal q.b.","Pimenta q.b.","1 colher de chá bem cheia de massa pimentão","2 colheres de sopa de azeite","80 ml de vinho branco","Papel de alumínio"],
+"ingredientes": ["porco","alho","louro","sal","pimenta","massa pimentão","azeite","vinho branco","papel de alumínio"],
+"preparação": ["1. Corte os alhos em pedaços e coloque-os dentro de um almofariz. Junte sal e esmague muito bem até que fique uma pasta. Tempere com bastante pimenta. Junte o louro e a massa de pimentão. Misture o tempero muito bem.","2. Coloque a carne num tabuleiro de ir ao forno e barre-a por igual com a pasta que preparou. Regue com o vinho branco e o azeite. Tape o tabuleiro muito bem com 2 a 3 folhas de alumínio.","3. Leve ao forno pré-aquecido nos 180ºC e deixe assar durante 1 hora e 30 minutos. Passado o tempo, retire o tabuleiro do forno. Destape-o e deixe arrefecer o lombo. Sirva a carne fria cortada em fatias finas e decorada com pickles e azeitonas pretas. Acompanhe esta carne com uma salada fria a gosto."],
+"porção":10,		
+"tempo":"1 hora e 45 minutos"
+}, 
+
+{"id":124,
+"nome": "Magret de Pato com Manga e Especiarias",
+"quantidade": ["2 peitos de pato","1 colher de chá de mostarda inglesa","2 colheres de chá de mel","300g de manga cortada em cubinhos","35g de manteiga","1 colher de sopa bem cheia de mel","1 pedacinho de gengibre fresco","1 pau de canela","1 folha de louro","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["pato","mostarda","mel","manga","manteiga","gengibre","canela","louro","sal","pimenta"],
+"preparação": ["1. Misture a mostarda com as 2 colheres de chá de mel. Com a faca, dê golpes na pele do pato em forma de losangos. Tempere os peitos de ambos os lados com sal, pimenta e com a mistura de mostarda e mel. Esfregue bem o tempero. Deixe marinar durante 1 hora.","2. Passado 1 hora faça o molho. Numa frigideira leve ao lume a manteiga, o gengibre, a folha de louro e o pau de canela. Mexa e deixe aquecer. Junte a manga e o restante mel. Mexa e deixe cozinhar durante 5 minutos em lume médio até que o molho fique cremoso e a manga cozinhada. Depois do molho no ponto, retire a folha de louro, o gengibre e o pau de canela.","3. Numa frigideira anti-aderente e quente, coloque os peitos de pato a fritar com a pele virada para baixo. Deixe fritar em lume médio-baixo aproximadamente 12 minutos. Vire o pato e deixe fritar mais 6 minutos. Depois do pato cozinhado, sirva-o cortado às fatias e regado com o molho. Acompanhe este prato com arroz, batata frita ou outra guarnição a gosto."],
+"porção":3,		
+"tempo":"1 hora e 30 minutos"
+}, 
+
+{"id":125,
+"nome": "Rolinhos de Couve com Carne Gratinados",
+"quantidade": ["8 folhas grandes de couve lombarda lavadas","2 colheres de sopa de azeite","1 cebola grande picada","2 dentes de alho picados","1 colher de café rasa de louro em pó","80g de bacon picado na picadora","80g de chouriço de carne picado na picadora","600g de carne de vaca picada","1 tomate grande maduro cortado em cubinhos","3 cenouras pequenas raladas","200g de queijo mozarela ralado","50g de manteiga","40g de farinha de trigo sem fermento","200 ml de natas light","700 ml de leite","Noz-moscada q.b.","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["couve lombarda","azeite","cebola","alho","louro","bacon","chouriço de carne","vaca","tomate","cenoura","queijo","manteiga","farinha","natas","leite","noz-moscada","sal","pimenta"],
+"preparação": ["1. Com uma faca retire o excesso do talo, para que depois seja mais fácil enrolar. Numa panela ou num tacho largo com água a ferver, tempere com sal. Coloque as couves, começando pelas mais escuras e acabando pelas mais claras. Acalque com uma escumadeira e deixe cozer durante 15 minutos. Passado os 15 minutos, retire as couves com a escumadeira e deixe arrefecer.","2. Numa frigideira leve ao lume o azeite, 3/4 da cebola picada e os alhos. Mexa e deixe refogar até que a cebola fique vidrada. Junte o bacon e o chouriço. Mexa e deixe fritar bem.","3. Junte a carne picada. Tempere com sal, pimenta e com o louro em pó. Mexa muito bem com uma colher até que a carne fique soltinha. Junte o tomate e a cenoura ralada. Misture tudo muito bem e deixe cozinhar em lume forte durante 10 minutos. Quando tudo estiver apurado, retire.","4. Entretanto, num tacho, leve ao lume a manteiga e a restante cebola. Mexa e deixe refogar sem deixar alourar. Ao refogado, junte a farinha e mexa muito bem. Enquanto mexe, junte aos poucos o leite e as natas. Tempere com sal, pimenta e noz-moscada. Mexa até que o molho engrosse e comece a borbulhar.","5. Num prato, coloque uma folha de couve bem espalmada e por cima espalhe 1/8 do recheio de carne. Polvilhe com uma colher de sobremesa de queijo ralado.
+Por fim, enrole e aconchegue bem a folha de couve. Repita o processo com as restantes folhas.","6. Num tabuleiro, previamente untado com manteiga, espalhe no fundo um pouco de molho.
+Por cima, coloque com cuidado os rolos de couve bem aconchegados. Cubra os rolos com o restante molho e alise. Por fim, polvilhe com o restante queijo ralado.","7. Leve ao forno pré-aquecido nos 180ºC e deixe gratinar durante 30 minutos. Passado os 30 minutos retire e sirva."],
+"porção":4,		
+"tempo":"1 hora e 15 minutos"
+}, 
+
+{"id":126,
+"nome": "Arroz de Cabrito no Forno com Açafrão",
+"quantidade": ["1,8 kg de cabrito cortado em pedaços","2 colheres de chá de massa pimentão","3 dentes de alho picados","1 raminho de salsa atado com um fio","3 raminhos de alecrim fresco","2 folhas de louro","200 ml de vinho branco","350g de tomates sem pele cortados em cubos","5 colheres de sopa de azeite","1 cebola picada","50g de paio cortado em cubinhos","50g de chouriço de carne cortado em cubinhos","Os miúdos de meio cabrito cortados em cubinhos","280g de arroz vaporizado","3 cravinhos-da-Índia","1 colher de café bem cheia de açafrão-da-Índia em pó","80g de chouriço de carne cortado em rodelas","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["cabrito","massa pimentão","alho","salsa","alecrim","louro","vinho branco","tomate","azeite","cebola","paio","chouriço de carne","arroz","cravinhos da Índia","açafrão da Índia","sal","pimenta"],
+"preparação": ["1. Num tabuleiro de ir ao forno, de preferência de barro, tempere o cabrito com sal, pimenta, os alhos e a massa de pimentão. Esfregue muito bem a carne com o tempero. Junte a salsa, o alecrim e o louro. Por fim, regue com o vinho branco e deixe marinar durante 1 hora.","2. Passada 1 hora, junte à carne os cubos de tomate e 3 colheres de sopa de azeite.
+Misture tudo muito bem.","3. Leve ao forno pré-aquecido nos 220ºC e deixe assar durante 1 hora.
+Retire a carne do forno e reserve o molho.","4. Num tacho leve ao lume o restante azeite e a cebola. Mexa e deixe refogar sem deixar alourar. Junte os cubinhos de paio, de chouriço e os miúdos. Mexa muito bem e deixe fritar.","5. Quando tudo estiver bem salteado, junte o molho da carne, sem a salsa, o alecrim e o louro. Misture e deixe ferver. Adicione o arroz, os cravinhos-da-Índia e o açafrão. Mexa e quando começar a secar, adicione aos poucos e enquanto coze 600 ml de água. Deixe o arroz cozer aproximadamente 15 minutos até que a água seque.","6. Espalhe o arroz no tabuleiro onde assou a carne. Por cima espalhe as rodelas de chouriço e os pedaços de cabrito. Leve novamente ao forno nos 190ºC e deixe assar aproximadamente 30 minutos até que tudo fique loirinho. Depois da carne bem cozinhada e o arroz tostadinho, retire e sirva."],
+"porção":5,		
+"tempo":"3 horas e 15 minutos"
+}, 
+
+{"id":127,
+"nome": "Perna de Porco no Forno com Linguiça",
+"quantidade": ["1,2 kg de carne de porco da perna","260g de linguiça alentejana","3 dentes de alho picados","2 colheres de chá de massa de Pimentão","1 colher de sopa bem cheia de banha de porco","1 colher de sopa de azeite","1 colher de chá de paprica","1 kg de batatinhas para assar descascadas","1 cebola grande, de preferência nova cortada em tiras","1 pimentão vermelho cortado em tiras","2 folhas de louro","250 ml de vinho branco","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["porco","linguiça","alho","massa de pimentão","azeite","paprica","batatas","cebola","pimentão vermelho","louro","vinho branco","sal","pimenta"],
+"preparação": ["1. Com uma faca comprida, dê golpes de um lado ao outro da carne para que consiga introduzir a linguiça. Atravessa a linguiça de um lado ao outro no orifício que abriu e corte-a pela extremidade. Repita o processo mais 4 vezes de forma a que sobre um pouco de linguiça. Corte a restante linguiça em rodelas finas.","2. Coloque num almofariz os alhos picados, pimenta e uma colher de chá de sal. Esmague tudo muito bem até que fique uma pasta.
+Junte a massa de pimentão e misture muito bem com uma colher.","3. Coloque a carne num tabuleiro de ir ao forno. Barre-a com o tempero que preparou. Deixe marinar algum tempo, de preferência de um dia para o outro.","4. Na hora de colocar no forno, tempere as batatas com umas pedrinhas de sal, a paprica e o azeite. Envolva tudo. À volta da carne espalhe a cebola, o pimento vermelho, as folhas de louro, a linguiça cortada em rodelas e as batatinhas. Regue a carne com o marinado das batatas. Por cima da carne coloque a banha. Por fim, regue à volta com o vinho branco.","5. Leve ao forno pré-aquecido nos 180ºC e deixe assar durante 2 horas. A meio do tempo, vire a carne e mexa as batatas. Depois de tudo assado, retire do forno e sirva. Se quiser, pode acompanhar este prato com grelos cozidos ou uma salada."],
+"porção":5,		
+"tempo":"14 horas e 30 minutos"
+}, 
+
+{"id":128,
+"nome": "Escalopes de Porco Enrolados com Molho de Tomate",
+"quantidade": ["4 escalopes finos de porco","4 salsichas tipo Frankfurt","4 fatias grossas de queijo flamengo","Sal q.b.","Pimenta q.b.","1 ovo batido","Pão ralado","Óleo para fritar","1 colher de sopa de azeite","1 cebola pequena picada","1 dente de alho picado","4 tomates médios maduros cortados em cubinhos","2 colheres de sopa bem cheias de polpa de tomate","1 colher de café de açúcar","Folhas de manjericão cortadas em juliana"],
+"ingredientes": ["escalopes","salsicha","queijo","ovo","pão ralado","óleo","azeite","cebola","alho","tomate","polpa de tomate","açúcar","manjericão","sal","pimenta"],
+"preparação": ["1. Tempere os escalopes com sal e pimenta. Envolva bem o tempero com a carne.","2. Faça o molho. Num tacho leve ao lume o azeite, a cebola e o alho. Mexa e deixe refogar em lume médio sem deixar alourar. Junte o tomate e a polpa de tomate. Deixe cozinhar aproximadamente 5 minutos até que o tomate comece a desfazer-se.","3. Tempere com sal e pimenta.
+Passe tudo com a varinha mágica até que fique um molho espesso. Junte o açúcar e o manjericão.
+Mexa e retire do lume.","4. Num prato, espalme bem os escalopes. Por cima de cada escalope, coloque uma fatia de queijo e numa das extremidades, uma salsicha. Enrole bem os escalopes e prenda com 2 palitos.","5. Passe os rolos por ovo batido e pão ralado. Frite os rolos em óleo quente de ambos os lados. Tenha atenção especial para que fiquem bem passados por dentro.
+Depois de fritos coloque-os num prato com papel absorvente. Sirva os rolinhos com o molho de tomate. Se quiser, pode acompanhar com esparguete salteado com cogumelos e espinafres salteados ou outro acompanhamento a gosto."],
+"porção":2,		
+"tempo":"20 minutos"
+}, 
+
+{"id":129,
+"nome": "Pita de Borrego",
+"quantidade": ["4 pães pita","400g de borrego da perna ou da pá cortada em tiras","1 colher de café de alho em pó","1 colher de café de açafrão em pó","1 colher de café de pimentão doce","Meia colher de café de cominhos em pó","1 pitada de louro em pó","Sal q.b.","Pimenta q.b.","Sumo de lima","Folhas de coentros picadas grosseiramente","1 colher de sopa de azeite","125g de iogurte natural magro","2 colheres de sopa bem cheias de maionese magra","4 folhas de alface cortadas em juliana","50g de couve roxa cortada em juliana fina","1 cenoura ralada","Meia cebola pequena cortada em tiras"],
+"ingredientes": ["pão pita","borrego","alho","açafrão","pimentão doce","cominhos","louro","sal","pimenta","lima","coentros","azeite","iogurte","maionese","alface","couve roxa","cenoura","cebola"],
+"preparação": ["1. Tempere o borrego com sal, pimenta, uma pitada de louro, os cominhos, o pimentão doce, metade do alho em pó e o açafrão em pó. Junte um pouco de coentros picados.
+Regue com sumo de meia lima e por fim, misture tudo muito bem. Deixe marinar durante 2 horas no frigorífico.","2. Numa frigideira leve ao lume o azeite e deixe aquecer. Junte a carne e deixe fritar em lume forte até que fique loirinha. Quando a carne estiver frita, junte metade do iogurte e mais um pouco de coentros. Mexa e deixe cozinhar em lume forte até que o molho seque.","3. Numa tigela, misture a alface com a couve roxa, a cenoura e a cebola.","4. Numa tigela, misture o restante iogurte com a maionese. Tempere com umas pedrinhas de sal, pimenta, o restante alho em pó, umas gotas de sumo de lima e um pouco de coentros picados.","5. Aqueça as pitas conforme as instruções da embalagem. Corte-as pelo picotado com uma tesoura. Abra os pães e recheie alternadamente com salada e carne, acabando o recheio com carne. Acompanhe as pitas com a restante salada e o molho."],
+"porção":4,		
+"tempo":"2 horas e 20 minutos"
+}, 
+
+{"id":130,
+"nome": "Bife com Molho de Pimenta",
+"quantidade": ["2 bifes de vaca do lombo com aproximadamente 180g cada","Flor de sal q.b.","50g de manteiga","100 ml de caldo de carne natural (meio cubo de caldo natural)","2 colheres de sopa bem cheias de mistura de pimentas em grão","1 colher de chá de molho inglês","200 ml de natas"],
+"ingredientes": ["vaca","flor de sal","manteiga","caldo de carne","pimentas","molho inglês","natas"],
+"preparação": ["1. Num almofariz esmague um pouco as pimentas. Quando mais esmgadas tiverem, mais forte fica o molho.","2. Tempere os bifes de ambos os lados com um pouco de flor de sal, tendo em conta que o caldo de carne já é salgado. Numa frigideira, leve ao lume a manteiga e deixe aquecer bem. Frite os bifes de ambos os lados a gosto. Depois dos bifes fritos coloque-os num prato.","3. À gordura que ficou, misture a pimenta, o molho inglês e o caldo de carne. Deixe ferver alguns minutos até que o molho reduza para metade. Bata as natas com uma vara de arames até que ganhem um pouco de consistência e volume. Junte as natas ao molho e misture bem.
+Deixe cozinhar alguns segundos até que o molho fique cremoso. Sirva o bife com o molho por cima."],
+"porção":2,		
+"tempo":"20 minutos"
+}, 
+
+{"id":131,
+"nome": "Lombinhos de Porco com Mexilhão e Açafrão",
+"quantidade": ["2 lombinhos de porco com cerca de 200g cada","400g de mexilhão meia concha","3 colheres de sopa de azeite","2 dentes de alho picados","1 ou 2 malaguetas cortadas em rodelas","Meio pimento vermelho cortado em tiras","Meio pimento amarelo cortado em tiras","250mg de fios de açafrão","250 ml de vinho branco","1 molhinho de coentros picados grosseiramente","Sal q.b."],
+"ingredientes": ["porco","mexilhão","azeite","alho","malaguetas","pimento vermelho","pimento amarelo","açafrão","vinho branco","coentros","sal"],
+"preparação": ["1. Tempere os lombinhos com sal. Numa tigela, hidrate os fios de açafrão com um pouco de água a ferver.","2. Num tacho, leve ao lume o azeite e deixe aquecer. Coloque os lombinhos a fritar de ambos os lados até que fiquem bem selados. Retire-os para um prato.","3. Na gordura que ficou, junte os alhos picados, o pimento vermelho, o pimento amarelo e a malagueta. Mexa e deixe refogar um pouco. Quando os pimentos começarem a ficar caramelizados, junte novamente a carne, o vinho branco e o açafrão. Tape e deixe cozinhar em lume médio até o líquido evaporar.","4. Quando o molho estiver apurado, retire a carne e coloque-a num prato que possa ir ao forno. Leve a carne a assar no forno pré-aquecido nos 220ºC entre 10 a 15 minutos.","5. Entretanto, ao molho que ficou, junte os mexilhões e misture bem. Tape e deixe cozinhar em lume moderado durante 10 minutos. Passado os 10 minutos, junte os coentros, mexa e retire.","6. Quando a carne estiver bem passada e tostadinha por fora, retire-a do forno.
+Sirva a carne cortada em fatias com os mexilhões e o molho por cima. Acompanhe este prato com puré de batata e legumes cozidos, eu usei couve romanesca cozida."],
+"porção":3,		
+"tempo":"50 minutos"
+}, 
+ 
+{"id":132,
+"nome": "Delícia de Frango com Natas no Forno",
+"quantidade": ["Meio frango do campo grande cortado em pedaços ou um frango pequeno cortado em pedaços","400g de batata palha frita","100g de manteiga","1 cebola grande cortada em rodelas meia lua","2 dentes de alho picados","2 folhas de louro cortadas ao meio","2 cenouras médias raladas","300g de cogumelos frescos laminados","60g de farinha de trigo sem fermento","300 ml de leite","200 ml de natas","100g de queijo mozarela ralado","Sumo de limão q.b.","Sal q.b.","Pimenta q.b.","Noz-moscada q.b."],
+"ingredientes": ["frango","batata palha","manteiga","cebola","alho","louro","cenoura","cogumelos","farinha","leite","natas","queijo mozarela","limão","sal","pimenta","noz-moscada"],
+"preparação": ["1. Numa panela com água a ferver, tempere com sal. Coloque os pedaços de frango a cozer durante 30 minutos. Depois do frango cozido, retire-o com uma escumadeira para um prato e deixe arrefecer. Reserve 600 ml de caldo de cozer o frango. Depois do frango frio, limpe-o de peles e de ossos e desfie.","2. Num tacho, leve ao lume metade da manteiga. Quando estiver derretida, misture muito bem a farinha. Aos poucos e enquanto mexe, adicione, o caldo de cozer o frango que reservou, o leite e as natas. Tempere com umas pedrinhas de sal (tendo em conta que o caldo já está salgado), pimenta, noz-moscada e sumo de limão. Mexa e deixe engrossar.","3. Entretanto, num outro tacho, leve ao lume a restante manteiga, a cebola, os alhos picados e as folhas de louro. Mexa e deixe refogar ligeiramente sem deixar alourar.","4. Ao refogado, junte a cenoura e os cogumelos. Misture tudo e deixe refogar durante 5 minutos em lume médio.","5. Quando tudo estiver bem refogado, adicione o frango. Tempere com pimenta. Junte 2/3 do molho branco. Mexa bem e retire as folhas de louro. Apague o lume e misture muito bem as batatas com o frango.","6. Coloque o preparado num tabuleiro de ir ao forno e espalhe. Cubra tudo com o restante molho branco. Por fim, polvilhe com o queijo ralado.","7. Leve ao forno pré-aquecido nos 180º e deixe gratinar apenas com a grelha de cima durante 20 minutos. Depois de loirinho, retire. Acompanhe este prato com espinafres salteados ou uma salada."],
+"porção":6,		
+"tempo":"1 hora e 30 minutos"
+}, 
+
+{"id":133,
+"nome": "Coxas de Frango com Molho de Soja e Noodles de Arroz",
+"quantidade": ["6 coxas de frango","2 colheres de sopa de óleo de girassol","2 colheres de chá de açúcar","1 cubo de caldo de galinha","3 colheres de sopa de molho de soja","4 fatias finas de gengibre fresco","Meia malagueta","150g de noodles de arroz (massa de arroz)","Meia cenoura descascada","100g de couve chinesa cortada em juliana","100g de cogumelos enoki","Sal q.b."],
+"ingredientes": ["frango","óleo de girassol","açúcar","cubo de caldo de galinha","molho de soja","gengibre","malagueta","noodles","cenoura","couve chinesa","cogumelos"],
+"preparação": ["1. Num tacho, leve ao lume 1 colher de sopa de óleo e deixe aquecer ligeiramente. Junte o gengibre, a malagueta e as coxas de frango. Deixe as coxas alourar de ambos os lados.","2. Tempere com umas pedrinhas de sal, tendo em conta que o caldo de galinha já é salgado. Regue com o molho de soja. Junte o caldo de galinha, o açúcar e água suficiente para cobrir o frango. Tape e deixe cozinhar em lume médio-baixo durante 1 hora.","3. Quando o frango estiver quase pronto, coloque os noodles numa tigela. Cubra-os com água a ferver. Solte ligeiramente a massa com um garfo. Deixe cozer durante 2 minutos. Passado os 2 minutos, escorra a massa e passe por um pouco de água fria para que não coza mais.","4. Num wok ou numa frigideira, leve ao lume o restante óleo. Com um descascador, corte fatias finas de cenoura.
+Deixe aquecer bem e adicione os cogumelos. Tempere com sal. Quando tudo estiver quente, junte os noodles, salteie bem e por fim, junte a couve. Deixe saltear mais um pouco e retire. Tenha especial atenção para não deixar cozer a couve demasiado. Quando a carne estiver bem tenrinha e o molho espesso, está pronto a servir.Sirva o frango com o molho e os noodles salteados."],
+"porção":3,		
+"tempo":"1 hora e 10 minutos"
+}, 
+
+{"id":134,
+"nome": "Rolo de Carne Recheado com Queijo e Espinafres",
+"quantidade": ["800g de carne de vaca picada, dentro de um saco de plástico com 40x26 cm","Meio molho de folhas de espinafres","200g de queijo mozarela ralado","7 fatias de presunto","2 colheres de sopa de manteiga","2 colheres de sopa de azeite","1 cebola picada","2 dentes de alho esmagados","200g de tomates mini-chucha cortados ao meio","200g de cogumelos frescos cortados em quartos","2 folhas de louro","100 ml de Vinho do Porto branco","200 ml de caldo de legumes","Folhas de orégãos secas","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["vaca","espinafres","queijo","presunto","manteiga","azeite","cebola","alho","tomate","cogumelos","louro","vinho do Porto","caldo de legumes","sal","pimenta"],
+"preparação": ["1. Endireite o saco com a carne. Passe com o rolo da massa por cima, para que a carne fique espalhada por igual. Não faça muita pressão com o rolo da massa, para que depois a carne não fique muito seca e compacta. Quando a carne estiver num formato de um retângulo perfeito, com a ajuda de uma faca corte as extremidades do saco sem cortar um dos lados de maior comprimento.","2. Abra o saco. Tempere a carne com sal, pimenta e folhas de orégãos.
+Por cima, espalhe as folhas de espinafres e acalque bem. Polvilhe tudo com o queijo ralado.","3. Com a ajuda da extremidade do saco, enrole bem o rolo e vá acalcando. Feche as extremidades da carne para que o recheio não saia para fora.","4. Abra o saco. Por cima do saco, espalhe as fatias de presunto junto ao rolo de carne. Tempere a carne com mais um pouco de sal, pimenta e folhas de orégãos. Enrole o saco, de forma a que as fatias de presunto fiquem por cima do rolo. Acalque bem e guarde no frigorífico durante 30 minutos para que ganhe consistência e sabor.","5. Passado os 30 minutos, desenrole com cuidado o rolo para dentro de um tabuleiro de ir ao forno previamente pincelado com azeite. À volta do rolo, espalhe as folhas de louro, os dentes de alho, a cebola, os tomates mini-chucha e os cogumelos. Regue tudo com o Vinho do Porto, o caldo de legumes e o azeite. Por fim, espalhe os pedacinhos de manteiga e polvilhe tudo com folhas de orégãos.","6. Leve ao forno pré-aquecido nos 180º e deixe assar entre 25 a 30 minutos. Quando estiver loirinho, retire. Tenha atenção especial para não deixar passar demasiado a carne. Sirva o rolo com massa ou arroz a gosto. Neste caso, eu utilizei linguini com pesto salteado com espinafres."],
+"porção":5,		
+"tempo":"1 hora e 15 minutos"
+}, 
+
+{"id":135,
+"nome": "Frango com Cogumelos e Tomilho",
+"quantidade": ["2 pernas de frango do campo cortadas ao meio","1 colher de sopa de manteiga","1 cebola média picada","2 dentes de alho picados","1 folha de louro cortada ao meio","60g de bacon fumado cortado em cubinhos","Raminhos de tomilho fresco","200g de cogumelos frescos cortados em quartos","300 ml de vinho tinto","Sal q.b.","Mistura de 5 pimentas q.b"],
+"ingredientes": ["frango","manteiga","cebola","alho","louro","bacon","tomilho","cogumelos","vinho tinto","sal","pimentas"],
+"preparação": ["1. Numa frigideira, leve ao lume a manteiga, a cebola, os alhos, o louro e o bacon. Mexa e deixe refogar sem deixar alourar muito.","2. Junte os pedaços de frango. Tempere com sal, a mistura das 5 pimentas e folhinhas de tomilho fresco (aproximadamente 1 colher de sopa bem cheia). Deixe alourar os pedaços de frango de ambos os lados por igual.","3. Depois da carne loirinha, regue com o vinho tinto. Tape e deixe cozinhar em lume médio durante 30 minutos.","4. A meio do tempo, vire a carne. Caso o molho esteja muito seco, adicione mais um pouco de vinho tinto. Junte os cogumelos. Tape e deixe cozinhar os restantes 15 minutos. Quando a carne e os cogumelos estiverem cozinhados e o molho apurado, está pronto a servir. Sirva a carne polvilhada com folhinhas de tomilho frescas e acompanhada de couves de bruxelas e arroz branco cozido. Neste caso, usei a mistura de 3 arrozes diferentes, branco, vermelho e selvagem."],
+"porção":2,		
+"tempo":"45 minutos"
+}, 
+
+{"id":136,
+"nome": "Perna de Peru no Forno com Mel e Laranja",
+"quantidade": ["1 perna de peru com cerca de 2 kg","Flor de sal q.b.","1 colher de chá bem cheia de louro em pó","1 colher de chá bem cheia de gengibre em pó","3 dentes de alho picados","1 colher de chá bem cheia de mostarda com sementes","Sumo de 1 limão","Sumo de 2 laranjas","3 colheres de sopa bem cheias de mel","250 ml de vinho branco","1 malagueta","Raminhos de tomilho fresco","80g de manteiga","Azeite q.b.","2 dentes de alho com casca","1 kg de batatinhas com casca","250g de cenouras baby cortadas ao meio","Sal q.b.","Pimenta q.b.","1 dente de alho","260g de caldo verde","60g de bacon","2 laranjas cortadas em rodelas"],
+"ingredientes": ["peru","flor de sal","louro","gengibre","alho","mostarda","limão","laranja","mel","vinho branco","malagueta","tomilho","azeite","manteiga","batata","cenoura","sal","pimenta","caldo verde","bacon"],
+"preparação": ["1. Comece por fazer o peru. Numa tigela, coloque a mostarda, os alhos picados, o sumo de laranja, o sumo de limão, a malagueta, o vinho branco e o mel. Triture tudo com a varinha mágica.","2. Coloque a perna de peru num tabuleiro de ir ao forno. Tempere de ambos os lados com flor de sal, o louro em pó e o gengibre. Esfregue bem a perna com o tempero. A perna deve ficar com a pele virada para baixo para que seja tostada no final. Regue a carne com o molho que preparou. À volta, espalhe raminhos de tomilho e a manteiga partida em pedacinhos.","3. Leve ao forno pré-aquecido nos 180º e deixe assar aproximadamente 1 hora e 30 minutos. A meio do tempo vire a perna de peru para que fique assada por igual e a perna tostada.","4. Entretanto, faça os acompanhamentos. Numa panela com água, tempere com sal. Coloque a cozer os alhos com casca, as batatinhas e as cenouras. Depois de começar a ferver, deixe cozer durante 15 minutos. Passado os 15 minutos, retire tudo com uma escumadeira para uma travessa.","5. Entretanto, noutra panela com água a ferver, tempere com sal. Coloque o caldo verde. Logo que comece a ferver, retire e escorra.","6. Na picadora, coloque o dente de alho e o bacon cortado em pedaços. Pique tudo até que fique uma pasta.","7. Numa frigideira, leve ao lume 4 colheres de sopa de azeite. Junte a pasta de bacon e deixe saltear. Adicione o caldo verde e deixe saltear durante 1 minuto. Caso o caldo verde esteja um pouco seco, adicione mais azeite.","8. Numa outra frigideira, leve ao lume 4 colheres de sopa de azeite. Adicione os alhos cozidos e descascados e esmague-os com um garfo. Junte os raminhos de tomilho e deixe aquecer um pouco. Junte as batatas e as cenouras. Tempere com umas pedrinhas de sal e pimenta.
+Salteie até que as batatas fiquem loirinhas.","9. Depois da carne assada, retire-a. Sirva a carne cortada às fatias, acompanhada das batatas e as cenouras salteadas, o caldo verde, o molho e as laranjas cortadas em rodelas."],
+"porção":6,		
+"tempo":"1 hora e 45 minutos"
+}, 
+
+{"id":137,
+"nome": "Costeletas de Borrego com Chalotas e Molho de Vinho",
+"quantidade": ["12 costeletas do pé de borrego","2 colheres de sopa de azeite","1 raminho de alecrim fresco","Flor de sal q.b.","2 dentes de alho","1 folha de louro partido em pedacinhos","Pimenta q.b.","8 chalotas pequenas cortadas em tiras","1 colher de sopa bem cheia de manteiga","250 ml de vinho tinto de boa qualidade","4 batatas médias com casca","4 rodelas de manteiga de alho e ervas","Sal q.b."],
+"ingredientes": ["borrego","azeite","alecrim","flor de sal","louro","pimenta","chalotas","manteiga","vinho tinto","batata","manteiga de alho","sal"],
+"preparação": ["1. Num tabuleiro de ir ao forno, coloque as batatas bem lavadas e com a casca molhada para que o sal agarre. Tempere as batatas de ambos os lados com sal. Leve ao forno pré-aquecido nos 200º e deixe assar aproximadamente 50 minutos.","2. Entretanto, tempere as costeletas com flor de sal, pimenta, os alhos esmagados no esmagador, folhinhas de alecrim, o louro partido em pedacinhos e o azeite. Misture muito bem e deixe marinar durante 15 minutos.","3. Numa frigideira de cerâmica ou anti-aderente bem quente, frite 6 costeletas de ambos os lados, durante alguns segundos até que fiquem loirinhas. Logo que a carne esteja dourada, retire as costeletas e repita o processo com as restantes.","4. Na mesma frigideira, coloque a manteiga e as chalotas. Deixe refogar até que fiquem caramelizadas. Adicione o vinho tinto. Deixe ferver durante alguns minutos até que o molho fique apurado.","5. Por fim, coloque as costeletas novamente na frigideira e envolva bem com o molho. Caso o molho esteja muito seco, adicione mais um pouco de vinho tinto, na frigideira, sem colocar por cima da carne. Tape e deixe cozinhar durante 2 minutos até que a carne aqueça bem.","6. Depois das batatas assadas, retire-as. Para cada prato, coloque uma batata e com um pano ou uma folha de papel absorvente, dê um murro. No centro, abra ligeiramente a pele e coloque uma rodela de manteiga com alho e ervas. Para que a manteiga se mantenha rija durante mais tempo, guarde no congelador 10 minutos antes de servir. Termine o empratamento com as costeletas, as chalotas e o molho. Se quiser pode acompanhar este prato com grelos de couve ou de nabo cozido ou salteados e cogumelos salteados. E está pronto a servir."],
+"porção":4,		
+"tempo":"1 hora"
+}, 
+
+{"id":138,
+"nome": "Asas de Frango Agridoces no Forno",
+"quantidade": ["1 kg de asinhas frango cortadas ao meio e sem as pontas","2 colheres de sopa de azeite","1 colher de chá de alho em pó","1 colher de sopa de molho de piri-piri","1 colher de chá rasa de pimenta-caiena","Pimenta preta q.b.","Sumo de limão q.b.","Sal q.b.","60g de manteiga","2 colheres de sopa de molho de piri-piri","2 colheres de sopa de ketchup","3 colheres de sopa de vinagre de cidra","3 colheres de sopa de bem cheias de mel","1 colher de chá de amido de milho"],
+"ingredientes": ["frango","azeite","alho","piri piri","pimenta","pimenta preta","limão","sal","manteiga","ketchup","vinagre de cidra","mel","amido de milho"],
+"preparação": ["1. Numa caixa, tempere as asinhas de frango com sal, o alho em pó, o molho de piri-piri, a pimenta-caiena, a pimenta preta, o azeite e sumo de 1/4 de limão. Tape a caixa e agite bem, para que o tempero fique bem espalhado. Deixe marinar durante 1 hora.","2. Entretanto faça o molho. Num tachinho, dissolva o amido de milho com o vinagre. Junte o ketchup, o molho de piri-piri, o mel e a manteiga. Leve ao lume e deixe derreter a manteiga. Quando estiver um molho homogéneo, retire.","3. Num tabuleiro de ir ao forno previamente pincelado com azeite, coloque as asinhas de frango com a pele virada para baixo, de forma que as asinhas não fiquem coladas umas às outras.","4. Leve ao forno pré-aquecido nos 230º e deixe assar durante 10 minutos. Passado os 10 minutos, retire as asinhas e pincele-as com o molho.
+Vire-as com a pele para cima e pincele-as novamente. Leve novamente ao forno durante 10 minutos.
+Quando as asinhas de frango estiverem loirinhas e com aspecto caramelizado, retire. Se quiser que as asinhas de frango fiquem com o sabor mais intenso, pincele novamente com o molho ou sirva-o à parte. Também pode servir com outro molho a gosto."],
+"porção":4,		
+"tempo":"1 hora e 30 minutos"
+}, 
+
+{"id":138,
+"nome": "Tagliatelle com Molho de Cérebro e Olhos (Halloween)",
+"quantidade": ["600g de carne de peru picada","280g de tagliatelle verde","4 colheres de sopa de azeite","1 cebola picada","2 dentes de alho picados","1 folha de louro cortada ao meio","400g de tomate pelado cortado em cubinhos","4 folhinhas de manjericão","3 colheres de sopa de polpa de tomate","100g de fios extra finos de bacon","250 ml de caldo de galinha","20 mini queijos mozarela","20 rodelas de azeitonas verdes recheadas com pimento vermelho","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["peru","tagliatelle","azeite","alho","cebola","louro","tomate","manjericão","polpa de tomate","bacon","caldo de galinha","queijo","azeitona","sal","pimenta"],
+"preparação": ["1. Numa panela com bastante água a ferver, tempere com sal. Junte uma colher de sopa de azeite e coloque a massa a cozer durante 7 minutos. Mexa a massa com um garfo para que fique bem soltinha. Depois da massa cozida, escorra-a.","2. Entretanto, numa frigideira larga, leve ao lume o restante azeite, a cebola, os alhos e a folha de louro. Mexa e deixe refogar em lume médio até que a cebola fique vidrada.","3. Junte o tomate pelado e as folhinhas de manjericão cortadas em pedacinhos. Mexa e deixe refogar mais um pouco. Adicione a polpa de tomate e o caldo de galinha. Mexa e deixe ferver.","4. Quando começar a ferver, retire as folhas de louro. Coloque o molho num copo e passe com a varinha mágica. Coloque novamente o molho na frigideira e junte a carne picada. Mexa muito bem até que a carne fique bem soltinha..
+Tempere com sal e pimenta.","5. Por fim, junte o bacon. Mexa e deixe cozinhar durante 5 minutos em lume médio. Depois da carne cozinhada e o molho apurado, retire.","6. Divida a massa por 4 pratos. No centro da massa, coloque a carne. Em cada prato, afunde ligeiramente 5 queijinhos com uma rodela de azeitona por cima. E está pronto a servir."],
+"porção":4,		
+"tempo":"25 minutos"
+}, 
+
+{"id":139,
+"nome": "Salsichas Frescas no Forno com Couve Salteada",
+"quantidade": ["1 kg de salsichas frescas","1 colher de chá bem cheia de massa de pimentão","200 ml de vinho branco","4 colheres de sopa de azeite","1 cebola cortada ao meio","2 dentes de alho","60g de bacon","1 kg de couve lombarda cortada em juliana grossa","Sal q.b.","Pimenta preta q.b."],
+"ingredientes": ["salsicha","massa de pimentão","vinho branco","azeite","cebola","alho","bacon","couve lombarda","sal","pimenta preta"],
+"preparação": ["1. No liquidificador coloque 1 dente de alho, meia cebola cortada em pedaços, a massa de pimentão, o vinho branco e 200 ml de água. Triture tudo muito bem até que fique um molho.","2. Num tabuleiro de ir ao forno, coloque metade do molho e as salsichas. Tempere com pimenta e misture tudo bem. Enrole as salsichas e faça um caracol. Prenda as salsichas com 2 espetos grandes. Regue-as com o restante molho e metade do azeite. Leve ao forno pré-aquecido nos 200º e deixe assar durante 30 minutos.","3. Entretanto, faça a couve. Na picadora, coloque a restante cebola cortada em pedaços, o outro dente de alho e o bacon cortado em pedaços.
+Triture tudo até que fique um pasta.","4. Num tacho largo, leve ao lume o restante azeite e deixe aquecer. Junte a misture do bacon com a cebola e deixe fritar um pouco. Caso o refogado esteja muito seco, adicione mais um pouco de azeite. Junte a couve bem lavada e escorrida aos poucos e entre cada adição misture bem com o bacon. Tempere com sal e pimenta. Deixe saltear em lume forte durante 10 miknutos. Quando a couve estiver bem seca, retire-a.","5. A meio do tempo, vire as salsichas. Quando estiverem douradinhas, retire-as. Acompanhe as salsichas com a couve salteada e se quiserem, um pouco de arroz de manteiga. E está pronto a servir."],
+"porção":4,		
+"tempo":"40 minutos"
+}, 
+
+{"id":140,
+"nome": "Lombinho de Porco Frito com Cerveja",
+"quantidade": ["1 kg de lombinhos de porco cortados em cubos","400g de camarão fresco ou descongelado","150 ml de azeite","4 dentes de alho esmagados","2 folhas de louro cortadas ao meio","2 malaguetas cortadas em rodelas","1 colher de sobremesa bem cheia de massa de pimentão","200 ml de cerveja","1 raminho de salsa picada","Azeitonas verdes recheadas com pimento vermelho","Pickles picados","Sal q.b."],
+"ingredientes": ["porco","camarão","azeite","alho","louro","malagueta","massa de pimentão","cerveja","salsa","azeitona","pickle","sal"],
+"preparação": ["1. Numa tigela, tempere a carne com sal tendo em conta que a massa de pimentão já é salgada. Junte a malagueta, a massa de pimentão, os dentes de alho, as folhas de louro, metade do azeite e a salsa picada. Envolva tudo muito bem. Regue com a cerveja e misture tudo. Deixe marinar durante 30 minutos.","2. Num tacho largo leve ao lume o restante azeite e deixe aquecer bem. Junte a carne escorrida, os alhos e as folhas de louro. Mexa e deixe fritar por igual até que a carne fique bem loirinha.","3. Junte o camarão e deixe aquecer. Aos poucos e enquanto frita, junte o marinado. Logo que o camarão esteja bem passado e o molho apurado, retire. Sirva a carne com os pickles picados, as azeitonas recheadas e batata frita."],
+"porção":5,		
+"tempo":"1 hora"
+}, 
+
+{"id":141,
+"nome": "Fettuccini com Cogumelos e Frango",
+"quantidade": ["400g de fettuccini com cogumelos","600g de bifes de frango cortados em tirinhas","300g de cogumelos frescos laminados","2 colheres de sopa de azeite","1 dente de alho picado","1 colher de sopa bem cheia de folhas de orégãos secas","200 ml de natas light para cozinhar","Queijo parmesão ralado na hora","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["fettuccini","frango","cogumelos","azeite","alho","orégãos","nata","queijo","sal","pimenta"],
+"preparação": ["1. Numa panela com bastante água a ferver, coloque um fio de azeite. Tempere com sal. Adicione a massa. Mexa com um garfo e deixe cozer durante 5 minutos. Passado os 5 minutos, escorra a massa. Passe com um pouco de água fria para que não coza demasiado.","2. Entretanto, numa frigideira, leve ao lume o azeite e o alho. Quando estiver quente, junte o frango. Tempere com sal e pimenta. Deixe fritar até que a carne ganhe cor.","3. Adicione os cogumelos. Deixe saltear tudo até que fique bem apurado.","4. Junte a massa e salteie. Por fim, junte as natas e as folhas de orégãos. Misture, deixe ferver alguns segundos e retire. E está pronto a servir. Sirva a massa com o queijo parmesão ralado na hora."],
+"porção":5,		
+"tempo":"20 minutos"
+}, 
+
+{"id":142,
+"nome": "Costeletas de Porco Assadas no Forno",
+"quantidade": ["4 costeletas de porco com o courato","4 dentes de alho esmagados","1 colher de chá bem cheia de massa de pimentão","1 folha de louro partida ao meio","1 colher de café rasa de cominhos em pó","500 ml (0,5l) de vinho verde","Coentros q.b.","Sal q.b.","Pimenta q.b.","1 kg de batatinhas para assar descascadas","1 colher de chá de colorau","2 colheres de sopa de azeite","1 colher de sopa de margarina","Coentros picados"],
+"ingredientes": ["porco","alho","massa de pimentão","louro","cominhos","vinho verde","coentros","sal","pimenta","batata","colorau","azeite","margarina","coentros"],
+"preparação": ["1. Num tabuleiro de barro ou de vidro, coloque as costeletas. Tempere de ambos os lados com sal, pimenta, massa de pimentão e os cominhos. Espalhe os alhos, o louro e raminhos de coentros. Por fim, regue tudo com o vinho verde. Deixe marinar no frigorífico de um dia para o outro.","2. No dia da confecção, tempere as batatas com sal, colorau e o azeite.
+Misture tudo. Espalhe à volta da carne. Junte o marinado das batatas e a margarina.","3. Leve ao forno pré-aquecido nos 200º e deixe assar durante 40 minutos. Passado os 40 minutos, vire a carne com o courato virado para cima para que fique tostado. Leve novamente ao forno e deixe assar aproximadamente 20 minutos até que o courato fique tostado. Depois da carne e das batatas assadas, retire. Sirva este prato com os coentros picados por cima e acompanhado de grelos de nabo ou de couve cozidos."],
+"porção":4,		
+"tempo":"1 hora e 10 minutos"
+}, 
+
+{"id":143,
+"nome": "Tapas de Bitoque",
+"quantidade": ["4 pãezinhos de mistura cortados ao meio","8 escalopes de novilho","4 fatias de presunto cortadas ao meio","2 colheres de sopa de azeite","1 colher de sopa bem cheia de margarina","2 dentes de alho esmagados","1 folha de louro cortada ao meio","2 colheres de sopa de vinho branco","8 ovos de codorniz","Óleo para fritar","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["pão","escalopes","presunto","azeite","margarina","alho","louro","vinho branco","ovo","óleo","sal","pimenta"],
+"preparação": ["1. Tempere os escalopes com um pouco de sal, tendo em conta que o presunto já é salgado, e pimenta. Envolva bem o tempero com a carne.","2. Numa frigideira grande, leve ao lume o azeite, a margarina, os alhos e o louro. Mexa e deixe aquecer.","3. Frite as fatias de presunto de ambos os lados durante alguns segundos. Retire-as para um prato.","4. Frite os escalopes aproximadamente 1 minuto de cada lado em lume forte. Regue com o vinho branco. Deixe apurar alguns minutos e envolva bem os bifinhos com o molho.","5. Entretanto, numa frigideira com um pouco de óleo quente, frite os ovos de codorniz partidos. Tempere com uma pedrinha de sal. Depois de fritos, retire-os com uma escumadeira para um prato com papel absorvente.","6. Em cada metade de pão, regue com um pouco de molho dos bifes. Por cima, coloque um bifinho, meia fatia de presunto e um ovo de codorniz. Se quiser, prenda tudo com um palito. Sirva este petisco acompanhado de batata frita, mostarda, ketchup e molho cocktail."],
+"porção":8,		
+"tempo":"10 minutos"
+}, 
+
+{"id":144,
+"nome": "Almôndegas Recheadas com Molho de Tomate",
+"quantidade": ["12 ovos de codorniz","500g de carne de vaca picada","60g de bacon cortado em pedaços","1 cebola pequena cortada em pedaços","1 ovo","Pão ralado q.b.","4 colheres de sopa de azeite","2 dentes de alho picados","2 tomates maduros sem pele cortados em cubos","160 ml de polpa de tomate","Folhinhas de manjericão","1 cubo de caldo de carne","180 ml de vinho branco","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["ovo","vaca","bacon","cebola","pão","azeite","alho","tomate","polpa de tomate","manjericão","caldo de carne","vinho branco","sal","pimenta"],
+"preparação": ["1. Num tachinho com água, coloque os ovos de codorniz a cozer durante 3 minutos.
+Depois dos ovos cozidos, retire-os com uma escumadeira para uma tigela com água fria. Descasque os ovos.","2. Na picadora, coloque a cebola e o bacon. Pique até que fique uma pasta.","3. Coloque a carne numa tigela. Tempere com sal e pimenta. Junte o picado do bacon com a cebola, o ovo partido e um pouco de pão ralado. Misture tudo muito bem. Caso seja necessário, acrescente mais um pouco de pão ralado para que a carne não cole nas mãos.","4. Divida a carne em 12 pedaços iguais. Na mão, espalhe cada pedaço de carne picada e no centro, coloque 1 ovo de codorniz. Molde a carne à volta do ovo de forma a que fique uma almôndega.","5. Numa frigideira, leve ao lume metade do azeite e o alho. Deixe aquecer ligeiramente e adicione os cubos de tomate. Mexa e deixe refogar em lume médio até que o tomate fique puré. Adicione as folhas de manjericão, a polpa de tomate, o caldo de carne, o vinho branco e 250 ml de água.
+Misture e deixe ferver durante 5 minutos.","6. Entretanto, leve ao lume o restante azeite e deixe aquecer. Frite as almôndegas de ambos os lados até ganharem um pouco de cor. Regue as almôndegas com o molho. Tape e deixe cozinhar em lume médio durante 10 minutos. A meio do tempo, vire as almôndegas. Depois da carne cozinhada, está pronto a servir. Acompanhe este prato com esparguete ou outra massa, ou puré de batata."],
+"porção":4,		
+"tempo":"40 minutos"
+}, 
+
+{"id":145,
+"nome": "Rolos de Frango com Farinheira no Forno",
+"quantidade": ["4 bifes grandes de frango","1 farinheira","4 fatias de bacon","2 dentes de alho esmagados com casca","1 raminho de alecrim","2 colheres de sopa de azeite","60 ml de vinho branco","Sal q.b.","Pimenta q.b.","Fio de cozinha"],
+"ingredientes": ["frango","farinheira","bacon","alho","alecrim","azeite","vinho branco","fio","sal","pimenta"],
+"preparação": ["1. Dê um golpe na farinheira e retire-lhe a pele. Corte a farinheira em 4 pedaços.","2. Tempere os bifes de ambos os lados com um pouco de sal e pimenta. No centro de cada bife, coloque 1/4 de farinheira e esmague com um garfo de forma que fique bem espalhada.
+Enrole o bife. Por cima coloque uma fatia de bacon. Prenda o rolo com fio de cozinha e ate-o.
+Repita o processo até que acabem os ingredientes.","3. Coloque os rolinhos num tabuleiro de ir ao forno, previamente untado com manteiga ou margarina. Junte os alhos e folhinhas de alecrim.
+Regue os rolinhos com azeite e o vinho branco.","4. Leve ao forno pré-aquecido nos 190º e deixe assar 25 minutos. Depois da carne loirinha, retire e sirva."],
+"porção":4,		
+"tempo":"40 minutos"
+}, 
+
+{"id":146,
+"nome": "Panados de Peru com Maionese de Alho e Salsa",
+"quantidade": ["800g de bifinhos de peru","4 dentes de alho picados","Sumo de 1 limão","Sal q.b.","Pimenta q.b.","2 ovos mexidos com um garfo","240g de pão ralado","Óleo para fritar","1 gema de ovo","1 dente de alho","1/2 colher de café de mostarda dijon","125 ml de azeite","125 ml de óleo","Sumo de limão","Salsa picada finamente"],
+"ingredientes": ["peru","alho","limão","sal","pimenta","ovo","pão ralado","óleo","gema","alho","mostarda","azeite","óleo","limão","salsa"],
+"preparação": ["1. Tempere os bifes com sal, pimenta, os alhos picados e sumo de 1 limão. Envolva muito bem. Deixe marinar durante 30 minutos.","2. Entretanto faça a maionese. Numa tigela coloque a mostarda, a gema e umas gotas de sumo de limão. Mexa bem com uma vara de arames e aos poucos enquanto mexe, adicione o azeite e o óleo. Mexa bem até que fique uma maionese cremosa.","3. Esmague o alho num esmagador ou num almofariz e adicione à maionese. Tempere com sal, pimenta e sumo de limão. Mexa bem e por fim, misture salsa picada a gosto.
+Guarde no frigorífico até que a maionese fique fresca.","4. Passe os bifinhos por ovo batido e pão ralado. Frite os bifes de ambos os lados em óleo quente. Depois dos bifes fritos, retire-os para um prato com papel absorvente. Sirva os panados de peru com a maionese de alho e salsa e uma salada."],
+"porção":6,		
+"tempo":"45 minutos"
+}, 
+
+{"id":147,
+"nome": "Tiras de Frango Gratinadas com Tomate e Mozarela",
+"quantidade": ["600g de bifes de frango cortados em tirinhas","3 colheres de sopa de azeite","1 cebola pequena picada","1 dente de alho picado","1 folha de louro","1 tomate grande cortado em rodelas finas","100g de bacon cortado em tirinhas","3 colheres de sopa de polpa de tomate","250 ml de vinho branco","1 colher de sopa de folhas de orégãos secas","200g de queijo mozarela ralado","Sal q.b.","Pimenta q.b."],
+"ingredientes": ["frango","azeite","cebola","alho","louro","tomate","bacon","polpa de tomate","vinho branco","orégãos","queijo","sal","pimenta"],
+"preparação": ["1. Numa frigideira leve ao lume o azeite, a cebola, o alho e a folha de louro.
+Mexa e deixe refogar até que a cebola fique vidrada. Junte o tomate e deixe refogar até que comece a desfazer-se. Adicione o bacon e deixe fritar durante alguns minutos.","2. Junte o frango. Tempere com sal e pimenta. Mexa e deixe cozinhar um pouco até que o frango comece a ganhar cor. Adicione a polpa de tomate, o vinho branco e metade dos orégãos. Mexa e deixe ferver durante 3 minutos até que o álcool evapore.","3. Num tabuleiro de ir ao forno, espalhe no fundo, metade do queijo. Por cima, coloque a carne. Retire a folha de louro. Polvilhe com o restante queijo e orégãos.","4. Leve ao forno pré-aquecido nos 250º e deixe gratinar durante 5 minutos. Passado os 5 minutos, retire e sirva. Acompanhe este prato com arroz, legumes e salada."],
+"porção":5,		
+"tempo":"25 minutos"
+}, 
+
+{"id":148,
+"nome": "Costeletas de Borrego Grelhadas com Alecrim e Cebola Caramelizada",
+"quantidade": ["1 kg de costeletas de borrego","2 raminhos de alecrim fresco","6 dentes de alho","5 colheres de sopa de azeite","Sumo de limão","Sal q.b.","Pimenta q.b.","1 colher de sopa de manteiga","2 cebolas roxas cortadas em rodelas meia lua","1 colher de sobremesa de açúcar amarelo ou mascavado","1 molho de folhas de espinafres lavadas","2 colheres de sopa de azeite","1 dente de alho picado finamente"],
+"ingredientes": ["borrego","alecrim","alho","azeite","limão","sal","pimenta","manteiga","cebola","açúcar","espinafres"],
+"preparação": ["1. Para uma travessa, pique finamente os alhos (os 6 dentes). Junte folhinhas de alecrim. Adicione o azeite. Tempere com sal e pimenta. Envolva bem o tempero com as costeletas. Deixe marinar durante 1 hora.","2. Para a cebola caramelizada: Numa frigideira, leve ao lume a manteiga e deixe aquecer. Junte a cebola. Mexa e deixe refogar até que a cebola fique amolecida. Adicione o açúcar amarelo e mexa até que a cebola comece a ficar com um tom caramelizado. Retire do lume.","3. Para os espinafres: Numa frigideira, leve ao lume o azeite e o alho. Mexa e adicione os espinafres. Tempere com umas pedrinhas de sal. Deixe cozinhar em lume forte até que a água seque.","4. Quando for grelhar as costeletas, tempere com um pouco de sumo de limão. Grelhe as costeletas 5 minutos de cada lado. Sirva a carne acompanhada da cebola caramelizada, os espinafres salteados e um pouco de batata frita."],
+"porção":4,		
+"tempo":"1 hora e 15 minutos"
+}, 
+
+{"id":149,
+"nome": "Coxinhas de Frango",
+"quantidade": ["500g de peitos de frango","1 cubo de caldo de galinha","80g de manteiga","1 cebola picada","2 dentes de alho picados","2 tomates maduros cortados em cubos","Salsa picada","120g de manteiga","1 cebola grande ralada","250 ml de leite","400g de farinha de trigo sem fermento","1 colher de sopa de óleo","Sal q.b.","Pimenta q.b.","Farinha para polvilhar","2 ovos batidos","Pão ralado para polvilhar","Óleo para fritar"],
+"ingredientes": ["frango","caldo de galinha","manteiga","cebola","alho","tomate","salsa","leite","farinha","óleo","pimenta","ovos","pão ralado"],
+"preparação": ["1. Numa panela com 1 litro e meio de água a ferver, tempere com sal e adicione o caldo de galinha. Mexa e coloque o frango a cozer durante 20 minutos. Depois do frango cozido, coloque-o num prato e deixe arrefecer. Do caldo de cozer o frango, reserve 400 ml + 125 ml. Depois do frango frio, desfie-o muito bem.","2. Num tacho, leve ao lume os 80g de manteiga, a cebola picada e os alhos picados. Mexa e deixe refogar até que a cebola fique vidrada. Junte o tomate. Deixe refogar até que o tomate comece a desfazer-se.","3. Junte os 125 ml de caldo de cozer o frango, a salsa e o frango desfiado. Tempere com pimenta. Mexa e deixe cozinhar até que o molho seque.","4. Para a massa: Num tacho largo, leve ao lume os 120g de manteiga e a cebola ralada. Mexa e deixe refogar um pouco. Junte os 400 ml de caldo e o leite. Tempere com sal. Quando começar a ferver, junte de uma só vez a farinha. Mexa até que a massa comece a descolar do fundo. Quando a massa começar a descolar, adicione a colher de sopa de óleo e mexa muito bem. Logo que a massa descole totalmente do tacho, retire.","5. Polvilhe a bancada com farinha e coloque a massa por cima. Tape com um pano e deixe repousar um pouco até a massa amornar.
+Quando conseguir, amasse a massa. Faça um bolo e corte em fatias grossas. Enrole os pedaços de massa em rolos. Corte os rolos em pedaços.","6. Com os dedos, molde os pedaços de massa até que fiquem com uma superfície côncava e coloque lá dentro o recheio. Com cuidado, una as pontas da massa até que fique em formato de pera e feche-as bem. Coloque as coxinhas num prato polvilhado com farinha.","7. Passe as coxinhas por ovo batido e pão ralado. Frite-as em óleo não muito quente. Depois de loirinhas, retire-as para um prato com papel absorvente. E estão prontas a servir."],
+"porção":6,		
+"tempo":"2 horas"
+}, 
+
+{"id":150,
+"nome": "Vazia na Frigideira com Cogumelos",
+"quantidade": ["1 bife da vazia com cerca de 600g","1 colher de sopa de banha de porco","80g de manteiga","700g de cogumelos frescos cortados em quartos","2 dentes de alho picados","1 colher de sopa de mostarda","Sumo de meio limão","Salsa picada","Sal q.b.","Pimenta preta q.b."],
+"ingredientes": ["bife da vazia","bife","banha","manteiga","cogumelos","alho","mostarda","limão","salsa","sal","pimenta preta"],
+"preparação": ["1. Tempere a carne de ambos os lados com sal e pimenta. Numa frigideira leve ao lume a banha e deixe aquecer. Frite a carne de ambos os lados em lume brando, 8 minutos de cada lado.","2. Entretanto, numa outra frigideira, leve ao lume a manteiga e os alhos. Mexa e deixe aquecer. Junte a mostarda e mexa muito bem. Adicione os cogumelos e tempere com sal. Envolva bem os cogumelos com o molho. Deixe saltear em lume forte até que os cogumelos percam a água.","3. Por fim, junte a salsa e sumo de meio limão. Mexa e deixe aquecer bem. Sirva a carne por cima dos cogumelos cortada às fatias."],
+"porção":4,		
+"tempo":"20 minutos"
+}
+
+]
