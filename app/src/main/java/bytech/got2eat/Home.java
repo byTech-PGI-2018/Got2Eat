@@ -16,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
@@ -44,6 +46,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
+    private FirebaseFirestore db;
     private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
 
     @Override
@@ -51,6 +54,8 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        db = FirebaseFirestore.getInstance();
 
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
@@ -86,6 +91,10 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
                     messages.add(messageObj);
                     adapter.addToStart(messageObj, true);
+
+                    //Save in database
+                    db.collection("users").document(FirebaseAuth.getInstance().getUid())
+                            .update("logs", FieldValue.arrayUnion("" + message));
 
                     //Send HTTP request to Dialogflow
                     aiRequest = new AIRequest();
