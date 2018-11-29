@@ -51,6 +51,11 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (FirebaseAuth.getInstance() == null){
+            Intent intent = new Intent(thisInstance, Login.class);
+            startActivity(intent);
+            finish();
+        }
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);

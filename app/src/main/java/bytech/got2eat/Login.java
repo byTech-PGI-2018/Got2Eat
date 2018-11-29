@@ -165,7 +165,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                             Map<String, Object> data = new HashMap<>();
                             data.put("lastlogin", Timestamp.now());
                             db.collection("users").document(authResult.getUser().getUid())
-                                    .set(data);
+                                    .update(data);
 
                             //Create new intent to main activity
                             Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
@@ -211,7 +211,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     Map<String,Object> data = new HashMap<>();
                     data.put("lastlogin", Timestamp.now());
                     db.collection("users").document(FirebaseAuth.getInstance().getUid())
-                            .set(data);
+                            .update(data);
                     startActivity(new Intent(getApplicationContext(),Login.class));
                     finish();
                 }

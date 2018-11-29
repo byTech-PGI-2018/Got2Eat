@@ -64,11 +64,12 @@ public class Register extends AppCompatActivity {
                     String username = registerUsername.getText().toString();
                     String email = registerEmail.getText().toString();
 
-                    Map<String, Object> userData = new HashMap<>();
-                    userData.put("username", username);
-
                     //Check input first
                     if (validateInput(password, email, name, username)==0){
+                        Map<String, Object> userData = new HashMap<>();
+                        userData.put("username", username);
+                        userData.put("firstname", name);
+                        userData.put("email", email);
                         //Create the account
                         register(email, password, userData);
                     }
