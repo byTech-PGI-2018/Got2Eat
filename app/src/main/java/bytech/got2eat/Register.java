@@ -1,14 +1,18 @@
 package bytech.got2eat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -26,11 +30,13 @@ public class Register extends AppCompatActivity {
     private static final String TAG = "Register";
     FirebaseAuth mAuth;
 
-    TextInputLayout registerName;
-    TextInputLayout registerUsername;
-    TextInputLayout registerEmail;
-    TextInputLayout registerPassword;
+    EditText registerName;
+    EditText registerUsername;
+    EditText registerEmail;
+    EditText registerPassword;
     Button registerButton;
+    Button passwordVisibilityButton;
+    private boolean passwordVisible = false;
     private Context context = this;
     private FirebaseFirestore db;
 
@@ -53,16 +59,17 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (isNetworkConnected()){
-                    String password = registerPassword.getEditText().getText().toString();
-                    String name = registerName.getEditText().getText().toString();
-                    String username = registerUsername.getEditText().getText().toString();
-                    String email = registerEmail.getEditText().getText().toString();
-
-                    Map<String, Object> userData = new HashMap<>();
-                    userData.put("username", username);
+                    String password = registerPassword.getText().toString();
+                    String name = registerName.getText().toString();
+                    String username = registerUsername.getText().toString();
+                    String email = registerEmail.getText().toString();
 
                     //Check input first
                     if (validateInput(password, email, name, username)==0){
+                        Map<String, Object> userData = new HashMap<>();
+                        userData.put("username", username);
+                        userData.put("firstname", name);
+                        userData.put("email", email);
                         //Create the account
                         register(email, password, userData);
                     }
@@ -71,6 +78,22 @@ public class Register extends AppCompatActivity {
                     Log.e(TAG, "Tried to register without internet");
                     Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        passwordVisibilityButton = findViewById(R.id.icon_password_visibility);
+        passwordVisibilityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                passwordVisible = !passwordVisible;
+                if (passwordVisible){
+                    passwordVisibilityButton.setBackground(ContextCompat.getDrawable(context, R.drawable.password_visible));
+                    registerPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }
+                else{
+                    passwordVisibilityButton.setBackground(ContextCompat.getDrawable(context, R.drawable.password_not_visible));
+                    registerPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+                registerPassword.setSelection(registerPassword.length());
             }
         });
     }
@@ -141,5 +164,9 @@ public class Register extends AppCompatActivity {
     private boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         return cm.getActiveNetworkInfo() != null;
+    }
+
+    public void gotoLogin(View view){
+        finish();
     }
 }
