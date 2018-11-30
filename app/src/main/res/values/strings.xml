@@ -20,4 +20,11 @@
     <string name="recipe_preparation_title">Modo de preparação</string>
     <string name="recipe_preparation">Preparação</string>
     <string name="recipe_submit">Submeter</string>
+    <string name="signed_out">Signed out</string>
+    <string name="register_text">Preencha os seguintes campos para se registar</string>
+    <string name="login_text_separator">ou</string>
+    <string name="google_login_text">Login com</string>
+    <string name="user_profile">Profile</string>
+    <string name="recipe">Recipe</string>
+    <string name="sign_out">Sign out</string>
 </resources>
