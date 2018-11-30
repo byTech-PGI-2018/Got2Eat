@@ -1,5 +1,6 @@
 package bytech.got2eat;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -79,9 +80,35 @@ public class Home extends AppCompatActivity implements AIListener{
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", new Date(), bot);
-        messages.add(obj);
-        adapter.addToStart(obj, true);
+        //Find if there are recipes
+        String[] tokens = message.split("_");
+        if (tokens.length > 1){
+            //There is at least one recipe
+            //Send initial
+            Message initial = new Message(tokens[0], "bot", new Date(), bot);
+            adapter.addToStart(initial, true);
+
+            for (int i=1; i<tokens.length; i++){
+                //Send separate messages and set their onClick to a recipe
+                final Message obj = new Message(tokens[i], "bot", new Date(), bot);
+                messages.add(obj);
+                adapter.addToStart(obj, true);
+                adapter.setOnMessageClickListener(new MessagesListAdapter.OnMessageClickListener<Message>() {
+                    @Override
+                    public void onMessageClick(Message message) {
+                        if (message == obj){
+                            Intent intent = new Intent(thisInstance, Recipe.class);
+                            startActivity(intent);
+                        }
+                    }
+                });
+            }
+        }
+        else{
+            Message obj = new Message(message, "bot", new Date(), bot);
+            messages.add(obj);
+            adapter.addToStart(obj, true);
+        }
     }
 
     private int validateInput(String message){
