@@ -50,6 +50,16 @@ public class Home extends AppCompatActivity implements AIListener{
 
         MessagesList messagesList = findViewById(R.id.messagesList);
         messagesList.setAdapter(adapter);
+        adapter.setOnMessageClickListener(new MessagesListAdapter.OnMessageClickListener<Message>() {
+            @Override
+            public void onMessageClick(Message message) {
+                if (message.getFirestoreId() != null) {
+                    Intent intent = new Intent(thisInstance, Recipe.class);
+                    intent.putExtra("firestoreId", message.getFirestoreId());
+                    startActivity(intent);
+                }
+            }
+        });
 
         userInput = findViewById(R.id.user_input_layout);
 
@@ -88,20 +98,11 @@ public class Home extends AppCompatActivity implements AIListener{
             Message initial = new Message(tokens[0], "bot", new Date(), bot);
             adapter.addToStart(initial, true);
 
-            for (int i=1; i<tokens.length; i++){
+            for (int i=1; i<tokens.length; i+=2){
                 //Send separate messages and set their onClick to a recipe
-                final Message obj = new Message(tokens[i], "bot", new Date(), bot);
+                final Message obj = new Message(tokens[i+1], "bot", new Date(), bot, tokens[i]);
                 messages.add(obj);
                 adapter.addToStart(obj, true);
-                adapter.setOnMessageClickListener(new MessagesListAdapter.OnMessageClickListener<Message>() {
-                    @Override
-                    public void onMessageClick(Message message) {
-                        if (message == obj){
-                            Intent intent = new Intent(thisInstance, Recipe.class);
-                            startActivity(intent);
-                        }
-                    }
-                });
             }
         }
         else{
