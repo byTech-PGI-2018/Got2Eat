@@ -82,6 +82,16 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
         MessagesList messagesList = findViewById(R.id.messagesList);
         messagesList.setAdapter(adapter);
+        adapter.setOnMessageClickListener(new MessagesListAdapter.OnMessageClickListener<Message>() {
+            @Override
+            public void onMessageClick(Message message) {
+                if (message.getFirestoreId() != null) {
+                    Intent intent = new Intent(thisInstance, Recipe.class);
+                    intent.putExtra("firestoreId", message.getFirestoreId());
+                    startActivity(intent);
+                }
+            }
+        });
 
         userInput = findViewById(R.id.user_input_layout);
 
@@ -116,9 +126,26 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", new Date(), bot);
-        messages.add(obj);
-        adapter.addToStart(obj, true);
+        //Find if there are recipes
+        String[] tokens = message.split("_");
+        if (tokens.length > 1){
+            //There is at least one recipe
+            //Send initial
+            Message initial = new Message(tokens[0], "bot", new Date(), bot);
+            adapter.addToStart(initial, true);
+
+            for (int i=1; i<tokens.length; i+=2){
+                //Send separate messages and set their onClick to a recipe
+                final Message obj = new Message(tokens[i+1], "bot", new Date(), bot, tokens[i]);
+                messages.add(obj);
+                adapter.addToStart(obj, true);
+            }
+        }
+        else{
+            Message obj = new Message(message, "bot", new Date(), bot);
+            messages.add(obj);
+            adapter.addToStart(obj, true);
+        }
     }
 
     private int validateInput(String message){
