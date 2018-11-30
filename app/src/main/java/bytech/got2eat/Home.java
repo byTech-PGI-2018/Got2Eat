@@ -16,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
@@ -44,13 +46,21 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
+    private FirebaseFirestore db;
     private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (FirebaseAuth.getInstance() == null){
+            Intent intent = new Intent(thisInstance, Login.class);
+            startActivity(intent);
+            finish();
+        }
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        db = FirebaseFirestore.getInstance();
 
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
@@ -72,6 +82,16 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
         MessagesList messagesList = findViewById(R.id.messagesList);
         messagesList.setAdapter(adapter);
+        adapter.setOnMessageClickListener(new MessagesListAdapter.OnMessageClickListener<Message>() {
+            @Override
+            public void onMessageClick(Message message) {
+                if (message.getFirestoreId() != null) {
+                    Intent intent = new Intent(thisInstance, Recipe.class);
+                    intent.putExtra("firestoreId", message.getFirestoreId());
+                    startActivity(intent);
+                }
+            }
+        });
 
         userInput = findViewById(R.id.user_input_layout);
 
@@ -86,6 +106,10 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
                     messages.add(messageObj);
                     adapter.addToStart(messageObj, true);
+
+                    //Save in database
+                    db.collection("users").document(FirebaseAuth.getInstance().getUid())
+                            .update("logs", FieldValue.arrayUnion("" + message));
 
                     //Send HTTP request to Dialogflow
                     aiRequest = new AIRequest();
@@ -102,9 +126,26 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", new Date(), bot);
-        messages.add(obj);
-        adapter.addToStart(obj, true);
+        //Find if there are recipes
+        String[] tokens = message.split("_");
+        if (tokens.length > 1){
+            //There is at least one recipe
+            //Send initial
+            Message initial = new Message(tokens[0], "bot", new Date(), bot);
+            adapter.addToStart(initial, true);
+
+            for (int i=1; i<tokens.length; i+=2){
+                //Send separate messages and set their onClick to a recipe
+                final Message obj = new Message(tokens[i+1], "bot", new Date(), bot, tokens[i]);
+                messages.add(obj);
+                adapter.addToStart(obj, true);
+            }
+        }
+        else{
+            Message obj = new Message(message, "bot", new Date(), bot);
+            messages.add(obj);
+            adapter.addToStart(obj, true);
+        }
     }
 
     private int validateInput(String message){
