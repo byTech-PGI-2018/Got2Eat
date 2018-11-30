@@ -44,7 +44,7 @@
         android:id="@+id/back_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/backspace"
+        android:background="@drawable/shopping_cart_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
@@ -117,7 +117,7 @@
         android:id="@+id/ingredients_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/backspace"
+        android:background="@drawable/plus_circle_icon"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         />
@@ -138,7 +138,7 @@
         android:id="@+id/ingredients_show_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/backspace"
+        android:background="@drawable/restaurant_menu_icon"
         app:layout_constraintBottom_toBottomOf="@+id/ingredients_image"
         app:layout_constraintEnd_toEndOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/ingredients_image" />
