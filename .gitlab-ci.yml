@@ -20,7 +20,8 @@ before_script:
   - set +o pipefail
   - yes | android-sdk-linux/tools/bin/sdkmanager --licenses
   - set -o pipefail
-  - mv app/google-services.json.sample app/google-services.json
+  - rm app/google-services.json.sample
+  - curl -L -o app/google-services.json "https://drive.google.com/uc?export=download&id=$DRIVE_FILE_ID"
 
 stages:
   - build
