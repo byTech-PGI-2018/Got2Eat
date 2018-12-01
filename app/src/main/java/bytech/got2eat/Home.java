@@ -1,5 +1,8 @@
 package bytech.got2eat;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Handler;
@@ -21,9 +24,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import ai.api.AIDataService;
 import ai.api.AIListener;
@@ -90,6 +95,15 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                     intent.putExtra("firestoreId", message.getFirestoreId());
                     startActivity(intent);
                 }
+            }
+        });
+        adapter.setOnMessageLongClickListener(new MessagesListAdapter.OnMessageLongClickListener<Message>() {
+            @Override
+            public void onMessageLongClick(Message message) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip1", message.getText());
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(thisInstance, R.string.copy_clipboard, Toast.LENGTH_SHORT).show();
             }
         });
 
