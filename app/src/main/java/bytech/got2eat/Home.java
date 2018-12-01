@@ -24,11 +24,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import ai.api.AIDataService;
 import ai.api.AIListener;
