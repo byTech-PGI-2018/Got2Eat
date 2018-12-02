@@ -23,7 +23,8 @@
         <activity android:name=".Home"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
         </activity>
-        <activity android:name=".Recipe"/>
+        <activity android:name=".RecipeCreate"/>
+        <activity android:name=".RecipeShow"/>
     </application>
 
 </manifest>
