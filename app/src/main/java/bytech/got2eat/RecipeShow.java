@@ -29,6 +29,8 @@ public class RecipeShow extends AppCompatActivity {
     private TextView recipePrep;
     private Button hideIngredients;
     private Button hidePrep;
+    private boolean ingredientsUpArrow = false;
+    private boolean prepUpArrow = false;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -84,33 +86,18 @@ public class RecipeShow extends AppCompatActivity {
         });
 
         // TODO unique animation for each of the button
-        final Animation animation = AnimationUtils.loadAnimation(this, R.anim.rotate_180);
-        /*animation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                if (hideIngredients.getBackground().getConstantState()==getResources()
-                        .getDrawable(R.drawable.down_arrow).getConstantState()){
-                    hideIngredients.setBackgroundResource(R.drawable.down_arrow);
-                }
-                else if (hideIngredients.getBackground().getConstantState()==getResources()
-                        .getDrawable(R.drawable.up_arrow).getConstantState()){
-                    hideIngredients.setBackgroundResource(R.drawable.up_arrow);
-                }
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-            }
-        });*/
+        final Animation animationIngredients = AnimationUtils.loadAnimation(this, R.anim.rotate_180);
+        final Animation animationPrep = AnimationUtils.loadAnimation(this, R.anim.rotate_180);
 
         hideIngredients.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                view.startAnimation(animation);
+                hideIngredients.startAnimation(animationIngredients);
+                if (ingredientsUpArrow){
+                    hideIngredients.setBackground(getDrawable(R.drawable.down_arrow));
+                }
+                else hideIngredients.setBackground(getDrawable(R.drawable.up_arrow));
+                ingredientsUpArrow = !ingredientsUpArrow;
                 ScrollView scrollView = findViewById(R.id.scroll_ingredients);
                 if (scrollView.getVisibility() == View.VISIBLE){
                     scrollView.setVisibility(View.GONE);
@@ -122,7 +109,12 @@ public class RecipeShow extends AppCompatActivity {
         hidePrep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                view.startAnimation(animation);
+                hidePrep.startAnimation(animationPrep);
+                if (prepUpArrow){
+                    hidePrep.setBackground(getDrawable(R.drawable.down_arrow));
+                }
+                else hidePrep.setBackground(getDrawable(R.drawable.up_arrow));
+                prepUpArrow = !prepUpArrow;
                 ScrollView scrollView = findViewById(R.id.scroll_preparation);
                 if (scrollView.getVisibility() == View.VISIBLE){
                     scrollView.setVisibility(View.GONE);
