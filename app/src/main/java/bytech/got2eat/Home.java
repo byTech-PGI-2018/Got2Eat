@@ -86,7 +86,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
             @Override
             public void onMessageClick(Message message) {
                 if (message.getFirestoreId() != null) {
-                    Intent intent = new Intent(thisInstance, Recipe.class);
+                    Intent intent = new Intent(thisInstance, RecipeShow.class);
                     intent.putExtra("firestoreId", message.getFirestoreId());
                     startActivity(intent);
                 }
@@ -171,7 +171,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 finish();
                 return true;
             case R.id.nav_item_recipe:
-                intent = new Intent(thisInstance, Recipe.class);
+                intent = new Intent(thisInstance, RecipeCreate.class);
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;

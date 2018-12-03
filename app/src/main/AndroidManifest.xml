@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Launcher">
 
@@ -23,7 +22,8 @@
         <activity android:name=".Home"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
         </activity>
-        <activity android:name=".Recipe"/>
+        <activity android:name=".RecipeCreate"/>
+        <activity android:name=".RecipeShow"/>
     </application>
 
 </manifest>

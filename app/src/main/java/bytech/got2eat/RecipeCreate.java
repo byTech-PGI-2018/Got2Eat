@@ -12,9 +12,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Recipe extends AppCompatActivity {
+public class RecipeCreate extends AppCompatActivity {
 
-    private static final String TAG = "Recipe";
+    private static final String TAG = "RecipeCreate";
     private FirebaseFirestore db;
     private TextView recipeName;
 
@@ -45,8 +45,5 @@ public class Recipe extends AppCompatActivity {
                         }
                     }
                 });
-
-
-
     }
 }
