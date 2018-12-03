@@ -60,7 +60,7 @@ public class RecipeShow extends AppCompatActivity {
                         recipeDuration.setText((String)document.get("tempo"));
                         recipePortion.setText((String)document.get("porção"));
                         String temp = "";
-                        ArrayList<String> stringArray = (ArrayList<String>) document.get("ingredients");
+                        ArrayList<String> stringArray = (ArrayList<String>) document.get("quantidade");
                         if (stringArray != null){
                             for (String s:stringArray){
                                 s = s.substring(0,1).toUpperCase() + s.substring(1);
