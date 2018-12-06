@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.content.ContextCompat;
@@ -64,7 +65,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         //Comment for testing gpg key
         db = FirebaseFirestore.getInstance();
 
+        final String email = "overskilers@gmail.com";
+        final String pass = "qwerty";
+
         mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
         if (mAuth.getCurrentUser()!=null){
             Toast.makeText(this, R.string.already_login, Toast.LENGTH_SHORT).show();
             Log.i(TAG, "User already logged in");
@@ -153,6 +158,14 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 loginPassword.setSelection(loginPassword.length());
             }
         });
+
+        Handler h = new Handler();
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                signInEmailPassword(email, pass);
+            }
+        }, 1000);
     }
 
     private void signInEmailPassword(String email, String password){
@@ -160,6 +173,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
+                        Log.d(TAG, "Entered onSuccess");
                         if (authResult.getUser()!=null){
                             //Update timestamp in database
                             Map<String, Object> data = new HashMap<>();
@@ -179,9 +193,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        Log.e(TAG, "Exception when sign in: " + e);
                         Toast.makeText(context, "Login failed", Toast.LENGTH_SHORT).show();
                     }
                 });
+        Log.d(TAG, "Finished login");
     }
 
     private void signInGoogle(){
