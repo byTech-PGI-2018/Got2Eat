@@ -127,25 +127,31 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
     private void respond(String message) {
         //Find if there are recipes
-        String[] tokens = message.split("_");
-        if (tokens.length > 1){
-            //There is at least one recipe
-            //Send initial
-            Message initial = new Message(tokens[0], "bot", new Date(), bot);
-            adapter.addToStart(initial, true);
+        if(!message.matches("Vou pesquisar restaurantes próximos de si!")){
+            String[] tokens = message.split("_");
+            if (tokens.length > 1){
+                //There is at least one recipe
+                //Send initial
+                Message initial = new Message(tokens[0], "bot", new Date(), bot);
+                adapter.addToStart(initial, true);
 
-            for (int i=1; i<tokens.length; i+=2){
-                //Send separate messages and set their onClick to a recipe
-                final Message obj = new Message(tokens[i+1], "bot", new Date(), bot, tokens[i]);
+                for (int i=1; i<tokens.length; i+=2){
+                    //Send separate messages and set their onClick to a recipe
+                    final Message obj = new Message(tokens[i+1], "bot", new Date(), bot, tokens[i]);
+                    messages.add(obj);
+                    adapter.addToStart(obj, true);
+                }
+            }
+            else{
+                Message obj = new Message(message, "bot", new Date(), bot);
                 messages.add(obj);
                 adapter.addToStart(obj, true);
             }
+        }else{
+            Intent intent = new Intent(this.thisInstance,Restaurantes.class);
+            startActivity(intent);
         }
-        else{
-            Message obj = new Message(message, "bot", new Date(), bot);
-            messages.add(obj);
-            adapter.addToStart(obj, true);
-        }
+
     }
 
     private int validateInput(String message){
