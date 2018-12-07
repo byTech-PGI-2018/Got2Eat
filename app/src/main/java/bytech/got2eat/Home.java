@@ -1,20 +1,29 @@
 package bytech.got2eat;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.squareup.picasso.Picasso;
+import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
@@ -32,28 +41,45 @@ import ai.api.model.AIResponse;
 import ai.api.model.Result;
 
 public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
+    private DrawerLayout drawer;
     private NavigationView navView = null;
     private TextView navDisplayName = null;
     private Author user;
     private Author bot;
-    private TextInputLayout userInput;
-    private Button inputEnter;
+    private EditText userInput;
+    private ImageView inputEnter;
     private List<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
-    private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
+    private FirebaseFirestore db;
+    private ImageLoader imageLoader = new ImageLoader() {
+        @Override
+        public void loadImage(ImageView imageView, @Nullable String url, @Nullable Object payload) {
+            Picasso.with(getApplicationContext()).load(url).into(imageView);
+        }
+    };
+
+    private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), imageLoader);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (FirebaseAuth.getInstance() == null){
+            Intent intent = new Intent(thisInstance, Login.class);
+            startActivity(intent);
+            finish();
+        }
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        db = FirebaseFirestore.getInstance();
 
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
+                drawer = findViewById(R.id.drawer);
                 navView = findViewById(R.id.nav_view);
                 navView.setNavigationItemSelectedListener(thisInstance);
                 navDisplayName = navView.findViewById(R.id.nav_header_textView);
@@ -69,38 +95,77 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
         MessagesList messagesList = findViewById(R.id.messagesList);
         messagesList.setAdapter(adapter);
+        adapter.setOnMessageClickListener(new MessagesListAdapter.OnMessageClickListener<Message>() {
+            @Override
+            public void onMessageClick(Message message) {
+                if (message.getFirestoreId() != null) {
+                    Intent intent = new Intent(thisInstance, RecipeShow.class);
+                    intent.putExtra("firestoreId", message.getFirestoreId());
+                    startActivity(intent);
+                }
+            }
+        });
 
-        userInput = findViewById(R.id.user_input_layout);
+        userInput = findViewById(R.id.user_input);
 
         inputEnter = findViewById(R.id.input_enter_button);
         inputEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Validate input
-                final String message = userInput.getEditText().getText().toString();
+                final String message = userInput.getText().toString();
                 if (validateInput(message)==0){
                     Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), user);
 
                     messages.add(messageObj);
                     adapter.addToStart(messageObj, true);
 
+                    //Save in database
+                    db.collection("users").document(FirebaseAuth.getInstance().getUid())
+                            .update("logs", FieldValue.arrayUnion("" + message));
+
                     //Send HTTP request to Dialogflow
                     aiRequest = new AIRequest();
                     aiRequest.setQuery(message);
                     new DialogTask(aiService, aiRequest, thisInstance).execute(aiRequest);
+                    userInput.setText("");
 
                 }
             }
         });
 
         user = new Author(FirebaseAuth.getInstance().getUid(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null);
-        bot = new Author("bot", "bot", null);
+        Uri uri = Uri.parse("android.resource://" + getApplicationContext().getPackageName()+"/"+R.drawable.mascote);
+        bot = new Author("bot", "bot", uri.toString());
     }
 
     private void respond(String message) {
-        Message obj = new Message(message, "bot", new Date(), bot);
-        messages.add(obj);
-        adapter.addToStart(obj, true);
+        //Find if there are recipes
+        if(!message.matches("Vou pesquisar restaurantes próximos de si!")){
+            String[] tokens = message.split("_");
+            if (tokens.length > 1){
+                //There is at least one recipe
+                //Send initial
+                Message initial = new Message(tokens[0], "bot", new Date(), bot);
+                adapter.addToStart(initial, true);
+
+                for (int i=1; i<tokens.length; i+=2){
+                    //Send separate messages and set their onClick to a recipe
+                    final Message obj = new Message(tokens[i+1], "bot", new Date(), bot, tokens[i]);
+                    messages.add(obj);
+                    adapter.addToStart(obj, true);
+                }
+            }
+            else{
+                Message obj = new Message(message, "bot", new Date(), bot);
+                messages.add(obj);
+                adapter.addToStart(obj, true);
+            }
+        }else{
+            Intent intent = new Intent(this.thisInstance,Restaurantes.class);
+            startActivity(intent);
+        }
+
     }
 
     private int validateInput(String message){
@@ -121,8 +186,14 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(thisInstance, Login.class);
                 startActivity(intent);
+                drawer.closeDrawers();
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
+                return true;
+            case R.id.nav_item_recipe:
+                intent = new Intent(thisInstance, RecipeCreate.class);
+                startActivity(intent);
+                drawer.closeDrawers();
                 return true;
 	    default:
 		//Satisfy codacy

@@ -11,9 +11,22 @@
     <string name="login_google">Google</string>
     <string name="no_internet">No internet connection</string>
     <string name="user_input_hint">Write something</string>
-    <string name="sign_out">Sign out</string>
+    <string name="recipe_name">Nome da receita</string>
+    <string name="upload_recipe_image">Carreg. foto</string>
+    <string name="recipe_duration">Duração (min)</string>
+    <string name="recipe_portions">Porções</string>
+    <string name="recipe_ingredients">Ingredientes</string>
+    <string name="recipe_ingredient_quantity">Qt.</string>
+    <string name="recipe_preparation_title">Modo de preparação</string>
+    <string name="recipe_preparation">Preparação</string>
+    <string name="recipe_submit">Submeter</string>
     <string name="signed_out">Signed out</string>
     <string name="register_text">Preencha os seguintes campos para se registar</string>
     <string name="login_text_separator">ou</string>
     <string name="google_login_text">Login com</string>
+    <string name="user_profile">Profile</string>
+    <string name="recipe">Recipe</string>
+    <string name="sign_out">Sign out</string>
+    <string name="copy_clipboard">Copied to clipboard</string>
+    <string name="hint_pedido">Insira aqui o seu pedido...</string>
 </resources>
