@@ -1,8 +1,5 @@
 package bytech.got2eat;
 
-import android.content.ClipData;
-import android.content.ClipboardManager;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -106,15 +103,6 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                     intent.putExtra("firestoreId", message.getFirestoreId());
                     startActivity(intent);
                 }
-            }
-        });
-        adapter.setOnMessageLongClickListener(new MessagesListAdapter.OnMessageLongClickListener<Message>() {
-            @Override
-            public void onMessageLongClick(Message message) {
-                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("clip1", message.getText());
-                clipboard.setPrimaryClip(clip);
-                Toast.makeText(thisInstance, R.string.copy_clipboard, Toast.LENGTH_SHORT).show();
             }
         });
 
