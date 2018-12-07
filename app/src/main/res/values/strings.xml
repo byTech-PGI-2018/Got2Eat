@@ -28,4 +28,5 @@
     <string name="recipe">Recipe</string>
     <string name="sign_out">Sign out</string>
     <string name="copy_clipboard">Copied to clipboard</string>
+    <string name="hint_pedido">Insira aqui o seu pedido...</string>
 </resources>
