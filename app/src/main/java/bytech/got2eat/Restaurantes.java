@@ -171,8 +171,6 @@ public class Restaurantes extends AppCompatActivity{
                             adapter = new MyAdapter(rest,getApplicationContext());
                             //adapter.setClickListener(getApplicationContext());
                             recyclerView.setAdapter(adapter);
-
-
                             alreadyGotData = true;
                         }
                     }
