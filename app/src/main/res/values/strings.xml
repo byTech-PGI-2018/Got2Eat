@@ -13,8 +13,8 @@
     <string name="user_input_hint">Write something</string>
     <string name="recipe_name">Nome da receita</string>
     <string name="upload_recipe_image">Carreg. foto</string>
-    <string name="recipe_duration">Duração (min)</string>
-    <string name="recipe_portions">Porções</string>
+    <string name="recipe_duration">Duração (min): </string>
+    <string name="recipe_portions">Porções: </string>
     <string name="recipe_ingredients">Ingredientes</string>
     <string name="recipe_ingredient_quantity">Qt.</string>
     <string name="recipe_preparation_title">Modo de preparação</string>

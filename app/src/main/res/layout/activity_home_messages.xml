@@ -16,6 +16,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_rectangle_white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         app:layout_constraintBottom_toTopOf="@+id/user_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -57,6 +59,7 @@
         android:ems="10"
         android:hint="@string/hint_pedido"
         android:inputType="text"
+        android:paddingStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
