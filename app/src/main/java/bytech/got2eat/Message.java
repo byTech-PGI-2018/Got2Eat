@@ -1,5 +1,7 @@
 package bytech.got2eat;
 
+import android.support.annotation.Nullable;
+
 import com.google.android.gms.auth.api.Auth;
 import com.stfalcon.chatkit.commons.models.IMessage;
 
@@ -27,10 +29,13 @@ public class Message implements IMessage {
         this.firestoreId = firestoreId;
     }
 
+
+
     @Override
     public String getId() {
         return id;
     }
+
 
     @Override
     public String getText() {
@@ -51,3 +56,5 @@ public class Message implements IMessage {
         return firestoreId;
     }
 }
+
+

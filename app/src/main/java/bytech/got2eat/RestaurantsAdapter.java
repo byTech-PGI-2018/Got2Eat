@@ -2,7 +2,6 @@ package bytech.got2eat;
 
 import android.content.Context;
 import android.content.Intent;
-import android.location.Location;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -13,16 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.google.android.gms.tasks.OnSuccessListener;
-
 import java.util.ArrayList;
 
-class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class RestaurantsAdapter extends RecyclerView.Adapter<RestaurantsAdapter.ViewHolder> {
     private ArrayList<Restaurant> mDataset;
     private Context context;
 
 
-    public MyAdapter(ArrayList<Restaurant> myDataset, Context context) {
+    public RestaurantsAdapter(ArrayList<Restaurant> myDataset, Context context) {
         this.mDataset = myDataset;
         this.context = context;
     }

@@ -1,9 +1,11 @@
 package bytech.got2eat;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
@@ -12,12 +14,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.squareup.picasso.Picasso;
+import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
@@ -40,14 +46,21 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     private TextView navDisplayName = null;
     private Author user;
     private Author bot;
-    private TextInputLayout userInput;
-    private Button inputEnter;
+    private EditText userInput;
+    private ImageView inputEnter;
     private List<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
     private FirebaseFirestore db;
-    private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), null);
+    private ImageLoader imageLoader = new ImageLoader() {
+        @Override
+        public void loadImage(ImageView imageView, @Nullable String url, @Nullable Object payload) {
+            Picasso.with(getApplicationContext()).load(url).into(imageView);
+        }
+    };
+
+    private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), imageLoader);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,14 +106,14 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
             }
         });
 
-        userInput = findViewById(R.id.user_input_layout);
+        userInput = findViewById(R.id.user_input);
 
         inputEnter = findViewById(R.id.input_enter_button);
         inputEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Validate input
-                final String message = userInput.getEditText().getText().toString();
+                final String message = userInput.getText().toString();
                 if (validateInput(message)==0){
                     Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), user);
 
@@ -115,14 +128,15 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                     aiRequest = new AIRequest();
                     aiRequest.setQuery(message);
                     new DialogTask(aiService, aiRequest, thisInstance).execute(aiRequest);
-                    userInput.getEditText().setText("");
+                    userInput.setText("");
 
                 }
             }
         });
 
         user = new Author(FirebaseAuth.getInstance().getUid(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null);
-        bot = new Author("bot", "bot", null);
+        Uri uri = Uri.parse("android.resource://" + getApplicationContext().getPackageName()+"/"+R.drawable.mascote);
+        bot = new Author("bot", "bot", uri.toString());
     }
 
     private void respond(String message) {
