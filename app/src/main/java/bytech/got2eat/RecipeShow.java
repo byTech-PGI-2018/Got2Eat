@@ -1,5 +1,6 @@
 package bytech.got2eat;
 
+import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,6 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -31,6 +33,8 @@ public class RecipeShow extends AppCompatActivity {
     private Button hidePrep;
     private boolean ingredientsUpArrow = false;
     private boolean prepUpArrow = false;
+    private boolean isSaved = false;
+    private LottieAnimationView animationView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,6 +50,7 @@ public class RecipeShow extends AppCompatActivity {
         recipePrep = findViewById(R.id.recipe_preparation);
         hideIngredients = findViewById(R.id.recipe_ingredients_hide_btn);
         hidePrep = findViewById(R.id.recipe_preparation_hide_btn);
+        animationView = findViewById(R.id.animation_view);
 
         String recipeId = getIntent().getStringExtra("firestoreId");
 
@@ -120,6 +125,25 @@ public class RecipeShow extends AppCompatActivity {
                     scrollView.setVisibility(View.GONE);
                 }
                 else scrollView.setVisibility(View.VISIBLE);
+            }
+        });
+
+        animationView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "isSaved: " + isSaved);
+                if (!isSaved){
+                    animationView.setMinProgress(0.2f);
+                    animationView.setMaxProgress(0.7f);
+                    animationView.playAnimation();
+                    isSaved = true;
+                }
+                else{
+                    animationView.setMinProgress(0.7f);
+                    animationView.setMaxProgress(1f);
+                    animationView.playAnimation();
+                    isSaved = false;
+                }
             }
         });
     }

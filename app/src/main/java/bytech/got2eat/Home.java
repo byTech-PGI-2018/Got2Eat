@@ -190,13 +190,13 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
                 return true;
-            case R.id.nav_item_recipe:
-                intent = new Intent(thisInstance, RecipeCreate.class);
+            /*case R.id.nav_item_user_profile:
+                intent = new Intent(thisInstance, Profile.class);
                 startActivity(intent);
                 drawer.closeDrawers();
-                return true;
-	    default:
-		//Satisfy codacy
+                return true;*/
+            default:
+		        //Satisfy codacy
                 return true;
         }
     }
