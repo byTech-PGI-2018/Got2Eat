@@ -30,6 +30,7 @@
         <activity android:name=".RecipeCreate"/>
         <activity android:name=".RecipeShow"/>
         <activity android:name=".Restaurantes"/>
+        <activity android:name=".SavedRecipes"/>
     </application>
 
 </manifest>
