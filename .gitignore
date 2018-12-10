@@ -1,3 +1,6 @@
+#CI file
+.gitlab-ci.yml
+
 # Compiled class file
 *.class
 
