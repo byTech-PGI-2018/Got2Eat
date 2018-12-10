@@ -123,7 +123,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         });
 
         googleButton = findViewById(R.id.google_button);
-        googleButton.setOnClickListener(new View.OnClickListener() {
+        /*googleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (isNetworkConnected()){
@@ -135,7 +135,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
 
         passwordVisibilityButton = findViewById(R.id.icon_password_visibility);
         passwordVisibilityButton.setOnClickListener(new View.OnClickListener() {
