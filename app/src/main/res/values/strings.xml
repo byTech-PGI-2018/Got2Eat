@@ -13,8 +13,8 @@
     <string name="user_input_hint">Write something</string>
     <string name="recipe_name">Nome da receita</string>
     <string name="upload_recipe_image">Carreg. foto</string>
-    <string name="recipe_duration">Duração (min)</string>
-    <string name="recipe_portions">Porções</string>
+    <string name="recipe_duration">Duração (min): </string>
+    <string name="recipe_portions">Porções: </string>
     <string name="recipe_ingredients">Ingredientes</string>
     <string name="recipe_ingredient_quantity">Qt.</string>
     <string name="recipe_preparation_title">Modo de preparação</string>
@@ -29,4 +29,8 @@
     <string name="sign_out">Sign out</string>
     <string name="copy_clipboard">Copied to clipboard</string>
     <string name="hint_pedido">Insira aqui o seu pedido...</string>
+    <string name="refuse_location">Uso de GPS recusado.</string>
+    <string name="recipe_not_saved">Receita não guardada</string>
+    <string name="recipe_not_unsaved">Receita não eliminada</string>
+    <string name="nav_saved_recipes">Receitas guardadas</string>
 </resources>

@@ -11,11 +11,16 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -137,6 +142,32 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         user = new Author(FirebaseAuth.getInstance().getUid(),FirebaseAuth.getInstance().getCurrentUser().getDisplayName(),null);
         Uri uri = Uri.parse("android.resource://" + getApplicationContext().getPackageName()+"/"+R.drawable.mascote);
         bot = new Author("bot", "bot", uri.toString());
+
+        ImageView helpButton = findViewById(R.id.helpButton);
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LayoutInflater inflater = (LayoutInflater)
+                        getSystemService(LAYOUT_INFLATER_SERVICE);
+                View popupView = inflater.inflate(R.layout.popupwindow, null);
+
+
+                int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+                int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+                boolean focusable = true; // lets taps outside the popup also dismiss it
+                final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+                popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+
+                popupView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        popupWindow.dismiss();
+                        return true;
+                    }
+                });
+            }
+        });
     }
 
     private void respond(String message) {
@@ -190,13 +221,18 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
                 return true;
-            case R.id.nav_item_recipe:
-                intent = new Intent(thisInstance, RecipeCreate.class);
+            /*case R.id.nav_item_user_profile:
+                intent = new Intent(thisInstance, Profile.class);
+                startActivity(intent);
+                drawer.closeDrawers();
+                return true;*/
+            case R.id.nav_item_saved_recipes:
+                intent = new Intent(thisInstance, SavedRecipes.class);
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;
-	    default:
-		//Satisfy codacy
+            default:
+		        //Satisfy codacy
                 return true;
         }
     }

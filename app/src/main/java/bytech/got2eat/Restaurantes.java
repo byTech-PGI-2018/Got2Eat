@@ -1,14 +1,10 @@
 package bytech.got2eat;
 
 import android.Manifest;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -31,14 +27,10 @@ import java.util.concurrent.ExecutionException;
 
 public class Restaurantes extends AppCompatActivity{
 
-    MyAdapter adapter;
+    RestaurantsAdapter adapter;
 
-    public static final String TAG = Restaurantes.class.getSimpleName();
+    public static final String TAG = "Restaurantes";
     private FusedLocationProviderClient mFusedLocationClient;
-    RecyclerView recyclerView;
-
-    SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
 
     double latitude;
     double longitude;
@@ -49,12 +41,26 @@ public class Restaurantes extends AppCompatActivity{
     private String locationName = "--";
     private List<Address> list;
 
+    private final int REQUEST_PERMISSION_LOCATION = 1;
+
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] permissionsGranted){
-        super.onRequestPermissionsResult(requestCode, permissions, permissionsGranted);
-        Log.d(TAG, "PASSED THROUGH ONREQUESTPERMISSIONSRESULT\n\n");
-        getForecast(); /*Main method*/
-        Log.d(TAG, "Main UI thread is running");
+        //super.onRequestPermissionsResult(requestCode, permissions, permissionsGranted);
+
+        switch (requestCode){
+            case REQUEST_PERMISSION_LOCATION:
+                if (permissionsGranted.length > 0 && permissionsGranted[0] == PackageManager.PERMISSION_GRANTED){
+                    getLocation();
+                }
+                else if (permissionsGranted.length > 0 && permissionsGranted[0] == PackageManager.PERMISSION_DENIED){
+                    Toast.makeText(this, getString(R.string.refuse_location), Toast.LENGTH_LONG).show();
+                    finish();
+                }
+                else Log.d(TAG, "Something else");
+                break;
+            default:
+                Log.e(TAG, "Unrecognized request code");
+        }
     }
 
     @Override
@@ -62,51 +68,20 @@ public class Restaurantes extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_restaurants);
 
-        sharedPreferences = getPreferences(MODE_PRIVATE);
-
-        //Check if coordinates were saved
-        Log.i(TAG, "Checking if values were saved");
-        if (sharedPreferences.contains("latitude") && sharedPreferences.contains("longitude") && sharedPreferences.contains("locationName")){
-            //Get the data then
-            latitude = Double.longBitsToDouble(sharedPreferences.getLong("latitude", 0));
-            longitude = Double.longBitsToDouble(sharedPreferences.getLong("longitude", 0));
-            locationName = sharedPreferences.getString("locationName", "Null");
-            Log.i(TAG, "Getting values from SharedPreferences \n(Lat: " + latitude + ", long: " + longitude + ", name: " + locationName + ")");
-            alreadyGotData = false;
-        }
-        else Log.i(TAG, "Values were not saved");
-
         //Check if permissions were already granted
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_DENIED){
             Log.i(TAG, "No permission yet");
             //Request permission
             ActivityCompat.requestPermissions(this,
-                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_PERMISSION_LOCATION);
 
             //Wait for the permission request
-            onRequestPermissionsResult(1, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, new int[] {1});
+            onRequestPermissionsResult(REQUEST_PERMISSION_LOCATION, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, new int[] {1});
         }
         else {
             Log.i(TAG, "Already have necessary permission");
-            getForecast();
-        }
-    }
-
-    private void checkPermissionAndGetLocation() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                == PackageManager.PERMISSION_DENIED){
-            Toast.makeText(this, "Location permission denied", Toast.LENGTH_LONG).show();
-            Log.i(TAG, "Location permission denied");
-        }
-        else{
-            Log.i(TAG, "Location permission granted");
-            //Get location
-            try{
-                getLocation();
-            }catch (SecurityException e) {
-                Log.e(TAG, "SecurityException caught: " + e);
-            }
+            getLocation();
         }
     }
 
@@ -168,11 +143,9 @@ public class Restaurantes extends AppCompatActivity{
                             RecyclerView recyclerView = findViewById(R.id.restaurants);
                             recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                             recyclerView.setHasFixedSize(true);
-                            adapter = new MyAdapter(rest,getApplicationContext());
+                            adapter = new RestaurantsAdapter(rest,getApplicationContext());
                             //adapter.setClickListener(getApplicationContext());
                             recyclerView.setAdapter(adapter);
-
-
                             alreadyGotData = true;
                         }
                     }
@@ -185,43 +158,4 @@ public class Restaurantes extends AppCompatActivity{
                 });
         Log.v(TAG, "Went past getlastlocation");
     }
-
-    private void getForecast() {
-
-        Log.i(TAG, "BEFORE CHECK PERMISSION AND GET LOCATION\n");
-        if (!alreadyGotData) checkPermissionAndGetLocation();
-        Log.i(TAG, "AFTER CHECK PERMISSION AND GET LOCATION\n");
-
-        sharedPreferences = getPreferences(MODE_PRIVATE);
-        editor = sharedPreferences.edit();
-
-        //Save values
-        Log.i(TAG, "Saving values to SharedPreferences \n(Lat: " + latitude + ", long: " + longitude + ", name: " + locationName + ")");
-        editor.putLong("latitude", Double.doubleToRawLongBits(latitude));
-        editor.putLong("longitude", Double.doubleToRawLongBits(longitude));
-        editor.putString("locationName", locationName);
-        editor.apply();
-
-        if(isNetworkAvailable()) {
-
-        }
-    }
-
-    private boolean isNetworkAvailable() {
-        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
-        NetworkInfo networkInfo = manager.getActiveNetworkInfo();
-
-        boolean isAvailable = false;
-        if(networkInfo != null && networkInfo.isConnected()) isAvailable = true;
-        else{
-            Toast.makeText(this, R.string.no_internet, Toast.LENGTH_LONG).show();
-        }
-
-        return isAvailable;
-    }
-
-
-
-
 }
