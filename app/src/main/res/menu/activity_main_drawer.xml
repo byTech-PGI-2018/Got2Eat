@@ -5,6 +5,9 @@
         <item android:id="@+id/nav_item_user_profile"
             android:icon="@drawable/profile"
             android:title="@string/user_profile"/>
+        <item android:id="@+id/nav_item_saved_recipes"
+            android:icon="@drawable/profile"
+            android:title="@string/nav_saved_recipes"/>
     </group>
     <group
         android:id="@+id/menu_bottom">
