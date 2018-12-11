@@ -88,4 +88,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/help" />
 
+    <TextView
+            android:text="TextView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawer_slide_hint_pos"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="58dp"/>
+
 </android.support.constraint.ConstraintLayout>
