@@ -99,8 +99,7 @@ public class RecipeShow extends AppCompatActivity {
                     }
                 }
             });
-
-            // TODO unique animation for each of the button
+            
             final Animation animationIngredients = AnimationUtils.loadAnimation(this, R.anim.rotate_180);
             final Animation animationPrep = AnimationUtils.loadAnimation(this, R.anim.rotate_180);
 
