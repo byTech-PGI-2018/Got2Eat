@@ -33,4 +33,5 @@
     <string name="recipe_not_saved">Receita não guardada</string>
     <string name="recipe_not_unsaved">Receita não eliminada</string>
     <string name="nav_saved_recipes">Receitas guardadas</string>
+    <string name="no_saved_recipes">Não há receitas guardadas.</string>
 </resources>

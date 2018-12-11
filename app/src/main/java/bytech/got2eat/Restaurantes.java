@@ -1,10 +1,12 @@
 package bytech.got2eat;
 
 import android.Manifest;
+import android.animation.ValueAnimator;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -13,8 +15,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -40,6 +45,11 @@ public class Restaurantes extends AppCompatActivity{
     boolean alreadyGotData = false;
     private String locationName = "--";
     private List<Address> list;
+    private LottieAnimationView animationView;
+    private TextView noRecipesText;
+    private ArrayList<Restaurant> rest;
+    private RecyclerView recyclerView;
+    private HerePlaces h;
 
     private final int REQUEST_PERMISSION_LOCATION = 1;
 
@@ -86,10 +96,19 @@ public class Restaurantes extends AppCompatActivity{
     }
 
     private void getLocation() throws SecurityException{
+        Log.d(TAG, "Getting mFusedLocationClient");
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         final Geocoder geocoder = new Geocoder(this);
+        Log.d(TAG, "Got mFusedLocationClient");
 
         Log.d(TAG, "Getting ready to get last location");
+
+        animationView = findViewById(R.id.animation_view);
+        noRecipesText = findViewById(R.id.no_recipes_here);
+        noRecipesText.setVisibility(View.GONE);
+
+        animationView.setRepeatCount(ValueAnimator.INFINITE);
+        animationView.playAnimation();
 
         mFusedLocationClient.getLastLocation()
                 .addOnSuccessListener(this, new OnSuccessListener<Location>() {
@@ -121,32 +140,45 @@ public class Restaurantes extends AppCompatActivity{
                             latitudeFinal = latitude;
                             longitudeFinal = longitude;
                             localFinal = locationName;
-                            HerePlaces h = new HerePlaces();
-                            ArrayList<Restaurant> rest = new ArrayList<>();
-                            try {
-                                rest = h.returnRestaurant(latitude,longitude);
-
-                                /*TextView name = findViewById(R.id.restaurant_name);
-                                TextView address = findViewById(R.id.restaurant_address);
-                                TextView morada = findViewById(R.id.distance);
-                                //View v = findViewById(R.id.view);
-                                name.setText(rest.get(0).nome);
-                                address.setText(rest.get(0).morada);
-                                morada.setText("A cerca de " + rest.get(0).distancia + " metros");*/
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            } catch (ExecutionException e) {
-                                e.printStackTrace();
-                            }
-                            RecyclerView recyclerView = findViewById(R.id.restaurants);
+                            h = new HerePlaces();
+                            recyclerView = findViewById(R.id.restaurants);
                             recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                             recyclerView.setHasFixedSize(true);
-                            adapter = new RestaurantsAdapter(rest,getApplicationContext());
-                            //adapter.setClickListener(getApplicationContext());
-                            recyclerView.setAdapter(adapter);
-                            alreadyGotData = true;
+                            rest = new ArrayList<>();
+                            Handler handler = new Handler();
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    try{
+                                        Log.d(TAG, "Getting ready to returnRestaurant");
+                                        rest = h.returnRestaurant(latitude,longitude);
+                                        Log.d(TAG, "Got all restaurants");
+
+                                        adapter = new RestaurantsAdapter(rest,getApplicationContext());
+                                        //adapter.setClickListener(getApplicationContext());
+
+                                        recyclerView.setAdapter(adapter);
+                                        alreadyGotData = true;
+
+                                        if (!rest.isEmpty()){
+                                            animationView.pauseAnimation();
+                                            animationView.setVisibility(View.GONE);
+                                        }
+                                        else{
+                                            animationView.pauseAnimation();
+                                            animationView.setVisibility(View.GONE);
+                                            noRecipesText.setText(R.string.no_saved_recipes);
+                                            noRecipesText.setVisibility(View.VISIBLE);
+                                        }
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    } catch (ExecutionException e) {
+                                        e.printStackTrace();
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            });
                         }
                     }
                 })
