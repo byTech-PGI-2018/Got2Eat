@@ -44,11 +44,14 @@ import ai.api.model.AIError;
 import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
+import uk.co.deanwild.materialshowcaseview.shape.CircleShape;
 
 public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout drawer;
     private NavigationView navView = null;
     private TextView navDisplayName = null;
+    private TextView showcaseTextViewTarget;
     private Author user;
     private Author bot;
     private EditText userInput;
@@ -64,7 +67,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
             Picasso.with(getApplicationContext()).load(url).into(imageView);
         }
     };
-
+    private String SHOWCASE_ID = "1";
     private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), imageLoader);
 
     @Override
@@ -80,6 +83,8 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
         db = FirebaseFirestore.getInstance();
 
+        showcaseTextViewTarget = findViewById(R.id.drawer_slide_hint_pos);
+
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             @Override
@@ -91,6 +96,20 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
             }
         }, 300);
+
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                new MaterialShowcaseView.Builder(thisInstance)
+                        .setTarget(showcaseTextViewTarget)
+                        .setDismissText("ENTENDIDO")
+                        .setShape(new CircleShape())
+                        .setContentText("Para abrir a gaveta, deslize para a direita a partir do lado esquerdo")
+                        .setDelay(1500) // optional but starting animations immediately in onCreate can make them choppy
+                        .singleUse(SHOWCASE_ID) // provide a unique ID used to ensure it is only shown once
+                        .show();
+            }
+        }, 2000);
 
         final AIConfiguration config = new AIConfiguration("bd09387ec42144bd9dbf3ea09141f6fd",
                 AIConfiguration.SupportedLanguages.Portuguese,
