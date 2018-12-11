@@ -13,8 +13,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -40,6 +43,8 @@ public class Restaurantes extends AppCompatActivity{
     boolean alreadyGotData = false;
     private String locationName = "--";
     private List<Address> list;
+    private LottieAnimationView animationView;
+    private TextView noRecipesText;
 
     private final int REQUEST_PERMISSION_LOCATION = 1;
 
@@ -90,6 +95,13 @@ public class Restaurantes extends AppCompatActivity{
         final Geocoder geocoder = new Geocoder(this);
 
         Log.d(TAG, "Getting ready to get last location");
+
+        animationView = findViewById(R.id.animation_view);
+        noRecipesText = findViewById(R.id.no_recipes_here);
+        noRecipesText.setVisibility(View.GONE);
+
+        animationView.setRepeatMode(1);
+        animationView.playAnimation();
 
         mFusedLocationClient.getLastLocation()
                 .addOnSuccessListener(this, new OnSuccessListener<Location>() {
@@ -145,6 +157,18 @@ public class Restaurantes extends AppCompatActivity{
                             recyclerView.setHasFixedSize(true);
                             adapter = new RestaurantsAdapter(rest,getApplicationContext());
                             //adapter.setClickListener(getApplicationContext());
+
+                            if (!rest.isEmpty()){
+                                animationView.pauseAnimation();
+                                animationView.setVisibility(View.GONE);
+                            }
+                            else{
+                                animationView.pauseAnimation();
+                                animationView.setVisibility(View.GONE);
+                                noRecipesText.setText(R.string.no_saved_recipes);
+                                noRecipesText.setVisibility(View.VISIBLE);
+                            }
+
                             recyclerView.setAdapter(adapter);
                             alreadyGotData = true;
                         }

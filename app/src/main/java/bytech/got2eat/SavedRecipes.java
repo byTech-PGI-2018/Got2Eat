@@ -9,6 +9,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import android.view.View;
+import android.widget.TextView;
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,6 +27,8 @@ public class SavedRecipes extends AppCompatActivity {
     private SavedRecipesAdapter adapter;
     private FirebaseFirestore db;
     private Context context = this;
+    private LottieAnimationView animationView;
+    private TextView noRecipesText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +38,13 @@ public class SavedRecipes extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         final ArrayList<Recipe> recipes = new ArrayList<>();
+
+        animationView = findViewById(R.id.animation_view);
+        noRecipesText = findViewById(R.id.no_recipes_here);
+        noRecipesText.setVisibility(View.GONE);
+
+        animationView.setRepeatMode(1);
+        animationView.playAnimation();
 
         recyclerView = findViewById(R.id.saved_recipes);
         llm = new LinearLayoutManager(getApplicationContext());
@@ -63,6 +75,8 @@ public class SavedRecipes extends AppCompatActivity {
                                                         Log.d(TAG, "Found recipe for id: " + id + " with name: " + (String)task.getResult().get("name"));
                                                         Recipe recipe = new Recipe((String)task.getResult().get("name"), id);
                                                         recipes.add(recipe);
+                                                        animationView.pauseAnimation();
+                                                        animationView.setVisibility(View.GONE);
                                                         adapter.notifyItemInserted(recipes.size()-1);
                                                     }
                                                     else{
@@ -71,6 +85,12 @@ public class SavedRecipes extends AppCompatActivity {
                                                 }
                                             });
                                 }
+                            }
+                            else{
+                                animationView.pauseAnimation();
+                                animationView.setVisibility(View.GONE);
+                                noRecipesText.setText(R.string.no_saved_recipes);
+                                noRecipesText.setVisibility(View.VISIBLE);
                             }
                         }
                         else{
