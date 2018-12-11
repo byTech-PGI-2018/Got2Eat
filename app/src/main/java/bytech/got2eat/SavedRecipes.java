@@ -1,5 +1,6 @@
 package bytech.got2eat;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -43,7 +44,7 @@ public class SavedRecipes extends AppCompatActivity {
         noRecipesText = findViewById(R.id.no_recipes_here);
         noRecipesText.setVisibility(View.GONE);
 
-        animationView.setRepeatMode(1);
+        animationView.setRepeatCount(ValueAnimator.INFINITE);
         animationView.playAnimation();
 
         recyclerView = findViewById(R.id.saved_recipes);
