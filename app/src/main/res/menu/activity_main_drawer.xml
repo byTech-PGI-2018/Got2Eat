@@ -2,9 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group
         android:id="@+id/menu_top">
-        <item android:id="@+id/nav_item_user_profile"
-            android:icon="@drawable/profile"
-            android:title="@string/user_profile"/>
         <item android:id="@+id/nav_item_saved_recipes"
             android:icon="@drawable/profile"
             android:title="@string/nav_saved_recipes"/>
