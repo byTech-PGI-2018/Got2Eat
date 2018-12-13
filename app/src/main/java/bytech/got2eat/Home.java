@@ -26,7 +26,10 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.gson.Gson;
@@ -110,7 +113,21 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 navView = findViewById(R.id.nav_view);
                 navView.setNavigationItemSelectedListener(thisInstance);
                 navDisplayName = navView.findViewById(R.id.nav_header_textView);
-                navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                navDisplayName.setText("");
+                db.collection("users").document(FirebaseAuth.getInstance().getUid())
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                if (task.isSuccessful()){
+                                    DocumentSnapshot document = task.getResult();
+                                    navDisplayName.setText((String)document.get("firstname"));
+                                }
+                                else{
+                                    navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                                }
+                            }
+                        });
             }
         }, 300);
 
