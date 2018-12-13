@@ -1,5 +1,6 @@
 package bytech.got2eat;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -17,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -54,6 +56,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private Login thisInstance = this;
     private FirebaseFirestore db;
     private boolean alreadyClicked = false;
+    private LottieAnimationView animationView;
 
     private int RC_SIGN_IN = 100;
 
@@ -62,6 +65,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        animationView = findViewById(R.id.animation_view);
+        animationView.setVisibility(View.GONE);
+        animationView.setRepeatCount(ValueAnimator.INFINITE);
 
         //Comment for testing gpg key
         db = FirebaseFirestore.getInstance();
@@ -103,6 +110,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                         String email = loginEmail.getText().toString().trim();
 
                         if (validateInput(password, email)==0){
+                            loginButton.setVisibility(View.GONE);
+                            registerButton.setVisibility(View.GONE);
+                            animationView.setVisibility(View.VISIBLE);
+                            animationView.setRepeatCount(ValueAnimator.INFINITE);
+                            animationView.playAnimation();
                             Log.d(TAG, "Password: " + loginPassword.getText().toString());
                             Log.d(TAG, "Email: " + loginEmail.getText().toString());
 
@@ -196,6 +208,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        loginButton.setVisibility(View.VISIBLE);
+                        registerButton.setVisibility(View.VISIBLE);
+                        animationView.pauseAnimation();
+                        animationView.setVisibility(View.GONE);
                         Toast.makeText(context, "Login failed", Toast.LENGTH_SHORT).show();
                         alreadyClicked = false;
                     }
