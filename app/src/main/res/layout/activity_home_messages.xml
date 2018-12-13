@@ -57,6 +57,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:maxLength="240"
             android:background="@drawable/rounded_rectangle_white"
             android:ems="10"
             android:hint="@string/hint_pedido"
