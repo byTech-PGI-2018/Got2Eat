@@ -167,7 +167,7 @@ public class Restaurantes extends AppCompatActivity{
                                         else{
                                             animationView.pauseAnimation();
                                             animationView.setVisibility(View.GONE);
-                                            noRecipesText.setText(R.string.no_saved_recipes);
+                                            noRecipesText.setText(R.string.no_restaurant_found);
                                             noRecipesText.setVisibility(View.VISIBLE);
                                         }
                                     } catch (InterruptedException e) {
