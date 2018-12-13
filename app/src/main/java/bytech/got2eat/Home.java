@@ -1,6 +1,7 @@
 package bytech.got2eat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
@@ -11,6 +12,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -27,6 +29,7 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.messages.MessagesList;
@@ -48,6 +51,7 @@ import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
 import uk.co.deanwild.materialshowcaseview.shape.CircleShape;
 
 public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
+    private static final String TAG = "Home";
     private DrawerLayout drawer;
     private NavigationView navView = null;
     private TextView navDisplayName = null;
@@ -56,7 +60,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     private Author bot;
     private EditText userInput;
     private ImageView inputEnter;
-    private List<Message> messages = new ArrayList<>();
+    private ArrayList<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
@@ -69,6 +73,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     };
     private String SHOWCASE_ID = "1";
     private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), imageLoader);
+    private SharedPreferences mPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +86,17 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //Retrive data (if it exists)
+        mPrefs = getPreferences(MODE_PRIVATE);
+        Gson gson = new Gson();
+        String json = mPrefs.getString("History", "");
+        History history = gson.fromJson(json, History.class);
+        Log.d(TAG, "History: " + history);
+        if (history != null && history.history!=null && !history.history.isEmpty()){
+            Log.d(TAG, "Adding history");
+            adapter.addToEnd(history.history, true);
+        }
 
         db = FirebaseFirestore.getInstance();
 
@@ -188,6 +204,17 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 });
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        SharedPreferences.Editor prefsEditor = mPrefs.edit();
+        History history = new History(messages);
+        Gson gson = new Gson();
+        String json = gson.toJson(history);
+        prefsEditor.putString("History", json);
+        prefsEditor.apply();
+        super.onPause();
     }
 
     private void respond(String message) {
