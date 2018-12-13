@@ -1,5 +1,6 @@
 package bytech.got2eat;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -15,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -39,6 +41,7 @@ public class Register extends AppCompatActivity {
     private boolean passwordVisible = false;
     private Context context = this;
     private FirebaseFirestore db;
+    private LottieAnimationView animationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,10 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         db = FirebaseFirestore.getInstance();
+
+        animationView = findViewById(R.id.animation_view);
+        animationView.setVisibility(View.GONE);
+        animationView.setRepeatCount(ValueAnimator.INFINITE);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -66,6 +73,10 @@ public class Register extends AppCompatActivity {
 
                     //Check input first
                     if (validateInput(password, email, name, username)==0){
+                        registerButton.setVisibility(View.GONE);
+                        animationView.setVisibility(View.VISIBLE);
+                        animationView.playAnimation();
+
                         Map<String, Object> userData = new HashMap<>();
                         userData.put("username", username);
                         userData.put("firstname", name);
@@ -123,6 +134,9 @@ public class Register extends AppCompatActivity {
                                     });
                         }
                         else{
+                            animationView.pauseAnimation();
+                            animationView.setVisibility(View.GONE);
+                            registerButton.setVisibility(View.VISIBLE);
                             Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -130,6 +144,9 @@ public class Register extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        animationView.pauseAnimation();
+                        animationView.setVisibility(View.GONE);
+                        registerButton.setVisibility(View.VISIBLE);
                         Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
                     }
                 });
