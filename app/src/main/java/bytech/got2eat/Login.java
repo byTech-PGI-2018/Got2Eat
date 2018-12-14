@@ -152,6 +152,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             public void onClick(View v) {
                 if (isNetworkConnected()){
                     //Log in with google
+                    Log.d(TAG, "Clicked and internet is up");
                     signInGoogle();
                 }
                 else{
@@ -186,6 +187,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     public void onSuccess(AuthResult authResult) {
                         if (authResult.getUser()!=null){
                             //Update timestamp in database
+                            failedAttempts = 0;
                             Map<String, Object> data = new HashMap<>();
                             data.put("lastlogin", Timestamp.now());
                             db.collection("users").document(authResult.getUser().getUid())
@@ -235,7 +237,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==RC_SIGN_IN){
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            Log.d(TAG, "Result is :" + result);
+            Log.d(TAG, "Result status: " + result.getStatus());
             if(result.isSuccess()){
+                Log.d(TAG, "ActivityResult is successful, starting authWtihGoogle");
                 GoogleSignInAccount account = result.getSignInAccount();
                 authWithGoogle(account);
             }
@@ -243,6 +248,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     }
 
     private void authWithGoogle(GoogleSignInAccount account) {
+        Log.d(TAG, "Started authWithGoogle");
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(),null);
         mAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -251,6 +257,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     //Update value in database
                     Map<String,Object> data = new HashMap<>();
                     data.put("lastlogin", Timestamp.now());
+                    Log.d(TAG,"Task signInGoogle is success: " + FirebaseAuth.getInstance().getUid());
                     db.collection("users").document(FirebaseAuth.getInstance().getUid())
                             .update(data);
                     startActivity(new Intent(getApplicationContext(),Login.class));

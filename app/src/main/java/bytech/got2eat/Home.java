@@ -80,7 +80,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        if (FirebaseAuth.getInstance() == null){
+        if (FirebaseAuth.getInstance() == null || FirebaseAuth.getInstance().getUid() == null){
             Intent intent = new Intent(thisInstance, Login.class);
             startActivity(intent);
             finish();
