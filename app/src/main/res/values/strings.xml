@@ -1,16 +1,15 @@
 <resources>
-    <string name="app_name">Got2Eat</string>
-    <string name="already_login">User already logged in</string>
+    <string name="app_name" translatable="false">Got2Eat</string>
     <string name="email_hint">Email</string>
     <string name="login_button">Login</string>
-    <string name="empty_username">Field can\'t be empty</string>
+    <string name="empty_username">Campo não pode estar vazio</string>
     <string name="password_hint">Password</string>
     <string name="name_hint">Nome</string>
     <string name="username_hint">Username</string>
-    <string name="register_button">Register</string>
+    <string name="register_button">Registar</string>
     <string name="login_google">Google</string>
-    <string name="no_internet">No internet connection</string>
-    <string name="user_input_hint">Write something</string>
+    <string name="no_internet">Não existe conexão à internet</string>
+    <string name="user_input_hint">Escreva qualquer coisa</string>
     <string name="recipe_name">Nome da receita</string>
     <string name="upload_recipe_image">Carreg. foto</string>
     <string name="recipe_duration">Duração (min): </string>
@@ -20,14 +19,14 @@
     <string name="recipe_preparation_title">Modo de preparação</string>
     <string name="recipe_preparation">Preparação</string>
     <string name="recipe_submit">Submeter</string>
-    <string name="signed_out">Signed out</string>
+    <string name="signed_out">Sessão terminada</string>
     <string name="register_text">Preencha os seguintes campos para se registar</string>
     <string name="login_text_separator">ou</string>
     <string name="google_login_text">Login com</string>
-    <string name="user_profile">Profile</string>
-    <string name="recipe">Recipe</string>
-    <string name="sign_out">Sign out</string>
-    <string name="copy_clipboard">Copied to clipboard</string>
+    <string name="user_profile">Perfil</string>
+    <string name="recipe">Receita</string>
+    <string name="sign_out">Terminar sessão</string>
+    <string name="copy_clipboard">Copiado</string>
     <string name="hint_pedido">Insira aqui o seu pedido...</string>
     <string name="refuse_location">Uso de GPS recusado.</string>
     <string name="recipe_not_saved">Receita não guardada</string>
@@ -35,4 +34,5 @@
     <string name="nav_saved_recipes">Receitas guardadas</string>
     <string name="no_saved_recipes">Não há receitas guardadas.</string>
     <string name="no_restaurant_found">Nenhum restaurante encontrado</string>
+    <string name="already_login">Utilizador já tem sessão iniciada</string>
 </resources>
