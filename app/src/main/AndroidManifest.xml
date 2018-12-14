@@ -38,6 +38,8 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".SavedRecipes"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".aboutUs"
+                android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
