@@ -120,7 +120,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/facelogo" />
+            app:srcCompat="@mipmap/facelogo" />
 
         <ImageView
             android:id="@+id/launch"
@@ -132,7 +132,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/launchlogo" />
+            app:srcCompat="@mipmap/launchlogo" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline4"
