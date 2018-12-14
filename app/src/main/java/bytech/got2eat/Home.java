@@ -1,6 +1,7 @@
 package bytech.got2eat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
@@ -11,6 +12,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -24,9 +26,13 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.messages.MessagesList;
@@ -44,16 +50,20 @@ import ai.api.model.AIError;
 import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
+import uk.co.deanwild.materialshowcaseview.shape.CircleShape;
 
 public class Home extends AppCompatActivity implements AIListener, NavigationView.OnNavigationItemSelectedListener{
+    private static final String TAG = "Home";
     private DrawerLayout drawer;
     private NavigationView navView = null;
     private TextView navDisplayName = null;
+    private TextView showcaseTextViewTarget;
     private Author user;
     private Author bot;
     private EditText userInput;
     private ImageView inputEnter;
-    private List<Message> messages = new ArrayList<>();
+    private ArrayList<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
@@ -64,8 +74,9 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
             Picasso.with(getApplicationContext()).load(url).into(imageView);
         }
     };
-
+    private String SHOWCASE_ID = "1";
     private MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getUid(), imageLoader);
+    private SharedPreferences mPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,12 +84,26 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
             Intent intent = new Intent(thisInstance, Login.class);
             startActivity(intent);
             finish();
+            return;
         }
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //Retrive data (if it exists)
+        mPrefs = getPreferences(MODE_PRIVATE);
+        Gson gson = new Gson();
+        String json = mPrefs.getString("History", "");
+        History history = gson.fromJson(json, History.class);
+        Log.d(TAG, "History: " + history);
+        if (history != null && history.history!=null && !history.history.isEmpty()){
+            Log.d(TAG, "Adding history");
+            adapter.addToEnd(history.history, true);
+        }
+
         db = FirebaseFirestore.getInstance();
+
+        showcaseTextViewTarget = findViewById(R.id.drawer_slide_hint_pos);
 
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
@@ -88,9 +113,37 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 navView = findViewById(R.id.nav_view);
                 navView.setNavigationItemSelectedListener(thisInstance);
                 navDisplayName = navView.findViewById(R.id.nav_header_textView);
-                navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                navDisplayName.setText("");
+                db.collection("users").document(FirebaseAuth.getInstance().getUid())
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                if (task.isSuccessful()){
+                                    DocumentSnapshot document = task.getResult();
+                                    navDisplayName.setText((String)document.get("firstname"));
+                                }
+                                else{
+                                    navDisplayName.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                                }
+                            }
+                        });
             }
         }, 300);
+
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                new MaterialShowcaseView.Builder(thisInstance)
+                        .setTarget(showcaseTextViewTarget)
+                        .setDismissText("ENTENDIDO")
+                        .setShape(new CircleShape())
+                        .setContentText("Para abrir a gaveta, deslize para a direita a partir do lado esquerdo")
+                        .setDelay(1500) // optional but starting animations immediately in onCreate can make them choppy
+                        .singleUse(SHOWCASE_ID) // provide a unique ID used to ensure it is only shown once
+                        .show();
+            }
+        }, 2000);
 
         final AIConfiguration config = new AIConfiguration("bd09387ec42144bd9dbf3ea09141f6fd",
                 AIConfiguration.SupportedLanguages.Portuguese,
@@ -170,6 +223,17 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         });
     }
 
+    @Override
+    protected void onPause() {
+        SharedPreferences.Editor prefsEditor = mPrefs.edit();
+        History history = new History(messages);
+        Gson gson = new Gson();
+        String json = gson.toJson(history);
+        prefsEditor.putString("History", json);
+        prefsEditor.apply();
+        super.onPause();
+    }
+
     private void respond(String message) {
         //Find if there are recipes
         if(!message.matches("Vou pesquisar restaurantes próximos de si!")){
@@ -221,13 +285,13 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
                 return true;
-            /*case R.id.nav_item_user_profile:
-                intent = new Intent(thisInstance, Profile.class);
-                startActivity(intent);
-                drawer.closeDrawers();
-                return true;*/
             case R.id.nav_item_saved_recipes:
                 intent = new Intent(thisInstance, SavedRecipes.class);
+                startActivity(intent);
+                drawer.closeDrawers();
+                return true;
+            case R.id.nav_item_about_us:
+                intent = new Intent(thisInstance, aboutUs.class);
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;

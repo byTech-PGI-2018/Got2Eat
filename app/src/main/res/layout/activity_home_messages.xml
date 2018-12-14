@@ -51,20 +51,22 @@
     </android.support.design.widget.TextInputLayout>
 
     <EditText
-        android:id="@+id/user_input"
-        android:layout_width="0dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/rounded_rectangle_white"
-        android:ems="10"
-        android:hint="@string/hint_pedido"
-        android:inputType="text"
-        android:paddingStart="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/user_input"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:maxLength="240"
+            android:background="@drawable/rounded_rectangle_white"
+            android:ems="10"
+            android:hint="@string/hint_pedido"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingEnd="50dp"/>
 
     <ImageView
         android:id="@+id/input_enter_button"
@@ -87,5 +89,16 @@
         app:layout_constraintEnd_toEndOf="@+id/messagesList"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/help" />
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawer_slide_hint_pos"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="58dp"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_username">Field can\'t be empty</string>
+    <string name="name_hint">Name</string>
+    <string name="register_button">Register</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="user_input_hint">Write something</string>
+    <string name="recipe_name">Recipe name</string>
+    <string name="upload_recipe_image">Up. photo</string>
+    <string name="recipe_duration">Duration (min):</string>
+    <string name="recipe_portions">Portions:</string>
+    <string name="recipe_ingredients">Ingredients</string>
+    <string name="recipe_preparation_title">Preparation</string>
+    <string name="recipe_preparation">Preparation</string>
+    <string name="recipe_submit">Submit</string>
+    <string name="signed_out">Signed out</string>
+    <string name="register_text">Submit the following info to register</string>
+    <string name="login_text_separator">or</string>
+    <string name="google_login_text">Login with</string>
+    <string name="user_profile">Profile</string>
+    <string name="recipe">Recipe</string>
+    <string name="sign_out">Sign out</string>
+    <string name="copy_clipboard">Copied to clipboard</string>
+    <string name="hint_pedido">Write your request here...</string>
+    <string name="refuse_location">GPS access denied.</string>
+    <string name="recipe_not_saved">Recipe not saved</string>
+    <string name="recipe_not_unsaved">Recipe not forgot</string>
+    <string name="nav_saved_recipes">Saved recipes</string>
+    <string name="no_saved_recipes">No saved recipes.</string>
+    <string name="no_restaurant_found">No restaurant found</string>
+    <string name="already_login">User already logged in</string>
+</resources>

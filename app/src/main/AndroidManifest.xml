@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Launcher">
 
-        <activity android:name=".Login">
+        <activity android:name=".Login"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,15 +23,23 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Register" />
+        <activity android:name=".Register"
+                  android:screenOrientation="portrait"/>
 
         <activity android:name=".Home"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".RecipeCreate"/>
-        <activity android:name=".RecipeShow"/>
-        <activity android:name=".Restaurantes"/>
-        <activity android:name=".SavedRecipes"/>
+        <activity android:name=".RecipeCreate"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".RecipeShow"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Restaurantes"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SavedRecipes"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".aboutUs"
+                android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

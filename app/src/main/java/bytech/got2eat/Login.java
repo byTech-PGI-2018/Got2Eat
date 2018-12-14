@@ -1,9 +1,11 @@
 package bytech.got2eat;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.content.ContextCompat;
@@ -16,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -52,7 +55,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private Context context = this;
     private Login thisInstance = this;
     private FirebaseFirestore db;
+    private boolean alreadyClicked = false;
+    private LottieAnimationView animationView;
 
+    private int failedAttempts;
     private int RC_SIGN_IN = 100;
 
     @Override
@@ -61,16 +67,22 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        failedAttempts = 0;
+
+        animationView = findViewById(R.id.animation_view);
+        animationView.setVisibility(View.GONE);
+        animationView.setRepeatCount(ValueAnimator.INFINITE);
+
         //Comment for testing gpg key
         db = FirebaseFirestore.getInstance();
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser()!=null){
-            Toast.makeText(this, R.string.already_login, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, R.string.already_login, Toast.LENGTH_SHORT).show();
             Log.i(TAG, "User already logged in");
 
             //Create new intent to main activity
-            Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "Logged in", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(thisInstance, Home.class);
             startActivity(intent);
             finish();
@@ -95,15 +107,23 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             @Override
             public void onClick(View v) {
                 if (isNetworkConnected()){
-                    String password = loginPassword.getText().toString().trim();
-                    String email = loginEmail.getText().toString().trim();
+                    if (!alreadyClicked){
+                        alreadyClicked = true;
+                        String password = loginPassword.getText().toString().trim();
+                        String email = loginEmail.getText().toString().trim();
 
-                    if (validateInput(password, email)==0){
-                        Log.d(TAG, "Password: " + loginPassword.getText().toString());
-                        Log.d(TAG, "Email: " + loginEmail.getText().toString());
+                        if (validateInput(password, email)==0){
+                            loginButton.setVisibility(View.GONE);
+                            registerButton.setVisibility(View.GONE);
+                            animationView.setVisibility(View.VISIBLE);
+                            animationView.setRepeatCount(ValueAnimator.INFINITE);
+                            animationView.playAnimation();
+                            Log.d(TAG, "Password: " + loginPassword.getText().toString());
+                            Log.d(TAG, "Email: " + loginEmail.getText().toString());
 
-                        //Log in
-                        signInEmailPassword(email, password);
+                            //Log in
+                            signInEmailPassword(email, password);
+                        }
                     }
                 }
                 else{
@@ -117,13 +137,17 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Register.class);
-                startActivity(intent);
+                if (!alreadyClicked){
+                    alreadyClicked = true;
+                    Intent intent = new Intent(Login.this, Register.class);
+                    startActivity(intent);
+                    alreadyClicked = false;
+                }
             }
         });
 
         googleButton = findViewById(R.id.google_button);
-        /*googleButton.setOnClickListener(new View.OnClickListener() {
+        googleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (isNetworkConnected()){
@@ -135,7 +159,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     Toast.makeText(context, R.string.no_internet, Toast.LENGTH_SHORT).show();
                 }
             }
-        });*/
+        });
 
         passwordVisibilityButton = findViewById(R.id.icon_password_visibility);
         passwordVisibilityButton.setOnClickListener(new View.OnClickListener() {
@@ -172,14 +196,31 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                             Intent intent = new Intent(thisInstance, Home.class);
                             startActivity(intent);
                             finish();
+                            Handler h = new Handler();
+                            h.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    alreadyClicked = false;
+                                }
+                            }, 2000);
                         }
-                        else Toast.makeText(context, "Wrong user/password", Toast.LENGTH_SHORT).show();
+                        else Toast.makeText(context, "Email/password incorreto", Toast.LENGTH_SHORT).show();
+                        alreadyClicked = false;
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(context, "Login failed", Toast.LENGTH_SHORT).show();
+                        failedAttempts+=1;
+                        loginButton.setVisibility(View.VISIBLE);
+                        registerButton.setVisibility(View.VISIBLE);
+                        animationView.pauseAnimation();
+                        animationView.setVisibility(View.GONE);
+                        Toast.makeText(context, "Erro de login.", Toast.LENGTH_SHORT).show();
+                        if (failedAttempts > 3){
+                            Toast.makeText(context, "Associou este email a uma conta Google?", Toast.LENGTH_LONG).show();
+                        }
+                        alreadyClicked = false;
                     }
                 });
     }
@@ -225,9 +266,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private int validateInput(String password, String email){
         if (password.isEmpty()){
             loginPassword.setError(getString(R.string.empty_username));
+            alreadyClicked = false;
             return 1;
         }
         else if (email.isEmpty()){
+            alreadyClicked = false;
             loginEmail.setError(getString(R.string.empty_username));
             return 1;
         }
