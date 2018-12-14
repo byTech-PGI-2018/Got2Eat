@@ -122,14 +122,14 @@ public class Register extends AppCompatActivity {
                                         @Override
                                         public void onSuccess(Void aVoid) {
                                             //Data added successfully
-                                            Toast.makeText(context, "Register complete", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(context, "Registo completo", Toast.LENGTH_SHORT).show();
                                             finish();
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
-                                            Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(context, "Erro no registo", Toast.LENGTH_SHORT).show();
                                         }
                                     });
                         }
@@ -137,7 +137,7 @@ public class Register extends AppCompatActivity {
                             animationView.pauseAnimation();
                             animationView.setVisibility(View.GONE);
                             registerButton.setVisibility(View.VISIBLE);
-                            Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Erro no registo", Toast.LENGTH_SHORT).show();
                         }
                     }
                 })
@@ -147,7 +147,7 @@ public class Register extends AppCompatActivity {
                         animationView.pauseAnimation();
                         animationView.setVisibility(View.GONE);
                         registerButton.setVisibility(View.VISIBLE);
-                        Toast.makeText(context, "Register failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Erro no registo", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
