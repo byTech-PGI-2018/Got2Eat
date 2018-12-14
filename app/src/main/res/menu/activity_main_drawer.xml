@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <group
         android:id="@+id/menu_top">
         <item android:id="@+id/nav_item_saved_recipes"
-            android:icon="@drawable/profile"
+            android:icon="@drawable/recipe_save"
             android:title="@string/nav_saved_recipes"/>
     </group>
     <group
         android:id="@+id/menu_bottom">
+        <item android:id="@+id/nav_item_about_us"
+              android:icon="@drawable/about_us"
+              android:title="@string/about_us" />
         <item android:id="@+id/nav_item_sign_out"
             android:icon="@drawable/sign_out"
             android:title="@string/sign_out" />
     </group>
+
 </menu>

@@ -290,6 +290,11 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;
+            case R.id.nav_item_about_us:
+                intent = new Intent(thisInstance, aboutUs.class);
+                startActivity(intent);
+                drawer.closeDrawers();
+                return true;
             default:
 		        //Satisfy codacy
                 return true;
