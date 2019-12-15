@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.restaurants;
 
 import android.os.AsyncTask;
 

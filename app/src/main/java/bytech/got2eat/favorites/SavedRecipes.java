@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.favorites;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -19,6 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.ArrayList;
+
+import bytech.got2eat.R;
+import bytech.got2eat.recipe.Recipe;
 
 public class SavedRecipes extends AppCompatActivity {
 

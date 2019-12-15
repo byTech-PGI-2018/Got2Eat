@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.recipe;
 
 public class Recipe {
     private String name;

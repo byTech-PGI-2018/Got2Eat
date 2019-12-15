@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.favorites;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import bytech.got2eat.R;
+import bytech.got2eat.recipe.Recipe;
+import bytech.got2eat.recipe.RecipeShow;
 
 public class SavedRecipesAdapter extends RecyclerView.Adapter<SavedRecipesAdapter.ViewHolder>{
 

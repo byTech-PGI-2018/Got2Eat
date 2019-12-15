@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.recipe;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -25,8 +25,11 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+
+import bytech.got2eat.R;
+
+//FIXME: If first text box is too large, second text box is invisible, can't scroll
 
 public class RecipeShow extends AppCompatActivity {
 
