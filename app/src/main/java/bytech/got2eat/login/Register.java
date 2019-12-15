@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.login;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -26,6 +26,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import bytech.got2eat.R;
 
 public class Register extends AppCompatActivity {
 

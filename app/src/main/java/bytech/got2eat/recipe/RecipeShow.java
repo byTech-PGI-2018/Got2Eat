@@ -1,10 +1,11 @@
-package bytech.got2eat;
+package bytech.got2eat.recipe;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -25,8 +26,11 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+
+import bytech.got2eat.R;
+
+//FIXME: If first text box is too large, second text box is invisible, can't scroll
 
 public class RecipeShow extends AppCompatActivity {
 
@@ -112,7 +116,7 @@ public class RecipeShow extends AppCompatActivity {
                     }
                     else hideIngredients.setBackground(getDrawable(R.drawable.up_arrow));
                     ingredientsUpArrow = !ingredientsUpArrow;
-                    ScrollView scrollView = findViewById(R.id.scroll_ingredients);
+                    NestedScrollView scrollView = findViewById(R.id.scroll_ingredients);
                     if (scrollView.getVisibility() == View.VISIBLE){
                         scrollView.setVisibility(View.GONE);
                     }
@@ -129,7 +133,7 @@ public class RecipeShow extends AppCompatActivity {
                     }
                     else hidePrep.setBackground(getDrawable(R.drawable.up_arrow));
                     prepUpArrow = !prepUpArrow;
-                    ScrollView scrollView = findViewById(R.id.scroll_preparation);
+                    NestedScrollView scrollView = findViewById(R.id.scroll_preparation);
                     if (scrollView.getVisibility() == View.VISIBLE){
                         scrollView.setVisibility(View.GONE);
                     }

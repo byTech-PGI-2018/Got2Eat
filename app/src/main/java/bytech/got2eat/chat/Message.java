@@ -1,8 +1,5 @@
-package bytech.got2eat;
+package bytech.got2eat.chat;
 
-import android.support.annotation.Nullable;
-
-import com.google.android.gms.auth.api.Auth;
 import com.stfalcon.chatkit.commons.models.IMessage;
 
 import java.util.Date;

@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.chat;
 
 import com.stfalcon.chatkit.commons.models.IUser;
 
@@ -8,7 +8,7 @@ public class Author implements IUser {
     private String name;
     private String avatar;
 
-    Author(String id, String name, String avatar){
+    public Author(String id, String name, String avatar){
         this.id = id;
         this.name = name;
         this.avatar = avatar;

@@ -1,4 +1,4 @@
-package bytech.got2eat;
+package bytech.got2eat.restaurants;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 
 import java.util.ArrayList;
+
+import bytech.got2eat.R;
 
 public class RestaurantsAdapter extends RecyclerView.Adapter<RestaurantsAdapter.ViewHolder> {
     private ArrayList<Restaurant> mDataset;

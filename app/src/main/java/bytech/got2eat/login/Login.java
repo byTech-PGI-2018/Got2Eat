@@ -1,13 +1,11 @@
-package bytech.got2eat;
+package bytech.got2eat.login;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,9 +34,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.sql.Time;
 import java.util.HashMap;
 import java.util.Map;
+
+import bytech.got2eat.home.Home;
+import bytech.got2eat.R;
+
+//FIXME: View does not resize when opening keyboard
 
 public class Login extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
@@ -228,8 +230,9 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     }
 
     private void signInGoogle(){
+        Log.d(TAG, "Trying to sign in with google");
         Intent signIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signIntent,RC_SIGN_IN);
+        startActivityForResult(signIntent, RC_SIGN_IN);
     }
 
     @Override
