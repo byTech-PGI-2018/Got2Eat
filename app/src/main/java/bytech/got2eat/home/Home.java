@@ -56,7 +56,6 @@ import bytech.got2eat.R;
 import bytech.got2eat.favorites.SavedRecipes;
 import bytech.got2eat.about.aboutUs;
 import bytech.got2eat.login.Login;
-import bytech.got2eat.settings.Settings;
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
 import uk.co.deanwild.materialshowcaseview.shape.CircleShape;
 
@@ -278,12 +277,6 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
             case R.id.nav_item_about_us:
                 intent = new Intent(thisInstance, aboutUs.class);
-                startActivity(intent);
-                drawer.closeDrawers();
-                return true;
-
-            case R.id.nav_item_settings:
-                intent = new Intent(thisInstance, Settings.class);
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;
