@@ -66,7 +66,6 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     private TextView navDisplayName = null, showcaseTextViewTarget;
     private Author user;
     private EditText userInput;
-    private ArrayList<Message> messages = new ArrayList<>();
     private AIDataService aiService;
     private AIRequest aiRequest;
     private Home thisInstance = this;
@@ -95,6 +94,11 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
+        /*Initialize Chat*/
+        chat = new Chat(thisInstance);
+
+
         /*Retrieve history message data (if it exists)*/
         //FIXME: User's messages are retrieved, but not the chatbot's (also, check if they are added chronologically)
         mPrefs = getPreferences(MODE_PRIVATE);
@@ -105,6 +109,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
         if (history != null && history.history!=null && !history.history.isEmpty()){
             Log.d(TAG, "Adding history");
             adapter.addToEnd(history.history, true);
+            chat.updateMessagesList(history.history);
         }
 
         db = FirebaseFirestore.getInstance();
@@ -168,8 +173,10 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
         MessagesList messagesList = findViewById(R.id.messagesList);
 
-        /*Initialize Chat*/
-        chat = new Chat(thisInstance, user, bot);
+        /*Initialize Chat authors*/
+        chat.setUser(user);
+        chat.setBot(bot);
+
         /*Initialize chat message list*/
         chat.setMessagesList(messagesList);
         chat.setMessagesListAdapter(adapter);
@@ -188,7 +195,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
                     /*Show the message in the chat and save it to a message list as well (for potential onPause())*/
                     chat.addMessage(messageObj);
-                    messages.add(messageObj);
+                    //messages.add(messageObj);
 
                     /*Save the message in the database*/
                     //TODO: Maybe remove this kind of logs
@@ -238,7 +245,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
     protected void onPause() {
         /*Save the current list of messages to a .json file*/
         SharedPreferences.Editor prefsEditor = mPrefs.edit();
-        History history = new History(messages);
+        History history = new History(chat.retrieveAllMessages());
         Gson gson = new Gson();
         String json = gson.toJson(history);
         prefsEditor.putString("History", json);

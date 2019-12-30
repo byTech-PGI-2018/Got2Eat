@@ -20,11 +20,26 @@ public class Chat {
     private final Home homeInstance;
     private Author user, bot;
 
+    public Chat(Home homeInstance){
+        this.homeInstance = homeInstance;
+    }
+
     public Chat(Home homeInstance, Author user, Author bot){
         this.homeInstance = homeInstance;
         this.user = user;
         this.bot = bot;
     }
+
+
+    public void setUser(Author user){
+        this.user = user;
+    }
+
+    public void setBot(Author bot){
+        this.bot = bot;
+    }
+
+
 
     public void setMessagesList(MessagesList list) {this.messagesList = list;}
 
@@ -45,9 +60,16 @@ public class Chat {
         });
     }
 
+
+    public void updateMessagesList(ArrayList<Message> messages){
+        this.messages.addAll(messages);
+    }
+
     /*Create a chat response in the user's side of the conversation*/
     public void addMessage(Message messageObj){
         adapter.addToStart(messageObj, true);
+        /*Also, save the message in the log*/
+        messages.add(messageObj);
     }
 
     /*Create a chat response, or multiple responses in case of found recipes, in the bot's side of the conversation*/
@@ -78,5 +100,9 @@ public class Chat {
             homeInstance.startActivity(intent);
         }
 
+    }
+
+    public ArrayList<Message> retrieveAllMessages(){
+        return messages;
     }
 }
