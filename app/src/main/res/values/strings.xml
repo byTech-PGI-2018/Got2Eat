@@ -36,4 +36,5 @@
     <string name="no_restaurant_found">Nenhum restaurante encontrado</string>
     <string name="already_login">Utilizador já tem sessão iniciada</string>
     <string name="about_us">Acerca de</string>
+    <string name="settings">Definições</string>
 </resources>
