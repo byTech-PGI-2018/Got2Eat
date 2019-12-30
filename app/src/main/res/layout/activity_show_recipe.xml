@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".recipe.RecipeShow">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background">
@@ -41,20 +41,20 @@
             app:layout_constraintTop_toBottomOf="@+id/recipe_name"
             app:layout_constraintVertical_bias="0.363" />
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/guideline"
             app:layout_constraintGuide_percent="0.05"
             android:orientation="vertical"/>
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/guideline1"
             app:layout_constraintGuide_percent="0.95"
             android:orientation="vertical"/>
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/guideline2"
@@ -142,7 +142,7 @@
             app:layout_constraintEnd_toEndOf="@+id/guideline1"
             app:layout_constraintTop_toTopOf="@+id/ingredients_image" android:id="@+id/recipe_ingredients_hide_btn"/>
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll_ingredients"
             android:layout_width="0dp"
             android:layout_height="200dp"
@@ -161,7 +161,7 @@
                 android:text="Ingrediente 1\nIngrediente 1\nIngrediente 1\nIngrediente 1\nIngrediente 1\nIngrediente 1\nIngrediente 1\n"
                 android:textColor="@color/darkGray"
                 android:textSize="17sp" />
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
         <ImageView
             android:id="@+id/preparation_image"
@@ -194,7 +194,7 @@
             app:layout_constraintEnd_toEndOf="@+id/guideline1"
             app:layout_constraintTop_toTopOf="@+id/preparation_image" android:id="@+id/recipe_preparation_hide_btn"/>
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll_preparation"
             android:layout_width="0dp"
             android:layout_height="200dp"
@@ -216,7 +216,7 @@
                 android:textColor="@color/darkGray"
                 android:textSize="17sp"
                 tools:text="Lorem ipsus test text" />
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
         <ImageView
             android:id="@+id/recipe_logo"
@@ -257,6 +257,6 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/recipe_ingredients_hide_btn"/>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</android.support.v4.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>

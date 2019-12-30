@@ -3,16 +3,16 @@ package bytech.got2eat.recipe;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.widget.NestedScrollView;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -141,6 +141,7 @@ public class RecipeShow extends AppCompatActivity {
                 }
             });
 
+            //FIXME: Problem saving recipes when logged in using Google
             animationView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

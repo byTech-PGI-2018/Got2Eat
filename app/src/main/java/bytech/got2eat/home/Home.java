@@ -5,11 +5,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -24,8 +19,14 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
@@ -267,16 +268,19 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                 Toast.makeText(thisInstance, R.string.signed_out, Toast.LENGTH_LONG).show();
                 finish();
                 return true;
+
             case R.id.nav_item_saved_recipes:
                 intent = new Intent(thisInstance, SavedRecipes.class);
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;
+
             case R.id.nav_item_about_us:
                 intent = new Intent(thisInstance, aboutUs.class);
                 startActivity(intent);
                 drawer.closeDrawers();
                 return true;
+
             default:
 		        //Satisfy codacy
                 return true;
