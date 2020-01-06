@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -198,9 +200,14 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                     //messages.add(messageObj);
 
                     /*Save the message in the database*/
-                    //TODO: Maybe remove this kind of logs
-                    db.collection("users").document(FirebaseAuth.getInstance().getUid())
-                            .update("logs", FieldValue.arrayUnion("" + message));
+                    //TODO: Maybe remove this kind of logs (Option in Settings)
+                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(thisInstance);
+                    /*If 'Online logging' is not activated, this returns false*/
+                    if (prefs.getBoolean("online_log", true)){
+                        Log.d(TAG, "Logging message");
+                        db.collection("users").document(FirebaseAuth.getInstance().getUid())
+                                .update("logs", FieldValue.arrayUnion("" + message));
+                    }
 
                     /*Send HTTP request to Dialogflow*/
                     aiRequest = new AIRequest();
