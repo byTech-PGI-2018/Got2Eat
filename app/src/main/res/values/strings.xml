@@ -37,4 +37,10 @@
     <string name="already_login">Utilizador já tem sessão iniciada</string>
     <string name="about_us">Acerca de</string>
     <string name="settings">Definições</string>
+
+    <string name="preferences_logging_category" translatable="false">Logging</string>
+    <string name="preferences_online_log">Ativar registros online</string>
+    <string name="preferences_help_category">Ajuda</string>
+    <string name="preferences_feedback">Enviar feedback</string>
+    <string name="preferences_feedback_summary">Reportar erros técnicos e sugerir novas funcionalidades</string>
 </resources>

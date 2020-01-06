@@ -2,13 +2,25 @@
 <PreferenceScreen
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreferenceCompat
-        app:key="online_log"
-        app:title="Enable online chat log"/>
+    <PreferenceCategory
+        app:key="logging_category"
+        app:title="@string/preferences_logging_category">
 
-    <Preference
-        app:key="github"
-        app:title="Send feedback"
-        app:summary="Report technical issues or suggest new features"/>
+        <SwitchPreferenceCompat
+            app:key="online_log"
+            app:title="@string/preferences_online_log"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="help_category"
+        app:title="@string/preferences_help_category">
+
+        <Preference
+            app:key="github"
+            app:title="@string/preferences_feedback"
+            app:summary="@string/preferences_feedback_summary"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
