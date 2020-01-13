@@ -5,10 +5,6 @@ apply plugin: 'kotlin-android'
 android {
     signingConfigs {
         config {
-            keyAlias 'key0'
-            keyPassword 'ByTechGot2Eat18+'
-            storeFile file('C:/Users/Filipe/Downloads/Escola/PGI/Chaves/got2eat.jks')
-            storePassword 'ByTechGot2Eat18+'
         }
     }
     compileSdkVersion 28
