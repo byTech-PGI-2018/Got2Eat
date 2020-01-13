@@ -183,7 +183,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
             @Override
             public void onClick(View v) {
                 /*Validate input*/
-                final String message = userInput.getText().toString();
+                String message = userInput.getText().toString();
                 if (validateInput(message)==0){
                     Message messageObj = new Message(message, FirebaseAuth.getInstance().getUid(), new Date(), user);
 
@@ -196,8 +196,19 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                     db.collection("users").document(FirebaseAuth.getInstance().getUid())
                             .update("logs", FieldValue.arrayUnion("" + message));
 
-                    /*Send HTTP request to Dialogflow*/
+                    /*Start creating request to Dialogflow*/
                     aiRequest = new AIRequest();
+
+                    /*Check if user activated 'vegan-only' preference*/
+                    SharedPreferences myPrefs = thisInstance.getSharedPreferences("myPrefs", MODE_PRIVATE);
+                    boolean veganOnly = myPrefs.getBoolean("vegan-only", false);
+
+                    /*If vegan only, append 'vegan' to the end of the message so server won't retrieve non-vegan recipes*/
+                    if (veganOnly){
+                        message = message + " vegan";
+                    }
+
+                    /*Send HTTP request to Dialogflow*/
                     aiRequest.setQuery(message);
                     new DialogTask(aiService, aiRequest).execute(aiRequest);
                     userInput.setText("");
