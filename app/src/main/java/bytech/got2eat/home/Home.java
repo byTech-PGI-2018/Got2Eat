@@ -201,7 +201,7 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
 
                     /*Check if user activated 'vegan-only' preference*/
                     SharedPreferences myPrefs = thisInstance.getSharedPreferences("myPrefs", MODE_PRIVATE);
-                    boolean veganOnly = myPrefs.getBoolean("vegan-only", false);
+                    boolean veganOnly = myPrefs.getBoolean("vegan_only", false);
 
                     /*If vegan only, append 'vegan' to the end of the message so server won't retrieve non-vegan recipes*/
                     if (veganOnly){
