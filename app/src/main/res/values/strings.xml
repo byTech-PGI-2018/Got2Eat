@@ -43,4 +43,7 @@
     <string name="preferences_help_category">Ajuda</string>
     <string name="preferences_feedback">Enviar feedback</string>
     <string name="preferences_feedback_summary">Reportar erros técnicos e sugerir novas funcionalidades</string>
+    <string name="preferences_recipe_category">Receitas</string>
+    <string name="preferences_vegan_only" translatable="false">Vegan</string>
+    <string name="preferences_vegan_only_summary">Apenas mostrar receitas vegan</string>
 </resources>
