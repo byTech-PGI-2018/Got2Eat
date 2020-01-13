@@ -199,12 +199,12 @@ public class Home extends AppCompatActivity implements AIListener, NavigationVie
                     chat.addMessage(messageObj);
                     //messages.add(messageObj);
 
-                    /*Save the message in the database*/
-                    //TODO: Maybe remove this kind of logs (Option in Settings)
+                    /*Check if user turned on online logging*/
                     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(thisInstance);
-                    /*If 'Online logging' is not activated, this returns false*/
-                    if (prefs.getBoolean("online_log", true)){
-                        Log.d(TAG, "Logging message");
+                    boolean onlineLog = prefs.getBoolean("online_log", false);
+
+                    /*If user turned on online logging, send the message to database*/
+                    if (onlineLog){
                         db.collection("users").document(FirebaseAuth.getInstance().getUid())
                                 .update("logs", FieldValue.arrayUnion("" + message));
                     }
