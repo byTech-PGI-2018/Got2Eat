@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.widget.NestedScrollView;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +40,8 @@ public class RecipeShow extends AppCompatActivity {
     private TextView recipeName;
     private TextView recipeDuration;
     private TextView recipePortion;
+    private TextView recipeDifficulty;
+    private TextView recipeDifficultyLabel;
     private TextView recipeIngredients;
     private TextView recipePrep;
     private Button hideIngredients;
@@ -54,12 +57,18 @@ public class RecipeShow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_recipe);
 
+        final ConstraintLayout mainLayout = findViewById(R.id.main_layout);
+        mainLayout.setVisibility(View.GONE);
+
+
         if (isNetworkConnected()){
             db = FirebaseFirestore.getInstance();
 
             recipeName = findViewById(R.id.recipe_name);
             recipeDuration = findViewById(R.id.recipe_duration_value);
             recipePortion = findViewById(R.id.recipe_portion_value);
+            recipeDifficulty = findViewById(R.id.recipe_difficulty_value);
+            recipeDifficultyLabel = findViewById(R.id.recipe_difficulty);
             recipeIngredients = findViewById(R.id.recipe_ingredients);
             recipePrep = findViewById(R.id.recipe_preparation);
             hideIngredients = findViewById(R.id.recipe_ingredients_hide_btn);
@@ -78,6 +87,17 @@ public class RecipeShow extends AppCompatActivity {
                             recipeName.setText((String)document.get("name"));
                             recipeDuration.setText((String)document.get("tempo"));
                             recipePortion.setText((String)document.get("porção"));
+
+                            /*Check if difficulty info exists, and if not, hide the text*/
+                            if (document.contains("dificuldade")){
+                                recipeDifficulty.setText((String) document.get("dificuldade"));
+                                Log.i(TAG, "Difficulty value: " + recipeDifficulty.getText().toString());
+                            }
+                            else{
+                                Log.d(TAG, "No difficulty value");
+                                recipeDifficultyLabel.setVisibility(View.GONE);
+                            }
+
                             String temp = "";
                             ArrayList<String> stringArray = (ArrayList<String>) document.get("quantidade");
                             if (stringArray != null){
@@ -101,6 +121,8 @@ public class RecipeShow extends AppCompatActivity {
                     } else {
                         Log.d(TAG, "get failed with ", task.getException());
                     }
+
+                    mainLayout.setVisibility(View.VISIBLE);
                 }
             });
             

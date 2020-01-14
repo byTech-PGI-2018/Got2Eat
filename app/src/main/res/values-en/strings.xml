@@ -7,7 +7,7 @@
     <string name="user_input_hint">Write something</string>
     <string name="recipe_name">Recipe name</string>
     <string name="upload_recipe_image">Up. photo</string>
-    <string name="recipe_duration">Duration (min):</string>
+    <string name="recipe_duration">Duration:</string>
     <string name="recipe_portions">Portions:</string>
     <string name="recipe_ingredients">Ingredients</string>
     <string name="recipe_preparation_title">Preparation</string>
